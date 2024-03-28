@@ -1,0 +1,24 @@
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slogan{
+    text-align: center;
+}
+
+footer{
+    display: inline-flex;
+    gap: 70rem;
+}
+
+.container1{
+    display: flex;
+    gap: 10px;
+}
+
+.container2{
+    display: flex;
+    gap: 10px;
+}
