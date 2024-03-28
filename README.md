@@ -1,0 +1,1 @@
+# Plataforma de Ensino sobre Metodologia Scrum
