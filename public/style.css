@@ -1,4 +1,51 @@
+body{
+    background-color: #1B1B32;
+    color: white;
+}
+
+.header-style{
+    background-color: #0A0A23;
+}
+#fundamentos-scrum-list{
+    display: block;
+}
+.section-1{
+    display: flex;
+}
+
+#games-interativos-title{
+    display: inline-block;
+}
+
+#books-and-tools-image{
+    float: left;
+}
+
+.click-to-start{
+    color: white;
+    display: inline-block;
+    margin-left: 44%;
+    margin-right: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #1F1F5F;
+}
+
+hr{
+    color: #232363;
+}
+
 .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github-logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -8,17 +55,85 @@
     text-align: center;
 }
 
+.interactives-games{
+    text-align: center;
+}
+
 footer{
-    display: inline-flex;
-    gap: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    display: flex;
 }
 
 .container1{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .container2{
     display: flex;
+    margin-left: auto;
     gap: 10px;
+}
+
+.footer-background{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #0A0A23;
+    color: white;
+}
+
+
+
+/* Scrum Master */
+
+#scrum-master-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrum-master-function{
+    display: flex;
+}
+
+.nav-footer-bar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-nav-bar{
+    background-color: #0A0A23;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 25px;
+}
+
+#call-for-video{
+    text-align: center;
+}
+
+
+/* Games Interativos */
+#play{
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-color: #2E8F2C;
+}
+
+
+/* Quiz de conhecimentos */
+
+input[type="submit"]{
+    background-color: #2E8F2C;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
 }

@@ -6,13 +6,11 @@
     <link rel="stylesheet" href="./public/style.css">
 </head>
 <body>
-    <header>
+    <header class="header-style">
         <div>
             <img alt="Logo do grupo" class="logo" src="./images/logo.jpg" width="50px">
         </div>
     </header>
-
-
 
     <h1>Seja bem-vindo à nossa plataforma de ensino do Método Scrum!</h1>
 
@@ -29,21 +27,26 @@
         <h2>
             Seção 1: Definições e Origem
         </h2>
-        <img src="./images/Books-and-tools.jpg" width="200px" height="200px">
-
-        <ul>
-            <li>Fundamentos do Scrum;</li>
-            <li>Manifesto ágil;</li>
-            <li>Pilares do método;</li>
-            <li>Quiz de conhecimento - Definições e origem;</li>
-        </ul>
+        <div class="section-1">
+            <img id="books-and-tools-image" src="./images/Books-and-tools.jpg" width="200px" height="200px">
+                <div id="fundamentos-scrum-list">
+                    <ul>
+                        <li>Fundamentos do Scrum;</li>
+                        <li>Manifesto ágil;</li>
+                        <li>Pilares do método;</li>
+                        <li>Quiz de conhecimento - Definições e origem;</li>
+                    </ul>
+                </div>
+        </div>
     </div>
 
-    <h2>Games interativos:</h2>
+    <div id="games-interativos-title">
+        <h2>Games interativos:</h2>
 
-    <p>
-        Os games interativos são baseados em situações presentes no método Scrum. Foram desenvolvidos para proporcionar uma experiência prática de como é trabalhar com esse método, permitindo que você adquira uma noção básica do que fazer em cada situação. Assim, você não terá dificuldades ao aplicar o método na vida real. Os games estão disponíveis na página "Games Interativos", onde cada um possui um link junto com sua descrição. Basta clicar no game escolhido para iniciá-lo.
-    </p>
+        <p>
+            Os games interativos são baseados em situações presentes no método Scrum. Foram desenvolvidos para proporcionar uma experiência prática de como é trabalhar com esse método, permitindo que você adquira uma noção básica do que fazer em cada situação. Assim, você não terá dificuldades ao aplicar o método na vida real. Os games estão disponíveis na página "Games Interativos", onde cada um possui um link junto com sua descrição. Basta clicar no game escolhido para iniciá-lo.
+        </p>
+    </div>
 
     <h3>Game 1: Desenvolva seu Product Backlog</h3><hr/>
     <p>
@@ -67,12 +70,13 @@
         Agora que você já sabe como funciona o processo de aprendizagem do Scrum, vamos começar?
     </p>
 
-    <div><a href="./public/Scrum-Introduction.html">Clique aqui para começar</a></div>
+    <a href="./public/Scrum-Introduction.html"><scan class="click-to-start"> Clique aqui para começar</scan></a>
 
     
-    <div>
+    <div class="footer-background">
         <img alt="Logo do grupo" class="logo" src="./images/logo.jpg" width="50px" height="50px">
         <p id="slogan">"Code Don't Blow: Where Innovations Unfolds!"</p>
+        <img alt="Logo do Github" class="github-logo" src="./images/github-icon-white.png" width="40px" height="40px">
     </div>
         
     <footer>
