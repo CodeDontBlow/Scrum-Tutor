@@ -13,6 +13,7 @@
         </div>
     </header>
 
+    <!-- Quiz -->
     <h1>Quiz de conhecimento Definições e Origem</h1>
 
     <div id="Forms">
@@ -129,6 +130,27 @@
     
             <input type="submit" value="Validar"/>
         </form>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Resultado do Quiz</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Você acertou {{correct_answers }} questões.</p>
+                    <p>Você errou {{incorrect_answers }} questões.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+  </div>
     
     </div>
     
@@ -152,6 +174,13 @@
     </footer>
 
 
+    {% if modal_show %}
+    <script>
+      $(document).ready(function(){
+        $('#resultModal').modal('show');
+      });
+    </script>
+    {% endif %}
 
 
     

@@ -50,15 +50,16 @@ respostas_corretas = {
 @app.route('/submit_quiz', methods=['POST'])
 def submit_quiz():
     respostas_usuario = request.form
-    resultados = []
+    correct_answers = 0
+    incorrect_answers = 0
     for questao, resposta_correta in respostas_corretas.items():
         resposta_usuario = respostas_usuario.get(questao)
         if resposta_usuario == resposta_correta:
-            resultados.append(f'A resposta à alternativa está correta!')
+            correct_answers += 1
         else:
-            resultados.append(f'A resposta está incorreta. A resposta certa é {resposta_correta}.')
-    return '<br>'.join(resultados)
+            incorrect_answers += 1
+    return render_template("Quiz-de-conhecimento.html", modal_show=True, correct_answers = correct_answers, incorrect_answers = incorrect_answers)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug = True)
