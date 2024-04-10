@@ -11,7 +11,7 @@
 |**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)|[@Linkedin](https://www.linkedin.com/in/ygorrpereira/)
 |**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)|[@Linkedin](https://www.linkedin.com/in/sofiamatoslessa/)
 |**Leonardo Cristiano**|Desenvolvedor|[@GitHub](https://github.com/Leonardo-dSouza)|[@Linkedin](https://www.linkedin.com/in/ana-luisa-andrade-4a695526b)
-|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)|[@Linkedin](https://www.linkedin.com/in/maria-luiza-a141b123b)
+|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)|[@Linkedin](https://www.linkedin.com/in/henrique-silva-9737bb237/)
 |**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)|[@Linkedin](https://www.linkedin.com/in/gustavo-sena-577045232)
 
 </br>
