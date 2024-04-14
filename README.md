@@ -47,9 +47,7 @@ Você pode visualizar a planilha no Google Planilhas clicando [aqui](https://doc
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 
-<a href='http://www.youtube.com/watch?v=a0tEuoaHXgk'>
-  <img src="http://www.img.youtube.com/vi/a0tEuoaHXgk/0.jpg" alt='Demonstração de navegação'>
-  </a>
+[![Veja como funcionará nossa navegação](http://www.img.youtube.com/vi/a0tEuoaHXgk/0.jpg)](https://www.youtube.com/watch?v=a0tEuoaHXgk)
 
 ## 💼 Requisitos
 <details>
