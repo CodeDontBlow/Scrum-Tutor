@@ -46,7 +46,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 
-![Demonstração de Navegação](https://www.youtube.com/watch?v=a0tEuoaHXgk)
+[![Demonstração de Navegação](https://img.youtube.com/vi/a0tEuoaHXgk)](https://www.youtube.com/watch?v=a0tEuoaHXgk)
 ## 💼 Requisitos
 <details>
   <summary>
