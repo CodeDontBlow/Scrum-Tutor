@@ -42,6 +42,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 </table>
 
 ## 📑 Back Log do produto
+Você pode visualizar a planilha no Google Planilhas clicando [aqui](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjRgqvYZv0bv0nnhDIQUGqU_bEFrsYi1pcQFEnWeyEQrnkYsmPLVW-WnNNP2OMefQktS1XxQl3euOB/pubhtml).
 
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
@@ -89,9 +90,6 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
         <li>GitHub</li>
         <li>Figma</li>        
 </ul>
-
-## 📃 Backlog do Produto e da Primeira Sprint
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjRgqvYZv0bv0nnhDIQUGqU_bEFrsYi1pcQFEnWeyEQrnkYsmPLVW-WnNNP2OMefQktS1XxQl3euOB/pubhtml?widget=true&amp;headers=false" width="100%" height="500"></iframe>
 
 ## 👥 Equipe Code Don´t Blow
 
