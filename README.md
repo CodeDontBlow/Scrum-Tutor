@@ -90,6 +90,9 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
         <li>Figma</li>        
 </ul>
 
+## 📃 Backlog do Produto e da Primeira Sprint
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTjRgqvYZv0bv0nnhDIQUGqU_bEFrsYi1pcQFEnWeyEQrnkYsmPLVW-WnNNP2OMefQktS1XxQl3euOB/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
 ## 👥 Equipe Code Don´t Blow
 
 <br>
