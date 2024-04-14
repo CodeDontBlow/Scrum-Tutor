@@ -1,5 +1,3 @@
-
-
 <h1 align="center"> Projeto API - 1º Semestre </h1>
 
 
@@ -103,4 +101,3 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 |**Pablo Rafael**|Desenvolvedor|[@GitHub](https://github.com/Rafa0709)|
 
 </br>
-

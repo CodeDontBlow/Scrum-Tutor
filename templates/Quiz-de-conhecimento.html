@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz de conhecimento Definições e Origem </title>
+    <link rel="stylesheet" text="text/css" href="{{url_for('static', filename='style/quiz.css')}}">
+    <link rel="stylesheet" text="text/css" href="{{url_for('static', filename='style/main.css')}}">
+</head>
+<body>
+    <header class="header-style">
+        <div>
+            <img alt="Logo do grupo" class="logo" src="{{url_for('static', filename='images/logo.jpg')}}" width="50px">
+        </div>
+    </header>
+
+    <!-- Quiz -->
+    <h1>Quiz de conhecimento Definições e Origem</h1>
+
+    <div id="Forms">
+        <h2>Forms de teste</h2>
+    
+        <form action="/submit_quiz" method="POST">
+            <p>
+                Na Seção 1: "Definições e Origem", você aprendeu sobre alguns dos elementos básicos do Scrum. Agora, demonstre sua compreensão e conhecimento respondendo às dez seguintes questões. Ao clicar no botão "Validar", sua nota aparecerá na tela junto com os erros e acertos. Lembre-se, essa nota não determinará sua aprovação ou reprovação no curso. Boa sorte!
+            </p>
+            <hr/>
+    
+    
+            <p>
+                Pergunta 1: Qual é a capital da França?
+            </p>
+            
+            <input type="radio" id="A-alt" name="Alt-question-1" value="Paris">
+            <label for="Paris">Paris</label><br>
+    
+    
+            <input type="radio" id="B-alt" name="Alt-question-1" value="Madri">
+            <label for="Madri">Madri</label><br>
+    
+            <input type="radio" id="C-alt" name="Alt-question-1" value="Tóquio">
+            <label for="Tóquio">Tóquio</label><br>
+    
+            <input type="radio" id="D-alt" name="Alt-question-1" value="Pequim">
+            <label for="Pequim">Pequim</label><br>
+
+            <hr/>
+
+            <p>
+                Pergunta 2: Qual é a capital da República Tcheca?
+            </p>
+    
+            
+            <input type="radio" id="A-alt" name="Alt-question-2" value="Londres">
+            <label for="Londres">Londres</label><br>
+    
+    
+            <input type="radio" id="B-alt" name="Alt-question-2" value="Praga">
+            <label for="Praga">Praga</label><br>
+    
+            <input type="radio" id="C-alt" name="Alt-question-2" value="Roma">
+            <label for="Roma">Roma</label><br>
+    
+            <input type="radio" id="D-alt" name="Alt-question-2" value="Berlin">
+            <label for="Berlin">Berlin</label><br>
+
+            <hr/>
+
+            <p>
+                Pergunta 3: Qual é o maior animal do mundo?
+            </p>
+    
+        
+            <input type="radio" id="A-alt" name="Alt-question-3" value="Elefante">
+            <label for="Elefante">Elefante</label><br>
+    
+    
+            <input type="radio" id="B-alt" name="Alt-question-3" value="Sua mãe, aquela gorda">
+            <label for="Sua mãe, aquela gorda">Sua mãe, aquela gorda</label><br>
+    
+            <input type="radio" id="C-alt" name="Alt-question-3" value="Baleia Azul">
+            <label for="Baleia Azul">Baleia Azul</label><br>
+    
+            <input type="radio" id="D-alt" name="Alt-question-3" value="Rinoceronte">
+            <label for="Rinoceronte">Rinoceronte</label><br>
+            
+    
+    
+            <hr/>
+    
+    
+            <p>
+                Pergunta 4: Quanto é 10 em binário?
+            </p>
+    
+            
+            <input type="radio" id="A-alt" name="Alt-question-4" value="1001">
+            <label for="1001">1001</label><br>
+    
+    
+            <input type="radio" id="B-alt" name="Alt-question-4" value="1111">
+            <label for="1111">1111</label><br>
+    
+            <input type="radio" id="C-alt" name="Alt-question-4" value="1010">
+            <label for="1010">1010</label><br>
+    
+            <input type="radio" id="D-alt" name="Alt-question-4" value="1101">
+            <label for="1101">1101</label><br>
+            
+            <hr/>
+    
+            <p>
+                Pergunta 5: Selecione uma das alternativas abaixo? É só lembrar do que o professor Massanori disse em aula:
+            </p>
+    
+            
+            <input type="radio" id="A-alt" name="Alt-question-5" value="Azul">
+            <label for="Azul">Azul</label><br>
+    
+    
+            <input type="radio" id="B-alt" name="Alt-question-5" value="42">
+            <label for="42">42</label><br>
+    
+            <input type="radio" id="C-alt" name="Alt-question-5" value="Maconha">
+            <label for="Maconha">Maconha</label><br>
+    
+            <input type="radio" id="D-alt" name="Alt-question-5" value="Sei lá, lek lol :D">
+            <label for="Sei lá, lek lol :D">Sei lá, lek lol :D</label><br>
+            
+            <hr/>
+    
+            <input type="submit" value="Validar"/>
+        </form>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Resultado do Quiz</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Você acertou {{correct_answers }} questões.</p>
+                    <p>Você errou {{incorrect_answers }} questões.</p>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+    </div>
+    
+
+    <div class="footer-background">
+        <img alt="Logo do grupo" class="logo" src="{{url_for('static', filename='images/logo.jpg')}}" width="50px" height="50px">
+        <p id="slogan">"Code Don't Blow: Where Innovations Unfolds!"</p>
+        <img alt="Logo do Github" class="github-logo" src="{{url_for('static', filename='images/github-icon-white.png')}}" width="40px" height="40px">
+    </div>
+
+    <footer>
+        <div class="container1">
+            <span class="footer-items" id="copyright">Copyright©2024</span>
+            <span class="footer-items" id="group-name">CodeDontBlow</span>
+        </div>
+
+        <div class="container2">
+            <span class="footer-items" id="footer-home"><a>Homepage</a></span>
+            <span class="footer-items" id="about-us"><a>Sobre nós</a></span>
+        </div>
+    </footer>
+
+
+    {% if modal_show %}
+    <script>
+      $(document).ready(function(){
+        $('#resultModal').modal('show');
+      });
+    </script>
+    {% endif %}
+
+
+    
+</body>
+</html>
