@@ -12,9 +12,9 @@ def homepage():
     return render_template("index.html")
 
 
-@app.route("/Scrum Introduction")
+@app.route("/scrumintroducion")
 def scrum_introduction():
-    return render_template("Scrum-Introduction.html")
+    return render_template("scrumintroducion.html")
 
 @app.route("/Trilhas de Aprendizagem")
 def trilhas_aprendizagem():
