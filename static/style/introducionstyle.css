@@ -1,28 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
-
-* {
-    font-family: Poppins, sans-serif;
-    color: white;
-}
-
 body {
     background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
-}
-
-.title {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.text {
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 19px;
-    text-align: justify;
 }
 
 .scrum-img {
@@ -109,10 +86,3 @@ section {
     box-shadow:  0 3px 6px rgba(0, 0, 0, 0.5) ;
 }
 
-
-.btn:hover {
-    background-color: #4141DD;
-    transform: scale(1.1);
-    background-position: -60px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
