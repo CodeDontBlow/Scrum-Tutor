@@ -3,6 +3,16 @@
 * {
     font-family: Poppins, sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    font-family: 'Poppins' , sans-serif;
 }
 
 .title {
@@ -27,4 +37,176 @@
     transform: scale(1.1);
     background-position: -60px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/* .:: Configurações NAVBAR ::. */
+
+
+nav.navbar{
+    background-color: #020234;
+    padding: 7px;
+}
+      /* Logo ScrumTutor */
+    nav.navbar a.navbar-brand > img{
+        width: 95px;
+
+        user-select: none;
+    }
+
+    /* Botões Navbar */
+    nav.navbar .NAVbtn,
+    nav.navbar a.nav-link{
+        color: white;
+        
+        opacity: 100%;
+
+        transition: opacity 200ms;
+    }
+
+        nav.navbar .NAVbtn:hover,
+        nav.navbar a.nav-link:hover{
+            opacity: 70%;
+        }
+
+        nav.navbar .NAVbtn:active,
+        nav.navbar a.nav-link:active{
+            opacity: 90%;
+        }
+
+
+    nav.navbar div.NAVbtn-home i.bi{
+      padding: 7px;
+      
+      color: white;
+      font-size: 1.3em;
+    }
+
+    nav.navbar .navbar-collapse{
+        flex-grow: 0;
+        text-align: center;
+    }
+
+    nav.navbar button.navbar-toggler i.bi{
+      color: white;
+      font-size: 1.8rem;
+    }
+
+        nav.navbar button.navbar-toggler:focus{
+          box-shadow: none;
+          border: 0;
+        }
+
+/* Responsividade */
+@media(max-width: 500px){
+    a.navbar-brand > img{
+    width: 60px !important;
+    }
+
+    nav.navbar a.nav-link{
+    font-size: .8rem;
+    }
+} 
+
+
+/* .:: Configurações FOOTER ::. */
+
+/* Parte de Cima do Footer */
+footer#CDBfooter > div.CDBfooter-top{
+    background-color: #020234;
+    padding: 10px;
+
+    color: white;
+}
+    /* Logo CodeDontBlow */
+    div.CDBfooter-top > div .CDBfooter-logo img{
+        width: 200px;
+        
+        transition: opacity 200ms;
+    }
+
+    /* Slogan CDB */
+    div.CDBfooter-top > div.CDBfooter-message h5{
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    /* Botão Github */
+    div.CDBfooter-top > div.CDBfooter-github .bi-github{
+        color: white;
+        font-size: 2.5rem;
+
+        transition: opacity 200ms;
+    }
+
+        div.CDBfooter-top > div.CDBfooter-github i.bi:hover,
+        div.CDBfooter-top > div.CDBfooter-logo img:hover
+        {
+            opacity: 80%;
+        }
+
+/* Parte de Baixo do Footer */
+footer#CDBfooter > div.CDBfooter-bottom{
+    background-color: black;
+}
+
+    /* Container dos Links */
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer{
+        padding: 15px;
+        gap: 10px;
+    }
+
+    /* Conteúdo da Parte de Baixo */
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer *{
+        padding: 3px;
+
+        display: inline;
+
+        color: white;
+        font-size: .85rem;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+        div.CDBfooter-bottom div.CDBfooter-BTcontainer a:hover{
+            text-decoration: underline;
+        }
+
+    /* Link especial (azul) */
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer > div.CDBfooter-cdb a{
+        color: #92A3FF;
+    }
+
+/* Responsividade */
+@media (max-width: 500px){
+
+    div.CDBfooter-top > .CDBfooter-logo img{
+    width: 110px;
+    }
+
+    div.CDBfooter-top > div.CDBfooter-message h5{
+    font-size: .8rem;
+    font-weight: 300;
+    }
+
+    div.CDBfooter-top > div.CDBfooter-github .bi-github{
+    color: white;
+    font-size: 1.55rem;
+    }
+
+    .CDBfooter-BTcontainer{
+    padding: 10px;
+    gap: 5px;
+    }   
+
+    .CDBfooter-BTcontainer > *{
+    font-size: .55rem;
+    font-weight: 300;
+    }
+
+    div.CDBfooter-BTcontainer a{
+    padding: 1px;
+    }
+
 }
