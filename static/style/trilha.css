@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
+}
+
+.scrum-img {
+    width: 290px;
+}
+
+.trilha-scrum .content {
+    gap: 30px;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    margin-top: 5%;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color:white;
+    text-align: start;
+}
+section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+hr{
+    color: black;
+}

@@ -39,7 +39,7 @@ def games_interativos():
 def quiz_conhecimentos():
     return render_template("Quiz-de-conhecimento.html")
 
-@app.route("/Capitulo 1")
+@app.route("/Capitulo1")
 def capitulo1():
     return render_template("Capitulos/Capitulo1.html")
 
