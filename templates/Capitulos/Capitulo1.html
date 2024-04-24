@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+    {% block pageCss %}
+        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+    {% endblock %}
+
+    {% block title %} Capitulo 1 {% endblock %}
+
+    {% block pageContent %}
+    
+    <section class="container-fluid capitulo-scrum">
+        <h1 class="title">Capitulo 1</h1>
+        <div class="content d-flex">
+          <p class="text col-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aperiam laboriosam deleniti ea porro, fuga facere repellendus nulla in, beatae sed? Quidem iste exercitationem neque laboriosam sequi dolores nulla? Distinctio.</p>
+        </div>
+      </section>
+    
+    
+    {% endblock %}
+
+
