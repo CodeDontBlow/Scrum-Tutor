@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/sobre.css')}}">
+{% endblock %}
+
+{% block pageTitle %} Trilha {% endblock %}
+
+{% block pageContent %}
+<body>
+    <h1>Seja bem-vindo a Trilha de Aprendizado</h1>
+
+    <p>
+        Essa trilha foi preperada especialmente para te proporcionar a melhor experiência e compreensão do método scrum! 
+        Bons Estudos!
+    </p>
+ <span>
+    <h2>
+        Módulo 1
+    </h2>
+    <ul>
+        <li>* Capítulo 1: Definições e Origem</li>
+        <li>  Sobre o Scrum</li>
+        <li>  Pilares do Método</li>
+        <li>  Auto-organização</li>
+        <li>* Capitulo 2: Scrum Team</li>
+        <li><a href="Scrum Master">Scrum Master, Product Owner, Develop Team;</a></li>
+        <li>* Capítulo 3: Eventos e Artefatos</li>
+    </ul>
+    <hr/>
+ </span> 
+<span>
+    <h2>
+        Módulo 2
+    </h2>
+    <ul>
+        <li>Jogo: Product Owner</li>
+        <li>Jogo2: Scrum Team </li>
+        <li>Jogo3: Scrum Master</li>
+    </ul>
+    <hr/>
+</span>  
+<span>
+    <h2>
+        Módulo 3
+    </h2>
+    <ul>
+        <li>Exame Final </li>
+    </ul>
+    <hr/> 
+</span> 
+</body>
+{% endblock %}

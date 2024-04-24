@@ -11,7 +11,6 @@
 
 body{
     min-height: 100vh;
-
     font-family: 'Poppins' , sans-serif;
 }
 
@@ -19,6 +18,14 @@ body{
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -147,6 +154,9 @@ footer#CDBfooter > div.CDBfooter-top{
         }
 
 /* Parte de Baixo do Footer */
+#CDBfooter{
+    position: absolute;
+}
 footer#CDBfooter > div.CDBfooter-bottom{
     background-color: black;
 }
@@ -177,6 +187,7 @@ footer#CDBfooter > div.CDBfooter-bottom{
     div.CDBfooter-bottom div.CDBfooter-BTcontainer > div.CDBfooter-cdb a{
         color: #92A3FF;
     }
+   
 
 /* Responsividade */
 @media (max-width: 500px){
