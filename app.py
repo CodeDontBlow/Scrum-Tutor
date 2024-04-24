@@ -16,9 +16,13 @@ def homepage():
 def scrum_introduction():
     return render_template("scrumintroducion.html")
 
-@app.route("/Trilhas de Aprendizagem")
-def trilhas_aprendizagem():
-    return render_template("Trilhas-de-Aprendizagem.html")
+@app.route("/trilha")
+def trilha():
+    return render_template("trilha.html")
+
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
 
 @app.route("/Scrum Master")
 def scrum_master():
