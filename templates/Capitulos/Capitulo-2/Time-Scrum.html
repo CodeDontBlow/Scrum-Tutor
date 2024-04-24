@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+    {% block pageCss %}
+        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+    {% endblock %}
+
+    {% block title %} Time Scrum{% endblock %}
+
+    {% block pageContent %}
+    
+    <section class="container-fluid capitulo-scrum">
+      <h1 class="title">Time Scrum ( PO, SM, ST)</h1>
+      <div class="content d-flex">
+        <p class="text col-7">Time Scrum</p>
+      </div>
+
+      
+    </section>
+    
+    
+    {% endblock %}
