@@ -40,7 +40,9 @@ body{
 }
 
 
-/* .:: Configurações NAVBAR ::. */
+
+/* .:: CONFIGURAÇÕES NAVBAR ::. */
+
 
 
 nav.navbar{
@@ -109,7 +111,10 @@ nav.navbar{
 } 
 
 
-/* .:: Configurações FOOTER ::. */
+
+/* .:: CONFIGURAÇÕES FOOTER ::. */
+
+
 
 /* Parte de Cima do Footer */
 footer#CDBfooter > div.CDBfooter-top{
@@ -122,6 +127,7 @@ footer#CDBfooter > div.CDBfooter-top{
     div.CDBfooter-top > div .CDBfooter-logo img{
         width: 200px;
         
+        user-select: none;
         transition: opacity 200ms;
     }
 
