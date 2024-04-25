@@ -5,13 +5,11 @@
     color: white;
     margin: 0;
     padding: 0;
-    list-style: none;
     box-sizing: border-box;
 }
 
 body{
     min-height: 100vh;
-
     font-family: 'Poppins' , sans-serif;
 }
 
@@ -19,6 +17,14 @@ body{
     font-weight: 600;
     font-style: normal;
     font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -108,7 +114,7 @@ nav.navbar{
     nav.navbar a.nav-link{
     font-size: .8rem;
     }
-} 
+}
 
 
 
@@ -153,6 +159,9 @@ footer#CDBfooter > div.CDBfooter-top{
         }
 
 /* Parte de Baixo do Footer */
+#CDBfooter{
+    position: absolute;
+}
 footer#CDBfooter > div.CDBfooter-bottom{
     background-color: black;
 }
@@ -183,6 +192,7 @@ footer#CDBfooter > div.CDBfooter-bottom{
     div.CDBfooter-bottom div.CDBfooter-BTcontainer > div.CDBfooter-cdb a{
         color: #92A3FF;
     }
+   
 
 /* Responsividade */
 @media (max-width: 500px){
@@ -216,3 +226,23 @@ footer#CDBfooter > div.CDBfooter-bottom{
     }
 
 }
+
+
+
+/* .:: BASE P/ PADRONIZAÇÃO ::. */
+
+
+
+/* Margem entre as linhas de conteúdo */
+/* cada linha possui essa classe:  */
+    .container-content{
+        margin: 20px auto;
+    }
+
+/* Espaçametno interno dos blocos de conteúdo */
+/* todo bloco de conteúdo tem essa tag:  */
+    .content-block{
+        padding: 15px;
+
+        color: white;
+    }

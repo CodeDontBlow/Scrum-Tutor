@@ -16,9 +16,13 @@ def homepage():
 def scrum_introduction():
     return render_template("scrumintroducion.html")
 
-@app.route("/Trilhas de Aprendizagem")
-def trilhas_aprendizagem():
-    return render_template("Trilhas-de-Aprendizagem.html")
+@app.route("/trilha")
+def trilha():
+    return render_template("trilha.html")
+
+@app.route("/sobre")
+def sobre():
+    return render_template("sobre.html")
 
 @app.route("/Scrum Master")
 def scrum_master():
@@ -30,10 +34,36 @@ def games_interativos():
     return render_template("Games-interativos.html")
 
 
-
 @app.route("/Quiz de conhecimento")
 def quiz_conhecimentos():
     return render_template("Quiz-de-conhecimento.html")
+
+@app.route("/Capitulo1")
+def capitulo1():
+    return render_template("Modulo-1/Capitulos/Capitulo-1/Capitulo1.html")
+
+@app.route("/Pilares Scrum")
+def pilares_scrum():
+    return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html")
+
+
+@app.route("/Capitulo2")
+def capitulo2():
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Capitulo2.html")
+
+@app.route("/Time Scrum")
+def time_scrum():
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Time-Scrum.html")
+
+
+
+
+
+
+
+
+
+
 
 
 

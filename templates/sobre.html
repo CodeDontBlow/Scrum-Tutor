@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/sobre.css')}}">
+{% endblock %}
+
+{% block pageTitle %} Sobre {% endblock %}
+
+{% block pageContent %}
+<section class="container d-flex justify-content-center sobre-scrum">
+  <img class="img-fluid cdb-img" src="{{url_for('static', filename='img/logos/CDB_preto.svg')}}" alt="CDB logo">
+  <h1 class="title-sobre col-6"> Code Don´t Blow:
+    <p> Onde cortamos o pavio <br>dos seus problemas!</p>
+  </h1>
+</section>
+<section>
+  <h1 class="title">Quem somos?</h1>
+  <div class="content d-flex justify-content-left sobre-scrum">
+    <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/about.svg')}}" alt="sobre">
+    <p class="text col-7"> Somos um novo player no mercado cada vez mais em expansão de tecnologia e soluções. Com um
+      time diverso e conectado com as mais importantes tendências na área Tecnológica e de Inovação, estamos sempre
+      buscando novas abordagens, mais simples, rápidas e eficientes de forma personalizada para nossos clientes. </p>
+  </div>
+</section>
+<section>
+  <h1 class="title">Valores</h1>
+  <div class="valores d-flex justify-content-left sobre-scrum">
+    <div class="val"><img src="{{url_for('static', filename='img/icons/graphicupicon.svg')}}" class="card-img-top"
+        style="height: 30px;" alt="...">
+      <h5 class="subtitle_sobre">Soluções Econômicas</h5>
+    </div>
+    <div class="val"><img src="{{url_for('static', filename='img/icons/handleicon.svg')}}" class="card-img-top"
+        style="height: 30px;" alt="...">
+      <h5 class="subtitle_sobre">Transparência nas Relações</h5>
+    </div>
+    <div class="val"><img src="{{url_for('static', filename='img/icons/tec.svg')}}" class="card-img-top"
+        style="height: 30px;" alt="...">
+      <h5 class="subtitle_sobre"> Inovação Tecnológica</h5>
+    </div>
+  </div>
+</section>
+<section>
+  <h1 class="title">Visão da Empresa</h1>
+  <div class="content d-flex justify-content-left sobre-scrum">
+    <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/online.svg')}}" alt="sobre">
+    <p class="text col-7"> O mercado de tecnologia se expande mais rápido do que as empresas são capazes de compreender
+      as novas ferramentas, sejam elas de gestão, de inovação, de processos, de educação ou de cultura. Acreditamos na
+      necessidade de empresas facilitadoras, isto é, um elo entre a Vanguarda das soluções e o mercado analógico que
+      quer ser digitalizado.</p>
+  </div>
+</section>
+<section>
+  <h1 class="title">Missão</h1>
+  <div class="content d-flex justify-content-left sobre-scrum">
+    <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/Innovation-rafiki.svg')}}"
+      alt="sobre">
+    <p class="text col-7"> A construção de um futuro em que qualquer empresa, seja ela de comércio, serviço ou
+      desenvolvimento, de qualquer tamanho, possa estar conectada às ferramentas digitais mais relevantes para sua área
+      de atuação. Todos têm que ter direito à revolução tecnológica que bate às nossas portas.</p>
+  </div>
+</section>
+<section class="membros">
+  <h2 class="title">Membros da Equipe</h2>
+  <div class="cards d-flex">
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Luana Souza</h5>
+        <p class="card-text"> Scrum Master</p>
+      </div>
+    </div>
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" style="height: 30px;"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Leonardo Cristiano</h5>
+        <p class="card-text">Product Owner</p>
+      </div>
+    </div>
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" style="height: 30px;"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ygor Pereira</h5>
+        <p class="card-text">Development Team</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="membros">
+  <div class="cards d-flex">
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rafael Gonçalves</h5>
+        <p class="card-text"> Development Team</p>
+      </div>
+    </div>
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Henrique Tadeu</h5>
+        <p class="card-text"> Development Team</p>
+      </div>
+    </div>
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Mariana Lins</h5>
+        <p class="card-text"> Development Team</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="pg-button d-flex">
+    <a class="btn btn-primary d-flex" href="#" role="button">Volte para a página inicial</a>
+  </div>
+</section>
+
+{% endblock %}

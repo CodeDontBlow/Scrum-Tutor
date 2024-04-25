@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+    {% block pageCss %}
+        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+    {% endblock %}
+
+    {% block title %} Capitulo 1 {% endblock %}
+
+    {% block pageContent %}
+    
+    <section class="container-fluid capitulo-scrum">
+      <h1 class="title">Capitulo 1</h1>
+      <div class="content d-flex">
+        <p class="text col-7">Bem-vindo ao curso de método ágil. Clique nas aulas para começar a ver o conteúdo.</p>
+      </div>
+
+      <div class="content d-flex justify-content-left trilha-scrum">
+        <ul>
+            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#" >Fundamentos Scrum</a></li><br>
+            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#"> Valores e Princípios ( Manifesto Agil, Princípios, Valores)
+            </a></li><br>
+            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Pilares Scrum"> Os Pilares de Scrum (Transparência, Inspeção, Adaptação)
+            </a></li>
+        </ul>
+    </div>
+    </section>
+    
+    
+    {% endblock %}
+
+

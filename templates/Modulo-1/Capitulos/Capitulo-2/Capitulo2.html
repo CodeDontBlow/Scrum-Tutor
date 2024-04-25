@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+    {% block pageCss %}
+        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+    {% endblock %}
+
+    {% block title %} Capitulo 2{% endblock %}
+
+    {% block pageContent %}
+    
+    <section class="container-fluid capitulo-scrum">
+      <h1 class="title">Capitulo 2</h1>
+      <div class="content d-flex">
+        <p class="text col-7">Bem-vindo ao curso de método ágil. Clique nas aulas para começar a ver o conteúdo.</p>
+      </div>
+
+      <div class="content d-flex justify-content-left trilha-scrum">
+        <ul>
+            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Time Scrum" >Time Scrum ( PO, SM, ST)</a></li><br>
+            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#"> Auto-organização, Facilitação, Visão
+            </a></li><br>
+        </ul>
+    </div>
+    </section>
+    
+    
+    {% endblock %}
