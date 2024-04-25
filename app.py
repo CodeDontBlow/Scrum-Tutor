@@ -40,20 +40,20 @@ def quiz_conhecimentos():
 
 @app.route("/Capitulo1")
 def capitulo1():
-    return render_template("Capitulos/Capitulo-1/Capitulo1.html")
+    return render_template("Modulo-1/Capitulos/Capitulo-1/Capitulo1.html")
 
 @app.route("/Pilares Scrum")
 def pilares_scrum():
-    return render_template("Capitulos/Capitulo-1/Pilares-Scrum.html")
+    return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html")
 
 
 @app.route("/Capitulo2")
 def capitulo2():
-    return render_template("Capitulos/Capitulo-2/Capitulo2.html")
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Capitulo2.html")
 
 @app.route("/Time Scrum")
 def time_scrum():
-    return render_template("Capitulos/Capitulo-2/Time-Scrum.html")
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Time-Scrum.html")
 
 
 
