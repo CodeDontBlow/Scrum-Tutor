@@ -13,8 +13,13 @@
     <!-- CSS Global do Projeto -->
     <link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
 
+    <link rel="stylesheet" href="../static/style/global.css">
+
 <!-- CSS LOCAL feito para identificar melhor a disposição de conteúdo nos layouts (este style deve ser ignorado na hora de montar sua página) -->
     <style>
+        body{
+            background-image: linear-gradient(to bottom right, #090942 , #1A1A76);
+        }
         .content-block{
             background-image: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.1));
             border: 1px dashed rgba(255, 255, 255, 0.3);
@@ -30,12 +35,15 @@
 
             <!-- Elemento 1 -->
             <div class="content-block col-sm-4">
-                Elemento 1 [4x8]
+                <img src="../static/img/storyset/paper.svg" alt="">
             </div>
 
             <!-- Elemento 2 -->
             <div class="content-block col-sm-8">
-                Elemento 2 [4x8]
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam debitis officiis consectetur sunt aliquam sequi reiciendis quaerat earum praesentium voluptatem rerum atque ut quam velit numquam optio assumenda porro.</p>
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam debitis officiis consectetur sunt aliquam sequi reiciendis quaerat earum praesentium voluptatem rerum atque ut quam velit numquam optio assumenda porro.</p>
             </div>
 
         </div>
@@ -45,12 +53,18 @@
 
             <!-- Elemento 1 -->
             <div class="content-block col-sm-8">
-                Elemento 1 [8x4]
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
             </div>
 
             <!-- Elemento 2 -->
             <div class="content-block col-sm-4">
-                Elemento 2 [8x4]
+                <img src="../static/img/storyset/online.svg" alt="">
             </div>
 
         </div>
@@ -59,17 +73,20 @@
         <div class="container-content text-center row">
             <!-- Elemento 1 -->
             <div class="content-block col-sm">
-                Elemento 1 [4x4x4]
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dignissimos autem quae perspiciatis ab delectus corporis dicta amet minus quam, ut ex beatae inventore quis.</p>
             </div>
 
             <!-- Elemento 2 -->
             <div class="content-block col-sm">
-                Elemento 2 [4x4x4]
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dignissimos autem quae perspiciatis ab delectus corporis dicta amet minus quam, ut ex beatae inventore quis.</p>
             </div>
 
             <!-- Elemento 3 -->
             <div class="content-block col-sm">
-                Elemento 3 [4x4x4]
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dignissimos autem quae perspiciatis ab delectus corporis dicta amet minus quam, ut ex beatae inventore quis.</p>
             </div>
         </div>
 

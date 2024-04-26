@@ -236,7 +236,7 @@ footer#CDBfooter > div.CDBfooter-bottom{
 /* Margem entre as linhas de conteúdo */
 /* cada linha possui essa classe:  */
     .container-content{
-        margin: 20px auto;
+        margin: 25px auto;
     }
 
 /* Espaçametno interno dos blocos de conteúdo */
