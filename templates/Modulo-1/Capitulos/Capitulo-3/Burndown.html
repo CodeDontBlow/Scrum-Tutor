@@ -2,10 +2,65 @@
 
     {% block pageCss %}
         <link rel="stylesheet" href="{{url_for('static', filename='style/burndown.css')}}">
+
+        <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+
+    <!-- CSS do Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- CSS Global do Projeto -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
+
     {% endblock %} 
 
     {% block pageTtile %} Homepage {% endblock %}
 
     {% block pageContent %}
+    <section>
+        <h1 class="title-burn">Artefatos Scrum</h1>
+    </section>
+    <section>
+        <div class="content d-flex justify-content-center flex-wrap">
+        <h1 class="subtitle-burn">Product Increment </h1>
+        </div>
+        <div class="container-content text-right row">
+            <!-- Elemento 1 -->
+            <div class="content-block col-sm">
+                Ao final de cada Sprint, o Development Team entrega um incremento do produto, resultado do que foi produzido durante a Sprint. Este é um dos conceitos principais de Scrum e vai de encontro com a sua natureza empírica, já que permite que o Product Owner perceba o valor do investimento e também vislumbre outras possibilidades.
+            </div>
 
+            <!-- Elemento 2 -->
+            <div class="content-block col-sm">
+                Para o Development Team é importante entender que o Incremento deve ser algo potencialmente entregável - o cliente pode optar por colocar imediatamente em produção. Com isso, o Development Team deve produzir código que tenha qualidade, com o mínimo de bugs possível, evitando os famosos "quebra-galhos", "depois eu arrumo isso", etc.
+            </div>
+        </div>
+    </section>
+<section>
+        <div class="content d-flex justify-content-center flex-wrap">
+        <h1 class="subtitle-burn">Burndown Chart </h1>
+        </div>
+    <div class="container-content d-flex justify-content-center flex-wrap">
+        <!-- Elemento 1 -->
+        <div class="content-block">
+            Em Scrum, o Development Team é autogerenciado, e para ajudar neste autogerenciamento, o Development Team pode fazer uso do Sprint Burndown Chart. O Sprint Burndown Chart torna visível a evolução diária do trabalho do Development Team, pois mostra a comparação entre o trabalho estimado com a quantidade restante estimada de trabalho. Normalmente, as unidades utilizadas são de esforço (em horas) planejado pelo tempo decorrido. A figura a seguir mostra um exemplo de um Sprint Burndown Chart:
+        </div>
+    </div>
+    <div class="container-content d-flex justify-content-center flex-wrap">
+        <div class="content-block">
+        <img class="img-fluid cont-img" src="{{url_for('static', filename='img/cont/burndownapi.png')}}" alt="img">
+        </div>
+    </div>
+        <div class="container-content row">
+            <!-- Elemento 1 -->
+            <div class="content-block col-sm-8">
+                Além de ajudar o time a se autogerenciar, um Sprint Burndown Chart também permite que o restante da organização também possa acompanhar o andamento da Sprint. Enquanto o Sprint Burndown Chart permite que o Development Team faça o autogerenciamento da Sprint, o Product Owner pode fazer uso de um outro gráfico para gerenciar o Release: o Release Burndown Chart. Através do Release Burndown Chart, o Product Owner tem uma indicação do término da Release de acordo com os dados e estimativas feitas pelo Development Team, ou a quantidade do Product Backlog que será completada.
+            </div>
+        <!-- Elemento 2 -->
+        <div class="content-block col-sm-4">
+            <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/In progress-rafiki.svg')}}" alt="img">
+        </div>
+    </div>
+    </div>
+</section>
     {% endblock %}

@@ -12,9 +12,14 @@ body {
     width: 250px;
 }
 
-.cont-img {
-    width: 300px;
-    align-items: center;
+.art-img {
+    width: 800px;
+    align-content: center;
+}
+
+.sprint-img {
+    width: 650px;
+    align-content: center;
 }
 
 section {

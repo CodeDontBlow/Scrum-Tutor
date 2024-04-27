@@ -49,10 +49,15 @@
         </div>
     </div>
     </div>
-</section>
     <div class="content-block">
         Além dos itens funcionais, o Product Backlog também contém itens não-funcionais (tempo de resposta), arquiteturais (ser desenvolvido com determinada tecnologia) e de infraestrutura (estar disponível somente dentro de uma intranet). Também pode conter itens que representem riscos a serem removidos. Durante o andamento do projeto, algumas funcionalidades podem acabar perdendo a importância e  até mesmo desaparecendo. Da mesma forma, novas funcionalidades também podem ser adicionadas, de acordo com a necessidade. Abaixo um exemplo de Product Backlog:
     </div>
+    <div class="container-content d-flex justify-content-center flex-wrap">
+        <div class="content-block">
+        <img class="img-fluid art-img" src="{{url_for('static', filename='img/cont/backlog.jpeg')}}" alt="img">
+        </div>
+    </div>
+</section>
     <section>
         <div class="content d-flex justify-content-center flex-wrap">
         <h1 class="subtitle-art">User Story</h1>
@@ -113,8 +118,13 @@
                 <div class="content-block col-sm-8">
                     O Sprint Backlog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o plano para transformá-los em um Incremento. Assim, ao final de cada Sprint Planning Meeting, um novo Sprint Backlog é criado. Normalmente, o plano é composto das tarefas técnicas necessárias para transformar o item em um incremento do produto. Um dos formatos mais utilizados de Sprint Backlog é o de Task Board:
                 </div>
+                <div class="container-content d-flex justify-content-center flex-wrap">
+                    <div class="content-block">
+                    <img class="img-fluid sprint-img" src="{{url_for('static', filename='img/cont/sprintapi.png')}}" alt="img">
+                    </div>
+                </div>
                 <div class="container-content row">
-                    <div class="content-block"> No Task Board, à esquerda, temos os itens vindos do Product Backlog, enquanto que nas colunas To do, Doing e Done, temos as tarefas a serem feitas, em andamento e prontas, respectivamente. As tarefas podem apresentar o nome da pessoa que está trabalhando nela. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que o Development Team atinja a meta da Sprint. Para isto, os membros do Development Team podem adicionar novas tarefas no decorrer da Sprint, caso mais trabalho seja necessário. Da mesma forma, também podem remover tarefas caso se mostrem desnecessárias. </div>    
+                    <div class="content-block"> No Task Board, temos os itens vindos do Product Backlog, e nas colunas To do, Doing e Done, temos as tarefas a serem feitas, em andamento e prontas, respectivamente. As tarefas podem apresentar o nome da pessoa que está trabalhando nela. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que o Development Team atinja a meta da Sprint. Para isto, os membros do Development Team podem adicionar novas tarefas no decorrer da Sprint, caso mais trabalho seja necessário. Da mesma forma, também podem remover tarefas caso se mostrem desnecessárias. </div>    
             </section>
 
     {% endblock %}
