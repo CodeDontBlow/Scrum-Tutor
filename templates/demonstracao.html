@@ -13,124 +13,124 @@
     <!-- CSS Global do Projeto -->
     <link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
 
-    <link rel="stylesheet" href="../static/style/global.css">
+    <!-- <link rel="stylesheet" href="../static/style/global.css"> -->
 
 <!-- CSS LOCAL feito para identificar melhor a disposição de conteúdo nos layouts (este style deve ser ignorado na hora de montar sua página) -->
     <style>
         body{
             background-image: linear-gradient(to bottom right, #090942 , #1A1A76);
+            background-repeat: no-repeat;
         }
+/* 
         .content-block{
             background-image: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.1));
             border: 1px dashed rgba(255, 255, 255, 0.3);
         }
+
+        .container-content{
+            margin: 50px auto;
+        } */
     </style>
 
 
     <div class="container-sm">
 
 
-        <!-- DOIS BLOCOS: [4x8] -->
-        <div class="container-content row">
 
+        <!-- CENTRALIZAÇÃO DE VÁRIOS ELEMENTOS -->
+        <div class="container-content d-flex justify-content-center gap-1 flex-wrap">
             <!-- Elemento 1 -->
+            <div class="content-block">
+                Elemento
+            </div>
+            <!-- Elemento 2 -->
+            <div class="content-block">
+                Elemento
+            </div>
+            <!-- Elemento 3 -->
+            <div class="content-block">
+                Elemento
+            </div>
+            <!-- Elemento 4 -->
+            <div class="content-block">
+                Elemento
+            </div>
+        </div>
+
+
+
+        <!-- UM BLOCO PRA CONTEÚDO -->
+        <div class="container-content text-center">
+            <!-- Bloco 1 -->
+            <div class="content-block">
+                Bloco
+            </div>
+        </div>
+
+
+
+        <!-- DOIS BLOCOS: [4x8] -->
+        <div class="container-content text-center row">
+
+            <!-- Bloco 1 -->
             <div class="content-block col-sm-4">
-                <img src="../static/img/storyset/paper.svg" alt="">
+                Bloco [4x8]
             </div>
 
-            <!-- Elemento 2 -->
+            <!-- Bloco 2 -->
             <div class="content-block col-sm-8">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam debitis officiis consectetur sunt aliquam sequi reiciendis quaerat earum praesentium voluptatem rerum atque ut quam velit numquam optio assumenda porro.</p>
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ipsam debitis officiis consectetur sunt aliquam sequi reiciendis quaerat earum praesentium voluptatem rerum atque ut quam velit numquam optio assumenda porro.</p>
+                Bloco [4x8]
             </div>
 
         </div>
 
-        <!-- DOIS BLOCOS: [8x4] -->
-        <div class="container-content row">
 
-            <!-- Elemento 1 -->
-            <div class="content-block col-sm-8">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat pariatur ducimus eos culpa sapiente enim, a ea dignissimos aliquid. Laudantium.</p>
+
+        <!-- DOIS BLOCOS: [6x6] -->   
+        <div class="container-content text-center row">
+            <!-- Bloco 1 -->
+            <div class="content-block col-sm">
+                Bloco [6x6]
             </div>
 
-            <!-- Elemento 2 -->
+            <!-- Bloco 2 -->
+            <div class="content-block col-sm">
+                Bloco [6x6]
+            </div>
+        </div>
+
+
+
+        <!-- DOIS BLOCOS: [8x4] -->
+        <div class="container-content text-center row">
+
+            <!-- Bloco 1 -->
+            <div class="content-block col-sm-8">
+                Bloco [8x4]
+            </div>
+
+            <!-- Bloco 2 -->
             <div class="content-block col-sm-4">
-                <img src="../static/img/storyset/online.svg" alt="">
+                Bloco [8x4]
             </div>
 
         </div>
         
         <!-- TRÊS BLOCOS: [4x4x4] -->   
         <div class="container-content text-center row">
-            <!-- Elemento 1 -->
+            <!-- Bloco 1 -->
             <div class="content-block col-sm">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dignissimos autem quae perspiciatis ab delectus corporis dicta amet minus quam, ut ex beatae inventore quis.</p>
+                Bloco [4x4x4]
             </div>
 
-            <!-- Elemento 2 -->
+            <!-- Bloco 2 -->
             <div class="content-block col-sm">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dignissimos autem quae perspiciatis ab delectus corporis dicta amet minus quam, ut ex beatae inventore quis.</p>
+                Bloco [4x4x4]
             </div>
 
-            <!-- Elemento 3 -->
+            <!-- Bloco 3 -->
             <div class="content-block col-sm">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dignissimos autem quae perspiciatis ab delectus corporis dicta amet minus quam, ut ex beatae inventore quis.</p>
-            </div>
-        </div>
-
-        <!-- DOIS BLOCOS: [6x6] -->   
-        <div class="container-content text-center row">
-            <!-- Elemento 1 -->
-            <div class="content-block col-sm">
-                Elemento 1 [6x6]
-            </div>
-
-            <!-- Elemento 2 -->
-            <div class="content-block col-sm">
-                Elemento 2 [6x6]
-            </div>
-        </div>
-
-        <!-- VÁRIOS ELEMENTOS AO CENTRO -->
-        <div class="container-content d-flex justify-content-center gap-1 flex-wrap">
-            <!-- Elemento 1 -->
-            <div class="content-block">
-                Elemento 1
-            </div>
-            <!-- Elemento 2 -->
-            <div class="content-block">
-                Elemento 2
-            </div>
-            <!-- Elemento 3 -->
-            <div class="content-block">
-                Elemento 3
-            </div>
-            <div class="content-block">
-                Elemento 4
-            </div>
-            <!-- Elemento 3 -->
-            <div class="content-block">
-                Elemento 5
-            </div>
-        </div>
-
-        <!-- UM ELEMENTO CENTRALIZADO -->
-        <div class="container-content d-flex justify-content-center flex-wrap">
-            <!-- Elemento 1 -->
-            <div class="content-block">
-                Elemento 1
+                Bloco [4x4x4]
             </div>
         </div>
 
@@ -139,8 +139,42 @@
 
 
 
+    <div class="container-sm container-content">
+        <img src="../static/img/storyset/teamwork-rafiki.svg" alt="" class="IMG-global">
+    </div>
 
 
+
+    <div class="container-sm container-content">
+        <span data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, exercitationem. <p/>">
+            Tooltip with HTML
+        </span>
+    </div>
+
+        
+
+    <div class="container-sm container-content">
+
+        <a href="#" class="BTN-global">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+        <a href="" class="BTN-global">
+            <span> Avançar <i class="bi bi-arrow-right-short"></i> </span>
+        </a>
+
+    </div>
+    
+    <div class="container-sm container-content">
+    
+            <a href="#" class="BTN-global">
+                <i class="bi bi-arrow-up-short"></i>
+            </a>
+            <a href="" class="BTN-global">
+                <span> Avançar <i class="bi bi-arrow-right-short"></i> </span>
+            </a>
+            
+    </div>
 
 
 
@@ -155,9 +189,14 @@
     
 
     <!-- JavaScript do Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
         
 </body>
 </html>

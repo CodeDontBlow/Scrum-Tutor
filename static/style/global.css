@@ -36,6 +36,16 @@ body{
     text-align: justify;
 }
 
+.custom-tooltip{
+    --bs-tooltip-bg: #020234;
+    --bs-tooltip-color: white;
+    border-radius: 5px;
+}
+
+
+.custom-tooltip::after , .custom-tooltip::before{
+    content: none;
+}
 
 /* hover dos botões azuis */
 .btn:hover {
@@ -242,7 +252,49 @@ footer#CDBfooter > div.CDBfooter-bottom{
 /* Espaçametno interno dos blocos de conteúdo */
 /* todo bloco de conteúdo tem essa tag:  */
     .content-block{
-        padding: 15px;
+        padding: 10px;
 
         color: white;
+    }
+
+
+
+    
+
+    .BTN-global{        
+        background-color: #4141DD;
+        padding: 10px 25px;
+        
+        color: white;
+        font-size: .9rem;
+        text-decoration: none;
+
+        border-radius: 20px;
+        box-shadow: 0 4px rgba(0, 0, 0, 0.8);
+
+        transition: all 200ms;
+    }
+
+        .BTN-global:hover{        
+            opacity: 80%;
+            padding: 11px 26px;
+            
+            box-shadow: 0 4px 0 1px rgba(0, 0, 0, 0.8);
+        }
+
+        .BTN-global:active{        
+            opacity: 95%;
+        }
+
+    
+    .BTN-global .bi{
+        font-size: 1.1rem;
+    }
+
+
+
+
+    
+    .IMG-global{
+        max-width: 100%;  
     }
