@@ -24,19 +24,15 @@ def trilha():
 def sobre():
     return render_template("sobre.html")
 
-@app.route("/Scrum Master")
-def scrum_master():
-    return render_template("Scrum-Master.html")
+
+@app.route("/jogo")
+def jogo():
+    return render_template("jogo.html")
 
 
-@app.route("/Games interativos")
-def games_interativos():
-    return render_template("Games-interativos.html")
-
-
-@app.route("/Quiz de conhecimento")
-def quiz_conhecimentos():
-    return render_template("Quiz-de-conhecimento.html")
+@app.route("/exame")
+def exame():
+    return render_template("examefinal.html")
 
 @app.route("/Capitulo1")
 def capitulo1():
@@ -46,7 +42,6 @@ def capitulo1():
 def pilares_scrum():
     return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html")
 
-
 @app.route("/Capitulo2")
 def capitulo2():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Capitulo2.html")
@@ -54,6 +49,18 @@ def capitulo2():
 @app.route("/Time Scrum")
 def time_scrum():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Time-Scrum.html")
+
+@app.route("/Capitulo3")
+def capitulo3():
+    return render_template("Modulo-1/Capitulos/Capitulo-3/Capitulo3.html")
+
+@app.route("/Artefatos")
+def artefatos():
+    return render_template("Modulo-1/Capitulos/Capitulo-3/Artefatos.html")
+
+@app.route("/Burndown")
+def burndown():
+    return render_template("Modulo-1/Capitulos/Capitulo-3/Burndown.html")
 
 
 
