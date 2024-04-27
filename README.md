@@ -97,13 +97,12 @@ Assista ao nosso vídeo da navegação do protótipo<br/>
 
 |Nome|Função|GitHub|
 | -------- |-------- |-------- |
-|**Felipe Chagas**|Product Owner|[@GitHub](https://github.com/oFelipeChagas)|
 |**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)|
+|**Leonardo Cristiano**|Product Owner|[@GitHub](https://github.com/Leonardo-dSouza)|
 |**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)|
 |**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)|
-|**Leonardo Cristiano**|Desenvolvedor|[@GitHub](https://github.com/Leonardo-dSouza)|
 |**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)|
 |**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)|
-|**Pablo Rafael**|Desenvolvedor|[@GitHub](https://github.com/Rafa0709)|
+
 
 </br>
