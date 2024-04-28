@@ -21,10 +21,12 @@ h2{
     gap: 40px;
 }
 
+/*Serve para mudar os caracteres da lista da questão 2 para romanos*/
 #second-question{
     list-style:upper-roman;
 }
 
+/*Os dois CSS abaixo servem para mudar a cor da letra do modal para preto*/
 .modal-header{
     color: black;
 }

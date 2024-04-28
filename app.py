@@ -77,6 +77,5 @@ def test_quiz():
 
         # Renderizar o template com o número de respostas corretas
         return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html", score=correct_answers)
-
 if __name__ == "__main__":
     app.run(debug = True)
