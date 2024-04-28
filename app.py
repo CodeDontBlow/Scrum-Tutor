@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for, render_template_string  # type: ignore
-import secrets
+import sqlite3 as sql
 
 
 app = Flask(__name__, static_url_path='/static', template_folder='templates')
 
-foo = secrets.token_urlsafe(16)
-app.secret_key = foo
 
 @app.route("/")
 def homepage():
@@ -55,41 +53,30 @@ def capitulo2():
 def time_scrum():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Time-Scrum.html")
 
+@app.route("/submit_quiz", methods=['POST'])
+def test_quiz():
+    if request.method == 'POST':
+        # Conectar ao banco de dados SQLite
+        conn = sql.connect('database/Questions.db')
+        cur = conn.cursor()
+
+        # Inicializar contagem de respostas corretas
+        correct_answers = 0
+
+        # Verificar cada resposta
+        for i in range(1, 4):  # Assumindo que há 3 perguntas
+            user_answer = request.form.get(f'Alt-question-{i}')
+            correct_answer = cur.execute(f"SELECT resposta FROM Perguntas_Capitulo1 WHERE Numero = ?", (i,)).fetchone()[0]
+
+            if user_answer == correct_answer:
+                correct_answers += 1
+
+        # Fechar a conexão com o banco de dados
+        conn.close()
 
 
-
-
-
-
-
-
-
-
-
-
-#Dicionário das respostas corretas
-respostas_corretas = {
-    'Alt-question-1': 'Paris',
-    'Alt-question-2': 'Praga',
-    'Alt-question-3': 'Sua mãe, aquela gorda',
-    'Alt-question-4': '1010',
-    'Alt-question-5': '42',
-}
-
-
-@app.route('/submit_quiz', methods=['POST'])
-def submit_quiz():
-    respostas_usuario = request.form
-    correct_answers = 0
-    incorrect_answers = 0
-    for questao, resposta_correta in respostas_corretas.items():
-        resposta_usuario = respostas_usuario.get(questao)
-        if resposta_usuario == resposta_correta:
-            correct_answers += 1
-        else:
-            incorrect_answers += 1
-    return render_template("Quiz-de-conhecimento.html", modal_show=True, correct_answers = correct_answers, incorrect_answers = incorrect_answers)
-
+        # Renderizar o template com o número de respostas corretas
+        return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html", score=correct_answers)
 
 if __name__ == "__main__":
     app.run(debug = True)
