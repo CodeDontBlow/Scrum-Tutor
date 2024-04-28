@@ -9,7 +9,6 @@ app = Flask(__name__, static_url_path='/static', template_folder='templates')
 def homepage():
     return render_template("index.html")
 
-
 @app.route("/scrumintroducion")
 def scrum_introduction():
     return render_template("scrumintroducion.html")
@@ -73,7 +72,6 @@ def test_quiz():
 
         # Fechar a conexão com o banco de dados
         conn.close()
-
 
         # Renderizar o template com o número de respostas corretas
         return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html", score=correct_answers)
