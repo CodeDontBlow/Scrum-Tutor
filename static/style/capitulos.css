@@ -1,9 +1,5 @@
-body {
-    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
-}
-
-
 section {
+    display: block;
     margin-top: 70px;
     margin-bottom: 80px;
 }

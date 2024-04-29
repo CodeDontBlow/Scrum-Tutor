@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/style/fundamentos.css')}}"> {% endblock %}
+
+{% block pageTitle%} Fundamentos do Scrum {% endblock %}
+
+{% block pageContent %}
+<section class="introducion">
+    <div class="container-content d-flex justify-content-center flex-wrap">
+        <div class="content-block">
+            <h1 class="title">Fundamentos do Scrum </h1>
+            <img src="{{ url_for('static', filename='/img/storyset/scrum method-amico.svg')}}" alt="scrum method"
+                class="img-fluid scrum-method-img">
+        </div>
+        <div class="content-block">
+            <p class="text">A definição de Scrum é: um framework ágil, uma mentalidade que promove colaboração,
+                transparência e melhoria, com o qual as pessoas podem resolver problemas complexos e adaptáveis,
+                enquanto entregam produtos de forma produtiva e criativa e com o maior valor possível. Scrum é: </p>
+            <ul>
+                <li> Leve </li>
+                <li> Simples de entender </li>
+                <li> Difícil de aplicar </li>
+            </ul>
+            <p class="text">Scrum consiste do Time Scrum e seus papéis, eventos e artefatos que
+                coordenam o relacionamento e interação entre os membros de equipe, visando entregar o melhor resultado
+                dentro dos requisitos do projeto.</p>
+        </div>
+
+</section>
+
+<section>
+    <div class="container-content text-center row">
+        <div class="content-block col-sm">
+            <h1 class="subtitle">Melhorias</h1>
+            <img src="{{ url_for('static', filename='/img/storyset/upgrade-amico.svg')}}" alt="" class="upgrade-img">
+            <p class="text">No scrum as melhorias são constantes! Um processo empírico é aquele onde diversos
+                imprevistos ocorrem –
+                diferente de um processo definido – e tomamos alguma atitude para
+                resolve-los. Desta forma, você vai adaptando o processo à medida que trabalha
+                com ele, já que as coisas não ocorrem sempre da mesma forma, assim, o metódo vai melhorando com tais
+                adaptações, se tornando mais ágil e simples de trabalhar.
+                Diferente de uma linha de montagem, onde cada passo pode ser previsto e
+                monitorado, em projetos de desenvolvimento complexo de softwares isso
+                se torna impossível, e daí a razão de se utilizar um processo empírico</p>
+        </div>
+        <div class="content-block col-sm">
+            <h1 class="subtitle">Versátil</h1>
+            <img src="{{ url_for('static', filename='/img/storyset/Collaboration-amico.svg')}}" alt="" class="puzzle-img">
+            <p class="text">O scrum pode se encaixar no seu negócio! Apesar de ter sido criado originalmente para
+                desenvolvimento de software,
+                Scrum pode ser usado em qualquer tipo de projeto, contanto que haja um
+                certo grau de complexidade, já que ele se baseia na teoria de controle
+                empírico de processos, ou empirismo. Aplicar o scrum não é algo tão simples quanto entende-lo, é necessário que você estude o método e conheça o seu negócio para encaixa-lo no seus processos produtivos de forma eficiente e de qualidade.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
