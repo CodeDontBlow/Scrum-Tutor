@@ -17,8 +17,8 @@ resultado = cursor.execute("SELECT name FROM sqlite_master")
 resultado.fetchone()
 
 todas_perguntas = [(1, 'Defina o Scrum:', 'Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de forma produtiva e criativa.'),
-                   (2, 'Os valores do Scrum são:', 'II, III e V estão corretas'),
-                   (3, 'O Scrum se baseia em 3 pilares, sendo eles:', 'Transparência, Inspeção, Adaptação'),]
+                   (2, 'Os valores do Scrum são:', 'II, III e V estão corretas.'),
+                   (3, 'O Scrum se baseia em 3 pilares, sendo eles:', 'Transparência, Inspeção, Adaptação.'),]
 
 #Inserir linhas na tabela
 cursor.executemany("INSERT INTO Perguntas_Capitulo1 (Numero, questao, resposta) VALUES(?, ?, ?)", todas_perguntas)
