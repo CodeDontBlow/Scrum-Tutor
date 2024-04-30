@@ -30,3 +30,12 @@ h2 {
 .modal-body {
     color: black;
 }
+
+#solv-prob{
+    display: block;
+    width:30%;
+    margin: 0 auto;
+}
+ul > li{
+    text-align: left;
+}
