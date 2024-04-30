@@ -93,32 +93,33 @@ def apagar():
 # == == == =
 
 
-# @app.route("/submit_quiz", methods=['POST'])
-# def test_quiz():
-#     if request.method == 'POST':
-#         # Conectar ao banco de dados SQLite
-#         conn = sql.connect('database/Questions.db')
-#         cur = conn.cursor()
+@app.route("/submit_quiz", methods=['POST'])
+def test_quiz():
+    if request.method == 'POST':
+        # Conectar ao banco de dados SQLite
+        conn = sql.connect('database/Questions.db')
+        cur = conn.cursor()
 
 
-# >>>>>> > 0f7a75e09b5180e56a9ad0577932d1744099e925
 
-#       # Inicializar contagem de respostas corretas
-#   correct_answers = 0
+      # Inicializar contagem de respostas corretas
+        correct_answers = 0
 
-#    # Verificar cada resposta
-#    for i in range(1, 4):  # Assumindo que há 3 perguntas
-#         user_answer = request.form.get(f'Alt-question-{i}')
-#         correct_answer = cur.execute(
-#             f"SELECT resposta FROM Perguntas_Capitulo1 WHERE Numero = ?", (i,)).fetchone()[0]
+# Verificar cada resposta
+    for i in range(1, 4):  # Assumindo que há 3 perguntas
+       user_answer = request.form.get(f'Alt-question-{i}')
+       correct_answer = cur.execute(
+           f"SELECT resposta FROM Perguntas_Capitulo1 WHERE Numero = ?", (i,)).fetchone()[0]
 
-#         if user_answer == correct_answer:
-#             correct_answers += 1
+       if user_answer == correct_answer:
+           correct_answers += 1
 
-#     # Fechar a conexão com o banco de dados
-#     conn.close()
+   # Fechar a conexão com o banco de dados
+    conn.close()
 
-#     # Renderizar o template com o número de respostas corretas
-#     return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html", score=correct_answers)
-#     if __name__ == "__main__":
-#         app.run(debug= True)
+    # Renderizar o template com o número de respostas corretas
+    return render_template("Modulo-1/Capitulos/Capitulo-1/Pilares-Scrum.html", score=correct_answers)
+
+
+if __name__ == "__main__":
+    app.run(debug= True)
