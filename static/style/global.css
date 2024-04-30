@@ -50,6 +50,12 @@ section{
     margin-top: 10px;
 }
 
+.links {
+    text-decoration: none;
+    color: white;
+    text-align: start;
+}
+
 /* hover dos botões azuis */
 .btn:hover {
     background-color: #4141DD;
