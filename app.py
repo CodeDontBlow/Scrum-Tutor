@@ -62,6 +62,9 @@ def artefatos():
 def burndown():
     return render_template("Modulo-1/Capitulos/Capitulo-3/Burndown.html")
 
+@app.route('/apagar')
+def apagar():
+    return render_template('apagar.html')
 
 
 
