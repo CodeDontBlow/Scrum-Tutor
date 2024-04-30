@@ -9,20 +9,35 @@
     {% block pageContent %}
     
     <section class="container-fluid capitulo-scrum">
-      <h1 class="title">Capitulo 3</h1>
+      <h1 class="title">Capítulo 3</h1>
       <div class="content d-flex">
         <p class="text col-7">Neste capítulo, adentramos o fascinante mundo dos eventos e artefatos do Scrum, os pilares que sustentam a estrutura ágil deste framework.</p>
       </div>
 
       <div class="content d-flex justify-content-left trilha-scrum">
         <ul>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Artefatos" >Artefatos Scrum (Product Backlog, User Stories e Sprint Backlog)
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#" > Eventos Scrum </a></li><br>
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#" > Sprint, Sprint Planning Meeting, Daily Scrum</a></li><br>
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#" > Sprint Review, Sprint Retrospective, Release Planning Meeting </a></li><br>
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Artefatos" >Artefatos Scrum (Product Backlog, User Stories e Sprint Backlog)
+          </a></li><br>
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Burndown">  Product Increment e Burndown Chart
             </a></li><br>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Burndown">  Product Increment e Burndown Chart
-            </a></li><br>
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#" > DoD e DoR</a></li><br>
+          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="#" > Estimativa (Planning Poker, Sequência Fibonacci, Velocidade) </a></li>
         </ul>
     </div>
     </section>
-    
+<section>
+      <a href="#" class="BTN-global" id="btn-return-trail">
+          <i class="bi bi-arrow-return-left"></i>
+      </a>
+      <a href="#" class="BTN-global">
+          <i class="bi bi-arrow-up-short"></i>
+      </a>
+      <a href="#" class="BTN-global">
+          <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </section>     
     
     {% endblock %}

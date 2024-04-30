@@ -1,4 +1,32 @@
-body {
-    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
+section {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    font-size: 20px;
 }
 
+#scum-method-pana {
+    width: 420px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+/*Serve para mudar os caracteres da lista da questão 2 para romanos*/
+#second-question {
+    list-style: upper-roman;
+}
+
+/*Os dois CSS abaixo servem para mudar a cor da letra do modal para preto*/
+.modal-header {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
