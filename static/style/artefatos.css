@@ -4,10 +4,6 @@
     font-family: Poppins, sans-serif;
 }
 
-body {
-    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
-}
-
 .scrum-img {
     width: 250px;
 }
@@ -33,7 +29,6 @@ section {
     font-size: 30px;
     text-align: center;
     color: white
-
 }
 
 .subtitle-art {
@@ -50,7 +45,8 @@ section {
     justify-content: center;
     align-items: center;
 }
-ul{
+
+ul {
     margin-top: 5%;
     align-items: center;
 }
