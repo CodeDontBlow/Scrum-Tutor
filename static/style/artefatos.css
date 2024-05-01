@@ -9,12 +9,13 @@
 }
 
 .art-img {
-    width: 800px;
+    width: 700px;
     align-content: center;
 }
 
 .sprint-img {
-    width: 650px;
+    width: 700px;
+    height: 220px;
     align-content: center;
 }
 
@@ -23,21 +24,6 @@ section {
     margin-bottom: 30px;
 }
 
-.title-art {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-    color: white
-}
-
-.subtitle-art {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 25px;
-    text-align: justify;
-    margin-bottom: 20px;
-}
 
 .art-scrum .content {
     gap: 20px;
