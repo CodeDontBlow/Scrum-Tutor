@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block pageCss %} {% endblock %}
+
+{% block pageTitle %} Cerimônias Scrum {% endblock %}
+
+{% block pageContent %} 
+    <div class="container-sm global-container">
+
+        <div class="container-content text-center">
+            <div class="content-block">
+                <h1 class="TITLE-global">
+                    Cerimônias Scrum
+                </h1>
+            </div>
+        </div>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md-4">
+                <img src="{{url_for('static' , filename='img/storyset/Circles-rafiki.svg')}}" alt="Uma imagem de duas pessoas desenhando" class="IMG-global">
+            </div>
+
+            <div class="content-block col-md-8">
+
+                <h2 class="SUB-global">
+                    Sprint
+                </h2>
+
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        As Sprints são ciclos de trabalho de duração pré-determinada, geralmente de até um mês, que segmentam o projeto em fases de desenvolvimento claramente definidas. 
+                    </p>
+                    <p class="TXT-global">
+                        No final de cada sprint, o Product Owner revisa os entregáveis completados pela equipe. Isso não só facilita ajustes imediatos no processo e na dinâmica da equipe como também garante que o projeto esteja alinhado com os objetivos e requisitos do cliente.
+                    </p>
+                    <p class="TXT-global">
+                        Esses ciclos se repetem até a conclusão do projeto e são suportados por reuniões regulares chamadas de Cerimônias Scrum. Ao todo, uma Sprint possui cinco cerimônias, sendo elas:
+                    </p>
+                </div>
+
+                <ol class="LIST-global list-group list-group-numbered">
+                    <li class="list-group-item"> Sprint Planning Meeting.</li>
+                    <li class="list-group-item"> Daily Scrum.</li>
+                    <li class="list-group-item"> Sprint Review.</li>
+                    <li class="list-group-item"> Sprint Retrospective.</li>
+                    <li class="list-group-item"> Release Planning Meeting.</li>
+                </ol>
+                
+            </div>
+
+        </div>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md">
+
+                <h2 class="SUB-global">
+                    Sprint Planning Meeting
+                </h2>
+
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        Trata-se do primeiro evento de todo ciclo, no qual todo o Time Scrum elabora e planeja previamente a Sprint e decide o que será produzido durante e o que será entregue ao fim dela.
+                    </p>
+                    <p class="TXT-global">
+                        As reuniões de planejamento de Sprint são fundamentais para organizar o Time Scrum e orientar o que deve ser produzido, portanto, o fim de uma Sprint Planning Meeting é marcado pela produção do
+
+                        <span class="POP-global" data-bs-toggle="popover" 
+                            data-bs-placement="top" data-bs-trigger="hover" 
+                            data-bs-custom-class="custom-popover"
+                            data-bs-title="Backlog da Sprint"
+                            data-bs-content="Um documento aonde as funcionalidades a serem entregues são compiladas e hierarquizadas de acordo com sua relevância.">
+                                Backlog da Sprint
+                        </span>
+                        
+                        .
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-block col-md">
+                <h2 class="SUB-global">
+                    Daily Scrum
+                </h2>
+
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        Daily Scrum são reuniões diárias breves que permitem que todos possam comunicar e sincronizar seu trabalho ao decorrer da Sprint.
+                        
+                    </p>
+                    <p class="TXT-global">
+                        Durante uma Daily Scrum, o Scrum Master faz três perguntas para que cada membro do Time Scrum as responda individualmente, sendo elas: “O que foi feito ontem?”, “O que será feito hoje” e “Há algum impedimento?”.
+                    </p>
+                    <p class="TXT-global">
+                        Dessa forma, é permitido que o Time de Desenvolvimento possa corrigir ou adaptar algum problema no processo o mais rápido possível.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="container-content d-flex justify-content-center flex-wrap">
+
+            <div class="content-block">
+                <a href="#" class="BTN-global">
+                    <i class="bi bi-arrow-up-short"></i>
+                </a>
+            </div>
+            <div class="content-block">
+                <a href="/CerimoniasPT-2" class="BTN-global">
+                    Avançar <i class="bi bi-arrow-right-short"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+
+
+

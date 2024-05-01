@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 * {
     font-family: Poppins, sans-serif;
@@ -9,9 +10,10 @@
 }
 
 body {
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 .title {
@@ -37,17 +39,6 @@ body {
     text-align: justify;
     line-height: 2rem;
     padding: 0 20px;
-}
-
-section{
-    margin-top: 50px;
-}
-
-.list{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 2.5rem;
-    margin-top: 10px;
 }
 
 /* hover dos botões azuis */
@@ -134,7 +125,9 @@ nav.navbar button.navbar-toggler:focus {
 
 /* .:: CONFIGURAÇÕES FOOTER ::. */
 
-
+.global-container{
+    margin: 40px auto;
+}
 
 /* Parte de Cima do Footer */
 footer#CDBfooter>div.CDBfooter-top {
@@ -228,13 +221,24 @@ div.CDBfooter-bottom div.CDBfooter-BTcontainer>div.CDBfooter-cdb a {
         gap: 5px;
     }
 
-    .CDBfooter-BTcontainer>* {
-        font-size: .55rem;
+    .CDBfooter-BTcontainer > * {
+        font-size: .45rem;
         font-weight: 300;
     }
 
     div.CDBfooter-BTcontainer a {
         padding: 1px;
+    }
+
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer {
+        padding: 15px 10px;
+        gap: 5px;
+    }
+    
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer * {
+        padding: 3px;
+
+        font-size: .6rem;
     }
 
 }
@@ -243,18 +247,212 @@ div.CDBfooter-bottom div.CDBfooter-BTcontainer>div.CDBfooter-cdb a {
 
 /* .:: BASE P/ PADRONIZAÇÃO ::. */
 
-
-
 /* Margem entre as linhas de conteúdo */
 /* cada linha possui essa classe:  */
-.container-content {
-    margin: 20px auto;
-}
+    .container-content{
+        margin: 5px auto;
+    }
 
 /* Espaçametno interno dos blocos de conteúdo */
 /* todo bloco de conteúdo tem essa tag:  */
-.content-block {
-    padding: 15px;
+    .content-block{
+        padding: 10px 15px;
 
-    color: white;
+        color: white;
+    }
+
+
+/* .:: ESTILIZAÇÃO DOS ELEMENTOS ::. */
+
+    .TITLE-global{
+        margin: 5px 0 25px;
+
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    .SUB-global{
+        margin-bottom: 15px;
+        
+        font-size: 1.35rem;
+        font-weight: 500;
+        text-indent: 30px;
+        text-align: start;
+    }
+
+    .TXT-global-container{
+        margin-bottom: 30px;
+        text-indent: 10px;
+    }
+
+    .TXT-global , .LIST-global li{
+        margin-bottom: 7px;
+
+        font-size: .95rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    @media(max-width: 600px){
+        
+        .TITLE-global{
+            font-size: 1.6rem;
+        }
+
+        .SUB-global{
+            font-size: 1.2rem;
+        }
+
+        .TXT-global , .LIST-global li{
+            font-size: .85rem;
+        }
+    }
+    
+/* Estilização dos Botões */
+    .BTN-global{
+        background-color: #4141DD;
+        width: max-content;
+        margin: 5px 0;
+        padding: 10px 25px;
+        
+        display: inline-block;
+
+        color: white;
+        font-size: .9rem;
+        text-decoration: none;
+
+        border-radius: 20px;
+        box-shadow: 0 4px rgba(0, 0, 0, 0.8);
+
+        transition: all 100ms;
+    }
+
+        .BTN-global:hover{        
+            opacity: 80%;
+            padding: 11px 26px;
+            
+            box-shadow: 0 4px 0 1px rgba(0, 0, 0, 0.8);
+        }
+
+        .BTN-global:active{        
+            opacity: 95%;
+        }
+
+    
+    .BTN-global .bi{
+        font-size: 1.1rem;
+
+        color: currentColor;
+    }
+
+    #btn-return-trail{
+        padding: 15px 25px;
+    }
+
+    #btn-return-trail .bi{
+        font-size: .85rem;
+    }
+
+        #btn-return-trail:hover{
+            padding: 16px 26px;
+        }
+
+        #btn-return-trail:active{
+            background-color: rgba(255, 255, 255, 0.8);
+
+            color: #4141DD;
+            font-weight: 500;
+            border: 2px solid currentColor;
+        }
+
+@media(max-width: 600px) {
+
+    .BTN-global{
+        margin: 3px 0;
+        padding: 5px 15px;
+
+        font-size: .7rem;
+
+        box-shadow: 0 2px rgba(0, 0, 0, 0.8);
+    }
+
+        .BTN-global:hover{        
+            padding: 6px 16px;
+            box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.8);
+        }
+
+    .BTN-global .bi{
+        font-size: .9rem;
+    }
+
+    #btn-return-trail{
+        padding: 10px 20px;
+    }
+
+    #btn-return-trail .bi{
+        font-size: .7rem;
+    }
+
+        #btn-return-trail:hover{
+            padding: 11px 21px;
+        }
+}
+
+
+/* Estilização das Imagens */
+    .IMG-global{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+
+
+/* Estilização do Pop Up */
+    .POP-global , .POP-global .bi{
+        color: #2E8F2C;
+        font-weight: 700;
+    }
+
+    .custom-popover{
+        --bs-popover-max-width: 270px;
+        --bs-popover-border-color: #2E8F2C;
+        --bs-popover-header-bg: #2E8F2C;
+        --bs-popover-header-color: white;
+        --bs-popover-body-padding-x: .7rem;
+        --bs-popover-body-padding-y: .5rem;
+
+        font-size: .85rem;
+        line-height: 19px;
+    }
+
+
+
+/* Estilização da Lista */
+    .LIST-global{
+        margin: 20px 30px;
+    }
+
+    .LIST-global li{
+        background-color: transparent;
+        margin: -2px 0;
+
+        color: white;
+
+        border: none;
+    }
+
+@media(max-width: 600px){
+    .LIST-global{
+        margin: 0 10px 20px;
+    }
+
+    .LIST-global li{
+        background-color: transparent;
+        margin-bottom: -10px;
+
+        color: white;
+
+        border: none;
+    }
+
 }

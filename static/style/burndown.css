@@ -3,3 +3,22 @@
 * {
     font-family: Poppins, sans-serif;
 }
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
+}
+
+.scrum-img {
+    width: 250px;
+}
+
+.cont-img {
+    width: 400px;
+    align-content: center;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+

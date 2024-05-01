@@ -17,31 +17,37 @@
     {% block pageTtile %} Homepage {% endblock %}
 
     {% block pageContent %}
-<section>
-    <h1 class="title-art">Artefatos Scrum</h1>
-</section>
+ <div class="container-sm global-container">
+
+        <div class="container-content text-center">
+            <div class="content-block">
+                <h1 class="TITLE-global">
+                    Artefatos Scrum
+                </h1>
+            </div>
+        </div>
     <div class="container-content d-flex justify-content-center flex-wrap">
         <!-- Elemento 1 -->
         <div class="content-block">
-             O Scrum possui alguns artefatos que dão uma visão do andamento do projeto e das Sprints. Os artefatos são informações que as equipes Scrum e as partes interessadas usam para detalhar o produto que está sendo desenvolvido, as ações para a produção dele e as ações realizadas durante o projeto. Sendo eles:
+            <p class="TXT-global"> O Scrum possui alguns artefatos que dão uma visão do andamento do projeto e das Sprints. Os artefatos são informações que as equipes Scrum e as partes interessadas usam para detalhar o produto que está sendo desenvolvido, as ações para a produção dele e as ações realizadas durante o projeto. Sendo eles: </p>
         </div>
     </div>
-<div class="content d-flex justify-content-center flex-wrap">
-    <ul>
-        <li class="text"> Product Backlog </li> <br>
-        <li class="text"> Sprint Backlog </li> <br>
-        <li class="text"> Product Increment </li> <br>
-        <li class="text"> Burndown Charts  </li> <br>
-        <li class="text"> Definition of Done </li>
-    </ul>
-</div>
-<section>
+ <div class="content d-flex justify-content-center flex-wrap">
+    <ol class="LIST-global list-group list-group-numbered">
+        <li class="list-group-item">  Product Backlog </li> <br>
+        <li class="list-group-item">  Sprint Backlog </li> <br>
+        <li class="list-group-item">  Product Increment </li> <br>
+        <li class="list-group-item">  Burndown Charts  </li> <br>
+        <li class="list-group-item">  Definition of Done </li>
+ </ol>
+ </div>
+ <section>
     <div class="content d-flex justify-content-center flex-wrap">
-    <h1 class="subtitle-art">Product Backlog</h1>
+        <h2 class="SUB-global"> Product Backlog</h2>
     <div class="container-content row">
             <!-- Elemento 1 -->
             <div class="content-block col-sm-8">
-            O Product Backlog é uma lista ordenada criada pelo Time Scrum, mas onde somente o Product Owner pode inserir, remover ou reordenar os itens. O formato mais utilizado para estes itens é o de User Stories, que deverão ser ordenados de acordo com o critério do Product Owner - geralmente itens mais importantes ficam no topo, e serão implementados antes. Em geral, os itens de maior importância são os itens que se têm maior conhecimento, já itens que precisam de maior refinamento geralmente têm uma importância menor e ficam mais abaixo no Product Backlog.
+                <p class="TXT-global"> O Product Backlog é uma lista ordenada criada pelo Time Scrum, mas onde somente o Product Owner pode inserir, remover ou reordenar os itens. O formato mais utilizado para estes itens é o de User Stories, que deverão ser ordenados de acordo com o critério do Product Owner - geralmente itens mais importantes ficam no topo, e serão implementados antes. Em geral, os itens de maior importância são os itens que se têm maior conhecimento, já itens que precisam de maior refinamento geralmente têm uma importância menor e ficam mais abaixo no Product Backlog. </p>
         </div>
         <!-- Elemento 2 -->
         <div class="content-block col-sm-4">
@@ -49,59 +55,67 @@
         </div>
     </div>
     </div>
-</section>
     <div class="content-block">
-        Além dos itens funcionais, o Product Backlog também contém itens não-funcionais (tempo de resposta), arquiteturais (ser desenvolvido com determinada tecnologia) e de infraestrutura (estar disponível somente dentro de uma intranet). Também pode conter itens que representem riscos a serem removidos. Durante o andamento do projeto, algumas funcionalidades podem acabar perdendo a importância e  até mesmo desaparecendo. Da mesma forma, novas funcionalidades também podem ser adicionadas, de acordo com a necessidade. Abaixo um exemplo de Product Backlog:
+        <p class="TXT-global"> Além dos itens funcionais, o Product Backlog também contém itens não-funcionais (tempo de resposta), arquiteturais (ser desenvolvido com determinada tecnologia) e de infraestrutura (estar disponível somente dentro de uma intranet). Também pode conter itens que representem riscos a serem removidos. Durante o andamento do projeto, algumas funcionalidades podem acabar perdendo a importância e  até mesmo desaparecendo. Da mesma forma, novas funcionalidades também podem ser adicionadas, de acordo com a necessidade. Abaixo um exemplo de Product Backlog: </p>
     </div>
+    <div class="container-content d-flex justify-content-center flex-wrap">
+        <div class="content-block">
+        <img class="img-fluid art-img" src="{{url_for('static', filename='img/cont/backlog.jpeg')}}" alt="img">
+        </div>
+    </div>
+ </section>
     <section>
         <div class="content d-flex justify-content-center flex-wrap">
-        <h1 class="subtitle-art">User Story</h1>
+            <h2 class="SUB-global"> User Story</h2>
         <div class="container-content row">
-            <div class="content-block">Ao descrever os itens para o Product Backlog, o Product Owner pode optar por User Stories, que descrevem uma funcionalidade que tenha valor ao cliente, mas em termos de negócios - e não de uma forma técnica. Assim, é composta de três aspectos:
+            <div class="content-block"> 
+                <p class="TXT-global">Ao descrever os itens para o Product Backlog, o Product Owner pode optar por User Stories, que descrevem uma funcionalidade que tenha valor ao cliente, mas em termos de negócios - e não de uma forma técnica. Assim, é composta de três aspectos: </p>
             </div>
         </div>
         </div>
         <div class="content d-flex justify-content-center flex-wrap">
             <ul>
-                <li class="text"> Descrição da história </li> <br>
-                <li class="text"> Conversas sobre a história que servem para detalhá-la </li> <br>
-                <li class="text"> Testes que conduzem aspectos importantes da história e determinar quando completa
+                <li class="list-group-item"> • Descrição da história </li> <br>
+                <li class="list-group-item"> • Conversas sobre a história que servem para detalhá-la </li> <br>
+                <li class="list-group-item"> • Testes que conduzem aspectos importantes da história e determinar quando completa
                 </li> 
             </ul>
         </div>
         <div class="container-content row">
-            <div class="content-block">Como normalmente User Stories são escritos em cartões de notas, convencionou-se a utilização dos 3Cs para User Stories: Cartão, Conversação e Confirmação. O modelo mais utilizado para a descrição de uma história em uma User Story é:
+            <div class="content-block">
+                <p class="TXT-global">Como normalmente User Stories são escritos em cartões de notas, convencionou-se a utilização dos 3Cs para User Stories: <strong> Cartão, Conversação e Confirmação. </strong> O modelo mais utilizado para a descrição de uma história em uma User Story é: </p>
             </div>
             <div class="cards d-flex">
                 <div class="card col-3">
                   <div class="card-body">
-                    <h5 class="card-title">Eu, como (papel), quero (funcionalidade) para (motivo).</h5>
+                    <h5 class="card-title"> Como (papel), quero (funcionalidade) para (motivo).</h5>
                   </div>
                 </div>
             </div>
         </section>
-<section>
+ <section>
         <div class="container-content row">
-            <div class="content-block">Neste modelo, o papel representa qualquer tipo de usuário que esteja utilizando o produto. Funcionalidade é a funcionalidade desejada, e motivo é o que determina o propósito desta funcionalidade. Ao se criar um User Story, o Product Owner deve sempre ter em mente que ela atenda aos critérios INVEST:
+            <div class="content-block">
+                <p class="TXT-global">Neste modelo, o papel representa qualquer tipo de usuário que esteja utilizando o produto. Funcionalidade é a funcionalidade desejada, e motivo é o que determina o propósito desta funcionalidade. Ao se criar um User Story, o Product Owner deve sempre ter em mente que ela atenda aos critérios INVEST: </p>
             </div>
             <div class="content d-flex justify-content-center flex-wrap">
                 <ul>
-                    <li class="text"> Independent - idealmente, pode ser implementado em qualquer ordem
+                    <li class="list-group-item"> • Independent - idealmente, pode ser implementado em qualquer ordem
                     </li> <br>
-                    <li class="text"> Negotiable - pode ser negociável
+                    <li class="list-group-item"> • Negotiable - pode ser negociável
                     </li> <br>
-                    <li class="text"> Valuable - possui valor</li> <br>
-                    <li class="text"> Estimatable - capaz de ser estimado</li> <br>
-                    <li class="text"> Small - com descrição curta
+                    <li class="list-group-item"> • Valuable - possui valor</li> <br>
+                    <li class="list-group-item"> • Estimatable - capaz de ser estimado</li> <br>
+                    <li class="list-group-item"> • Small - com descrição curta
                     </li> <br>
-                    <li class="text"> Testable - podem-se criar testes
+                    <li class="list-group-item"> • Testable - podem-se criar testes
                     </li>
                 </ul>
             </div>
         </section>
         <section>
             <div class="content d-flex justify-content-center flex-wrap">
-            <h1 class="subtitle-art">Sprint Backlog</h1> </div>
+                <h2 class="SUB-global"> Sprint Backlog</h2> </div>
             <div class="container-content row">
 
                 <!-- Elemento 1 -->
@@ -111,10 +125,39 @@
     
                 <!-- Elemento 2 -->
                 <div class="content-block col-sm-8">
-                    O Sprint Backlog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o plano para transformá-los em um Incremento. Assim, ao final de cada Sprint Planning Meeting, um novo Sprint Backlog é criado. Normalmente, o plano é composto das tarefas técnicas necessárias para transformar o item em um incremento do produto. Um dos formatos mais utilizados de Sprint Backlog é o de Task Board:
+                    <p class="TXT-global"> O Sprint Backlog é o conjunto de itens selecionados para serem implementados durante a Sprint mais o plano para transformá-los em um Incremento. Assim, ao final de cada Sprint Planning Meeting, um novo Sprint Backlog é criado. Normalmente, o plano é composto das tarefas técnicas necessárias para transformar o item em um incremento do produto. Um dos formatos mais utilizados de Sprint Backlog é o de 
+                    <span class="POP-global" data-bs-toggle="popover" 
+                        data-bs-placement="top" data-bs-trigger="hover" 
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Task Board"
+                        data-bs-content="Quadro usado pela equipe Scrum para visualizar e acompanhar o progresso das tarefas">
+                        Task Board: </p>
+                    </span>
+                </div>
+                <div class="container-content d-flex justify-content-center flex-wrap">
+                    <div class="content-block">
+                    <img class="img-fluid sprint-img" src="{{url_for('static', filename='img/cont/task.png')}}" alt="img">
+                    </div>
                 </div>
                 <div class="container-content row">
-                    <div class="content-block"> No Task Board, à esquerda, temos os itens vindos do Product Backlog, enquanto que nas colunas To do, Doing e Done, temos as tarefas a serem feitas, em andamento e prontas, respectivamente. As tarefas podem apresentar o nome da pessoa que está trabalhando nela. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que o Development Team atinja a meta da Sprint. Para isto, os membros do Development Team podem adicionar novas tarefas no decorrer da Sprint, caso mais trabalho seja necessário. Da mesma forma, também podem remover tarefas caso se mostrem desnecessárias. </div>    
+                    <div class="content-block">
+                        <p class="TXT-global"> No Task Board, temos os itens vindos do Product Backlog, e nas colunas To do, Doing e Done, temos as tarefas a serem feitas, em andamento e prontas, respectivamente. As tarefas podem apresentar o nome da pessoa que está trabalhando nela. O objetivo do Sprint Backlog é tornar visível o trabalho necessário para que o Development Team atinja a meta da Sprint. Para isto, os membros do Development Team podem adicionar novas tarefas no decorrer da Sprint, caso mais trabalho seja necessário. Da mesma forma, também podem remover tarefas caso se mostrem desnecessárias. </p> </div>    
             </section>
+ <section>
+    <div class="container-content d-flex justify-content-center flex-wrap">
+
+        <div class="content-block">
+            <a href="#" class="BTN-global">
+                <i class="bi bi-arrow-up-short"></i>
+            </a>
+        </div>
+        <div class="content-block">
+            <a href="/Burndown" class="BTN-global">
+                Avançar <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
 
     {% endblock %}

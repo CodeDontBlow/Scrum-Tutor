@@ -7,65 +7,76 @@
     {% block title %} Capitulo 2{% endblock %}
 
     {% block pageContent %}
+
+
+
     
     <section class="container-fluid">
       <h1 class="title">Pilares Scrum </h1>
       <h2 class="subtitle">Transparência, Inspeção e Adaptação</h2>
-      <div class="content">
-        <img id="scum-method-pana" src="{{url_for('static', filename='/img/storyset/scrum method-pana.svg')}}">
-        <p>
-          A filosofia ágil não tem esse nome à toa. Em 2001, um grupo de desenvolvedores decidiu criar uma rotina de processos, cerimônias e artefatos para gerenciar a construção de softwares. Com o sucesso dessa sugestão de gestão, escreveram o Manifesto ágil, que é o texto que segue:
-        </p>
-      </div>
-    </section>
 
-    <section>
-      <h1 class="title">Manifesto Ágil</h1>
-      <div>
-        <p>
-          Em uma tradução livre, o Manifesto Ágil consiste no seguinte:
-          “Estamos descobrindo maneiras melhores de desenvolver software, fazendo-o nós mesmos e ajudando outros a fazerem o mesmo. Através deste trabalho, passamos a valorizar: Indivíduos e interações mais que processos e ferramentas Software em funcionamento mais que documentação abrangente Colaboração com o cliente mais que negociação de contratos Responder a mudanças mais que seguir um plano Ou seja, mesmo havendo valor nos itens à direita, valorizamos mais os itens à esquerda”
-        </p>
+      <div class="container-content text-center row">
+        <div class="content-block col-md-4">
+          <img class="IMG-global" src="{{url_for('static', filename='/img/storyset/scrum method-pana.svg')}}">
+        </div>
+        <div class="content-block col-md-8" style="text-align: left;">
+          <ul>
+            <p> O Scrum é estruturado em torno de três pilares essenciais:</p>
+                  <li><h3>Transparência</h3></li>
+                  <li><h3>Inspeção</h3></li>
+                  <li><h3>Adaptação</h3></li>
+          </ul>
+        </div>
       </div>
-      <ol>
-        <li>
-          Nossa maior prioridade é satisfazer o cliente através da entrega contínua e adiantada de software com valor agregado;
-        </li>
-        <li>
-          Mudanças nos requisitos são bem-vindas, mesmo tardiamente no desenvolvimento; Processos ágeis tiram vantagem das mudanças visando vantagem competitiva para o cliente
-        </li>
-        <li>
-          Entregar frequentemente software funcionando, de poucas semanas a poucos meses, com preferência à menor escala de tempo;
-        </li>
-        <li>
-          Pessoas de negócio e desenvolvedores devem trabalhar diariamente em conjunto por todo o projeto;
-        </li>
-        <li>
-          Construa projetos em torno de indivíduos motivados. Dê a eles o ambiente e o suporte necessário e confie neles para fazer o trabalho;
-        </li>
-        <li>
-          O método mais eficiente e eficaz de transmitir informações para e entre uma equipe de desenvolvimento é através de conversa face a face;
-        </li>
-        <li>
-          Software funcionando é a medida primária de progresso;
-        </li>
-        <li>
-          Os processos ágeis promovem desenvolvimento sustentável. Os patrocinadores, desenvolvedores e usuários devem ser capazes de manter um ritmo constante indefinidamente;
-        </li>
-        <li>
-          Contínua atenção à excelência técnica e bom design aumenta a agilidade;
-        </li>
-        <li>
-          Simplicidade – a arte de maximizar a quantidade de trabalho não realizado – é essencial;
-        </li>
-        <li>
-          As melhores arquiteturas, requisitos e designs emergem de equipes auto-organizáveis e
-        </li>
-        <li>
-          Em intervalos regulares, a equipe reflete sobre como se tornar mais eficaz e então refina e ajusta seu comportamento de acordo.
-        </li>
-      </ol>
-    </section>
+
+
+      <div class="container-content text-center row">
+        <div class="content-block col-md-8">
+          <h3>Transparência</h3>
+
+          Essencial para o empirismo, a transparência é um pilar crucial do Scrum. Isso significa que todo o processo deve ser claro e acessível para todos os participantes envolvidos no desenvolvimento do produto. Para garantir que a transparência seja eficaz, é vital que todos os participantes estejam alinhados em relação aos termos utilizados. Por exemplo, todos devem entender e usar a mesma terminologia e jargões; a Definição de Pronto (DoD, Definition of Done) deve ser claramente estabelecida e conhecida por todos, assegurando que as expectativas sejam adequadamente atendidas.
+        </div>
+  
+        <div class="content-block col-md-4">
+          <img class="IMG-global" src="{{url_for('static', filename='/img/storyset/Data extraction-bro.svg')}}">
+        </div>
+      </div>
+
+
+    <div class="container-content text-center row">
+      <div class="content-block col-md">
+        <h3>Inspeção</h3>
+        Devido à sua natureza de controle empírico dos processos, é essencial que o Scrum seja submetido a inspeções frequentes para identificar quaisquer desafios ou irregularidades. Detalhes sobre quando e como essas inspeções ocorrem serão discutidos posteriormente.
+      </div>
+
+
+      <div class="content-block col-md">
+        <h3>Adaptação</h3>
+        Devido à sua natureza de controle empírico dos processos, é essencial que o Scrum seja submetido a inspeções frequentes para identificar quaisquer desafios ou irregularidades. Detalhes sobre quando e como essas inspeções ocorrem serão discutidos posteriormente.
+      </div>
+    </div>
+    <img id="solv-prob" src="{{url_for('static', filename='/img/storyset/Problem solving-bro.svg')}}" alt="Resolução de problemas" class="IMG-global">
+
+    <div class="container-content text-center row">
+      <div class="content-block col-md">
+        O Scrum incorpora momentos específicos para essas adaptações, incluindo:
+        <ul>
+          <li>Reunião de Planejamento da Sprint (Sprint Planning Meeting)</li>
+          <li>Scrum Diário (Daily Scrum)</li>
+          <li>Revisão da Sprint (Sprint Review)</li>
+          <li>Retrospectiva da Sprint (Sprint Retrospective)</li>
+        </ul>
+      </div>
+
+
+      <div class="content-block col-md">
+        É crucial manter a transparência entre todos os envolvidos no projeto para que as adaptações possam ser aplicadas em qualquer nível necessário da estrutura organizacional. Essa prática constante de inspeção e adaptação segue o conceito de “Kaizen” ou melhoria contínua, promovendo o aperfeiçoamento progressivo do processo com o objetivo de alcançar a excelência operacional.
+      </div>
+    </div>
+
+
+  </section>
+
 
 <!--Questionário com 3 perguntas-->
     <section>
@@ -157,6 +168,21 @@
         </form>
       </div>
     </section>
+
+<!-- Botão voltar ao topo da página -->
+<a href="#" class="BTN-global">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+          
+<!-- Botão ir para próxima página -->
+<a href="/Capitulo2" class="BTN-global">
+Avançar <i class="bi bi-arrow-right-short"></i>
+</a>
+          
+<!-- Botão voltar para a trilha de aprendizagem -->
+<a href="/trilha" class="BTN-global" id="btn-return-trail">
+<i class="bi bi-arrow-return-left"></i> Voltar a Trilha
+</a>
 
 <!--Modal para mostrar os resultados-->
         <!-- Modal -->
