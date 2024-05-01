@@ -140,14 +140,12 @@ nav.navbar button.navbar-toggler:focus {
 footer#CDBfooter>div.CDBfooter-top {
     background-color: #020234;
     padding: 10px;
-
     color: white;
 }
 
 /* Logo CodeDontBlow */
 div.CDBfooter-top>div .CDBfooter-logo img {
     width: 200px;
-
     user-select: none;
     transition: opacity 200ms;
 }
@@ -163,7 +161,6 @@ div.CDBfooter-top>div.CDBfooter-message h5 {
 div.CDBfooter-top>div.CDBfooter-github .bi-github {
     color: white;
     font-size: 2.5rem;
-
     transition: opacity 200ms;
 }
 
