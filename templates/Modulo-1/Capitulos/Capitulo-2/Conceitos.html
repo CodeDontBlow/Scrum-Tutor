@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block pageCss %} {% endblock %}
+
+{% block pageTitle %} Auto-organização, facilitação e visão {% endblock %}
+
+{% block pageContent %} 
+<div class="container-sm global-container">
+
+    <div class="container-content text-center">
+        <div class="content-block">
+            <h1 class="TITLE-global">
+                Auto-organização, facilitação e visão
+            </h1>
+        </div>
+    </div>
+    
+    <div class="container-content text-center row">
+        <div class="content-block col-md-4">
+            <img src="{{url_for('static' , filename='img/storyset/office-rafiki.svg')}}" alt=" " class="IMG-global">
+        </div>
+
+        <div class="content-block col-md-8">
+
+            <div class="TXT-global-container">
+                <p class="TXT-global">
+                    Um dos princípios fundamentais do Scrum é a autoorganização, onde as equipes têm autonomia para tomar decisões e se organizar com o objetivo de alcançar os resultados esperados. A facilitação é crucial para garantir que as reuniões e processos do Scrum sejam eficazes e ágeis, apoiando a equipe na colaboração e resolução de problemas.
+                </p>
+            </div>
+            <div class="TXT-global-container">
+                <p class="TXT-global">  
+                    A definição clara da visão e dos objetivos do projeto é essencial, pois fornece direção e inspiração para a equipe durante todo o desenvolvimento. Essa compreensão compartilhada do que se pretende alcançar mantém a equipe motivada e alinhada, mesmo diante de desafios e mudanças ao longo do caminho.
+                </p>
+            </div>
+
+            <div class="TXT-global-container">
+                <p class="TXT-global">  
+                    Portanto, a abordagem Scrum combina a autonomia da equipe com a clareza de propósito, criando um ambiente propício para a entrega de valor de forma rápida e adaptativa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-content d-flex justify-content-center flex-wrap">
+
+        <div class="content-block">
+            <a href="#" class="BTN-global">
+                <i class="bi bi-arrow-up-short"></i>
+            </a>
+        </div>
+        <div class="content-block">
+            <a href="/CerimoniasPT-2" class="BTN-global">
+                Avançar <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+        <div class="content-block">
+        <a href="/trilha" class="BTN-global" id="btn-return-trail">
+            <i class="bi bi-arrow-return-left"></i> Voltar a Trilha
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
+

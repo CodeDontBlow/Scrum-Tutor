@@ -61,6 +61,10 @@ def capitulo2():
 def time_scrum():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Time-Scrum.html")
 
+@app.route("/Conceitos")
+def conceitos():
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Conceitos.html")
+
 
 # << << << < HEAD
 
@@ -69,6 +73,9 @@ def time_scrum():
 def capitulo3():
     return render_template("Modulo-1/Capitulos/Capitulo-3/Capitulo3.html")
 
+@app.route("/Eventos")
+def eventos():
+    return render_template("Modulo-1/Capitulos/Capitulo-3/Eventos.html")
 
 @app.route("/Artefatos")
 def artefatos():

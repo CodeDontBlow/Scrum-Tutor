@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block pageCss %} {% endblock %}
+
+{% block pageTitle %} Eventos de Scrum {% endblock %}
+
+{% block pageContent %} 
+<div class="container-sm global-container">
+
+    <div class="container-content text-center">
+        <div class="content-block">
+            <h1 class="TITLE-global">
+                Eventos do Scrum
+            </h1>
+        </div>
+    </div>
+
+    <div class="content d-flex justify-content-center flex-wrap">
+        <div class="container-content row">
+             <!-- Elemento 1 -->
+            <div class="content-block">
+                Os eventos são pilares fundamentais do fluxo do Scrum, costumam ser de duração fixa e ocorrer em intervalos regulares, oferecendo oportunidades valiosas para inspeção e adaptação do projeto e seu andamento. A seguir aprenderemos mais a respeito de cada um desses eventos.
+             </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="container-content text-center row">
+        <div class="content-block">
+            <img src="{{url_for('static' , filename='img/storyset/eventos.svg')}}" alt=" " class="IMG-global">
+        </div>
+
+
+    <div class="container-content d-flex justify-content-center flex-wrap">
+
+        <div class="content-block">
+            <a href="#" class="BTN-global">
+                <i class="bi bi-arrow-up-short"></i>
+            </a>
+        </div>
+        <div class="content-block">
+            <a href="/CerimoniasPT-1" class="BTN-global">
+                Avançar <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
