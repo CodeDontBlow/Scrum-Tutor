@@ -7,35 +7,69 @@
 {% endblock %}
 
 {% block pageContent %}
-<h1 class="title">Simulador de Product Owner</h1>
+<h1 class="title">Jogo Product Owner</h1>
 <section class="bg-chat d-flex">
     <div class="left-side">
-        <div class="cliente"> 
-             <!-- aqui dentro vai o icone do cliente e sua fala  -->
+        <div class="cliente">
+            <div class="container-content row">
+                <!-- aqui dentro vai o icone do cliente e sua fala  -->
+                <!-- Elemento 1 -->
+                <div class="d-flex justify-content-center">
+                    <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                        alt="img">
+                    <div class="balao2">
+                        <p class="TXT-global"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla fugiat doloremque beatae eum mollitia sapiente quidem molestiae aut quo neque repudiandae, aperiam tempore, sit illo atque similique suscipit vitae!
+                    </div>
+                </div>
+            </div>
         </div>
-        <h1 class="subtitle"> Qual a melhor resposta?</h1>
+        <br>
+
         <div class="cards-buttons">
-            <!-- aqui dentro vão os cards em diplay flex column -->
+            <!-- aqui dentro vão os cards em display flex column -->
+            <h1 class="subtitle"> Qual a melhor resposta?</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Requisito 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+                </div>
+            </div> <br>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Requisito 2</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+                </div>
+            </div> <br>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Requisito 3</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+                </div>
+            </div>
         </div>
+
     </div>
+
     <div class="task-list">
         <div class="subtitle">Task-List</div>
-            <p class="list">
-                Requisito 1
-            </p>
-            <hr>
-            <p class="list">
-                Requisito 2
-            </p>
-            <hr>
-            <p class="list">
-                Requisito 3
-            </p>
-            <hr>
-            <p class="list">
-                Requisito 4
-            </p>
-            <hr>
+        <p class="list">
+            Requisito 1
+        </p>
+        <hr>
+        <p class="list">
+            Requisito 2
+        </p>
+        <hr>
+        <p class="list">
+            Requisito 3
+        </p>
+        <hr>
+        <p class="list">
+            Requisito 4
+        </p>
+        <hr>
         <button type="button" class="validar btn btn-success">Validar <i class="bi bi-check"></i></button>
     </div>
 </section>
