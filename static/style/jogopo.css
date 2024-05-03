@@ -1,0 +1,45 @@
+.bg-chat {
+    background-color: #1D1D7C;
+    margin: 20px 40px;
+    border-radius: 0 50px;
+    padding: 30px;
+    border: ridge 5px rgba(81, 7, 255, 0.233);
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+}
+
+hr {
+    margin: 0 5px;
+}
+
+.list {
+    margin: 20px 0;
+}
+
+.task-list {
+    background-color: #2D2DA8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 25%;
+    border: solid 1px rgba(0, 0, 0, 0.363);
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+}
+
+.task-list .subtitle {
+    background-color: #020234;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+    margin-bottom: 0px;
+}
+
+.validar {
+    background-color: #2E8F2C;
+    width: 50%;
+    height: 50px;
+    margin: 20% auto;
+    border-radius: 30px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
+}

@@ -65,6 +65,10 @@ def time_scrum():
 def conceitos():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Conceitos.html")
 
+@app.route("/jogoPO")
+def jogoPO():
+    return render_template("Modulo-2/jogoPo.html")
+
 
 # << << << < HEAD
 

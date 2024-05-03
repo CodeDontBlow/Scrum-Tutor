@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/jogopo.css')}}"> {% endblock %}
+
+{% block pageTitle%}
+{% endblock %}
+
+{% block pageContent %}
+<h1 class="title">Simulador de Product Owner</h1>
+<section class="bg-chat d-flex">
+    <div class="left-side">
+        <div class="cliente"> 
+             <!-- aqui dentro vai o icone do cliente e sua fala  -->
+        </div>
+        <h1 class="subtitle"> Qual a melhor resposta?</h1>
+        <div class="cards-buttons">
+            <!-- aqui dentro vão os cards em diplay flex column -->
+        </div>
+    </div>
+    <div class="task-list">
+        <div class="subtitle">Task-List</div>
+            <p class="list">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="list">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="list">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="list">
+                Requisito 4
+            </p>
+            <hr>
+        <button type="button" class="validar btn btn-success">Validar <i class="bi bi-check"></i></button>
+    </div>
+</section>
+
+
+{% endblock %}
