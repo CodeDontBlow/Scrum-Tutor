@@ -97,6 +97,14 @@ def cerimonias2():
 def burndown():
     return render_template("Modulo-1/Capitulos/Capitulo-3/Burndown.html")
 
+@app.route("/DoR_DoD")
+def DoR_DoD():
+    return render_template("Modulo-1/Capitulos/Capitulo-3/DoR_DoD.html")
+
+@app.route("/Estimativas")
+def estimativa():
+    return render_template("Modulo-1/Capitulos/Capitulo-3/Estimativas.html")
+
 @app.route('/apagar')
 def apagar():
     return render_template('apagar.html')
