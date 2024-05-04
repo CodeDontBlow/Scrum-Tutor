@@ -1,37 +1,42 @@
 {% extends 'base.html' %}
 
-    {% block pageCss %}
-        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
-    {% endblock %}
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+{% endblock %}
 
-    {% block title %} Capitulo 2{% endblock %}
+{% block title %} Capitulo 2{% endblock %}
 
-    {% block pageContent %}
-    
+{% block pageContent %}
+<div class="container-sm global-container">
     <section class="container-fluid capitulo-scrum">
-      <h1 class="title">Capítulo 2</h1>
-      <div class="content d-flex">
-        <p class="text col-7">Neste capítulo, mergulharemos profundamente nos papéis Scrum, destacando as responsabilidades de cada um, bem como a importância da auto-organização para o sucesso geral do projeto. </p>
-      </div>
+        <h1 class="title">Capítulo 2</h1>
+        <div class="content d-flex">
+            <p class="text col-7">Neste capítulo, mergulharemos profundamente nos papéis Scrum, destacando as
+                responsabilidades de cada um, bem como a importância da auto-organização para o sucesso geral do
+                projeto. </p>
+        </div>
 
-      <div class="content d-flex justify-content-left trilha-scrum">
-        <ul>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Time Scrum" alt="icone_livro" >Time Scrum ( PO, SM, ST)</a></li><br>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Conceitos" alt="icone_livro" > Auto-organização, Facilitação, Visão
-            </a></li><br>
-        </ul>
-    </div>
+        <div class="content d-flex justify-content-left trilha-scrum">
+            <ul>
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+                        href="/Time Scrum" alt="icone_livro">Time Scrum ( PO, SM, ST)</a></li><br>
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+                        href="/Conceitos" alt="icone_livro"> Auto-organização, Facilitação, Visão
+                    </a></li><br>
+            </ul>
+        </div>
     </section>
-<section>
-      <a href="/trilha" class="BTN-global" id="btn-return-trail">
-          <i class="bi bi-arrow-return-left"></i>
-      </a>
-      <a href="#" class="BTN-global">
-          <i class="bi bi-arrow-up-short"></i>
-      </a>
-      <a href="/Time Scrum" class="BTN-global">
-          <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </section>     
-    
-    {% endblock %}
+    <section>
+        <a href="/trilha" class="BTN-global" id="btn-return-trail">
+            <i class="bi bi-arrow-return-left"></i>
+        </a>
+        <a href="#" class="BTN-global">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+        <a href="/Time Scrum" class="BTN-global">
+            <i class="bi bi-arrow-right-short"></i>
+        </a>
+    </section>
+
+</div>
+{% endblock %}

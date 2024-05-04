@@ -1,43 +1,52 @@
 {% extends 'base.html' %}
 
-    {% block pageCss %}
-        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
-    {% endblock %}
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+{% endblock %}
 
-    {% block title %} Capitulo 3{% endblock %}
+{% block title %} Capitulo 3{% endblock %}
 
-    {% block pageContent %}
-    
-    <section class="container-fluid capitulo-scrum">
-      <h1 class="title">Capítulo 3</h1>
-      <div class="content d-flex">
-        <p class="text col-7">Neste capítulo, adentramos o fascinante mundo dos eventos e artefatos do Scrum, os pilares que sustentam a estrutura ágil deste framework.</p>
-      </div>
-
-      <div class="content d-flex justify-content-left trilha-scrum">
-        <ul>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Eventos" alt="img icone"> Eventos Scrum </a></li><br>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/CerimoniasPT-1" alt="img icone"> Sprint, Sprint Planning Meeting, Daily Scrum</a></li><br>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/CerimoniasPT-2" alt="img icone"> Sprint Review, Sprint Retrospective, Release Planning Meeting </a></li><br>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Artefatos" alt="img icone">Artefatos Scrum (Product Backlog, User Stories e Sprint Backlog)
-          </a></li><br>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Burndown"alt="img icone">  Product Increment e Burndown Chart
-            </a></li><br>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/DoR_DoD"alt="img icone"> DoR e DoD</a></li><br>
-          <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links" href="/Estimativas" alt="img icone"> Estimativa (Planning Poker, Sequência Fibonacci, Velocidade) </a></li>
-        </ul>
+{% block pageContent %}
+<div class="container-sm global-container">
+  <section class="container-fluid capitulo-scrum">
+    <h1 class="title">Capítulo 3</h1>
+    <div class="content d-flex">
+      <p class="text col-7">Neste capítulo, adentramos o fascinante mundo dos eventos e artefatos do Scrum, os pilares
+        que sustentam a estrutura ágil deste framework.</p>
     </div>
-    </section>
-<section>
-      <a href="/trilha" class="BTN-global" id="btn-return-trail">
-          <i class="bi bi-arrow-return-left"></i>
-      </a>
-      <a href="#" class="BTN-global">
-          <i class="bi bi-arrow-up-short"></i>
-      </a>
-      <a href="/Eventos" class="BTN-global">
-          <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </section>     
-    
-    {% endblock %} 
+
+    <div class="content d-flex justify-content-left trilha-scrum">
+      <ul>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/Eventos" alt="img icone"> Eventos Scrum </a></li><br>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/CerimoniasPT-1" alt="img icone"> Sprint, Sprint Planning Meeting, Daily Scrum</a></li><br>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/CerimoniasPT-2" alt="img icone"> Sprint Review, Sprint Retrospective, Release Planning Meeting </a>
+        </li><br>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/Artefatos" alt="img icone">Artefatos Scrum (Product Backlog, User Stories e Sprint Backlog)
+          </a></li><br>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/Burndown" alt="img icone"> Product Increment e Burndown Chart
+          </a></li><br>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/DoR_DoD" alt="img icone"> DoR e DoD</a></li><br>
+        <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
+            href="/Estimativas" alt="img icone"> Estimativa (Planning Poker, Sequência Fibonacci, Velocidade) </a></li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <a href="/trilha" class="BTN-global" id="btn-return-trail">
+      <i class="bi bi-arrow-return-left"></i>
+    </a>
+    <a href="#" class="BTN-global">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <a href="/Eventos" class="BTN-global">
+      <i class="bi bi-arrow-right-short"></i>
+    </a>
+  </section>
+</div>
+{% endblock %}

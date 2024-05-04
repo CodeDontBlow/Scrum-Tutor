@@ -1,41 +1,43 @@
 {% extends 'base.html' %}
 
-    {% block pageCss %}
-        <link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
-    {% endblock %}
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/capitulos.css')}}">
+{% endblock %}
 
-    {% block title %} Capitulo 1 {% endblock %}
+{% block title %} Capitulo 1 {% endblock %}
 
-    {% block pageContent %}
-    
+{% block pageContent %}
+<div class="container-sm global-container">
     <section class="container-fluid capitulo-scrum">
-      <h1 class="title">Capítulo 1</h1>
-      <div class="content d-flex">
-        <p class="text col-7">Bem-vindo ao curso da Metodolia Ágil Scrum. Clique nas aulas para começar a ver o conteúdo.</p>
-      </div>
+        <h1 class="title">Capítulo 1</h1>
+        <div class="content d-flex">
+            <p class="text col-7">Bem-vindo ao curso da Metodolia Ágil Scrum. Clique nas aulas para começar a ver o
+                conteúdo.</p>
+        </div>
 
-      <div class="content d-flex justify-content-left trilha-scrum">
-        <ul>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a class="links" href="/Fundamentos" >Fundamentos Scrum</a></li><br>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a class="links" href="/Valores"> Valores e Princípios ( Manifesto Ágil, Princípios, Valores)
-            </a></li><br>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a class="links" href="/Pilares Scrum"> Os Pilares de Scrum (Transparência, Inspeção, Adaptação)
-            </a></li>
-        </ul>
-      </div>
+        <div class="content d-flex justify-content-left trilha-scrum">
+            <ul>
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
+                        class="links" href="/Fundamentos">Fundamentos Scrum</a></li><br>
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
+                        class="links" href="/Valores"> Valores e Princípios ( Manifesto Ágil, Princípios, Valores)
+                    </a></li><br>
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
+                        class="links" href="/Pilares Scrum"> Os Pilares de Scrum (Transparência, Inspeção, Adaptação)
+                    </a></li>
+            </ul>
+        </div>
     </section>
-<section>
-      <a href="/trilha" class="BTN-global" id="btn-return-trail">
-          <i class="bi bi-arrow-return-left"></i>
-      </a>
-      <a href="#" class="BTN-global">
-          <i class="bi bi-arrow-up-short"></i>
-      </a>
-      <a href="/Fundamentos" class="BTN-global">
-          <i class="bi bi-arrow-right-short"></i>
-      </a>
-</section>    
-    
-    {% endblock %}
-
-
+    <section>
+        <a href="/trilha" class="BTN-global" id="btn-return-trail">
+            <i class="bi bi-arrow-return-left"></i>
+        </a>
+        <a href="#" class="BTN-global">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+        <a href="/Fundamentos" class="BTN-global">
+            <i class="bi bi-arrow-right-short"></i>
+        </a>
+    </section>
+</div>
+{% endblock %}

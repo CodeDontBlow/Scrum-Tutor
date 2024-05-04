@@ -1,61 +1,79 @@
 {% extends 'base.html' %}
 
-    {% block pageCss %}
-      <link rel="stylesheet" href="{{url_for('static', filename='style/pilares-scrum.css')}}">
-    {% endblock %}
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/pilares-scrum.css')}}">
+{% endblock %}
 
-    {% block title %} Capitulo 2{% endblock %}
+{% block title %} Capitulo 2{% endblock %}
 
-    {% block pageContent %}
+{% block pageContent %}
+<div class="container-sm global-container">
 
 
 
-    
-    <section class="container-fluid">
-      <h1 class="title">Pilares Scrum </h1>
-      <h2 class="subtitle">Transparência, Inspeção e Adaptação</h2>
+  <section class="container-fluid">
+    <h1 class="title">Pilares Scrum </h1>
+    <h2 class="subtitle">Transparência, Inspeção e Adaptação</h2>
 
-      <div class="container-content text-center row">
-        <div class="content-block col-md-4">
-          <img class="IMG-global" src="{{url_for('static', filename='/img/storyset/scrum method-pana.svg')}}" alt="imagem trabalhando">
-        </div>
-        <div class="content-block col-md-8" style="text-align: left;">
-          <ul>
-            <p> O Scrum é estruturado em torno de três pilares essenciais:</p>
-                  <li><h3>Transparência</h3></li>
-                  <li><h3>Inspeção</h3></li>
-                  <li><h3>Adaptação</h3></li>
-          </ul>
-        </div>
+    <div class="container-content text-center row">
+      <div class="content-block col-md-4">
+        <img class="IMG-global" src="{{url_for('static', filename='/img/storyset/scrum method-pana.svg')}}"
+          alt="imagem trabalhando">
+      </div>
+      <div class="content-block col-md-8" style="text-align: left;">
+        <ul>
+          <p> O Scrum é estruturado em torno de três pilares essenciais:</p>
+          <li>
+            <h3>Transparência</h3>
+          </li>
+          <li>
+            <h3>Inspeção</h3>
+          </li>
+          <li>
+            <h3>Adaptação</h3>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="container-content text-center row">
+      <div class="content-block col-md-8">
+        <h3>Transparência</h3>
+
+        Essencial para o empirismo, a transparência é um pilar crucial do Scrum. Isso significa que todo o processo deve
+        ser claro e acessível para todos os participantes envolvidos no desenvolvimento do produto. Para garantir que a
+        transparência seja eficaz, é vital que todos os participantes estejam alinhados em relação aos termos
+        utilizados. Por exemplo, todos devem entender e usar a mesma terminologia e jargões; a Definição de Pronto (DoD,
+        Definition of Done) deve ser claramente estabelecida e conhecida por todos, assegurando que as expectativas
+        sejam adequadamente atendidas.
       </div>
 
-
-      <div class="container-content text-center row">
-        <div class="content-block col-md-8">
-          <h3>Transparência</h3>
-
-          Essencial para o empirismo, a transparência é um pilar crucial do Scrum. Isso significa que todo o processo deve ser claro e acessível para todos os participantes envolvidos no desenvolvimento do produto. Para garantir que a transparência seja eficaz, é vital que todos os participantes estejam alinhados em relação aos termos utilizados. Por exemplo, todos devem entender e usar a mesma terminologia e jargões; a Definição de Pronto (DoD, Definition of Done) deve ser claramente estabelecida e conhecida por todos, assegurando que as expectativas sejam adequadamente atendidas.
-        </div>
-  
-        <div class="content-block col-md-4">
-          <img class="IMG-global" src="{{url_for('static', filename='/img/storyset/Data extraction-bro.svg')}}" alt="imagem robô organizando">
-        </div>
+      <div class="content-block col-md-4">
+        <img class="IMG-global" src="{{url_for('static', filename='/img/storyset/Data extraction-bro.svg')}}"
+          alt="imagem robô organizando">
       </div>
+    </div>
 
 
     <div class="container-content text-center row">
       <div class="content-block col-md">
         <h3>Inspeção</h3>
-        Devido à sua natureza de controle empírico dos processos, é essencial que o Scrum seja submetido a inspeções frequentes para identificar quaisquer desafios ou irregularidades. Detalhes sobre quando e como essas inspeções ocorrem serão discutidos posteriormente.
+        Devido à sua natureza de controle empírico dos processos, é essencial que o Scrum seja submetido a inspeções
+        frequentes para identificar quaisquer desafios ou irregularidades. Detalhes sobre quando e como essas inspeções
+        ocorrem serão discutidos posteriormente.
       </div>
 
 
       <div class="content-block col-md">
         <h3>Adaptação</h3>
-        Devido à sua natureza de controle empírico dos processos, é essencial que o Scrum seja submetido a inspeções frequentes para identificar quaisquer desafios ou irregularidades. Detalhes sobre quando e como essas inspeções ocorrem serão discutidos posteriormente.
+        Devido à sua natureza de controle empírico dos processos, é essencial que o Scrum seja submetido a inspeções
+        frequentes para identificar quaisquer desafios ou irregularidades. Detalhes sobre quando e como essas inspeções
+        ocorrem serão discutidos posteriormente.
       </div>
     </div>
-    <img id="solv-prob" src="{{url_for('static', filename='/img/storyset/Problem solving-bro.svg')}}" alt="Resolução de problemas" class="IMG-global">
+    <img id="solv-prob" src="{{url_for('static', filename='/img/storyset/Problem solving-bro.svg')}}"
+      alt="Resolução de problemas" class="IMG-global">
 
     <div class="container-content text-center row">
       <div class="content-block col-md">
@@ -70,7 +88,10 @@
 
 
       <div class="content-block col-md">
-        É crucial manter a transparência entre todos os envolvidos no projeto para que as adaptações possam ser aplicadas em qualquer nível necessário da estrutura organizacional. Essa prática constante de inspeção e adaptação segue o conceito de “Kaizen” ou melhoria contínua, promovendo o aperfeiçoamento progressivo do processo com o objetivo de alcançar a excelência operacional.
+        É crucial manter a transparência entre todos os envolvidos no projeto para que as adaptações possam ser
+        aplicadas em qualquer nível necessário da estrutura organizacional. Essa prática constante de inspeção e
+        adaptação segue o conceito de “Kaizen” ou melhoria contínua, promovendo o aperfeiçoamento progressivo do
+        processo com o objetivo de alcançar a excelência operacional.
       </div>
     </div>
 
@@ -78,150 +99,167 @@
   </section>
 
 
-<!--Questionário com 3 perguntas-->
-    <section>
-      <h2>Questionário</h2>
-      <div class="formulario">
-        <form class="question-forms" method="POST" action="/submit_quiz">
-          <ol>
-            <!--Primeira pergunta - Resposta: B-->
-            <li>
-              Defina o Scrum:
-            </li>
-            <input type="radio" id="A-alt" name="Alt-question-1" value="Uma metodologia de gerenciamento de projetos que prioriza a documentação extensiva e prazos bem estabelecidos.">
-            <label for="Uma metodologia de gerenciamento de projetos que prioriza a documentação extensiva e prazos bem estabelecidos.">
-              Uma metodologia de gerenciamento de projetos que prioriza a documentação extensiva e prazos bem estabelecidos.
-            </label><br>
+  <!--Questionário com 3 perguntas-->
+  <section>
+    <h2>Questionário</h2>
+    <div class="formulario">
+      <form class="question-forms" method="POST" action="/submit_quiz">
+        <ol>
+          <!--Primeira pergunta - Resposta: B-->
+          <li>
+            Defina o Scrum:
+          </li>
+          <input type="radio" id="A-alt" name="Alt-question-1"
+            value="Uma metodologia de gerenciamento de projetos que prioriza a documentação extensiva e prazos bem estabelecidos.">
+          <label
+            for="Uma metodologia de gerenciamento de projetos que prioriza a documentação extensiva e prazos bem estabelecidos.">
+            Uma metodologia de gerenciamento de projetos que prioriza a documentação extensiva e prazos bem
+            estabelecidos.
+          </label><br>
 
 
-            <input type="radio" id="B-alt" name="Alt-question-1" value="Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de forma produtiva e criativa.">
-            <label for="Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de forma produtiva e criativa.">
-              Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de forma produtiva e criativa.
-            </label><br>
+          <input type="radio" id="B-alt" name="Alt-question-1"
+            value="Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de forma produtiva e criativa.">
+          <label
+            for="Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de forma produtiva e criativa.">
+            Framework com o qual as pessoas resolvem problemas complexos e adaptáveis, enquanto entregam produtos de
+            forma produtiva e criativa.
+          </label><br>
 
 
-            <input type="radio" id="C-alt" name="Alt-question-1" value="Uma estrutura de desenvolvimento de software que não valoriza a adaptação contínua, seguindo um padrão fixo e hierárquico.">
-            <label for="Uma estrutura de desenvolvimento de software que não valoriza a adaptação contínua, seguindo um padrão fixo e hierárquico.">
-              Uma estrutura de desenvolvimento de software que não valoriza a adaptação contínua, seguindo um padrão fixo e hierárquico.
+          <input type="radio" id="C-alt" name="Alt-question-1"
+            value="Uma estrutura de desenvolvimento de software que não valoriza a adaptação contínua, seguindo um padrão fixo e hierárquico.">
+          <label
+            for="Uma estrutura de desenvolvimento de software que não valoriza a adaptação contínua, seguindo um padrão fixo e hierárquico.">
+            Uma estrutura de desenvolvimento de software que não valoriza a adaptação contínua, seguindo um padrão fixo
+            e hierárquico.
 
-            </label><br>
+          </label><br>
 
-            <input type="radio" id="D-alt" name="Alt-question-1" value="Framework que não promove a auto-organização e a colaboração da equipe.">
-            <label for="Framework que não promove a auto-organização e a colaboração da equipe.">
-              Framework que não promove a auto-organização e a colaboração da equipe.
-            </label><br>
+          <input type="radio" id="D-alt" name="Alt-question-1"
+            value="Framework que não promove a auto-organização e a colaboração da equipe.">
+          <label for="Framework que não promove a auto-organização e a colaboração da equipe.">
+            Framework que não promove a auto-organização e a colaboração da equipe.
+          </label><br>
 
-            <!--Segunda pergunta - Resposta: C-->
-            <li>
-              Os valores do Scrum são:
-              <ol id="second-question">
-                <li>Competitividade</li>
-                <li>Comprometimento</li>
-                <li>Coragem</li>
-                <li>Orgulho</li>
-                <li>Sinceridade</li>
-              </ol>
-            </li>
-            <p>Selecione a alternativa com os itens certos:</p>
-            <input type="radio" id="A-alt" name="Alt-question-2" value="I e III estão corretas.">
-            <label for="I e III estão corretas.">I e III estão corretas.
-            </label><br>
-
-
-            <input type="radio" id="B-alt" name="Alt-question-2" value="I, II e IV estão corretas.">
-            <label for="I, II e IV estão corretas.">I, II e IV estão corretas.
-
-            </label><br>
-            <input type="radio" id="C-alt" name="Alt-question-2" value="II, III e V estão corretas.">
-            <label for="II, III e V estão corretas.">II, III e V estão corretas.
-            </label><br>
-
-            <input type="radio" id="D-alt" name="Alt-question-2" value="IV e V estão corretas.">
-            <label for="IV e V estão corretas.">IV e V estão corretas.
-            </label><br>
+          <!--Segunda pergunta - Resposta: C-->
+          <li>
+            Os valores do Scrum são:
+            <ol id="second-question">
+              <li>Competitividade</li>
+              <li>Comprometimento</li>
+              <li>Coragem</li>
+              <li>Orgulho</li>
+              <li>Sinceridade</li>
+            </ol>
+          </li>
+          <p>Selecione a alternativa com os itens certos:</p>
+          <input type="radio" id="A-alt" name="Alt-question-2" value="I e III estão corretas.">
+          <label for="I e III estão corretas.">I e III estão corretas.
+          </label><br>
 
 
-            <!--Terceira questão - Resposta: A-->
-            <li>
-              O Scrum se baseia em 3 pilares, sendo eles:
-            </li>
-            <input type="radio" id="A-alt" name="Alt-question-3" value="Transparência, Inspeção, Adaptação.">
-            <label for="Transparência, Inspeção, Adaptação.">Transparência, Inspeção, Adaptação.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-2" value="I, II e IV estão corretas.">
+          <label for="I, II e IV estão corretas.">I, II e IV estão corretas.
+
+          </label><br>
+          <input type="radio" id="C-alt" name="Alt-question-2" value="II, III e V estão corretas.">
+          <label for="II, III e V estão corretas.">II, III e V estão corretas.
+          </label><br>
+
+          <input type="radio" id="D-alt" name="Alt-question-2" value="IV e V estão corretas.">
+          <label for="IV e V estão corretas.">IV e V estão corretas.
+          </label><br>
 
 
-            <input type="radio" id="B-alt" name="Alt-question-3" value="Adaptação, Progresso Pessoal, Investimento.">
-            <label for="Adaptação, Progresso Pessoal, Investimento.">
-              Adaptação, Progresso Pessoal, Investimento.
-            </label><br>
+          <!--Terceira questão - Resposta: A-->
+          <li>
+            O Scrum se baseia em 3 pilares, sendo eles:
+          </li>
+          <input type="radio" id="A-alt" name="Alt-question-3" value="Transparência, Inspeção, Adaptação.">
+          <label for="Transparência, Inspeção, Adaptação.">Transparência, Inspeção, Adaptação.</label><br>
 
 
-            <input type="radio" id="C-alt" name="Alt-question-3" value="Hierarquia, Projeção, Autonomia.">
-            <label for="Hierarquia, Projeção, Autonomia.">Hierarquia, Projeção, Autonomia.
-            </label><br>
+          <input type="radio" id="B-alt" name="Alt-question-3" value="Adaptação, Progresso Pessoal, Investimento.">
+          <label for="Adaptação, Progresso Pessoal, Investimento.">
+            Adaptação, Progresso Pessoal, Investimento.
+          </label><br>
 
-            <input type="radio" id="D-alt" name="Alt-question-3" value="Trabalho em Grupo, Foco, Cobrança.">
-            <label for="Trabalho em Grupo, Foco, Cobrança.">Trabalho em Grupo, Foco, Cobrança.
-            </label><br>
-          </ol>
 
-          <button data-bs-toggle="modal" data-bs-target="#resultados" type="submit" value="Validar" onclick="submitQuiz()" class="btn btn-primary">Validar</button>
-        </form>
-      </div>
-    </section>
+          <input type="radio" id="C-alt" name="Alt-question-3" value="Hierarquia, Projeção, Autonomia.">
+          <label for="Hierarquia, Projeção, Autonomia.">Hierarquia, Projeção, Autonomia.
+          </label><br>
 
-<!-- Botão voltar ao topo da página -->
-<a href="#" class="BTN-global">
-  <i class="bi bi-arrow-up-short"></i>
-</a>
-          
-<!-- Botão ir para próxima página -->
-<a href="/Capitulo2" class="BTN-global">
-Avançar <i class="bi bi-arrow-right-short"></i>
-</a>
-          
-<!-- Botão voltar para a trilha de aprendizagem -->
-<a href="/trilha" class="BTN-global" id="btn-return-trail">
-<i class="bi bi-arrow-return-left"></i> Voltar a Trilha
-</a>
+          <input type="radio" id="D-alt" name="Alt-question-3" value="Trabalho em Grupo, Foco, Cobrança.">
+          <label for="Trabalho em Grupo, Foco, Cobrança.">Trabalho em Grupo, Foco, Cobrança.
+          </label><br>
+        </ol>
 
-<!--Modal para mostrar os resultados-->
-        <!-- Modal -->
-        <div class="modal fade" id="resultados" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="resultados">Resultados</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                </button>
-              </div>
-              <div class="modal-body">
-                Você acertou {{score}} respostas
-              </div>
-              <div class="modal-footer">
+        <button data-bs-toggle="modal" data-bs-target="#resultados" type="submit" value="Validar" onclick="submitQuiz()"
+          class="btn btn-primary">Validar</button>
+      </form>
+    </div>
+  </section>
 
-              </div>
-            </div>
-          </div>
+  <!-- Botão voltar ao topo da página -->
+  <a href="#" class="BTN-global">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Botão ir para próxima página -->
+  <a href="/Capitulo2" class="BTN-global">
+    Avançar <i class="bi bi-arrow-right-short"></i>
+  </a>
+
+  <!-- Botão voltar para a trilha de aprendizagem -->
+  <a href="/trilha" class="BTN-global" id="btn-return-trail">
+    <i class="bi bi-arrow-return-left"></i> Voltar a Trilha
+  </a>
+
+  <!--Modal para mostrar os resultados-->
+  <!-- Modal -->
+  <div class="modal fade" id="resultados" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resultados">Resultados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
         </div>
+        <div class="modal-body">
+          Você acertou {{score}} respostas
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-<!--Os scripts javascripts estão incluídos-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Os scripts javascripts estão incluídos-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--Serve para mostrar o modal-->
-<script>
-  $(document).ready(function() {
+  <!--Serve para mostrar o modal-->
+  <script>
+    $(document).ready(function () {
       // Verifica se existe um score para mostrar, e se o modal deve ser exibido
       var score = "{{ score }}";
       if (score) {
-          var myModal = new bootstrap.Modal(document.getElementById('resultados'));
-          myModal.show();
+        var myModal = new bootstrap.Modal(document.getElementById('resultados'));
+        myModal.show();
       }
-  });
+    });
   </script>
 
-
+</div>
 {% endblock %}
