@@ -17,7 +17,7 @@
 
     <div class="container-content text-center row">
         <div class="TXT-global-container">
-            <p class="TXT-global">
+            <p class="TXT-global text-center">
                 Como se pode acompanhar ao longo dessas instruções, pode-se notar uma necessidade de compreensão do
                 produto para fazer as estimativas corretas.
             </p>
@@ -31,25 +31,25 @@
 
 
         <div class="content-block col-md-8">
-            <p class="TXT-global">
-                Quando utilizamos User Stories, é comum utilizarmos uma outra unidade de medida, ao invés do usual
-                “tempo” utilizado frequentemente em metodologias tradicionais. No caso de User Stories, utilizamos
-                “Story Points”. Isso porque utilizar “horas ou dias” como unidade de medida estima não somente o esforço
-                necessário para a funcionalidade, mas também a velocidade individual dos membros que trabalhem nela.
-            </p>
-
-            <p class="TXT-global">
-                Story Points é uma unidade de medida relativa que leva em consideração o esforço necessário para
-                realizar uma determinada funcionalidade. Se uma funcionalidade requerer o dobro de esforço para ser
-                implementada, ela receberá aproximadamente o dobro de Story Points. Para estimar a quantidade de Story
-                Points de um User Story, o Time de Desenvolvimento o compara com outros já estimados.
-            </p>
-
-            <p class="TXT-global">
-                Caso não haja ainda nada estimado no Product Backlog, o Time de Desenvolvimento localiza o User Story
-                com o menor esforço para o desenvolvimento, e o utiliza como base para comparações. Uma das melhores
-                formas de se estimar Story Points é utilizando o Planning Poker.
-            </p>
+            <div class="TXT-global-container">
+                <p class="TXT-global">
+                    Quando utilizamos User Stories, é comum utilizarmos uma outra unidade de medida, ao invés do usual
+                    “tempo” utilizado frequentemente em metodologias tradicionais. No caso de User Stories, utilizamos
+                    “Story Points”. Isso porque utilizar “horas ou dias” como unidade de medida estima não somente o esforço
+                    necessário para a funcionalidade, mas também a velocidade individual dos membros que trabalhem nela.
+                </p>
+                <p class="TXT-global">
+                    Story Points é uma unidade de medida relativa que leva em consideração o esforço necessário para
+                    realizar uma determinada funcionalidade. Se uma funcionalidade requerer o dobro de esforço para ser
+                    implementada, ela receberá aproximadamente o dobro de Story Points. Para estimar a quantidade de Story
+                    Points de um User Story, o Time de Desenvolvimento o compara com outros já estimados.
+                </p>
+                <p class="TXT-global">
+                    Caso não haja ainda nada estimado no Product Backlog, o Time de Desenvolvimento localiza o User Story
+                    com o menor esforço para o desenvolvimento, e o utiliza como base para comparações. Uma das melhores
+                    formas de se estimar Story Points é utilizando o Planning Poker.
+                </p>
+            </div>
         </div>
 
         <div class="container-content text-center">
@@ -62,27 +62,29 @@
 
         <div class="container-content text-center row">
             <div class="content-block col-md-8">
-                <p class="TXT-global">
-                    O Planning Poker é uma estratégia de construção de estimativas a partir do conhecimento dos membros
-                    do time. A ideia é que sejam capazes de decidir coletivamente e conscientemente quanto esforço cada
-                    uma das tarefas irá demandar e por quanto tempo do time.
-                </p>
-                <p class="TXT-global">
-                    No início do Planning Poker, cada membro do time recebe um conjunto de cartas. Cada carta exibe um
-                    dos valores válidos para a estimativa (0, 1, 2, 3, 5, 8, 13, 20, 40 e 100, por exemplo).
-                </p>
-                <p class="TXT-global">
-                    Em geral, os valores seguem uma escala baseada na sequência Fibonacci - outra sequência pode ser
-                    escolhida, porém Fibonacci é a mais utilizada. Para cada User Story a ser estimado, o Product Owner
-                    lê a descrição e esclarece quaisquer dúvidas que os membros do time tenham. Entretanto, é importante
-                    lembrar que em determinado ponto, qualquer discussão adicional não busca uma precisão maior.
-                </p>
-                <p class="TXT-global">
-                    Após todas as questões serem respondidas, cada membro seleciona uma carta representando sua
-                    estimativa, mas sem mostrar aos outros. As cartas não são mostradas até o momento em que todos,
-                    simultaneamente, exibem seus valores, de forma que todos vejam os valores selecionados
-                    simultaneamente.
-                </p>
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        O Planning Poker é uma estratégia de construção de estimativas a partir do conhecimento dos membros
+                        do time. A ideia é que sejam capazes de decidir coletivamente e conscientemente quanto esforço cada
+                        uma das tarefas irá demandar e por quanto tempo do time.
+                    </p>
+                    <p class="TXT-global">
+                        No início do Planning Poker, cada membro do time recebe um conjunto de cartas. Cada carta exibe um
+                        dos valores válidos para a estimativa (0, 1, 2, 3, 5, 8, 13, 20, 40 e 100, por exemplo).
+                    </p>
+                    <p class="TXT-global">
+                        Em geral, os valores seguem uma escala baseada na sequência Fibonacci - outra sequência pode ser
+                        escolhida, porém Fibonacci é a mais utilizada. Para cada User Story a ser estimado, o Product Owner
+                        lê a descrição e esclarece quaisquer dúvidas que os membros do time tenham. Entretanto, é importante
+                        lembrar que em determinado ponto, qualquer discussão adicional não busca uma precisão maior.
+                    </p>
+                    <p class="TXT-global">
+                        Após todas as questões serem respondidas, cada membro seleciona uma carta representando sua
+                        estimativa, mas sem mostrar aos outros. As cartas não são mostradas até o momento em que todos,
+                        simultaneamente, exibem seus valores, de forma que todos vejam os valores selecionados
+                        simultaneamente.
+                    </p>
+                </div>
             </div>
             <div class="content-block col-md-4">
                 <img src="{{url_for('static' , filename='img/storyset/Estimativa2.svg')}}" alt="imagem poker cartas" class="IMG-global">

@@ -1,15 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
-
-* {
-    font-family: Poppins, sans-serif;
-}
-
-.scrum-img {
-    width: 250px;
-}
-
 .art-img {
-    width: 700px;
+    max-width: 700px;
     align-content: center;
 }
 
@@ -49,10 +39,12 @@ ul {
     max-width: 300px;
     max-height: 450px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
+
+    transition: all 150ms;
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-position: -60px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
