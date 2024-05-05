@@ -1,15 +1,5 @@
-section {
-    margin-top: 70px;
-    margin-bottom: 80px;
-    font-size: 20px;
-}
-
 #scum-method-pana {
     width: 420px;
-}
-
-h2 {
-    text-align: center;
 }
 
 .content {
@@ -31,11 +21,6 @@ h2 {
     color: black;
 }
 
-#solv-prob{
-    display: block;
-    width:30%;
-    margin: 0 auto;
-}
 ul > li{
     text-align: left;
 }

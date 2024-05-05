@@ -7,43 +7,55 @@
 {% block title %} Time Scrum{% endblock %}
 
 {% block pageContent %}
-<div class="container-sm global-container">
-  <section class="container-fluid">
-    <h1 class="title">
-      Time Scrum
-    </h1>
-    <h2 class="title">ST, SM e PO</h2>
 
-    <!--Conteúdo sobre o time de desenvolvimento-->
-    <h2>Time de Desenvolvimento (ST)</h2>
-    <div class="development-team">
-      <img id="open-source-amico" src="{{url_for('static', filename='img/storyset/Open source-amico.svg')}}"
-        alt="Sobre Programação">
-      <p>
-        São todas as pessoas que estão diretamente envolvidas com o desenvolvimento de incrementos à um produto ou à um
-        serviço.
-        Ao final de cada Sprint, o Time de Desenvolvimento entrega um incremento do produto, resultado do que foi
-        produzido durante a Sprint. Este é um dos conceitos principais de Scrum e vai de encontro com a sua natureza
-        empírica, já que permite que o Product Owner perceba o valor do investimento e vislumbre outras possibilidades.
-      </p>
+
+<div class="container-sm global-container">
+  
+    <div class="container-content text-center">
+      <div class="content-block">
+        <h1 class="TITLE-global">
+          Time Scrum
+        </h1>
+      </div>
     </div>
 
-    <!--Conteúdo sobre o Scrum Master-->
-
-
-
-    <h2>Scrum Master (SM)</h2>
+    <!-- Time de Desenvolvimento -->
     <div class="container-content text-center row">
-      <div class="content-block col-md-8">
-        É o servidor do Time de Desenvolvimento. Muitos acreditam, erroneamente, que o Scrum Master é uma espécie de
-        superior hierárquico. No entanto, em um time de Scrum, a função de liderança é diluida devido à autonomia e alta
-        capacidade dos membros da equipe, uma vez que é uma equipe diversa. Dessa forma, a palavra Servidor é mais
-        apropriada. É o papel de quem compreende as demandas e propõe soluções, que procura encontrar ajuda para as
-        dificuldades do time, quem eventualmente precise lidar com algum conflito interno, é quem menos se envolve com o
-        desenvolvimento em si, mas quem mais garante ao time as condições para que ele aconteça. Por isso, a terceira
-        pergunta de uma Daily é: há algum impedimento para realizar suas tarefas hoje? Não é vazio de significado, o
-        papel do Scrum Master é encontrar as soluções para os problemas do Time.
-      </div>
+        <div class="content-block col-md-4">
+            <img id="open-source-amico" src="{{url_for('static', filename='img/storyset/Open source-amico.svg')}}" alt="Sobre Programação" class="IMG-global">
+        </div>
+
+        <div class="content-block col-md-8">
+          <h2 class="SUB-global">
+            Time de Desenvolvimento (ST)
+          </h2>
+
+          <p class="TXT-global">
+            São todas as pessoas que estão diretamente envolvidas com o desenvolvimento de incrementos à um produto ou à um
+          serviço.
+          </p>
+          <p class="TXT-global">        
+            Ao final de cada Sprint, o Time de Desenvolvimento entrega um incremento do produto, resultado do que foi produzido durante a Sprint. Este é um dos conceitos principais de Scrum e vai de encontro com a sua natureza empírica, já que permite que o Product Owner perceba o valor do investimento e vislumbre outras possibilidades.
+          </p>
+        </div>
+    </div>
+
+    <!-- Scrum Master -->
+    <div class="container-content text-center row">
+        <div class="content-block col-md-8">
+            <h2 class="SUB-global">
+              Scrum Master (SM)
+            </h2>
+            
+            <div class="TXT-global-container">
+              <p class="TXT-global">
+                É o servidor do Time de Desenvolvimento. Muitos acreditam, erroneamente, que o Scrum Master é uma espécie de superior hierárquico. No entanto, em um time de Scrum, a função de liderança é diluída devido à autonomia e alta capacidade dos membros da equipe, uma vez que é uma equipe diversa. Dessa forma, a palavra Servidor é mais apropriada. 
+              </p>
+              <p class="TXT-global">
+                É o papel de quem compreende as demandas e propõe soluções, que procura encontrar ajuda para as dificuldades do time, quem eventualmente precise lidar com algum conflito interno, é quem menos se envolve com o desenvolvimento em si, mas quem mais garante ao time as condições para que ele aconteça. Por isso, a terceira pergunta de uma Daily é: há algum impedimento para realizar suas tarefas hoje? Não é vazio de significado, o papel do Scrum Master é encontrar as soluções para os problemas do Time.
+              </p>
+            </div>
+        </div>
 
 
       <div class="content-block col-md-4">
@@ -52,76 +64,56 @@
       </div>
     </div>
 
+    <div class="container-content text-center">
+      <div class="content-block">
+          <p class="TXT-global text-center">
+            A relação entre o Scrum Master e os outros membros do Time Scrum é a de um líder na questão do processo. Embora seja fundamental para as práticas de Scrum do time, ele não exerce papel ativo no desenvolvimento do processo de engenharia do time. Ao invés disso, utiliza técnicas de facilitação e coaching para que os membros do time consigam visualizar os problemas e encontrar a melhor solução. Ele atua de forma a fazer com que o time se desafie constantemente.
+          </p>
+      </div>
+    </div>
+
+    <!-- Product Owner -->
     <div class="container-content text-center row">
       <div class="content-block col-md-4">
-        <img id="research-paper-rafiki" src="{{url_for('static', filename='img/storyset/Research paper-rafiki.svg')}}"
-          alt="Equié de desenvolvimento">
+          <img src="{{url_for('static', filename='img/storyset/Product quality-amico.svg')}}" alt="Aprovação de produto" class="IMG-global">
+      </div>
+
+      <div class="content-block col-md-8">
+        <h2 class="SUB-global">
+          Product Owner (PO)
+        </h2>
+
+        <div class="TXT-global-container">
+          <p class="TXT-global">
+            O Product Owner é um papel fundamental em uma equipe Scrum. Ele é responsável por definir, priorizar e aceitar o trabalho a ser realizado pela equipe de desenvolvimento. O Product Owner trabalha de perto com a equipe e os stakeholders para identificar e organizar as tarefas no Backlog do Produto, que é uma lista priorizada de tarefas a serem concluídas pelo time.
+          </p>
+
+          <p class="TXT-global">
+            O Product Owner deve ter uma visão clara do produto e entender as necessidades e expectativas dos usuários e stakeholders. Ele é responsável por garantir que a equipe esteja trabalhando nas tarefas que oferecem o máximo valor para o negócio.
+          </p>
+
+          <p class="TXT-global">
+            Além disso, o Product Owner é responsável por tomar decisões sobre o que será construído e em que ordem, com base em seu entendimento das necessidades do usuário, do mercado e do negócio. Ele também aceita ou rejeita o trabalho da equipe de desenvolvimento com base em critérios de aceitação predefinidos.
+          </p>
+
+        </div>
+
       </div>
     </div>
 
-    <div class="container-content text-center row">
-      <div class="content-block col-md">
-        A relação entre o Scrum Master e os outros membros do Time Scrum é o de um líder na questão do processo - embora
-        seja fundamental para as práticas de Scrum do time, ele não exerce papel ativo no desenvolvimento do processo de
-        engenharia do time. Ao invés disso, ele utiliza técnicas de facilitação e coaching para que os membros do time
-        consigam visualizar os problemas e encontrem a melhor solução. Ele atua de forma a fazer com que o time se
-        desafie constantemente.
-      </div>
-
-
-      <div class="content-block col-md">
-        Além disso, ele trabalha com os membros do time para que cada um consiga ser o mais eficiente possível, sempre
-        de acordo com os valores e princípios da metodologia Ágil e Scrum. Durante os eventos, o Scrum Master tem a
-        responsabilidade de fazer com que a reunião flua de forma adequada, utilizando técnicas de facilitação, embora
-        não seja o responsável por conduzi-las. Como os eventos têm duração fixa, é de extrema importância que situações
-        em que haja divergências sejam rapidamente resolvidas. Para o restante da organização, o Scrum Master servirá
-        como interface e especialista em Scrum.
-      </div>
+  <div class="container-content d-flex justify-content-center flex-wrap">
+    <div class="content-block">
+        <a href="#" class="BTN-global">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
     </div>
 
-
-    <div class="container-content text-center row">
-
-
-      <div class="content-block col-md">
-        <img id="good-team-pana" src="{{url_for('static', filename='img/storyset/Good team-pana.svg')}}"
-          alt="Boas ideias em conjunto">
-      </div>
+    <div class="content-block">
+        <a href="/Conceitos" class="BTN-global">
+            Avançar <i class="bi bi-arrow-right-short"></i>
+        </a>
     </div>
+  </div>
 
-    <!--Conteúdo sobre o Product Owner-->
-    <h2>Product Owner (PO)</h2>
-    <div class="po-content">
-      <img id="product-quality-amico" src="{{url_for('static', filename='img/storyset/Product quality-amico.svg')}}"
-        alt="Aprovação de produto">
-        <p class="TXT-global">
-          O Product Owner é um papel fundamental em uma equipe Scrum. Ele é responsável por definir, priorizar e aceitar o trabalho a ser realizado pela equipe de desenvolvimento. O Product Owner trabalha de perto com a equipe e os stakeholders para identificar e organizar as tarefas no Backlog do Produto, que é uma lista priorizada de tarefas a serem concluídas pelo time.
-        </p>
-        <p class="TXT-global">
-          O Product Owner deve ter uma visão clara do produto e entender as necessidades e expectativas dos usuários e stakeholders. Ele é responsável por garantir que a equipe esteja trabalhando nas tarefas que oferecem o máximo valor para o negócio.
-
-
-        </p>
-        <p class="TXT-global">
-          Além disso, o Product Owner é responsável por tomar decisões sobre o que será construído e em que ordem, com base em seu entendimento das necessidades do usuário, do mercado e do negócio. Ele também aceita ou rejeita o trabalho da equipe de desenvolvimento com base em critérios de aceitação predefinidos.
-        </p>
-      </div>
-  </section>
-
-
-  <!-- Botão voltar ao topo da página -->
-  <a href="#" class="BTN-global">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-
-  <!-- Botão ir para próxima página -->
-  <a href="/Conceitos" class="BTN-global">
-    Avançar <i class="bi bi-arrow-right-short"></i>
-  </a>
-
-  <!-- Botão voltar para a trilha de aprendizagem -->
-  <a href="/trilha" class="BTN-global" id="btn-return-trail">
-    <i class="bi bi-arrow-return-left"></i> Voltar a Trilha
-  </a>
 </div>
 {% endblock %}

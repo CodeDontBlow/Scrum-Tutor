@@ -22,8 +22,6 @@ body {
     font-size: 30px;
     text-align: center;
     margin-bottom: 30px;
-    margin-top: 20px;
-    color: white;
 }
 
 .subtitle {
@@ -45,11 +43,10 @@ body {
 
 /* hover dos botões azuis */
 .btn:hover {
-
+    background-color: #4141DD;
     transform: scale(1.1);
     background-position: -60px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: 0.1s;
 }
 
 
@@ -136,12 +133,14 @@ nav.navbar button.navbar-toggler:focus {
 footer#CDBfooter>div.CDBfooter-top {
     background-color: #020234;
     padding: 10px;
+
     color: white;
 }
 
 /* Logo CodeDontBlow */
 div.CDBfooter-top>div .CDBfooter-logo img {
     width: 200px;
+
     user-select: none;
     transition: opacity 200ms;
 }
@@ -157,6 +156,7 @@ div.CDBfooter-top>div.CDBfooter-message h5 {
 div.CDBfooter-top>div.CDBfooter-github .bi-github {
     color: white;
     font-size: 2.5rem;
+
     transition: opacity 200ms;
 }
 
@@ -404,8 +404,9 @@ div.CDBfooter-bottom div.CDBfooter-BTcontainer>div.CDBfooter-cdb a {
 
 /* Estilização das Imagens */
     .IMG-global{
-        max-width: 100%;
-        margin-bottom: 50px;
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 40px;
     }
 
 
