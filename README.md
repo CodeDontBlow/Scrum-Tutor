@@ -73,7 +73,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 
 
 ## 🔰 Sprint 2
-🖥️ Assista ao vídeo do nosso site
+🖥️ Assista ao vídeo do nosso site <br/>
 [![Watch the video](https://img.youtube.com/vi/EQWc5rAp7w4/0.jpg)](https://www.youtube.com/watch?v=EQWc5rAp7w4)
 
 ## Tecnologias
