@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{url_for('static', filename='style/pilares-scrum.css')}}">
 {% endblock %}
 
-{% block title %} Capitulo 2{% endblock %}
+{% block pageTitle %} Pilares Scrum {% endblock %}
 
 {% block pageContent %}
 
@@ -119,13 +119,14 @@
 
         </div>
     </div>
+
     
     <div class="container-content text-center">
-      <div class="content-block">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="/static/video/SCRUMCAP1.mp4"></iframe>
+        <div class="content-block">
+            <video class="VID-global" controls>
+                <source src="/static/video/SCRUMCAP1.mp4" type="video/mp4">
+            </video>
         </div>
-      </div>
     </div>
 
 
