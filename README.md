@@ -41,8 +41,10 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
   </tr>
 </table>
 
-## 📑 Back Log do produto
+## 📑 BackLog 
 Você pode visualizar a planilha no Google Planilhas clicando [aqui](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjRgqvYZv0bv0nnhDIQUGqU_bEFrsYi1pcQFEnWeyEQrnkYsmPLVW-WnNNP2OMefQktS1XxQl3euOB/pubhtml).
+<img src="/assets/backlogSP1">
+
 
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
