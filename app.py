@@ -105,9 +105,9 @@ def DoR_DoD():
 def estimativa():
     return render_template("Modulo-1/Capitulos/Capitulo-3/Estimativas.html")
 
-@app.route('/apagar')
-def apagar():
-    return render_template('apagar.html')
+@app.route("/Exame final")
+def examefinal():
+    return render_template("/Modulo-3/examefinal.html")
 
 # == == == =
 
