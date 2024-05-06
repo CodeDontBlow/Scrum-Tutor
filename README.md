@@ -42,12 +42,21 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 </table>
 
 ## Back Log do produto
-<img src="assets/backlogSP1.jpg">
-<img src="assets/backlogSP2.jpg">
+<img height="80%" width="80%" src="/assets/Backlog_Produto.jpg">
 
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
-## Requisitos
+## Backlog Sprint 1
+<img height="80%" width="80%" src="/assets/Backlog_PrimeiraSprint.jpg.jpg">
+
+## 🔰 Sprint 2
+## Backlog Sprint 2
+  <img height="80%" width="80%" src="/assets/Backlog_SegundaSprint1.jpg">
+  <img height="80%" width="80%" src="/assets/Backlog_SegundaSprint2.jpg">
+
+## Vídeo da navegação do incremento
+clique no ícone para acessar o vídeo no youtube
+[ <img height="20%" width="20%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/2560px-YouTube_full-color_icon_(2017).svg.png"> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
 
 ## Tecnologias
 <ul>
@@ -68,15 +77,11 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 
 <br>
 
-|Nome|Função|GitHub|Linkedin|
-| -------- |-------- |-------- |-------- |
-|**Felipe Chagas**|Product Owner|[@GitHub](https://github.com/juliagonzalezmoreira)|[@Linkedin](http://linkedin.com/in/julia-gonzalez-moreira)
-|**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)|[@Linkedin](https://www.linkedin.com/in/luana-souza-b104801b2/)
-|**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)|[@Linkedin](https://www.linkedin.com/in/ygorrpereira/)
-|**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)|[@Linkedin](https://www.linkedin.com/in/sofiamatoslessa/)
-|**Leonardo Cristiano**|Desenvolvedor|[@GitHub](https://github.com/Leonardo-dSouza)|[@Linkedin](https://www.linkedin.com/in/ana-luisa-andrade-4a695526b)
-|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)|[@Linkedin](https://www.linkedin.com/in/henrique-silva-9737bb237/)
-|**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)|[@Linkedin](https://www.linkedin.com/in/gustavo-sena-577045232)
-|**Pablo Rafael**|Desenvolvedor|[@GitHub](https://github.com/Rafa0709)|[@Linkedin](https://www.linkedin.com/in/pablo-rafael-silva-9ab4771ba/)
-
-</br>
+|Nome|Função|GitHub|
+| -------- |-------- |-------- 
+|**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)
+|**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)
+|**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)
+|**Leonardo Cristiano**|Product Owner|[@GitHub](https://github.com/Leonardo-dSouza)
+|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)
+|**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)
