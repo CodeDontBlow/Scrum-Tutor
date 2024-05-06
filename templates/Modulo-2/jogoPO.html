@@ -1,33 +1,37 @@
 {% extends 'base.html' %}
 
 {% block pageCss %}
+
 <link rel="stylesheet" href="{{url_for('static', filename='style/jogopo.css')}}"> {% endblock %}
 
 {% block pageTitle%}
 {% endblock %}
 
 {% block pageContent %}
-<h1 class="title">Jogo Product Owner</h1>
-<section class="bg-chat d-flex">
+<div class="container-sm global-container">
+    <div class="container-content text-center">
+        <div class="content-block">
+            <h1 class="TITLE-global"> Jogo Product Owner</h1>
+        </div>
+    </div>
+</div>
+<section class="container-sm global-container d-flex bg-chat">
+  
     <div class="left-side">
-        <div class="cliente">
-            <div class="container-content row">
+            <div class="container-sm d-flex cliente">
                 <!-- aqui dentro vai o icone do cliente e sua fala  -->
                 <!-- Elemento 1 -->
-                <div class="d-flex justify-content-center">
                     <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
                         alt="img">
                     <div class="balao2">
                         <p class="TXT-global"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla fugiat doloremque beatae eum mollitia sapiente quidem molestiae aut quo neque repudiandae, aperiam tempore, sit illo atque similique suscipit vitae!
                     </div>
-                </div>
             </div>
-        </div>
         <br>
 
-        <div class="cards-buttons">
+        <div class="container-sm global-container cards-buttons">
             <!-- aqui dentro vão os cards em display flex column -->
-            <h1 class="subtitle"> Qual a melhor resposta?</h1>
+            <h1 class="SUB-global"> Qual a melhor resposta?</h1>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Requisito 1</h5>
@@ -52,26 +56,27 @@
 
     </div>
 
-    <div class="task-list">
-        <div class="subtitle">Task-List</div>
-        <p class="list">
+    <div class="container-sm global-container task-list">
+        <h1 class="SUB-global">Task-List</h1>
+        <p class="TEXT-global">
             Requisito 1
         </p>
         <hr>
-        <p class="list">
+        <p class="TEXT-global">
             Requisito 2
         </p>
         <hr>
-        <p class="list">
+        <p class="TEXT-global">
             Requisito 3
         </p>
         <hr>
-        <p class="list">
+        <p class="TEXT-global">
             Requisito 4
         </p>
         <hr>
-        <button type="button" class="validar btn btn-success">Validar <i class="bi bi-check"></i></button>
+        <button type="button" class="validar">Validar <i class="bi bi-check"></i></button>
     </div>
+
 </section>
 
 
