@@ -41,14 +41,12 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
   </tr>
 </table>
 
-<<<<<<< HEAD
 ## BackLog do produto
 =======
 ## 📑 Back Log do produto
->>>>>>> eae5874413ab4f3224ed16af1b52af7bf0d8c123
 
 <a href="https://manager.2pdf.com/apps/storage/files/11156412/result/DOC-20240505-WA0013_c%C3%B3pia.png"> Link do Backlog do produto </a>
-<a href="https://manager.2pdf.com/apps/storage/files/11156406/result/Sprint2_c%C3%B3pia.png""> Link do Backlog da Sprint </a>
+<a href="https://manager.2pdf.com/apps/storage/files/11156406/result/Sprint2_c%C3%B3pia.png"> Link do Backlog da Sprint </a>
 
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
