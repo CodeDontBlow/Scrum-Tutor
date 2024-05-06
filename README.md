@@ -42,7 +42,6 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 </table>
 
 ## 📑 BackLog 
-Você pode visualizar a planilha no Google Planilhas clicando [aqui](https://docs.google.com/spreadsheets/d/e/2PACX-1vTjRgqvYZv0bv0nnhDIQUGqU_bEFrsYi1pcQFEnWeyEQrnkYsmPLVW-WnNNP2OMefQktS1XxQl3euOB/pubhtml).
 <img src="assets/backlogSP1.jpg">
 
 <img src="assets/backlogSP2.jpg">
