@@ -1,22 +1,19 @@
 {% extends 'base.html' %}
 
-{% block pageCss %}
-<link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
+{% block pageCss %} {% endblock %}
 
-{% endblock %}
+{% block pageTitle %} Exame final {% endblock %}
 
-{% block pageTitle %} Exame Final {% endblock %}
-
-{% block pageContent %}
+{% block pageContent %} 
     <!-- Quiz -->
-    <h1>Quiz de conhecimento Definições e Origem</h1>
-
+<div class="container-sm global-container">
     <div id="Forms">
-        <h2>Forms de teste</h2>
+        
+        <h2 class="text-center">Exame final</h2>
     
         <form action="/submit_quiz_final" method="POST">
             <p>
-                Na Seção 1: "Definições e Origem", você aprendeu sobre alguns dos elementos básicos do Scrum. Agora, demonstre sua compreensão e conhecimento respondendo às dez seguintes questões. Ao clicar no botão "Validar", sua nota aparecerá na tela junto com os erros e acertos. Lembre-se, essa nota não determinará sua aprovação ou reprovação no curso. Boa sorte!
+                Preparado para demonstrar todo o conhecimento adquirido ao longo deste curso? Este exame final oferece a oportunidade de mostrar sua compreensão e habilidades! Encare-o como um desafio gratificante, onde cada resposta reflete sua dedicação e preparação. Boa sorte!
             </p>
             <hr/>
     
@@ -29,9 +26,10 @@
             <label for="As cerimônias são eventos sociais, são importantes porque precisam ser comemoradas">As cerimônias são eventos sociais, são importantes porque precisam ser comemoradas.</label><br>
     
     
-            <input type="radio" id="B-alt" name="Alt-question-1" value="As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral">
-            <label for="As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral">
-            As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral.</label><br>
+            <input type="radio" id="B-alt" name="Alt-question-1" value="As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral
+            ">
+            <label for="As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral
+            ">As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral.</label><br>
     
             <input type="radio" id="C-alt" name="Alt-question-1" value="As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto">
             <label for="As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto">As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto.</label><br>
@@ -129,17 +127,18 @@
             </p>
     
             
-            <input type="radio" id="A-alt" name="Alt-question-6" value="Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades">
+            <input type="radio" id="A-alt" name="Alt-question-5" value="Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades">
             <label for="Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades">Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades.</label><br>
     
     
-            <input type="radio" id="B-alt" name="Alt-question-6" value="Tomar decisões finais sobre as funcionalidades a serem desenvolvidas">
+            <input type="radio" id="B-alt" name="Alt-question-5" value="Tomar decisões finais sobre as funcionalidades a serem desenvolvidas
+            ">
             <label for="Tomar decisões finais sobre as funcionalidades a serem desenvolvidas">Tomar decisões finais sobre as funcionalidades a serem desenvolvidas.</label><br>
     
-            <input type="radio" id="C-alt" name="Alt-question-6" value="Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade">
+            <input type="radio" id="C-alt" name="Alt-question-5" value="Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade">
             <label for="Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade">Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade.</label><br>
     
-            <input type="radio" id="D-alt" name="Alt-question-6" value="Encarregado de gerenciar os conflitos dentro da equipe">
+            <input type="radio" id="D-alt" name="Alt-question-5" value="Encarregado de gerenciar os conflitos dentro da equipe">
             <label for="Encarregado de gerenciar os conflitos dentro da equipe">Encarregado de gerenciar os conflitos dentro da equipe.</label><br>
             
             <hr/>
@@ -149,18 +148,18 @@
             </p>
     
             
-            <input type="radio" id="A-alt" name="Alt-question-7" value="O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante">
+            <input type="radio" id="A-alt" name="Alt-question-5" value="O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante">
             <label for="O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante">O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante.</label><br>
     
     
-            <input type="radio" id="B-alt" name="Alt-question-7" value="O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas
+            <input type="radio" id="B-alt" name="Alt-question-5" value="O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas
             ">
             <label for="O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas">O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas.</label><br>
     
-            <input type="radio" id="C-alt" name="Alt-question-7" value="O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories">
+            <input type="radio" id="C-alt" name="Alt-question-5" value="O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories">
             <label for="O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories">O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories.</label><br>
     
-            <input type="radio" id="D-alt" name="Alt-question-7" value="O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo">
+            <input type="radio" id="D-alt" name="Alt-question-5" value="O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo">
             <label for="O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo">O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo.</label><br>
             
             <hr/>
@@ -171,17 +170,17 @@
             </p>
     
             
-            <input type="radio" id="A-alt" name="Alt-question-8" value="O que você gostou de fazer no projeto? Está com alguma dificuldade?">
+            <input type="radio" id="A-alt" name="Alt-question-5" value="O que você gostou de fazer no projeto? Está com alguma dificuldade?">
             <label for="O que você gostou de fazer no projeto? Está com alguma dificuldade?">O que você gostou de fazer no projeto? Está com alguma dificuldade?</label><br>
     
     
-            <input type="radio" id="B-alt" name="Alt-question-8" value="Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?">
+            <input type="radio" id="B-alt" name="Alt-question-5" value="Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?">
             <label for="Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?">Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?</label><br>
     
-            <input type="radio" id="C-alt" name="Alt-question-8" value="O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?">
+            <input type="radio" id="C-alt" name="Alt-question-5" value="O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?">
             <label for="O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?">O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?</label><br>
     
-            <input type="radio" id="D-alt" name="Alt-question-8" value="O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?">
+            <input type="radio" id="D-alt" name="Alt-question-5" value="O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?">
             <label for="O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?">O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?</label><br>
             
             <hr/>
@@ -189,16 +188,16 @@
                 Pergunta 9: Qual o formato de uma User Story?
             </p>
     
-            <input type="radio" id="A-alt" name="Alt-question-9" value="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt">
-            <label for="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para &lt motivo que remeta um valor ao negócio &gt </label><br>
+            
+            <label for="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para &lt motivo que remeta um valor ao negócio &gt">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para &lt motivo que remeta um valor ao negócio &gt </label><br>
 
-            <input type="radio" id="B-alt" name="Alt-question-9" value="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt">
+            <input type="radio" id="B-alt" name="Alt-question-5" value="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt">
             <label for="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt </label><br>
     
-            <input type="radio" id="C-alt" name="Alt-question-9" value="Como &lt tipo de usuário> necessito de &lt produto final>">
+            <input type="radio" id="C-alt" name="Alt-question-5" value="Como &lt tipo de usuário> necessito de &lt produto final>">
             <label for="Como &lt tipo de usuário &gt necessito de &lt produto final &gt">Como &lt tipo de usuário &gt necessito de &lt produto final &gt &lt produto &gt </label><br>
     
-            <input type="radio" id="D-alt" name="Alt-question-9" value="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt">
+            <input type="radio" id="D-alt" name="Alt-question-5" value="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt">
             <label for="Como &lt tipo de usuário &gt quero &lt funcionalidade desejada>">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt &lt funcionalidade> </label><br>
             
             <hr/>
@@ -208,26 +207,23 @@
             </p>
     
             
-            <input type="radio" id="A-alt" name="Alt-question-10" value="Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos">
+            <input type="radio" id="A-alt" name="Alt-question-5" value="Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos">
             <label for="Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos">Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos</label><br>
     
     
-            <input type="radio" id="B-alt" name="Alt-question-10" value="Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva">
+            <input type="radio" id="B-alt" name="Alt-question-5" value="Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva">
             <label for="Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva">Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva</label><br>
     
-            <input type="radio" id="C-alt" name="Alt-question-10" value="Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva">
+            <input type="radio" id="C-alt" name="Alt-question-5" value="Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva">
             <label for="Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva">Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva</label><br>
     
-            <input type="radio" id="D-alt" name="Alt-question-10" value="Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva">
+            <input type="radio" id="D-alt" name="Alt-question-5" value="Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva">
             <label for="Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva">Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva</label><br>
             
             <hr/>
     
             <input type="submit" value="Validar"/>
         </form>
-
-
-
 
     <!-- Modal -->
     <div class="modal" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
@@ -237,62 +233,24 @@
                     <h5 class="modal-title">Resultado do Quiz</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Você acertou {{ score }} questões.</p>
+                    <p>Você acertou {{correct_answers }} questões.</p>
+                    <p>Você errou {{incorrect_answers }} questões.</p>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
-  </div>
     
     </div>
-    
-
-  <!--Modal para mostrar os resultados-->
-  <!-- Modal -->
-  <div class="modal fade" id="resultados" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="resultados">Resultados</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          </button>
-        </div>
-        <div class="modal-body">
-          Você acertou {{score}} respostas
-        </div>
-        <div class="modal-footer">
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!--Os scripts javascripts estão incluídos-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!--Serve para mostrar o modal-->
-  <script>
-    $(document).ready(function () {
-      // Verifica se existe um score para mostrar, e se o modal deve ser exibido
-      var score = "{{ score }}";
-      if (score) {
-        var myModal = new bootstrap.Modal(document.getElementById('resultados'));
-        myModal.show();
-      }
-    });
-  </script>
-
 </div>
+
+    {% if modal_show %}
+    <script>
+      $(document).ready(function(){
+        $('#resultModal').modal('show');
+      });
+    </script>
+    {% endif %}
+
 {% endblock %}
