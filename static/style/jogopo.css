@@ -1,0 +1,160 @@
+.bg-chat {
+    background-color: #1D1D7C;
+    border-radius: 0 50px;
+    padding: 30px;
+    border: ridge 5px rgba(81, 7, 255, 0.233);
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+}
+
+hr {
+    margin: 0 5px;
+}
+
+.scrum-img {
+    width: 180px;
+    margin-right: 20px;
+}
+
+.list {
+    margin: 20px 0;
+}
+
+.cliente {
+    gap: 10px;
+}
+
+.left-side {
+    width: 65%;
+}
+
+.task-list {
+    background-color: #2D2DA8;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    width: 25%;
+    border: none;
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+    height: 60%;
+    padding: 0;
+}
+
+.TITLE-global {
+    margin-bottom: 10px;
+}
+
+.SUB-global{
+    text-align: center;
+    text-indent: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.task-list .SUB-global {
+    background-color: #020234;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.task-list .TEXT-global {
+    margin-top: 15px;
+}
+
+.validar {
+    background-color: #2E8F2C;
+    width: 50%;
+    height: 50px;
+    margin: 50% auto;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
+}
+
+.validar:hover {
+    background-color: #379e35;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.balao2{
+    background: #2D2DA8;
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    margin-top: 25px;
+}
+.balao2:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #2D2DA8;
+    left: -20px; 
+    top: 25%;
+}
+
+.card {
+    background-color: #020234;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    max-height: 400px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.card-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px){
+    .bg-chat{
+        width: 80%;
+        flex-direction: column;
+    }
+    .left-side {
+        width: 100%;
+    }
+
+    .cards-buttons {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .task-list {
+        width: 80%;
+    }
+}

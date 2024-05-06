@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+
+    <!-- CSS do Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- CSS Global do Projeto -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
+    
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="{{url_for('static', filename='normalize.css/normalize.css')}}">
+    
+
+    <!-- Para adicionar mais arquivos CSS na sua página -->
+    {% block pageCss %} {% endblock %}
+
+    <title> {% block pageTitle%} {% endblock %}</title>
+    
+</head>
+<body>
+
+    <!-- .:: NAVBAR ::. -->
+    <nav class="navbar navbar-expand-lg">
+        
+        <div class="container-sm d-flex justify-content-between">
+
+            <!-- Logo ScrumTutor -->
+            <a class="navbar-brand" href="/">
+                <img src="{{url_for('static' , filename='/img/logos/STlogo.png')}}" class="NAVbtn alt="Logo do Site ScrumTutor">
+            </a>
+          
+            <!-- Botão p/ telas menores -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list NAVbtn"></i>
+            </button>
+
+            <!-- Itens da Navbar (Links) -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/scrumintroducion">Introdução ao Scrum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/trilha">Trilhas de Aprendizagem</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Games Interativos</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre Nós</a>
+                </li>
+                </ul>
+            </div>
+
+            <!-- Botão p/ Homepage -->
+            <div class="NAVbtn-home collapse navbar-collapse">
+                <a href="/">
+                <i class="bi bi-house-door-fill NAVbtn"></i>
+                </a>
+            </div>
+            
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Bloco para o Conteúdo da Página -->
+    {% block pageContent %} {% endblock %}
+
+
+
+
+
+    <!-- .:: FOOTER ::. -->
+    <footer class="container-fluid p-0" id="CDBfooter">
+
+        <!-- Parte de Cima -->
+        <div class="CDBfooter-top 
+        d-flex flex-column align-items-center pt-md-5 pt-4 pb-2">
+
+            <!-- Logo CodeDontBlow -->
+            <div class="CDBfooter-logo">
+                <img src="{{url_for('static' , filename='img/logos/CDBlogo.png')}}" alt="Logotipo da marca Code Don't Blow">
+            </div>
+
+            <!-- Slogan CDB -->
+            <div class="CDBfooter-message
+            pt-4 pb-2">
+                <h5>Code Don't Blow: Cortando o Pavio dos seus Problemas!</h5>
+            </div>
+
+            <!-- Botão p/ Github -->
+            <div class="CDBfooter-github">
+                <a href="https://github.com/CodeDontBlow/Scrum-Tutor" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Parte de Baixo -->
+        <div class="CDBfooter-bottom 
+        d-flex gap-3 justify-content-between">
+
+            <div class="CDBfooter-BTcontainer
+            d-flex">
+                <div class="CDBfooter-copyright">
+                    <p>Copyright &#169; 2024</p>
+                </div>
+
+                <div class="CDBfooter-cdb">
+                    <a href="https://github.com/CodeDontBlow" target="_blank">CodeDon'tBlow</a>
+                </div>
+            </div>
+
+            <div class="CDBfooter-BTcontainer
+            d-flex">
+                <div class="CDBfooter-home">
+                    <a href="/">Homepage</a>
+                </div>
+
+                <div class="CDBfooter-sqobreNos">
+                    <a href="/sobre">Sobre Nós</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript do Boostrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Script necessário para conteúdo expansivo -->
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        const popover = new bootstrap.Popover('.popover-dismiss', {
+        trigger: 'mouseover'
+        })
+    </script>
+        
+</body>
+</html>

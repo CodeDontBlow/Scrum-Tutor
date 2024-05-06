@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    font-family: Poppins, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2rem;
+    padding: 0 20px;
+}
+
+/* hover dos botões azuis */
+.btn:hover {
+    background-color: #4141DD;
+    transform: scale(1.1);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+
+/* .:: CONFIGURAÇÕES NAVBAR ::. */
+
+
+
+nav.navbar {
+    background-color: #020234;
+    padding: 7px;
+}
+
+/* Logo ScrumTutor */
+nav.navbar a.navbar-brand>img {
+    width: 95px;
+
+    user-select: none;
+}
+
+/* Botões Navbar */
+nav.navbar .NAVbtn,
+nav.navbar a.nav-link {
+    color: white;
+
+    opacity: 100%;
+
+    transition: opacity 200ms;
+}
+
+nav.navbar .NAVbtn:hover,
+nav.navbar a.nav-link:hover {
+    opacity: 70%;
+}
+
+nav.navbar .NAVbtn:active,
+nav.navbar a.nav-link:active {
+    opacity: 90%;
+}
+
+
+nav.navbar div.NAVbtn-home i.bi {
+    padding: 7px;
+
+    color: white;
+    font-size: 1.3em;
+}
+
+nav.navbar .navbar-collapse {
+    flex-grow: 0;
+    text-align: center;
+}
+
+nav.navbar button.navbar-toggler i.bi {
+    color: white;
+    font-size: 1.8rem;
+}
+
+nav.navbar button.navbar-toggler:focus {
+    box-shadow: none;
+    border: 0;
+}
+
+/* Responsividade */
+@media(max-width: 500px) {
+    a.navbar-brand>img {
+        width: 60px !important;
+    }
+
+    nav.navbar a.nav-link {
+        font-size: .8rem;
+    }
+}
+
+
+
+/* .:: CONFIGURAÇÕES FOOTER ::. */
+
+
+/* Parte de Cima do Footer */
+footer#CDBfooter *{
+    transition: all 200ms;
+}
+
+footer#CDBfooter>div.CDBfooter-top {
+    background-color: #020234;
+    padding: 10px;
+
+    color: white;
+}
+
+/* Logo CodeDontBlow */
+
+div.CDBfooter-top>div .CDBfooter-logo img {
+    width: 200px;
+
+    user-select: none;
+}
+
+/* Slogan CDB */
+div.CDBfooter-top>div.CDBfooter-message h5 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Botão Github */
+div.CDBfooter-top>div.CDBfooter-github .bi-github {
+    color: white;
+    font-size: 2.5rem;
+
+    transition: opacity 200ms;
+}
+
+div.CDBfooter-top>div.CDBfooter-github:hover{
+    opacity: 80%;
+    transform: scale(1.05);
+}
+
+/* Parte de Baixo do Footer */
+#CDBfooter {
+    position: absolute;
+}
+
+footer#CDBfooter>div.CDBfooter-bottom {
+    background-color: black;
+}
+
+/* Container dos Links */
+div.CDBfooter-bottom div.CDBfooter-BTcontainer {
+    padding: 15px;
+    gap: 10px;
+}
+
+/* Conteúdo da Parte de Baixo */
+div.CDBfooter-bottom div.CDBfooter-BTcontainer * {
+    padding: 3px;
+
+    display: inline;
+
+    color: white;
+    font-size: .85rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+div.CDBfooter-bottom div.CDBfooter-BTcontainer a:hover {
+    text-decoration: underline;
+}
+
+/* Link especial (azul) */
+div.CDBfooter-bottom div.CDBfooter-BTcontainer>div.CDBfooter-cdb a {
+    color: #92A3FF;
+}
+
+
+/* Responsividade */
+@media (max-width: 500px) {
+
+    div.CDBfooter-top>.CDBfooter-logo img {
+        width: 110px;
+    }
+
+    div.CDBfooter-top>div.CDBfooter-message h5 {
+        font-size: .75rem;
+        font-weight: 300;
+    }
+
+    div.CDBfooter-top>div.CDBfooter-github .bi-github {
+        color: white;
+        font-size: 1.55rem;
+    }
+
+    .CDBfooter-BTcontainer {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .CDBfooter-BTcontainer > * {
+        font-size: .45rem;
+        font-weight: 300;
+    }
+
+    div.CDBfooter-BTcontainer a {
+        padding: 1px;
+    }
+
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer {
+        padding: 15px 10px;
+        gap: 5px;
+    }
+    
+    div.CDBfooter-bottom div.CDBfooter-BTcontainer * {
+        padding: 3px;
+
+        font-size: .6rem;
+    }
+
+}
+
+
+
+/* .:: BASE P/ PADRONIZAÇÃO ::. */
+
+/* Espaçamento da Navbar e do Footer */
+.global-container{
+    margin: 40px auto;
+}
+
+/* Margem entre as linhas de conteúdo */
+/* cada linha possui essa classe:  */
+    .container-content{
+        margin: 5px auto;
+    }
+
+/* Espaçametno interno dos blocos de conteúdo */
+/* todo bloco de conteúdo tem essa tag:  */
+    .content-block{
+        padding: 10px 15px;
+
+        color: white;
+    }
+
+
+/* .:: ESTILIZAÇÃO DOS ELEMENTOS ::. */
+
+    .TITLE-global{
+        margin: 5px 0 25px;
+
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+    .SUB-global{
+        margin-bottom: 15px;
+        
+        font-size: 1.35rem;
+        font-weight: 500;
+        text-indent: 30px;
+        text-align: start;
+    }
+
+    .TXT-global-container{
+        margin-bottom: 30px;
+        text-indent: 10px;
+    }
+
+    .TXT-global , .LIST-global li{
+        margin-bottom: 7px;
+
+        font-size: .95rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    @media(max-width: 600px){
+        
+        .TITLE-global{
+            font-size: 1.6rem;
+        }
+
+        .SUB-global{
+            font-size: 1.2rem;
+        }
+
+        .TXT-global , .LIST-global li{
+            font-size: .85rem;
+        }
+    }
+    
+/* Estilização dos Botões */
+    .BTN-global{
+        background-color: #4141DD;
+        width: max-content;
+        margin: 5px 0;
+        padding: 10px 25px;
+        
+        display: inline-block;
+
+        color: white;
+        font-size: .9rem;
+        text-decoration: none;
+
+        border-radius: 20px;
+        box-shadow: 0 4px rgba(0, 0, 0, 0.8);
+
+        transition: all 100ms;
+    }
+
+        .BTN-global:hover{        
+            opacity: 80%;
+            padding: 11px 26px;
+            
+            box-shadow: 0 4px 0 1px rgba(0, 0, 0, 0.8);
+        }
+
+        .BTN-global:active{        
+            opacity: 95%;
+        }
+
+    
+    .BTN-global .bi{
+        font-size: 1.1rem;
+
+        color: currentColor;
+    }
+
+    #btn-return-trail{
+        padding: 15px 25px;
+    }
+
+    #btn-return-trail .bi{
+        font-size: .85rem;
+    }
+
+        #btn-return-trail:hover{
+            padding: 16px 26px;
+        }
+
+        #btn-return-trail:active{
+            background-color: rgba(255, 255, 255, 0.8);
+
+            color: #4141DD;
+            font-weight: 500;
+            border: 2px solid currentColor;
+        }
+
+@media(max-width: 600px) {
+
+    .BTN-global{
+        margin: 3px 0;
+        padding: 5px 15px;
+
+        font-size: .7rem;
+
+        box-shadow: 0 2px rgba(0, 0, 0, 0.8);
+    }
+
+        .BTN-global:hover{        
+            padding: 6px 16px;
+            box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.8);
+        }
+
+    .BTN-global .bi{
+        font-size: .9rem;
+    }
+
+    #btn-return-trail{
+        padding: 10px 20px;
+    }
+
+    #btn-return-trail .bi{
+        font-size: .7rem;
+    }
+
+        #btn-return-trail:hover{
+            padding: 11px 21px;
+        }
+}
+
+
+/* Estilização das Imagens e Vídeos */
+    .IMG-global{
+        width: 100%;
+        max-width: 450px;
+        margin-bottom: 40px;
+    }
+    
+    .VID-global{
+        width: 100%;
+        max-width: 550px;
+        margin-bottom: 25px;
+
+        border-radius: 15px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+/* Estilização do Pop Up */
+    .POP-global , .POP-global .bi{
+        color: #2E8F2C;
+        font-weight: 700;
+    }
+
+    .custom-popover{
+        --bs-popover-max-width: 270px;
+        --bs-popover-border-color: #2E8F2C;
+        --bs-popover-header-bg: #2E8F2C;
+        --bs-popover-header-color: white;
+        --bs-popover-body-padding-x: .7rem;
+        --bs-popover-body-padding-y: .5rem;
+
+        font-size: .85rem;
+        line-height: 19px;
+    }
+
+
+
+/* Estilização da Lista */
+    .LIST-global{
+        margin: 20px 30px;
+    }
+
+    .LIST-global li{
+        background-color: transparent;
+        margin: -2px 0;
+
+        color: white;
+
+        border: none;
+    }
+
+@media(max-width: 600px){
+    .LIST-global{
+        margin: 0 10px 20px;
+    }
+
+    .LIST-global li{
+        background-color: transparent;
+        margin-bottom: -10px;
+
+        color: white;
+
+        border: none;
+    }
+
+}

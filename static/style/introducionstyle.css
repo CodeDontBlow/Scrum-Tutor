@@ -1,0 +1,85 @@
+.scrum-img {
+    width: 420px;
+}
+
+.introducion-scrum .content {
+    gap: 20px;
+    justify-content: center;
+}
+
+section {
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.cards {
+    gap: 50px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #020234;
+    border-radius: 25px;
+    border: none;
+    max-width: 220px;
+    max-height: 400px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card i {
+    color: #4141DD;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.card-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.ava-img {
+    width: 420px;
+}
+
+.introducion-ava .content {
+    gap: 80px;
+    justify-content: center;
+}
+
+.ava-button {
+    justify-content: center;
+}
+
+.btn {
+    background-color: #4141DD;
+    border: none;
+    border-radius: 50px;
+    width: 350px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,41 @@
+.scrum-img {
+    width: 290px;
+}
+
+.trilha-scrum {
+    gap: 30px;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.content{
+    padding-left: 50px;
+    gap: 30px;
+}
+
+.list-content {
+    margin-top: 5%;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    text-align: start;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 0 auto;
+    width: 95%;
+    height: 2px;
+    border: 0px;
+    background-color: #4141DD;
+    border-radius: 25px;
+}

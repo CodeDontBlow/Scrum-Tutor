@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block pageCss %} {% endblock %}
+
+{% block pageTitle %} Estimativas {% endblock %}
+
+{% block pageContent %}
+
+<div class="container-sm global-container">
+    <div class="container-content text-center">
+        <div class="content-block">
+            <h1 class="TITLE-global">
+                Estimativas
+            </h1>
+        </div>
+    </div>
+
+    <div class="container-content text-center row">
+        <div class="TXT-global-container">
+            <p class="TXT-global text-center">
+                Como se pode acompanhar ao longo dessas instruções, pode-se notar uma necessidade de compreensão do
+                produto para fazer as estimativas corretas.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-content text-center row">
+        <div class="content-block col-md-4">
+            <img src="{{url_for('static' , filename='img/storyset/Estimativa.svg')}}" alt="imagem de prazo e tempo" class="IMG-global">
+        </div>
+
+
+        <div class="content-block col-md-8">
+            <div class="TXT-global-container">
+                <p class="TXT-global">
+                    Quando utilizamos User Stories, é comum utilizarmos uma outra unidade de medida, ao invés do usual
+                    “tempo” utilizado frequentemente em metodologias tradicionais. No caso de User Stories, utilizamos
+                    “Story Points”. Isso porque utilizar “horas ou dias” como unidade de medida estima não somente o esforço
+                    necessário para a funcionalidade, mas também a velocidade individual dos membros que trabalhem nela.
+                </p>
+                <p class="TXT-global">
+                    Story Points é uma unidade de medida relativa que leva em consideração o esforço necessário para
+                    realizar uma determinada funcionalidade. Se uma funcionalidade requerer o dobro de esforço para ser
+                    implementada, ela receberá aproximadamente o dobro de Story Points. Para estimar a quantidade de Story
+                    Points de um User Story, o Time de Desenvolvimento o compara com outros já estimados.
+                </p>
+                <p class="TXT-global">
+                    Caso não haja ainda nada estimado no Product Backlog, o Time de Desenvolvimento localiza o User Story
+                    com o menor esforço para o desenvolvimento, e o utiliza como base para comparações. Uma das melhores
+                    formas de se estimar Story Points é utilizando o Planning Poker.
+                </p>
+            </div>
+        </div>
+
+        <div class="container-content text-center">
+            <div class="content-block">
+                <h1 class="TITLE-global">
+                    Planning Poker
+                </h1>
+            </div>
+        </div>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md-8">
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        O Planning Poker é uma estratégia de construção de estimativas a partir do conhecimento dos membros
+                        do time. A ideia é que sejam capazes de decidir coletivamente e conscientemente quanto esforço cada
+                        uma das tarefas irá demandar e por quanto tempo do time.
+                    </p>
+                    <p class="TXT-global">
+                        No início do Planning Poker, cada membro do time recebe um conjunto de cartas. Cada carta exibe um
+                        dos valores válidos para a estimativa (0, 1, 2, 3, 5, 8, 13, 20, 40 e 100, por exemplo).
+                    </p>
+                    <p class="TXT-global">
+                        Em geral, os valores seguem uma escala baseada na sequência Fibonacci - outra sequência pode ser
+                        escolhida, porém Fibonacci é a mais utilizada. Para cada User Story a ser estimado, o Product Owner
+                        lê a descrição e esclarece quaisquer dúvidas que os membros do time tenham. Entretanto, é importante
+                        lembrar que em determinado ponto, qualquer discussão adicional não busca uma precisão maior.
+                    </p>
+                    <p class="TXT-global">
+                        Após todas as questões serem respondidas, cada membro seleciona uma carta representando sua
+                        estimativa, mas sem mostrar aos outros. As cartas não são mostradas até o momento em que todos,
+                        simultaneamente, exibem seus valores, de forma que todos vejam os valores selecionados
+                        simultaneamente.
+                    </p>
+                </div>
+            </div>
+            <div class="content-block col-md-4">
+                <img src="{{url_for('static' , filename='img/storyset/Estimativa2.svg')}}" alt="imagem poker cartas" class="IMG-global">
+            </div>
+
+            <div class="container-content text-center">
+                <div class="content-block">
+                    <img height="50%" width="50%" src="{{url_for('static' , filename='img/storyset/Estimativa3.png')}}" alt=" imagem fibonnaci" class="IMG-global">
+                </div>
+                <div class="content-block">
+                    <p class="TXT-global text-center">
+                        Neste ponto, é normal que as estimativas sejam significantemente diferentes. E na realidade é um bom
+                        sinal. Quando as estimativas diferem, os membros com o maior e menor valores expõem os motivos que
+                        os levaram a escolher aqueles valores. Depois das explanações e discussões, todos recolhem suas
+                        cartas e estimam novamente, da mesma forma.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-content d-flex justify-content-center flex-wrap">
+
+            <div class="content-block">
+                <a href="#" class="BTN-global">
+                    <i class="bi bi-arrow-up-short"></i>
+                </a>
+            </div>
+            <div class="content-block">
+            <a href="/trilha" class="BTN-global" id="btn-return-trail">
+                <i class="bi bi-arrow-return-left"></i> Voltar a Trilha
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

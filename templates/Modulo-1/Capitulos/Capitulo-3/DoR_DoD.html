@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block pageCss %} {% endblock %}
+
+{% block pageTitle %} DoR e DoD {% endblock %}
+
+{% block pageContent %}
+
+<div class="container-sm global-container">
+    <div class="container-content text-center">
+        <div class="content-block">
+            <h1 class="TITLE-global">
+                DoR e DoD
+            </h1>
+        </div>
+    </div>
+
+    <div class="container-content text-center row">
+        <div class="content-block col-md">
+
+            <h2 class="SUB-global">
+                DoR - Definição de Pronto
+            </h2>
+
+            <p class="TXT-global">
+                A Definição de Pronto (DoR) é um conjunto de critérios que um item de trabalho deve atender antes que
+                possa
+                ser considerado pronto para começar.
+            </p>
+            <p class="TXT-global">
+                Isso pode incluir coisas como ter requisitos claramente definidos,ter sido priorizado no backlog do
+                produto e ter critérios de aceitação claramente definidos.
+            </p>
+            <p class="TXT-global">
+                A DoR ajuda a garantir que a equipe esteja pronta para começar a trabalhar em um item e que todos os
+                membros da equipe tenham um entendimento claro do que é necessário para começar.
+            </p>
+        </div>
+
+        <div class="content-block col-md-4">
+            <img src="{{url_for('static' , filename='img/storyset/dor.svg')}}" alt="imagem de Organizando tasks" class="IMG-global">
+        </div>
+
+        <div class="content-block col-md">
+
+            <h2 class="SUB-global">
+                DoD - Definição de Concluído
+            </h2>
+
+            <p class="TXT-global">
+                Por outro lado, a Definição de Concluído (DoD) é um conjunto de critérios que um item de trabalho deve
+                atender antes que possa ser considerado concluído.
+            </p>
+
+            <p class="TXT-global">
+                Isso pode incluir coisas como ter passado por todos os
+                testes necessários, ter documentação completa e ter sido revisado e aprovado por todas as partes
+                interessadas relevantes.
+            </p>
+
+            <p class="TXT-global">
+                A DoD ajuda a garantir que a equipe saiba quando um item de trabalho está realmente concluído e que
+                todos os membros da equipe tenham um entendimento claro do que é necessário para chegar lá.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="container-content text-center">
+        <div class="content-block">
+            <div class="TXT-global-container">
+                <p class="TXT-global">
+                    Ambos, DoR e DoD, são ferramentas valiosas para ajudar as equipes Scrum a gerenciar o fluxo de trabalho
+                    e garantir que todos os membros da equipe tenham um entendimento claro do que é necessário para iniciar
+                    e concluir um item de trabalho.
+                </p>
+                <p class="TXT-global">
+                    Eles ajudam a promover a transparência e a comunicação dentro da equipe e a garantir que todos estejam
+                    na mesma página em relação ao que é esperado.
+                </p>
+            </div>
+            <div class="TXT-global-container">
+                <p class="TXT-global">
+                    É importante que ambas as definições sejam revisadas e atualizadas regularmente para garantir que
+                    continuem a ser relevantes e úteis para a equipe.
+                </p>
+                <p class="TXT-global">
+                    As equipes podem encontrar desafios ao definir e manter suas DoR e DoD, pois cada equipe terá suas
+                    próprias necessidades e circunstâncias únicas. No entanto, com comunicação aberta e colaboração, as
+                    equipes podem desenvolver DoR e DoD que suportem efetivamente seus processos de trabalho.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-content text-center row">
+        <div class="content-block col-md">
+
+            <h2 class="SUB-global">
+                Critérios - Definição de Pronto
+            </h2>
+
+            <div class="content-block col-md">
+                <img height="50%" width="50%" src="{{url_for('static' , filename='img/storyset/dor1.svg')}}" alt="imagem de Grafico de progresso" class="IMG-global">
+            </div>
+
+            <ol class="LIST-global list-group list-group-numbered">
+                <li class="list-group-item"> A história de usuário foi claramente definida e compreendida por todos os
+                    membros da equipe.
+                </li>
+                <li class="list-group-item"> Os critérios de aceitação foram escritos e aprovados pelo proprietário do
+                    produto.
+                </li>
+                <li class="list-group-item"> A história de usuário foi priorizada no backlog do produto.
+                </li>
+            </ol>
+
+            <p class="TXT-global text-center">
+                Por exemplo, se você tem uma história de usuário para desenvolver uma nova funcionalidade em um
+                aplicativo, a DoR pode incluir que os requisitos da funcionalidade foram claramente definidos, os
+                critérios de aceitação foram estabelecidos e a história foi priorizada no backlog do produto.
+            </p>
+        </div>
+
+        <div class="content-block col-md">
+
+            <h2 class="SUB-global">
+                Critérios - Definição de Concluído
+            </h2>
+
+            <div class="content-block col-md">
+                <img height="50%" width="50%" src="{{url_for('static' , filename='img/storyset/dor2.svg')}}" alt=" img de Ideias conversa" class="IMG-global">
+            </div>
+
+            <ol class="LIST-global list-group list-group-numbered">
+                <li class="list-group-item"> O código para a história de usuário foi escrito e passou em todos os
+                    testes.
+                </li>
+                <li class="list-group-item"> A documentação para a história de usuário foi concluída.
+                </li>
+                <li class="list-group-item"> A história de usuário foi revisada e aprovada pelo proprietário do produto.
+                </li>
+            </ol>
+
+            <p class="TXT-global text-center">
+                Continuando com o exemplo anterior, a DoD para a nova funcionalidade do aplicativo pode incluir que o
+                código foi escrito e passou em todos os testes, a documentação foi concluída e a funcionalidade foi
+                revisada e aprovada pelo proprietário do produto.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container-content d-flex justify-content-center flex-wrap">
+
+        <div class="content-block">
+            <a href="#" class="BTN-global">
+                <i class="bi bi-arrow-up-short"></i>
+            </a>
+        </div>
+        <div class="content-block">
+            <a href="/Estimativas" class="BTN-global">
+                Avançar <i class="bi bi-arrow-right-short"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

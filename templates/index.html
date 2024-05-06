@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+    {% block pageCss %}
+        <link rel="stylesheet" href="{{url_for('static', filename='style/homepage.css')}}">
+    {% endblock %} 
+
+    {% block pageTitle %} Homepage {% endblock %}
+
+    {% block pageContent %}
+        
+        <section class="container-fluid top-bg">
+            <img class="img-fluid" src="{{url_for('static', filename='img/backgrounds/Kanban-bg.svg')}}" alt="">
+        </section>
+
+        <section class="container-fluid carrossel">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="{{url_for('static', filename='img/carousel/Frame 1.svg')}}" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="{{url_for('static', filename='img/carousel/Frame 2.svg')}}" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="{{url_for('static', filename='img/carousel/Frame 3.svg')}}" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="{{url_for('static', filename='img/carousel/Frame 4.svg')}}" class="d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev justify-content-none" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="space"></div>
+
+        <section class="container-fluid d-flex direct-intro">
+            <div class="text-and-button">
+                <h1 class="fs-1 direct-title"> Agora que você já entendeu, que tal começar?</h1>
+                <div class="ava-button d-flex">
+                    <a class="btn btn-primary d-flex" href="/scrumintroducion" role="button">Comece já</a>
+                  </div>
+            </div>
+            <img src="{{url_for('static', filename='img/storyset/teamwork rafiki.svg')}}" class="img-fluid">
+        </section>
+
+        {% endblock %}

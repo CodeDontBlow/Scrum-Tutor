@@ -1,0 +1,28 @@
+section {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#product-quality-amico {
+    width: 350px;
+}
+
+.development-team {
+    display: flex;
+    gap: 20px
+}
+
+.scrum-master-content {
+    display: flex;
+    gap: 20px;
+}
+
+.po-content {
+    display: flex;
+    gap: 20px;
+}
