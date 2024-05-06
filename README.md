@@ -47,7 +47,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 ## 🔰 Sprint 1
 🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 ## Backlog Sprint 1
-<img height="80%" width="80%" src="/assets/Backlog_PrimeiraSprint.jpg.jpg">
+<img height="80%" width="80%" src="/assets/Backlog_PrimeiraSprint.jpg">
 
 ## 🔰 Sprint 2
 ## Backlog Sprint 2
