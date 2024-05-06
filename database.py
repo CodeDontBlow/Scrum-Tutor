@@ -30,7 +30,7 @@ perguntas_Cap_final = [(1, 'O que são as cerimônias e porque são importantes?
                        (6, 'Qual o papel do Product Owner?', 'Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades'),
                        (7, 'Qual é a definição de Scrum Master no Scrum?', 'O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo'),
                        (8, 'Quais são as perguntas recorrentes do Daily Scrum?', 'O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?'),
-                       (9, 'Qual o formato de uma User Story?', 'Como <tipo de usuário> quero <funcionalidade desejada> para <motivo que remeta um valor ao negócio>'),
+                       (9, 'Qual o formato de uma User Story?', 'Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt'),
                        (10, 'Uma Release Planning Meeting é composta por:', 'Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva')]
 
 #Inserir linhas na tabela
