@@ -6,6 +6,10 @@
     box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
 }
 
+.titulo-jogo {
+    margin-top: 30px;
+}
+
 hr {
     margin: 0 5px;
 }
@@ -76,7 +80,7 @@ hr {
 }
 
 .validar:hover {
-    background-color: #379e35;
+    background-color: #1e691c;
     transform: scale(1.2);
     transition: 0.2s;
 }

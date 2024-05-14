@@ -1,0 +1,95 @@
+.backlog {
+    background-color: #1D1D7C;
+    border-radius: 0 50px;
+    padding: 30px;
+    border: ridge 5px rgba(81, 7, 255, 0.233);
+    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+}
+
+.titulo-jogo {
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: separate;
+}
+
+
+td {
+    background-color: #020234;
+}
+ 
+td,
+th {
+    padding: 30px;
+    text-align: center;
+}
+
+th {
+    background-color: #3B3B82;
+}
+
+td select {
+    background-color: rgba(39, 35, 35, 0.952);
+    border: none;
+    padding: 5px;
+}
+
+.requisito {
+    background-color: #2d2daf;
+    width: 180px;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid #0202346b;
+    border-radius: 10px;
+    color: rgb(190, 188, 188);
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.493);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.requisito:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.cards-requisitos {
+    margin-left: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.validar {
+    background-color: #2E8F2C;
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    margin-top: 50px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
+}
+
+.validar:hover {
+    background-color: #1e691c;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+    .backlog {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards-requisitos {
+        margin-left: 0;
+    }
+
+    .requisito {
+        margin: auto;
+        margin-top: 30px;
+    }
+}

@@ -69,6 +69,9 @@ def conceitos():
 def jogoPO():
     return render_template("Modulo-2/jogoPo.html")
 
+@app.route("/jogoBacklog")
+def jogoBacklog():
+    return render_template("Modulo-2/jogoBacklog.html")
 
 # << << << < HEAD
 

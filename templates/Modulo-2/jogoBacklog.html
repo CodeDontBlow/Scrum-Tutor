@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/jogobacklog.css')}}">{% endblock %}
+
+{% block pageTitle%}{% endblock %}
+
+{% block pageContent %}
+
+<div class="container-content text-center titulo-jogo">
+    <h1 class="TITLE-global">Desenvolva o seu BackLog</h1>
+</div>
+<section class="container-sm global-container d-flex backlog">
+
+    <div class="tabela">
+        <table>
+            <tr>
+                <th>Rank
+                <th>Prioridade
+                <th>Requisito
+                <th>Estimativa (h)
+            </tr>
+            <tr>
+                <td>1
+                <td>Alta
+                <td>Arraste o requisito aqui
+                <td><select name="" id="estimativa">
+                        <option value="">0</option>
+                        <option value="">2</option>
+                        <option value="">5</option>
+                        <option value="">13</option>
+                        <option value="">18</option>
+                    </select>
+            </tr>
+            <tr>
+                <td>2
+                <td>Alta
+                <td>Arraste o requisito aqui
+                <td><select name="" id="estimativa">
+                        <option value="">0</option>
+                        <option value="">2</option>
+                        <option value="">5</option>
+                        <option value="">13</option>
+                        <option value="">18</option>
+                    </select>
+            </tr>
+            <tr>
+                <td>3
+                <td>Média
+                <td>Arraste o requisito aqui
+                <td><select name="" id="estimativa">
+                        <option value="">0</option>
+                        <option value="">2</option>
+                        <option value="">5</option>
+                        <option value="">13</option>
+                        <option value="">18</option>
+                    </select>
+            </tr>
+            <tr>
+                <td>4
+                <td>Baixa
+                <td>Arraste o requisito aqui
+                <td><select name="" id="estimativa">
+                        <option value="">0</option>
+                        <option value="">2</option>
+                        <option value="">5</option>
+                        <option value="">13</option>
+                        <option value="">18</option>
+                    </select>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cards-requisitos">
+        <h1 class="requisito">Requisito 1</h1>
+        <h1 class="requisito">Requisito 2</h1>
+        <h1 class="requisito">Requisito 3</h1>
+        <h1 class="requisito">Requisito 4</h1>
+        <button type="button" class="validar">Validar <i class="bi bi-check"></i></button>
+    </div>
+
+
+
+</section>
+{% endblock %}
