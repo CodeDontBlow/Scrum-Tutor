@@ -91,26 +91,6 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
         <li>Figma</li>        
 </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 👥 Equipe Code Don´t Blow
 
 <br>
@@ -123,6 +103,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 |**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)||
 |**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)|
 |**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)|
+|**Vanessa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
 
 
 </br>
