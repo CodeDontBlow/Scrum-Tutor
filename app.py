@@ -65,14 +65,6 @@ def time_scrum():
 def conceitos():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Conceitos.html")
 
-@app.route("/jogoPO")
-def jogoPO():
-    return render_template("Modulo-2/jogoPo.html")
-
-@app.route("/jogoBacklog")
-def jogoBacklog():
-    return render_template("Modulo-2/jogoBacklog.html")
-
 # << << << < HEAD
 
 
@@ -107,6 +99,20 @@ def DoR_DoD():
 @app.route("/Estimativas")
 def estimativa():
     return render_template("Modulo-1/Capitulos/Capitulo-3/Estimativas.html")
+
+
+
+@app.route("/jogoPO")
+def jogoPO():
+    return render_template("Modulo-2/jogoPo.html")
+
+@app.route("/jogoBacklog")
+def jogoBacklog():
+    return render_template("Modulo-2/jogoBacklog.html")
+
+@app.route('/jogoSM')
+def jogoSM():
+    return render_template('Modulo-2/jogoSM.html')
 
 @app.route("/Exame final")
 def examefinal():

@@ -1,0 +1,513 @@
+{% extends 'base.html'%}
+
+{% block pageCss %} 
+    <link rel="stylesheet" href="{{url_for('static' , filename='style/Modulo-2/jogoSM.css')}}">
+{% endblock %}
+
+{% block pageTitle%} Scrum Master {% endblock %}
+
+
+
+
+<!-- Conteúdo -->
+{% block pageContent %}
+
+<!-- .:: Início de uma Nova Tela ::. -->
+<!-- perguntas da daily pro dev 1 -->
+<section>
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-md devs-container">
+
+        <!-- Dev 1 -->
+        <div class="row dev-row disabled">
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-amico.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 1
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 2 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-pana.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 2
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 3 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-cuate.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 3
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-md master-container">
+
+        <!-- Área da Pergunta -->
+        <div class="row d-flex justify-content-center text-row">
+            <div class="col-6">
+
+                <!-- Pergunta -->
+                <h4 class="master-title text-center">
+                    Faça as perguntas da Daily
+                </h4>
+                
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-6 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        Olá Dev 1, vamos conversar sobre o andamento da sua parte no projeto! O que você fez ontem? O que planeja fazer hoje? Há algum impedimento?
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- .:: Início de uma Nova Tela ::. -->
+<!-- resposta do dev 1 -->
+<section>
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-md devs-container">
+
+        <!-- Dev 1 -->
+        <div class="row dev-row">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-amico.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 1
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Minha parte é fazer a NaveBar e o Footer responsivos do site. Ontem fiz a NavBar, e hoje irei fazer o Footer, não há impedimentos ou dúvidas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 2 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-pana.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 2
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 3 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-cuate.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 3
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-md master-container">
+        
+        <!-- Área da Pergunta -->
+        <div class="row d-flex justify-content-center text-row">
+            <div class="col-6">
+
+                <!-- Pergunta -->
+                <h4 class="master-title text-center">
+                    Resposnda o desempenho
+                </h4>
+                
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-6 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        Ótimo desempenho Dev 1! Dispensado.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- .:: Início de uma Nova Tela ::. -->
+<!-- pergunta da daily pro dev 2 -->
+<section>
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-md devs-container">
+
+        <!-- Dev 1 -->
+        <div class="row dev-row disabled">
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-amico.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 1
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 2 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-pana.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 2
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 3 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-cuate.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 3
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-md master-container">
+
+        <!-- Área da Pergunta -->
+        <div class="row d-flex justify-content-center text-row">
+            <div class="col-6">
+
+                <!-- Pergunta -->
+                <h4 class="master-title text-center">
+                    Faça as perguntas da Daily
+                </h4>
+                
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-6 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        Olá Dev 2, vamos conversar sobre o andamento da sua parte no projeto! O que você fez ontem? O que planeja fazer hoje? Há algum impedimento?
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- .:: Início de uma Nova Tela ::. -->
+<!-- resposta do dev 2 (problema de sobrecarga)-->
+<section>
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-md devs-container">
+
+        <!-- Dev 1 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-amico.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 1
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Dev 2 -->
+        <div class="row dev-row">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-pana.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 2
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Minha parte é fazer a Homepage responsiva e cadastro dos livros no banco de dados. Ontem eu comecei o cadastro dos livros, mas são muitos, então hoje planejo continuar com os cadastros. Meu impedimento nessa sprint é não conseguir  entregar  homepage no prazo, pois estou utilizando muito tempo e esforço na primeira tarefa. Acho que me sobrecarreguei 😓
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dev 3 -->
+        <div class="row dev-row disabled">
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="col-3">
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Eyes-cuate.svg')}}" alt="" class="dev-img">
+                    <h4 class="dev-name">
+                        Dev 3
+                    </h4>
+                </div>
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="col-md-6 col-9 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-md master-container">
+
+        <!-- Área da Pergunta -->
+        <div class="row d-flex justify-content-center text-row">
+            <div class="col-6">
+
+                <!-- Pergunta -->
+                <h4 class="master-title text-center">
+                    Como Scrum Master qual a melhor opção para solucionar esse problema? 
+                </h4>
+                
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-6 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        Aconselhar o Dev a se esforçar mais e terminar a tarefa logo.
+                    </p>
+                </div>
+
+                <!-- Alternativa B -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa B
+                    </h6>
+
+                    <p class="card-text">
+                        Distribuir a tarefa da homepage ao Dev 1, que já esta adiantado, para ajuda-lo, e tornar o processo ágil. (OPÇÃO CERTA)
+                    </p>
+                </div>
+
+                <!-- Alternativa C -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa C
+                    </h6>
+
+                    <p class="card-text">
+                        Sugerir que gaste menos tempo na tarefa de cadastro e comece a homepage.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
