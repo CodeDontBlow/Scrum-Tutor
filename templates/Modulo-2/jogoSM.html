@@ -14,7 +14,7 @@
 
 <!-- .:: Início de uma Nova Tela ::. -->
 <!-- perguntas da daily pro dev 1 -->
-<section>
+<section class="toggle-section">
 
     <!-- Área dos Devs (Parte de Cima) -->
     <div class="container-md devs-container">
@@ -111,7 +111,7 @@
             <div class="col-6 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card">
+                <div class="options-card" onclick="toggle(0)">
                     <h6 class="card-title">
                         Alternativa A
                     </h6>
@@ -133,7 +133,7 @@
 
 <!-- .:: Início de uma Nova Tela ::. -->
 <!-- resposta do dev 1 -->
-<section>
+<section class="toggle-section none">
 
     <!-- Área dos Devs (Parte de Cima) -->
     <div class="container-md devs-container">
@@ -232,7 +232,7 @@
             <div class="col-6 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card">
+                <div class="options-card" onclick="toggle(1)">
                     <h6 class="card-title">
                         Alternativa A
                     </h6>
@@ -254,7 +254,7 @@
 
 <!-- .:: Início de uma Nova Tela ::. -->
 <!-- pergunta da daily pro dev 2 -->
-<section>
+<section class="toggle-section none">
 
     <!-- Área dos Devs (Parte de Cima) -->
     <div class="container-md devs-container">
@@ -350,7 +350,7 @@
             <div class="col-6 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card">
+                <div class="options-card" onclick="toggle(2)">
                     <h6 class="card-title">
                         Alternativa A
                     </h6>
@@ -372,7 +372,7 @@
 
 <!-- .:: Início de uma Nova Tela ::. -->
 <!-- resposta do dev 2 (problema de sobrecarga)-->
-<section>
+<section class="toggle-section none">
 
     <!-- Área dos Devs (Parte de Cima) -->
     <div class="container-md devs-container">
@@ -481,7 +481,7 @@
                 </div>
 
                 <!-- Alternativa B -->
-                <div class="options-card">
+                <div class="options-card" onclick="toggle(3)">
                     <h6 class="card-title">
                         Alternativa B
                     </h6>
@@ -509,5 +509,21 @@
     </div>
 
 </section>
+
+
+<script>
+
+    // Função que troca as telas
+    function toggle(n){
+        // Oculta a tela atual
+        let block = document.getElementsByClassName("toggle-section")[n]
+        block.classList.add('none')
+
+        // Exibe a próxima tela
+        block = document.getElementsByClassName("toggle-section")[n + 1]
+        block.classList.remove('none')
+    }
+
+</script>
 
 {% endblock %}

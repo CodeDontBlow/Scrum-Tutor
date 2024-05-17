@@ -2,6 +2,17 @@ section{
     margin: 50px 0;
 }
 
+.none{
+    margin: 0;
+    height: 0;
+    opacity: 0;
+
+    overflow: hidden;
+}
+
+.toggle-section{
+    transition: all 200ms, margin 100ms;
+}
 
 .devs-container{
     padding: 0 100px;
