@@ -2,6 +2,12 @@ section{
     margin: 50px 0;
 }
 
+.hidden{
+    margin: 0;
+    height: 0;
+    opacity: 0;
+}
+
 
 .devs-container{
     padding: 0 100px;
