@@ -333,6 +333,8 @@ div.CDBfooter-bottom div.CDBfooter-BTcontainer>div.CDBfooter-cdb a {
         border-radius: 20px;
         box-shadow: 0 4px rgba(0, 0, 0, 0.8);
 
+        cursor: pointer;
+
         transition: all 100ms;
     }
 

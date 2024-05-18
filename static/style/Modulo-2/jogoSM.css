@@ -1,16 +1,18 @@
-section{
+.toggle-section{
     margin: 50px 0;
 }
 
 .hidden{
+    opacity: 0;
+    overflow: hidden;
     margin: 0;
     height: 0;
-    opacity: 0;
+
+    transition: margin 350ms;
 }
 
-
 .devs-container{
-    padding: 0 100px;
+    padding: 0 50px;
 }
 
     .dev-row{
@@ -24,26 +26,25 @@ section{
         }
 
             .dev-img{
-                max-height: 100px;
+                max-height: 170px;
                 filter: drop-shadow(0 0 3px #2E8F2C);
             }
 
             .dev-name{
-                flex-grow: 1;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
                 text-align: center;
             }
 
         .bubble-container{
             display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
             .speech-bubble{
                 background-color: #1D1D7C;
                 margin: 3px 0px;
-                padding: 15px 24px;
-
-                flex-grow: 1;
+                padding: 20px 25px;
 
                 position: relative;
 
@@ -68,39 +69,47 @@ section{
                 .sb-text{
                     margin-bottom: 0;
 
-                    font-size: .95rem;
+                    font-size: .9rem;
                     font-weight: 300;
 
-                    word-spacing: 1px;
+                    word-spacing: 3px;
                     line-height: 25px;
                 }
 
-    .disabled.dev-row{
-        transform: scale(.8);
-    }
 
-    .disabled .bubble-container{
-        opacity: 50%;
-    }
+        .disabled.dev-row{
+            transform: scale(.8);
+        }
 
-    .disabled .dev-card{
-        opacity: 80%;
-        filter: saturate(0);
-    }
+            .disabled .dev-card{
+                opacity: 80%;
+                filter: saturate(0);
+            }
+
+            .disabled .bubble-container{
+                opacity: 50%;
+            }
+
+                .disabled .sb-text::after{
+                    content: '. . .';
+
+                    display: block;
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+
 
 
 
                     
 .master-container{
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
     .text-row{
         
     }
         .master-title{
-            margin-bottom: 0;
-
             font-size: 1.2rem;
             font-weight: 400;
         }
@@ -113,7 +122,7 @@ section{
         .options-container{
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 15px;
         }
                 
             .options-card{
@@ -134,17 +143,18 @@ section{
                 }
             
                 .card-title{
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
 
-                    font-size: 1.05rem;
-                    font-weight: 400;
+                    font-size: 1.2rem;
+                    font-weight: 500;
                 }
 
                 .card-text{
-                    font-size: .85rem;
+                    font-size: .9rem;
                     font-weight: 300;
                     
                     word-spacing: 1px;
+                    line-height: 23px;
                 }
 
         
