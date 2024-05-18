@@ -11,8 +11,25 @@
     transition: margin 350ms;
 }
 
+.day-display{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+
+    opacity: 80%;
+}
+
+    .first-daily-display{
+        font-size: 2rem;
+        font-weight: 500;
+
+        font-variant: small-caps;
+
+        opacity: 100%;
+    }
+
 .devs-container{
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
     .dev-row{
@@ -43,7 +60,6 @@
 
             .speech-bubble{
                 background-color: #1D1D7C;
-                margin: 3px 0px;
                 padding: 20px 25px;
 
                 position: relative;
@@ -109,6 +125,7 @@
     .text-row{
         
     }
+
         .master-title{
             font-size: 1.2rem;
             font-weight: 400;
@@ -157,4 +174,115 @@
                     line-height: 23px;
                 }
 
-        
+@media(max-width: 992px){
+    .devs-container{
+        padding: 0 50px;
+    }
+}
+
+
+@media(max-width: 600px){
+
+    
+.day-display{
+    margin-bottom: 25px;
+
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+    .first-daily-display{
+        font-size: 1.1rem;
+
+        font-variant: normal;
+    }
+
+    .devs-container{
+        padding: 0 25px;
+    }
+    
+                .dev-img{
+                    max-height: 170px;
+                }
+    
+                .dev-name{
+                    font-size: 1rem;
+                }
+    
+                .speech-bubble{
+                    padding: 10px 15px;
+                }
+    
+                    .speech-bubble::before{
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        
+                        position: absolute;
+                        top: 10px;
+                        left: -13px;
+    
+                        border-top: 25px solid #2D2DA8;
+                        border-left: 13px solid transparent;
+                    }
+    
+                    .sb-text{
+                        margin-bottom: 0;
+    
+                        font-size: .8rem;
+                        font-weight: 300;
+    
+                        word-spacing: 1px;
+                        line-height: 19px;
+                    }
+    
+    
+            .disabled.dev-row{
+                transform: scale(.9);
+            }
+    
+                .disabled .sb-text::after{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+    
+    
+    
+                
+
+    .master-container{
+        margin: 50px 0 70px;
+    }
+
+            .master-title{
+                font-size: .9rem;
+            }
+                
+        .options-area{
+            margin-top: 10px;
+        }
+    
+            .options-container{
+                padding: 0px 30px;
+                
+                flex-grow: 1;
+                gap: 10px;
+            }
+                    
+                .options-card{
+                    padding: 15px 20px;
+                }
+                        
+                    .card-title{
+                        margin-bottom: 7px;
+    
+                        font-size: .9rem;
+                    }
+    
+                    .card-text{
+                        font-size: .75rem;
+
+                        word-spacing: 1px;
+                        line-height: 17px;
+                    }
+}
