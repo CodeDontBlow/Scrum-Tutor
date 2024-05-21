@@ -1,0 +1,212 @@
+{% extends 'base.html'%}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static' , filename='style/Modulo-2/jogoSM.css')}}">
+<link rel="stylesheet" href="{{url_for('static' , filename='style/Modulo-2/jogoST.css')}}">
+{% endblock %}
+
+{% block pageTitle%} Scrum Team {% endblock %}
+
+
+
+{% block pageContent %}
+
+<!-- .:: Início de uma Nova Tela (0) ::. -->
+<!-- Introdução -->
+<section class="toggle-section">
+
+    <div class="container-sm global-container">
+
+        <div class="container-content text-center">
+            <div class="content-block">
+                <h1 class="TITLE-global">
+                    Participe do Time de desenvolvimento!
+                </h1>
+                <p class="subtitle">Jogo Scrum Team </p>
+            </div>
+        </div>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md-4">
+                <img src="{{url_for('static' , filename='img/storyset/Mod2-ST_1.svg')}}" alt=" " class="IMG-global">
+            </div>
+
+            <div class="content-block col-md-8">
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        O Scrum Team, ou Time de Desenvolvimento, é um elemento-chave no jogo do método ágil Scrum. Este
+                        time, caracterizado por sua auto-organização e multifuncionalidade, trabalha em conjunto para
+                        atingir as metas de cada Sprint, entregando incrementos de “Pronto”, versões utilizáveis e
+                        potencialmente liberáveis de um produto.
+                    </p>
+                    <p class="TXT-global">
+                        Cada membro do time possui uma habilidade especializada, mas também é capaz de realizar
+                        diferentes tipos de tarefas, tarefas essas criadas na Sprint Planning, da qual este jogo se
+                        trata!
+                        Você e o Time de desenvolvimento irão criar Tasks e SubTasks baseado no Product Backlog. Boa
+                        sorte!
+                    </p>
+                </div>
+
+                <div class="BTN-global" id="btn-return-trail" onclick="toggle_screens(0)"
+                    style="background-color: #2E8F2C; color: white !important;">
+                    INICIAR
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Conversa Devs -->
+
+
+<!-- .:: Início de uma Nova Tela (1) ::. -->
+<!-- Apresentação dos Dev -->
+<section class="toggle-section hidden">
+
+    <h1 class="subtitle">
+        Sprint Planning
+    </h1>
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-lg devs-container">
+
+        <!-- Dev 1 -->
+        <div class="row dev-row">
+
+            <div class="container-content text-center row">
+                <div class="content-block col-md">
+                    <img src="{{url_for('static' , filename='img/storyset/Dev1.svg')}}" alt="" class="dev-img">
+                    <img src="{{url_for('static' , filename='img/storyset/Dev2.svg')}}" alt="" class="dev-img">
+                    <img src="{{url_for('static' , filename='img/storyset/Dev3.svg')}}" alt="" class="dev-img">
+                    <img src="{{url_for('static' , filename='img/storyset/Dev4.svg')}}" alt="" class="dev-img">
+                </div>
+                <div class="content-block col-md">
+                    <hr>
+                    <p class="TXT-global">
+                        Você e seus 4 colegas de trabalho irão discutir em relação as US escritas pelo PO, com a
+                        finalidade de Descrevelás em tarefas menores. Vamos chamar a tarefa principal (derivada da User
+                        Story) como Task, e as tarefas adjacentes como SubTask!
+                    </p>
+                    <hr>
+                    <p class="TXT-global">
+                        O intuíto da conversa é destrinchar o trabalho em tarefas menores para agilizar e estar sempre
+                        em produtividade para o desenvolvimento do projeto, é de suma importancia este passo!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Área das Opções (Parte de Baixo) -->
+        <div class="container-lg master-container">
+
+            <!-- Área das Alternativas -->
+            <div class="row d-flex justify-content-center options-area">
+
+                <!-- Container das Alternativas -->
+                <div class="col-lg-6 col-9 options-container">
+
+                    <!-- Alternativa A -->
+                    <div onclick="toggle_screens(1)">
+                        <button alt="Então...">
+                            <i>V</i>
+                            <i>a</i>
+                            <i>m</i>
+                            <i>o</i>
+                            <i>s</i>
+                            <i>&nbsp;</i>
+                            <i>C</i>
+                            <i>o</i>
+                            <i>m</i>
+                            <i>e</i>
+                            <i>ç</i>
+                            <i>a</i>
+                            <i>r</i>
+                            <i>!!</i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
+
+<!-- Apresentando Backlog -->
+
+<!-- .:: Início de uma Nova Tela (2) ::. -->
+<section class="toggle-section hidden">
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-sm global-container">
+        <div class="container-content text-center row">
+
+            <div class="content-block col-md-8">
+                <img src="{{url_for('static' , filename='img/cont/burndownapi.png')}}" alt="" class="IMG-global">
+                <h1 class="SUB-global">
+                    Este é o Backlog do produto, o primeiro dev iniciará mostrando como criar uma Task e uma
+                    Subtask!
+                </h1>
+            </div>
+
+            <div class="content-block col-md-4">
+                <img height="70%" width="70%" src="{{url_for('static' , filename='img/storyset/Dev1.svg')}}" alt=""
+                    class="IMG-global">
+                <h4 class="dev-name">
+                    Dev 1
+                </h4>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Área das Opções (Parte de Baixo) -->
+        <div class="container-lg master-container">
+
+            <!-- Área das Alternativas -->
+            <div class="row d-flex justify-content-center options-area">
+
+                <!-- Container das Alternativas -->
+                <div class="col-lg-6 col-9 options-container">
+
+                    <!-- Alternativa A -->
+                    <div class="options-card" onclick="toggle_screens(2)">
+                        <h1 class="SUB-global">
+                            Beleza! Vamos começar pela primeira User Story?
+                        </h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+
+    // Função que troca as telas
+    function toggle_screens(n) {
+
+        // Seleciona a tela atual
+        let screen = document.getElementsByClassName("toggle-section")[n]
+        screen.classList.add('hidden') //Oculta a tela atual
+
+        // Seleciona a próxima tela
+        let next_screen = document.getElementsByClassName("toggle-section")[n + 1]
+        next_screen.classList.remove('hidden') //Exibe a próxima tela
+    }
+
+</script>
+
+{% endblock %}

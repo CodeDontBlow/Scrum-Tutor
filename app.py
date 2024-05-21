@@ -114,6 +114,10 @@ def jogoBacklog():
 def jogoSM():
     return render_template('Modulo-2/jogoSM.html')
 
+@app.route("/jogoST")
+def jogoST():
+    return render_template("Modulo-2/jogoST.html")
+
 @app.route("/Exame final")
 def examefinal():
     return render_template("/Modulo-3/examefinal.html")
