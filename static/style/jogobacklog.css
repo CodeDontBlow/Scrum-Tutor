@@ -10,41 +10,49 @@
     margin-top: 30px;
 }
 
-table {
-    border-collapse: separate;
+.tabela {
+    margin-right: 90px;
 }
 
-
-td {
-    background-color: #020234;
+.linha {
+    display: flex;
+    flex-direction: row;
 }
  
-td,
-th {
+.elemento{
     padding: 30px;
     text-align: center;
+    background-color: #020234;
+    margin: 3px;
+    font-size: 10px;
+    width: 190px;
+    height: 100px;
 }
 
-th {
+.cabecalho .elemento {
     background-color: #3B3B82;
 }
 
-td select {
+.linha select {
     background-color: rgba(39, 35, 35, 0.952);
     border: none;
     padding: 5px;
+    font-size: 18px;
 }
 
 .requisito {
     background-color: #2d2daf;
-    width: 180px;
-    font-size: 20px;
-    padding: 20px;
+    width: 150px;
+    height: 50px;
     border: 1px solid #0202346b;
     border-radius: 10px;
     color: rgb(190, 188, 188);
     box-shadow: 2px 3px rgba(0, 0, 0, 0.493);
-    margin-top: 20px;
+    margin: 0;
+}
+
+.requisito h1 {
+    font-size: 18px;
     text-align: center;
 }
 
@@ -54,7 +62,7 @@ td select {
 }
 
 .cards-requisitos {
-    margin-left: 13%;
+    gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -13,73 +13,148 @@
 <section class="container-sm global-container d-flex backlog">
 
     <div class="tabela">
-        <table>
-            <tr>
-                <th>Rank
-                <th>Prioridade
-                <th>Requisito
-                <th>Estimativa (h)
-            </tr>
-            <tr>
-                <td>1
-                <td>Alta
-                <td>Arraste o requisito aqui
-                <td><select name="" id="estimativa">
-                        <option value="">0</option>
-                        <option value="">2</option>
-                        <option value="">5</option>
-                        <option value="">13</option>
-                        <option value="">18</option>
-                    </select>
-            </tr>
-            <tr>
-                <td>2
-                <td>Alta
-                <td>Arraste o requisito aqui
-                <td><select name="" id="estimativa">
-                        <option value="">0</option>
-                        <option value="">2</option>
-                        <option value="">5</option>
-                        <option value="">13</option>
-                        <option value="">18</option>
-                    </select>
-            </tr>
-            <tr>
-                <td>3
-                <td>Média
-                <td>Arraste o requisito aqui
-                <td><select name="" id="estimativa">
-                        <option value="">0</option>
-                        <option value="">2</option>
-                        <option value="">5</option>
-                        <option value="">13</option>
-                        <option value="">18</option>
-                    </select>
-            </tr>
-            <tr>
-                <td>4
-                <td>Baixa
-                <td>Arraste o requisito aqui
-                <td><select name="" id="estimativa">
-                        <option value="">0</option>
-                        <option value="">2</option>
-                        <option value="">5</option>
-                        <option value="">13</option>
-                        <option value="">18</option>
-                    </select>
-            </tr>
-        </table>
+        <div class="linha cabecalho">
+            <div class="elemento">
+                <h1>Rank</h1>
+            </div>
+            <div class="elemento">
+                <h1>Prioridade</h1>
+            </div>
+            <div class="elemento">
+                <h1>Requisito</h1>
+            </div>
+            <div class="elemento">
+                <h1>Estimativa h</h1>
+            </div>
+        </div>
+        <div class="linha 1">
+            <div class="elemento">
+                <h1>1</h1>
+            </div>
+            <div class="elemento">
+                <h1>Alta</h1>
+            </div>
+            <div class="elemento drop-zone d-flex justify-content-center">
+            </div>
+            <div class="elemento"><select name="" id="estimativa">
+                    <option value="">0</option>
+                    <option value="">2</option>
+                    <option value="">5</option>
+                    <option value="">13</option>
+                    <option value="">18</option>
+                </select></div>
+        </div>
+
+        <div class="linha 2">
+            <div class="elemento">
+                <h1>2</h1>
+            </div>
+            <div class="elemento">
+                <h1>Alta</h1>
+            </div>
+            <div class="elemento drop-zone d-flex justify-content-center">
+            </div>
+            <div class="elemento"><select name="" id="estimativa">
+                    <option value="">0</option>
+                    <option value="">2</option>
+                    <option value="">5</option>
+                    <option value="">13</option>
+                    <option value="">18</option>
+                </select></div>
+        </div>
+
+        <div class="linha 3">
+            <div class="elemento">
+                <h1>3</h1>
+            </div>
+            <div class="elemento">
+                <h1>Média</h1>
+            </div>
+            <div class="elemento drop-zone d-flex justify-content-center">
+            </div>
+            <div class="elemento"><select name="" id="estimativa">
+                    <option value="">0</option>
+                    <option value="">2</option>
+                    <option value="">5</option>
+                    <option value="">13</option>
+                    <option value="">18</option>
+                </select></div>
+        </div>
+
+        <div class="linha 4">
+            <div class="elemento">
+                <h1>4</h1>
+            </div>
+            <div class="elemento">
+                <h1>Baixa</h1>
+            </div>
+            <div class="elemento drop-zone d-flex justify-content-center">
+            </div>
+            <div class="elemento"><select name="" id="estimativa">
+                    <option value="">0</option>
+                    <option value="">2</option>
+                    <option value="">5</option>
+                    <option value="">13</option>
+                    <option value="">18</option>
+                </select></div>
+        </div>
+
+
     </div>
 
     <div class="cards-requisitos">
-        <h1 class="requisito">Requisito 1</h1>
-        <h1 class="requisito">Requisito 2</h1>
-        <h1 class="requisito">Requisito 3</h1>
-        <h1 class="requisito">Requisito 4</h1>
+        <div class="requisito" draggable="true">
+            <h1>Requisito 1</h1>
+        </div>
+        <div class="requisito" draggable="true">
+            <h1>Requisito 2</h1>
+        </div>
+        <div class="requisito" draggable="true">
+            <h1>Requisito 3</h1>
+        </div>
+        <div class="requisito" draggable="true">
+            <h1>Requisito 4</h1>
+        </div>
         <button type="button" class="validar">Validar <i class="bi bi-check"></i></button>
     </div>
-
-
-
 </section>
+
+<script>
+    const columns = document.querySelectorAll(".drop-zone");
+
+    document.addEventListener("dragstart", (e) => {
+        e.target.classList.add("dragging");
+    });
+
+    document.addEventListener("dragend", (e) => {
+        e.target.classList.remove("dragging");
+    });
+
+    columns.forEach((item) => {
+        item.addEventListener("dragover", (e) => {
+            const dragging = document.querySelector(".dragging");
+            const applyAfter = getNewPosition(item, e.clientY);
+
+            if (applyAfter) {
+                applyAfter.insertAdjacentElement("afterend", dragging);
+            } else {
+                item.prepend(dragging);
+            }
+        });
+    });
+
+    function getNewPosition(column, posY) {
+        const cards = column.querySelectorAll(".item:not(.dragging)");
+        let result;
+
+        for (let refer_card of cards) {
+            const box = refer_card.getBoundingClientRect();
+            const boxCenterY = box.y + box.height / 2;
+
+            if (posY >= boxCenterY) result = refer_card;
+        }
+
+        return result;
+    }
+</script>
 {% endblock %}

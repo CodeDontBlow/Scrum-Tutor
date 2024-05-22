@@ -73,9 +73,9 @@ hr {
     background-color: #2E8F2C;
     width: 50%;
     height: 50px;
-    margin: 50% auto;
     border: none;
     border-radius: 30px;
+    margin-left: 20%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
 }
 
@@ -116,6 +116,7 @@ hr {
     width: 100%;
     max-height: 400px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
+    padding: 25px;
 }
 
 .card:hover {
@@ -129,7 +130,7 @@ hr {
 .card-title {
     margin: 0;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 10px;
     color: white;
@@ -137,9 +138,18 @@ hr {
 
 .card-text {
     font-weight: 300;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    height: 0;
+
+    transition: margin 350ms;
 }
 
 @media (max-width:768px){
