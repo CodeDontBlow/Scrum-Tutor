@@ -13,358 +13,382 @@
 </div>
 
 <section class="container-sm global-container d-flex bg-chat toggle-section">
-    <div class="left-side">
+    <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
             <!-- Elemento 1 -->
             <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
                 alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
-                    interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso objetivo
-                    é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
-                    conveniente.
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
+                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
+                        objetivo
+                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
+                        conveniente. </p>
+                </div>
             </div>
         </div>
-        <br>
 
-        <div class="container-sm global-container cards-buttons">
-            <div class="card" onclick="toggle_screens(0)">
-                <h5 class="card-title">Resposta:</h5>
-                <p class="card-text">Olá João, prazer em conhece-lo! Gostaria de entender melhor algumas informações
-                    sobre o seu negócio e os requisitos do projeto. Isso nos ajudará a planejar as próximas etapas de
-                    maneira eficiente</p>
-            </div> <br>
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container-sm global-container cards-buttons">
+        <div class="card" onclick="toggle_screens(0)">
+            <h5 class="card-title">Resposta:</h5>
+            <p class="card-text">Olá João, prazer em conhece-lo! Gostaria de entender melhor algumas informações
+                sobre o seu negócio e os requisitos do projeto. Isso nos ajudará a planejar as próximas etapas de
+                maneira eficiente</p>
         </div>
     </div>
 
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
+</section>
+
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+    <div class="upside">
+        <div class="container-sm d-flex cliente">
+            <!-- aqui dentro vai o icone do cliente e sua fala  -->
+            <!-- Elemento 1 -->
+            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                alt="img">
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Algumas das principais funcionalidades que gostaríamos de ver no website são:
+                        catálogo de livros com filtros de pesquisa, carrinho de compras, check-out seguro e painel de
+                        acompanhamento de pedidos.
+                        Também é importante que o site tenha uma aparência moderna e intuitiva, que facilite a navegação
+                        e a
+                        experiência do usuário. Temos um público-alvo diversificado, então a usabilidade e a
+                        acessibilidade
+                        são aspectos cruciais. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
+        </div>
+    </div>
+
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Entendi. Sobre o Catálogo de Livros,...</h1>
+        <div class="card">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card" onclick="toggle_screens(1)">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
     </div>
 </section>
 
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
-    <div class="left-side">
+    <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
             <!-- Elemento 1 -->
             <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
                 alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Algumas das principais funcionalidades que gostaríamos de ver no website são:
-                    catálogo de livros com filtros de pesquisa, carrinho de compras, check-out seguro e painel de
-                    acompanhamento de pedidos.
-                    Também é importante que o site tenha uma aparência moderna e intuitiva, que facilite a navegação e a
-                    experiência do usuário. Temos um público-alvo diversificado, então a usabilidade e a acessibilidade
-                    são aspectos cruciais.
-
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
+                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
+                        objetivo
+                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
+                        conveniente. </p>
+                </div>
             </div>
         </div>
-        <br>
 
-        <div class="container-sm global-container cards-buttons">
-            <h1 class="SUB-global">PO: Entendi. Sobre o Catálogo de Livros,...</h1>
-            <div class="card">
-                <h5 class="card-title">Alternativa A</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
+        </div>
+    </div>
 
-            <div class="card" onclick="toggle_screens(1)">
-                <h5 class="card-title">Alternativa B</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Agora sobre Carrinho de Compras e Checkout, ...</h1>
+        <div class="card" onclick="toggle_screens(2)">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
 
-            <div class="card">
-                <h5 class="card-title">Alternativa C</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        <div class="card">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+    <div class="upside">
+        <div class="container-sm d-flex cliente">
+            <!-- aqui dentro vai o icone do cliente e sua fala  -->
+            <!-- Elemento 1 -->
+            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                alt="img">
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
+                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
+                        objetivo
+                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
+                        conveniente. </p>
+                </div>
             </div>
+        </div>
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
         </div>
 
     </div>
 
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Certo, sobre o acompanhamento dos pedidos, ...</h1>
+        <div class="card" onclick="toggle_screens(3)">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
     </div>
 </section>
 
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
-    <div class="left-side">
+    <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
             <!-- Elemento 1 -->
             <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
                 alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla fugiat
-                    doloremque beatae eum mollitia sapiente quidem molestiae aut quo neque repudiandae, aperiam tempore,
-                    sit illo atque similique suscipit vitae!
-            </div>
-        </div>
-        <br>
-
-        <div class="container-sm global-container cards-buttons">
-            <h1 class="SUB-global">PO: Agora sobre Carrinho de Compras e Checkout, ...</h1>
-            <div class="card" onclick="toggle_screens(2)">
-                <h5 class="card-title">Alternativa A</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
-
-            <div class="card">
-                <h5 class="card-title">Alternativa B</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
-
-            <div class="card">
-                <h5 class="card-title">Alternativa C</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
+                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
+                        objetivo
+                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
+                        conveniente. </p>
+                </div>
             </div>
         </div>
 
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
+        </div>
     </div>
 
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Ótimo! sobre o design, ... </h1>
+        <div class="card">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+
+        <div class="card" onclick="toggle_screens(4)">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+    <div class="upside">
+        <div class="container-sm d-flex cliente">
+            <!-- aqui dentro vai o icone do cliente e sua fala  -->
+            <!-- Elemento 1 -->
+            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                alt="img">
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
+                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
+                        objetivo
+                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
+                        conveniente. </p>
+                </div>
+            </div>
+        </div>v>
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
+        </div>
+    </div>
+
+    <div class="container-sm global-container cards-buttons">
+        <div class="card" onclick="toggle_screens(5)">
+            <h5 class="card-title">Resposta:</h5>
+            <p class="card-text">Perfeito, essas informações são muito importantes para que possamos definir um
+                plano de desenvolvimento adequado. Vou anotar todos esses detalhes e, em seguida, compartilharei uma
+                proposta inicial com você, contemplando o escopo, o cronograma e os próximos passos.</p>
+        </div>
     </div>
 </section>
 
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
-    <div class="left-side">
+    <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
             <!-- Elemento 1 -->
             <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
                 alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla fugiat
-                    doloremque beatae eum mollitia sapiente quidem molestiae aut quo neque repudiandae, aperiam tempore,
-                    sit illo atque similique suscipit vitae!
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Excelente. Estou ansioso para ver a sua proposta. Tenho certeza de que poderemos
+                        trabalhar juntos de forma produtiva para entregar este projeto com sucesso.</p>
+                </div>
             </div>
+        </div>v>
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                Requisito 1
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 2
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 3
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                Requisito 4
+            </p>
         </div>
-        <br>
-
-        <div class="container-sm global-container cards-buttons">
-            <h1 class="SUB-global">PO: Certo, sobre o acompanhamento dos pedidos, ...</h1>
-            <div class="card" onclick="toggle_screens(3)">
-                <h5 class="card-title">Alternativa A</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
-
-            <div class="card">
-                <h5 class="card-title">Alternativa B</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
-
-            <div class="card">
-                <h5 class="card-title">Alternativa C</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div>
-        </div>
-
     </div>
 
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
-    </div>
-</section>
-
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
-    <div class="left-side">
-        <div class="container-sm d-flex cliente">
-            <!-- aqui dentro vai o icone do cliente e sua fala  -->
-            <!-- Elemento 1 -->
-            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
-                alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla fugiat
-                    doloremque beatae eum mollitia sapiente quidem molestiae aut quo neque repudiandae, aperiam tempore,
-                    sit illo atque similique suscipit vitae!
-            </div>
-        </div>
-        <br>
-
-        <div class="container-sm global-container cards-buttons">
-            <h1 class="SUB-global">PO: Ótimo! sobre o design, ... </h1>
-            <div class="card">
-                <h5 class="card-title">Alternativa A</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
-
-            <div class="card">
-                <h5 class="card-title">Alternativa B</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div> <br>
-
-            <div class="card" onclick="toggle_screens(4)">
-                <h5 class="card-title">Alternativa C</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur. </p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
-    </div>
-</section>
-
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
-    <div class="left-side">
-        <div class="container-sm d-flex cliente">
-            <!-- aqui dentro vai o icone do cliente e sua fala  -->
-            <!-- Elemento 1 -->
-            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
-                alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla fugiat
-                    doloremque beatae eum mollitia sapiente quidem molestiae aut quo neque repudiandae, aperiam tempore,
-                    sit illo atque similique suscipit vitae!
-            </div>
-        </div>
-        <br>
-
-        <div class="container-sm global-container cards-buttons">
-            <div class="card" onclick="toggle_screens(5)">
-                <h5 class="card-title">Resposta:</h5>
-                <p class="card-text">Perfeito, essas informações são muito importantes para que possamos definir um
-                    plano de desenvolvimento adequado. Vou anotar todos esses detalhes e, em seguida, compartilharei uma
-                    proposta inicial com você, contemplando o escopo, o cronograma e os próximos passos.</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
-    </div>
-</section>
-
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
-    <div class="left-side">
-        <div class="container-sm d-flex cliente">
-            <!-- aqui dentro vai o icone do cliente e sua fala  -->
-            <!-- Elemento 1 -->
-            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
-                alt="img">
-            <div class="balao2">
-                <p class="TXT-global"> Excelente. Estou ansioso para ver a sua proposta. Tenho certeza de que poderemos
-                    trabalhar juntos de forma produtiva para entregar este projeto com sucesso.
-            </div>
-        </div>
-        <br>
-
-        <div class="container-sm global-container cards-buttons">
-            <button type="button" class="validar">Validar<i class="bi bi-check"></i></button>
-        </div>
-
-    </div>
-
-    <div class="container-sm global-container task-list">
-        <h1 class="SUB-global">Task-List</h1>
-        <p class="TEXT-global">
-            Requisito 1
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 2
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 3
-        </p>
-        <hr>
-        <p class="TEXT-global">
-            Requisito 4
-        </p>
+    <div class="container-sm global-container cards-buttons">
+        <button type="button" class="validar">Validar<i class="bi bi-check"></i></button>
     </div>
 </section>
 

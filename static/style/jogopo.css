@@ -4,6 +4,7 @@
     padding: 30px;
     border: ridge 5px rgba(81, 7, 255, 0.233);
     box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+    flex-direction: column;
 }
 
 .titulo-jogo {
@@ -23,12 +24,10 @@ hr {
     margin: 20px 0;
 }
 
-.cliente {
-    gap: 10px;
-}
-
-.left-side {
-    width: 65%;
+.upside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 .task-list {
@@ -37,8 +36,8 @@ hr {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* justify-content: center; */
-    width: 25%;
+    margin-right: 5%;
+    width: 35%;
     border: none;
     box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
     height: 60%;
@@ -49,7 +48,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.SUB-global{
+.SUB-global {
     text-align: center;
     text-indent: 0px;
     width: 100%;
@@ -60,7 +59,7 @@ hr {
     background-color: #020234;
     padding: 10px 0;
     text-align: center;
-    border-radius: 20px 20px 0 0 ;
+    border-radius: 20px 20px 0 0;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -85,28 +84,39 @@ hr {
     transition: 0.2s;
 }
 
-.balao2{
-    background: #2D2DA8;
-    font-size: 0.85em;
-    line-height: 1.6em;  
-    border-radius: 15px;
-    width: 300px;
-    height: auto;
-    color: #fff;
-    padding: 15px;
-    position: relative;
-    margin-top: 25px;
+.bubble-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.balao2:after{ /*Triangulo*/
-    content: "";
+
+.speech-bubble {
+    background-color: #1D1D7C;
+    padding: 20px 25px;
+    position: relative;
+    border: 3px solid #2D2DA8;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.speech-bubble::before {
+    content: '';
     width: 0;
     height: 0;
     position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #2D2DA8;
-    left: -20px; 
-    top: 25%;
+    top: 10px;
+    left: -17px;
+    border-top: 25px solid #2D2DA8;
+    border-left: 17px solid transparent;
+}
+
+.sb-text {
+    margin-bottom: 0;
+    font-size: .9rem;
+    font-weight: 300;
+    word-spacing: 3px;
+    line-height: 25px;
 }
 
 .card {
@@ -117,6 +127,7 @@ hr {
     max-height: 400px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
     padding: 25px;
+    margin-top: 20px;
 }
 
 .card:hover {
@@ -143,22 +154,50 @@ hr {
     margin-bottom: 10px;
 }
 
-.hidden{
+.hidden {
     opacity: 0;
     overflow: hidden;
     margin: 0;
     height: 0;
-
     transition: margin 350ms;
 }
 
-@media (max-width:768px){
-    .bg-chat{
+@media (max-width:768px) {
+    .bg-chat {
         width: 80%;
         flex-direction: column;
     }
-    .left-side {
+
+    .speech-bubble{
+        padding: 10px 15px;
+    }
+
+        .speech-bubble::before{
+            content: '';
+            width: 0;
+            height: 0;
+            
+            position: absolute;
+            top: 10px;
+            left: -13px;
+
+            border-top: 25px solid #2D2DA8;
+            border-left: 13px solid transparent;
+        }
+
+        .sb-text{
+            margin-bottom: 0;
+
+            font-size: .8rem;
+            font-weight: 300;
+
+            word-spacing: 1px;
+            line-height: 19px;
+        }
+
+    .upside {
         width: 100%;
+        flex-direction: column;
     }
 
     .cards-buttons {
