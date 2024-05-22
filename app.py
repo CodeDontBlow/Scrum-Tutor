@@ -104,7 +104,7 @@ def estimativa():
 
 @app.route("/jogoPO")
 def jogoPO():
-    return render_template("Modulo-2/jogoPo.html")
+    return render_template("Modulo-2/jogoPO.html")
 
 @app.route("/jogoBacklog")
 def jogoBacklog():
