@@ -5,10 +5,12 @@
     border: ridge 5px rgba(81, 7, 255, 0.233);
     box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
     flex-direction: column;
+    margin-top: 0;
 }
 
 .titulo-jogo {
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 hr {
@@ -35,7 +37,7 @@ hr {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     margin-right: 5%;
     width: 35%;
     border: none;
@@ -65,16 +67,19 @@ hr {
 }
 
 .task-list .TEXT-global {
+    font-size: 12px;
     margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .validar {
     background-color: #2E8F2C;
-    width: 50%;
+    width: 15%;
     height: 50px;
     border: none;
     border-radius: 30px;
-    margin-left: 20%;
+    margin: 0 auto;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
 }
 
@@ -131,7 +136,7 @@ hr {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.3s;
     background-position: -60px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -160,6 +165,15 @@ hr {
     margin: 0;
     height: 0;
     transition: margin 350ms;
+    padding: 0;
+}
+
+.column-1, .column-2 {
+    width: 50%;
+}
+
+.column-1 {
+    border-right: 1px solid rgba(231, 225, 225, 0.445);
 }
 
 @media (max-width:768px) {

@@ -11,7 +11,7 @@
 }
 
 .tabela {
-    margin-right: 90px;
+    margin-right: 20px;
 }
 
 .linha {
@@ -20,16 +20,18 @@
 }
  
 .elemento{
-    padding: 30px;
-    text-align: center;
     background-color: #020234;
-    margin: 3px;
-    font-size: 10px;
-    width: 190px;
-    height: 100px;
 }
 
-.cabecalho .elemento {
+.item-titulo, .elemento{
+    padding: 30px;
+    text-align: center;
+    margin: 3px;
+    font-size: 8px;
+    width: 120px;
+}
+
+.item-titulo {
     background-color: #3B3B82;
 }
 
@@ -42,8 +44,7 @@
 
 .requisito {
     background-color: #2d2daf;
-    width: 150px;
-    height: 50px;
+    width: 320px;
     border: 1px solid #0202346b;
     border-radius: 10px;
     color: rgb(190, 188, 188);
@@ -52,7 +53,7 @@
 }
 
 .requisito h1 {
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -72,7 +73,7 @@
     background-color: #2E8F2C;
     width: 150px;
     height: 50px;
-    margin: 20px auto;
+    margin: 5   0px auto;
     margin-top: 50px;
     border: none;
     border-radius: 30px;
@@ -83,6 +84,10 @@
     background-color: #1e691c;
     transform: scale(1.2);
     transition: 0.2s;
+}
+
+.drop-zone {
+    width: 330px;
 }
 
 @media (max-width: 768px) {
