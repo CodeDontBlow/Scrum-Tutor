@@ -1,7 +1,6 @@
 {% extends 'base.html'%}
 
 {% block pageCss %}
-<link rel="stylesheet" href="{{url_for('static' , filename='style/Modulo-2/jogoSM.css')}}">
 <link rel="stylesheet" href="{{url_for('static' , filename='style/Modulo-2/jogoST.css')}}">
 {% endblock %}
 
@@ -13,7 +12,7 @@
 
 <!-- .:: Início de uma Nova Tela (0) ::. -->
 <!-- Introdução -->
-<section class="toggle-section">
+<section id="top" class="toggle-section">
 
     <div class="container-sm global-container">
 
@@ -113,7 +112,7 @@
 
                     <!-- Alternativa A -->
                     <div onclick="toggle_screens(1)">
-                        <button alt="Então...">
+                        <button class="btn22" alt="Então...">
                             <i>V</i>
                             <i>a</i>
                             <i>m</i>
@@ -127,7 +126,8 @@
                             <i>ç</i>
                             <i>a</i>
                             <i>r</i>
-                            <i>!!</i>
+                            <i>!</i>
+                            <i>!</i>
                         </button>
                     </div>
 
@@ -151,7 +151,7 @@
             <div class="content-block col-md-8">
                 <img src="{{url_for('static' , filename='img/cont/burndownapi.png')}}" alt="" class="IMG-global">
                 <h1 class="SUB-global">
-                    Este é o Backlog do produto, o primeiro dev iniciará mostrando como criar uma Task e uma
+                    Este é o Backlog do produto, o primeiro e segundo dev iniciará mostrando como criar uma Task e uma
                     Subtask!
                 </h1>
             </div>
@@ -178,7 +178,7 @@
 
                     <!-- Alternativa A -->
                     <div class="options-card" onclick="toggle_screens(2)">
-                        <h1 class="SUB-global">
+                        <h1 class="card-text">
                             Beleza! Vamos começar pela primeira User Story?
                         </h1>
                     </div>
@@ -190,6 +190,404 @@
         </div>
     </div>
 </section>
+
+
+<!-- .:: Início de uma Nova Tela (3) ::. -->
+<!-- Dev 1 Explicando-->
+<section class="toggle-section hidden">
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-sm global-container">
+        <div class="container-content text-center row">
+
+            <!-- Dev 1 -->
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="content-block col-md">
+
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Dev1.svg')}}" alt="" class="IMG-global">
+                    <h4 class="dev-name">
+                        Dev 1
+                    </h4>
+                </div>
+
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="content-block col-md">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        1 - Como cliente externo, ter acesso às principais ferramentas de compra para facilitar a
+                        navegação e a usabilidade.
+                    </p>
+                    <hr>
+
+                    <p class="sb-text">
+                        Como nós iremos desenvolver essa história do usuario, precisamos deixar claro para qualquer um
+                        que a leia, ter noção do que fazer, como por exemplo: Criar ferramentas de compra visando a
+                        facilidade da navegação!
+                    </p>
+                    <hr>
+                    <p class="sb-text">
+                        As SubTask servem para indicar o passo a passo do desenvolvimento, você tem alguma ideia de por
+                        onde começar?
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-lg master-container">
+
+        <!-- Área da Pergunta -->
+        <div class="row d-flex justify-content-center text-row">
+            <div class="col-sm-6 col">
+
+                <!-- Pergunta -->
+                <h4 class="master-title text-center">
+                    Escolha qual seria o primeiro passo ideal:
+                </h4>
+
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-lg-6 col-9 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card" onclick="toggle_screens(3)">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        Conversar com o P.O e listar todas as ferramentas que devem ser implementadas.
+                    </p>
+                </div>
+
+                <!-- Alternativa B -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa B
+                    </h6>
+
+                    <p class="card-text">
+                        Criar a pagina web com o conteúdo.
+                    </p>
+                </div>
+
+                <!-- Alternativa C -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa C
+                    </h6>
+
+                    <p class="card-text">
+                        Observar outras ferramentas de sites relacionados e adicionar todas as ferramentas deles.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- .:: Início de uma Nova Tela (4) ::. -->
+<!-- Dev 2 Explicando-->
+<section class="toggle-section hidden">
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-sm global-container">
+        <div class="container-content text-center row">
+
+            <!-- Dev 2 -->
+
+            <!-- Imagem e nome do Dev (Lado Esquerdo) -->
+            <div class="content-block col-md">
+
+                <div class="dev-card">
+                    <img src="{{url_for('static' , filename='img/storyset/Dev2.svg')}}" alt="" class="IMG-global">
+                    <h4 class="dev-name">
+                        Dev 2
+                    </h4>
+                </div>
+
+            </div>
+
+            <!-- Balão de fala do Dev (Lado Direito) -->
+            <div class="content-block col-md">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Ceerto! Precisamos ter certeza que o que vamos desenvolver está de acordo com o que o
+                        cliente precisa.
+                    </p>
+                    <hr>
+
+                    <p class="sb-text">
+                        Tive uma idéia da próxima SubTask, Criar o layout da página onde ficarão as ferramentas. O que
+                        acha?
+                    </p>
+                    <hr>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-lg master-container">
+
+        <!-- Área da Pergunta -->
+        <div class="row d-flex justify-content-center text-row">
+            <div class="col-sm-6 col">
+
+                <!-- Pergunta -->
+                <h4 class="master-title text-center">
+                    Escolha sua resposta:
+                </h4>
+
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-lg-6 col-9 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        É uma má ideia, deveriamos escrever o código primeiro.
+                    </p>
+                </div>
+
+                <!-- Alternativa B -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa B
+                    </h6>
+
+                    <p class="card-text">
+                        É uma ideia ruim, não acho importante criar o layout.
+                    </p>
+                </div>
+
+                <!-- Alternativa C -->
+                <div class="options-card" onclick="toggle_screens(4)">
+                    <h6 class="card-title">
+                        Alternativa C
+                    </h6>
+
+                    <p class="card-text">
+                        É uma boa ideia, e para finalizar, podemos implementar em código as ferramentas finalizando a
+                        task!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- .:: Início de uma Nova Tela (5) ::. -->
+<section class="toggle-section hidden">
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-sm global-container">
+        <div class="container-content text-center row">
+
+            <div class="content-block col-md-4">
+                <img src="{{url_for('static' , filename='img/storyset/Dev2.svg')}}" alt="" class="IMG-global">
+                <h4 class="dev-name">
+                    Dev 2
+                </h4>
+            </div>
+
+            <div class="content-block col-md-8">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Então a primeira US ficou assim:
+                    </p>
+                    <p class="sb-text">
+                        1 - Como cliente externo, ter acesso às principais ferramentas de compra para facilitar a
+                        navegação e a usabilidade.
+                    </p>
+
+                    <hr>
+
+                    <p class="sb-text">
+                        Task - Criar ferramentas de compra visando a facilidade da navegação
+                    </p>
+
+                    <hr>
+
+                    <p class="sb-text">
+                        SubTask - Conversar com o P.O e listar todas as ferramentas que devem ser implementadas.
+                    </p>
+
+                    <p class="sb-text">
+                        SubTask - Criar o layout da página onde ficarão as ferramentas.
+                    </p>
+
+                    <p class="sb-text">
+                        SubTask - Implementar em código as ferramentas finalizando a task.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-lg-6 col-9 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card" onclick="toggle_screens(5)">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                        Certo! Podemos finalizar esta User Story com todas as subtask prontas. Qual é a segunda US Dev 3?
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- .:: Início de uma Nova Tela (6) ::. -->
+<section class="toggle-section hidden">
+
+    <!-- Área dos Devs (Parte de Cima) -->
+    <div class="container-sm global-container">
+        <div class="container-content text-center row">
+
+            <div class="content-block col-md-4">
+                <img src="{{url_for('static' , filename='img/storyset/Dev3.svg')}}" alt="" class="IMG-global">
+                <h4 class="dev-name">
+                    Dev 3
+                </h4>
+            </div>
+
+            <div class="content-block col-md-8">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        A Segunda US é:
+                    </p>
+                    <hr>
+                    <p class="sb-text">
+                       2 - Como UX Design, poder criar elementos e uma aparência moderna e chamativa, para cativar os possíveis clientes externos.
+                    </p>
+
+                    <hr>
+
+                    <p class="sb-text">
+                        Qual seria a Task para poder destrinchar essa US?
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Área das Opções (Parte de Baixo) -->
+    <div class="container-lg master-container">
+
+        <!-- Área das Alternativas -->
+        <div class="row d-flex justify-content-center options-area">
+
+            <!-- Container das Alternativas -->
+            <div class="col-lg-6 col-9 options-container">
+
+                <!-- Alternativa A -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa A
+                    </h6>
+
+                    <p class="card-text">
+                    
+                    </p>
+                </div>
+
+                <!-- Alternativa B -->
+                <div class="options-card" onclick="toggle_screens(6)">
+                    <h6 class="card-title">
+                        Alternativa B
+                    </h6>
+
+                    <p class="card-text">
+                        Criar elementos e uma aparência moderna e chamativa, para cativar os possíveis clientes externos.
+                    </p>
+                </div>
+
+                <!-- Alternativa C -->
+                <div class="options-card">
+                    <h6 class="card-title">
+                        Alternativa C
+                    </h6>
+
+                    <p class="card-text">
+                    
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
