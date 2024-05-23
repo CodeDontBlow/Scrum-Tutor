@@ -1,23 +1,28 @@
 <h1 align="center"> Projeto API - 1º Semestre </h1>
 
+## 🏛️ Curso de metodologia SCRUM 
 
+<p align="center">
+<img height="30%" width="30%" src="static/img/logos/STlogoG.svg">
+</p>
 
-## Curso de metodologia SCRUM 
-
-<img src="https://wac-cdn.atlassian.com/dam/jcr:7af87fb7-1d9d-40de-910b-852ad8fe1825/scrum@2x.png?cdnVersion=1549" alt="Texto Alternativo">
-
-## 🏁 Objetivo
+## 🎯 Objetivo
 O objetivo deste projeto é desenvolver um website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. Alunos do 1º semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC liderarão o desenvolvimento desta plataforma
 
 ## 👁️ Visão do produto
 A visão deste produto é criar um sistema web didático e formativo que sirva como uma ferramenta abrangente para ensinar a metodologia Scrum. Nosso objetivo é fornecer aos usuários uma compreensão detalhada dos princípios, processos e artefatos do Scrum, enquanto demonstramos como aplicá-los em diferentes contextos de projeto.
 
-## ✏️ Cronograma
+## 📅 Cronograma
 <table>
   <tr>
+    <td></td>
+    <td>Início</td>
+    <td>Fim</td>
+  </tr>
+  <tr>
     <td>Kick Off</td>
-    <td>00/00</td>
-    <td>00/00</td>
+    <td>12/03</td>
+    <td>12/03</td>
   </tr>
    <tr>
     <td>Sprint 1</td>
@@ -41,69 +46,61 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
   </tr>
 </table>
 
-## 📑 Back Log do produto
-
-<a href="https://manager.2pdf.com/apps/storage/files/11156412/result/DOC-20240505-WA0013_c%C3%B3pia.png"> Link do Backlog do produto </a>
-<a href="https://manager.2pdf.com/apps/storage/files/11156406/result/Sprint2_c%C3%B3pia.png"> Link do Backlog da Sprint </a>
+## 📋 BackLog do produto
+<p align="center">
+<img height="80%" width="80%" src="assets/Backlog_Produto.jpg">
+</p>
 
 ## 🔰 Sprint 1
-🖥️ <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
-## Requisitos
-<details>
-  <summary>
- Funcionais
-</summary>
-<ul>
-        <li>Linguagem Python (Requisito Fatec)</li>
-        <li>Linguagem HTML e CSS (Requisito Fatec)</li>
-        <li>Python</li>
-        <li>Uso do framework Bootstrap</li>
-</ul>
-</details>
-<details>
-  <summary>
-  Não funcionais
-</summary>
-<ul>
-        <li>Documentação via Github.</li>
-        <li>Linguagem de programação Python, framework Flask.</li>
-        <li>Linguagem de marcação HTML e CSS.</li>
-</ul>
-</details>
-
+🔗 <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
+## 📋 Backlog Sprint 1
+<p align="center">
+<img height="80%" width="80%" src="assets/Backlog_PrimeiraSprint.jpg">
+</p>
 
 ## 🔰 Sprint 2
-🖥️ Assista ao vídeo do nosso site <br/>
-[![Watch the video](https://img.youtube.com/vi/EQWc5rAp7w4/0.jpg)](https://www.youtube.com/watch?v=EQWc5rAp7w4)
+## 📋 Backlog Sprint 2
+<p align="center">
+  <img height="80%" width="80%" src="assets/Backlog_SegundaSprint1.jpg">
+  <img height="80%" width="80%" src="assets/Backlog_SegundaSprint2.jpg">
+</p>
 
-## Tecnologias
-<ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Python</li>
-        <li>Bootstrap</li>
-        <li>Flask</li>
-</ul>
+## Vídeo da navegação do incremento
+Clique no ícone para acessar o vídeo no youtube:<br>
 
-## Ferramentas
-<ul>
-        <li>GitHub</li>
-        <li>Figma</li>        
-</ul>
+<p align="center">
+
+[ <img height="10%" width="10%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/2560px-YouTube_full-color_icon_(2017).svg.png"> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
+
+</p>
+
+## 💻 Tecnologias
+- ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+- ![FLASK](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) 
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) 
+
+## 🧰 Ferramentas
+- ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+- ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ## 👥 Equipe Code Don´t Blow
 
 <br>
 
 |Nome|Função|GitHub|
-| -------- |-------- |-------- |
-|**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)|
-|**Leonardo Cristiano**|Product Owner|[@GitHub](https://github.com/Leonardo-dSouza)|
-|**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)|
-|**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)||
-|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)|
-|**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)|
-|**Vanessa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)|
+| -------- |-------- |-------- 
+|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)
+|**Leonardo Cristiano**|Product Owner|[@GitHub](https://github.com/Leonardo-dSouza)
+|**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)
+|**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)
+|**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)
+|**Vanessa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)
+|**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)
 
+<br>
 
-</br>
+<p align="center">
+<img height="25%" width="25%" src="static/img/logos/CDB_preto.svg">
+</p>
