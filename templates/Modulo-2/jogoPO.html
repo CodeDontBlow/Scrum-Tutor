@@ -8,12 +8,60 @@
 {% endblock %}
 
 {% block pageContent %}
-<div class="container-content text-center titulo-jogo">
-    <h1 class="TITLE-global">Atue como Product Owner</h1>
-</div>
+<!-- Introdução -->
+<section id="top" class="toggle-section">
 
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+    <div class="container-sm global-container">
+
+        <div class="container-content text-center">
+            <div class="content-block">
+                <h1 class="TITLE-global">
+                    Atue como Product Owner!
+                </h1>
+                <p class="subtitle">Jogo Product Owner </p>
+            </div>
+        </div>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md-4">
+                <img src="{{url_for('static' , filename='img/storyset/jogopo.svg')}}" alt=" " class="IMG-global">
+            </div>
+
+            <div class="content-block col-md-8">
+                <div class="TXT-global-container">
+                    <p class="TXT-global">
+                        Bem-vindo ao jogo de simulação interativa, que recria uma conversa típica entre o Product Owner e o Cliente em um processo Scrum. Este exercício visa proporcionar uma experiência realista e imersiva, permitindo que você se coloque no lugar de cada uma dessas importantes funções e compreenda melhor os desafios e dinâmicas envolvidos.
+
+                    </p>
+                    <p class="TXT-global">
+                        Ao longo deste jogo, você terá a oportunidade de assumir o papel do Product Owner, responsável por definir e priorizar os requisitos do produto, em uma conversa com o Cliente, que apresenta suas necessidades e expectativas. 
+
+                    </p>
+                    <p class="TXT-global">
+                        O objetivo é que, ao final da experiência, você tenha uma melhor compreensão do processo Scrum, da importância da colaboração entre as partes e das habilidades necessárias para uma comunicação produtiva e eficaz entre o Product Owner e o Cliente.
+
+                    </p>
+                    <p class="TXT-global">
+                        Prepare-se para uma jornada desafiadora, mas enriquecedora, que irá aprimorar suas habilidades no gerenciamento de projetos ágeis. Boa sorte e divirta-se!
+                    </p>
+                </div>
+
+                <div class="BTN-global" id="btn-return-trail" onclick="toggle_screens(0)"
+                    style="background-color: #2E8F2C; color: white !important;">
+                    INICIAR
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
+
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
             <!-- Elemento 1 -->
