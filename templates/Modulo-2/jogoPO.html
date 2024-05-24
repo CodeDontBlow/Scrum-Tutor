@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block pageContent %}
-<!-- Introdução -->
+<!-- Introdução ao jogo -->
 <section id="top" class="toggle-section">
 
     <div class="container-sm global-container">
@@ -59,6 +59,9 @@
 
 </section>
 
+<!--ROUNDS-->
+
+<!--Inicio-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
 
@@ -86,7 +89,7 @@
     </div>
 
     <div class="container-sm global-container cards-buttons">
-        <div class="card" onclick="toggle_screens(0)">
+        <div class="card" onclick="toggle_screens(1)">
             <h5 class="card-title">Resposta:</h5>
             <p class="card-text">Olá João, prazer em conhece-lo! Gostaria de entender melhor algumas informações
                 sobre o seu negócio e os requisitos do projeto. Isso nos ajudará a planejar as próximas etapas de
@@ -96,6 +99,7 @@
 
 </section>
 
+<!--Round 1-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
@@ -137,7 +141,7 @@
             <p class="card-text"> Você acha que seria interessante organizar o catálogo de livros por cores das capas? </p>
         </div>
 
-        <div class="card" onclick="toggle_screens(1)">
+        <div class="card" onclick="toggle_screens(2)">
             <h5 class="card-title">Alternativa B</h5>
             <p class="card-text">Como você imagina que o catálogo de livros e as opções de pesquisa devem ser
                 organizados e apresentados aos usuários? Você tem alguma preferência em relação à exibição das
@@ -151,6 +155,7 @@
     </div>
 </section>
 
+<!--Round 2-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
@@ -196,7 +201,7 @@
             </p>
         </div>
 
-        <div class="card" onclick="toggle_screens(2)">
+        <div class="card" onclick="toggle_screens(3)">
             <h5 class="card-title">Alternativa B</h5>
             <p class="card-text"> Que funcionalidades você considera essenciais no carrinho de compras? </p>
         </div>
@@ -209,6 +214,7 @@
 
 </section>
 
+<!--Round 3-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
@@ -219,11 +225,69 @@
             <div class="col-lg-8 bubble-container">
                 <div class="speech-bubble">
                     <p class="sb-text">
-                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
-                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
-                        objetivo
-                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
-                        conveniente. </p>
+                        No carrinho de compras, gostaríamos que os clientes pudessem adicionar, remover e alterar a quantidade de itens. Também deve exibir o valor total do pedido e a opção de aplicar cupons de desconto.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <p class="TEXT-global">
+                1. Acesso fácil às principais ferramentas de compra.
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                2. Criar design moderno e atrativo para clientes.
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                3. Melhorar busca no catálogo com filtros.
+            </p>
+            <hr>
+            <p class="TEXT-global">
+                4. Desenvolver carrinho de compras e Checkout.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Ainda sobre Carrinho de Compras e Checkout, ...</h1>
+        <div class="card">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text">
+                Você acha que seria interessante adicionar um minigame ao carrinho de compras para entreter os clientes durante o processo de checkout?
+            </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text"> Você acha que seria interessante incluir uma opção de pagamento via trocas de serviços durante o processo de finalização da compra?
+            </p>
+        </div>
+        <div class="card" onclick="toggle_screens(4)">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text"> Quais etapas você imagina que o processo de checkout deve contemplar para oferecer uma experiência de compra segura e eficiente? Você tem alguma preferência ou requisito específico quanto aos métodos de pagamento que devem ser oferecidos?
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--Round 4-->
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+    <div class="upside">
+        <div class="container-sm d-flex cliente">
+            <!-- aqui dentro vai o icone do cliente e sua fala  -->
+            <!-- Elemento 1 -->
+            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                alt="img">
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        No processo de checkout, seria essencial ter etapas como seleção de endereço de entrega, escolha do método de pagamento e confirmação do pedido.
+
+Quanto aos métodos de pagamento, é importante oferecer as principais bandeiras de cartão de crédito, além de outras opções como boleto bancário e PIX.
+ </p>
                 </div>
             </div>
         </div>
@@ -261,14 +325,14 @@
             <p class="card-text"> Você acha que seria interessante incluir uma funcionalidade de doação para organizações políticas no painel de acompanhamento de pedidos dos clientes?
             </p>
         </div>
-        <div class="card" onclick="toggle_screens(3)">
+        <div class="card" onclick="toggle_screens(5)">
             <h5 class="card-title">Alternativa C</h5>
             <p class="card-text"> Que informações você considera essenciais no painel de acompanhamento de pedidos dos clientes?
             </p>
         </div>
     </div>
 </section>
-
+<!--Round 5-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
@@ -279,11 +343,79 @@
             <div class="col-lg-8 bubble-container">
                 <div class="speech-bubble">
                     <p class="sb-text">
-                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
-                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
-                        objetivo
-                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
-                        conveniente. </p>
+                        No painel de acompanhamento, gostaríamos que os clientes pudessem visualizar o status do pedido (processando, enviado, entregue), a data prevista de entrega e mais informações sobre o frete. </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <div class="us d-flex">
+                <div class="column-1">
+                    <p class="TEXT-global">
+                        1. Acesso fácil às principais ferramentas de compra.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        2. Criar design moderno e atrativo para clientes.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        3. Melhorar busca no catálogo com filtros.
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p class="TEXT-global">
+                        4. Desenvolver carrinho de compras e Checkout.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        5. Acompanhar status do pedido.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        6. Automatizar atualizações de pedidos por email.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Ainda sobre o acompanhamento dos pedidos….., ... </h1>
+        <div class="card">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text"> Você acha que seria interessante incluir uma funcionalidade de adoção de animais de estimação no painel de acompanhamento de pedidos, onde os clientes pudessem adotar diferentes tipos de animais durante o processo?
+            </p>
+        </div>
+
+        <div class="card" >
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text"> Você acha que seria interessante incluir uma funcionalidade de contato direto com o CEO da empresa no processo de checkout, onde os clientes pudessem ligar e conversar com ele sobre seus pedidos?
+            </p>
+        </div>
+
+        <div class="card" onclick="toggle_screens(6)">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text"> Você imagina alguma funcionalidade específica que possa melhorar a transparência e a satisfação dos clientes durante o processo de compra, como comunicação sobre o status dos pedidos? </p>
+        </div>
+    </div>
+
+</section>
+
+<!--Round 6-->
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+    <div class="upside">
+        <div class="container-sm d-flex cliente">
+            <!-- aqui dentro vai o icone do cliente e sua fala  -->
+            <!-- Elemento 1 -->
+            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                alt="img">
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        Sim, é importante ter a opção de o cliente entrar em contato com o serviço de atendimento para tirar dúvidas ou reportar problemas com o pedido. Além disso, uma funcionalidade que pode melhorar a experiência é a possibilidade de o cliente receber atualizações por e-mail ou notificações sobre o status do seu pedido, mantendo-o informado durante todo o processo.</p>
                 </div>
             </div>
         </div>
@@ -334,7 +466,7 @@
             <p class="card-text"> Você acha que seria uma boa ideia ter um layout assimétrico e caótico no website, com elementos flutuantes e sobrepostos, para criar uma sensação de dinamismo e movimento? </p>
         </div>
 
-        <div class="card" onclick="toggle_screens(4)">
+        <div class="card" onclick="toggle_screens(7)">
             <h5 class="card-title">Alternativa C</h5>
             <p class="card-text"> Você tem alguma preferência ou sugestão em relação à paleta de cores e ao alinhamento do design do website com a identidade visual da empresa? </p>
         </div>
@@ -342,6 +474,7 @@
 
 </section>
 
+<!--Round 7-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
@@ -352,11 +485,77 @@
             <div class="col-lg-8 bubble-container">
                 <div class="speech-bubble">
                     <p class="sb-text">
-                        Olá, Product Owner. Eu sou João, representando a empresa XYZ. Nós estamos
-                        interessados em desenvolver um website de e-commerce voltado para a venda de livros. Nosso
-                        objetivo
-                        é criar uma plataforma online onde os nossos clientes possam comprar livros de maneira fácil e
-                        conveniente. </p>
+                        Sim, gostaríamos de manter uma paleta de cores limpa e elegante, com predominância de tons neutros como branco, cinza e preto, combinados com alguns toques de cores secundárias, como azul ou verde, para dar maior destaque aos produtos. Além disso, é essencial que o design do website esteja em harmonia com a identidade visual da nossa empresa, mantendo elementos-chave, como logotipo, cores e estilo, para criar uma experiência coerente e fortalecer nossa marca.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-sm global-container task-list">
+            <h1 class="SUB-global">Task-List</h1>
+            <div class="us d-flex">
+                <div class="column-1">
+                    <p class="TEXT-global">
+                        1. Acesso fácil às principais ferramentas de compra.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        2. Criar design moderno e atrativo para clientes.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        3. Melhorar busca no catálogo com filtros.
+                    </p>
+                </div>
+                <div class="column-2">
+                    <p class="TEXT-global">
+                        4. Desenvolver carrinho de compras e Checkout.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        5. Acompanhar status do pedido.
+                    </p>
+                    <hr>
+                    <p class="TEXT-global">
+                        6. Automatizar atualizações de pedidos por email.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-sm global-container cards-buttons">
+        <h1 class="SUB-global">PO: Certo, ainda sobre o design, ... </h1>
+        <div class="card">
+            <h5 class="card-title">Alternativa A</h5>
+            <p class="card-text"> Você acha que seria interessante incluir GIFs animados com conteúdo humorístico e irônico em todas as páginas do website, para deixar a experiência do usuário mais divertida? </p>
+        </div>
+
+        <div class="card">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text"> Você acha que seria interessante incluir vídeos com conteúdo violento e sangrento em todas as páginas do website, para criar uma atmosfera mais intensa e impactante? </p>
+        </div>
+
+        <div class="card" onclick="toggle_screens(8)">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text"> Qual a sua expectativa em relação ao uso de imagens e outros elementos multimídia no website? </p>
+        </div>
+    </div>
+
+</section>
+
+<!--Fala de finalização PO-->
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+    <div class="upside">
+        <div class="container-sm d-flex cliente">
+            <!-- aqui dentro vai o icone do cliente e sua fala  -->
+            <!-- Elemento 1 -->
+            <img class="scrum-img img-fluid" src="{{url_for('static', filename='img/storyset/Character.svg')}}"
+                alt="img">
+            <div class="col-lg-8 bubble-container">
+                <div class="speech-bubble">
+                    <p class="sb-text">
+                        É muito importante que as imagens dos livros sejam de alta qualidade e destaquem bem as capas e detalhes dos produtos. Além disso, seria interessante incluir pequenos vídeos ou trailers de alguns lançamentos, para enriquecer a experiência do usuário. </p>
                 </div>
             </div>
         </div>
@@ -403,7 +602,7 @@
     </div>
 
     <div class="container-sm global-container cards-buttons">
-        <div class="card" onclick="toggle_screens(5)">
+        <div class="card" onclick="toggle_screens(9)">
             <h5 class="card-title">Resposta:</h5>
             <p class="card-text">Perfeito, essas informações são muito importantes para que possamos definir um
                 plano de desenvolvimento adequado. Vou anotar todos esses detalhes e, em seguida, compartilharei uma
@@ -412,6 +611,8 @@
     </div>
 </section>
 
+
+<!--Ultima resposta do Cliente-->
 <section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
