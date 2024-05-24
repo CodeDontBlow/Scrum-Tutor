@@ -1,0 +1,74 @@
+.capitulo-scrum{
+    text-align: center;
+}
+
+.col-7{
+    font-size:15px;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.lista-conteudos{
+    list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/*Todos os dispositivos citados para a resposividade
+são baseados na função inspecionar do navegador Firefox*/
+
+
+/*Responsividade para o Kindle*/
+@media (min-width: 800px) {
+
+    #CDBfooter {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    body{
+        max-height: 1280px;
+    }
+   
+}
+
+
+
+/*Responsividade para o Kindle*/
+@media (min-width: 427px) {
+
+    #CDBfooter {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+    body{
+        max-height: 1280px;
+    }
+   
+}
+
+
+/*Responsividade para o Desktop*/
+@media (min-width: 1079px) {
+
+    #CDBfooter {
+        bottom: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    body{
+        max-height: 1920px;
+    }
+
+}
+

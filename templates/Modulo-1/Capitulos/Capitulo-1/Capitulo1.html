@@ -7,20 +7,23 @@
 {% block title %} Capitulo 1 {% endblock %}
 
 {% block pageContent %}
-<div class="container-sm global-container">
+<div class="container-sm global-container principal">
     <section class="container-fluid capitulo-scrum">
-        <h1 class="TITLE-global">Capítulo 1</h1>
+        <h1 class="TITLE-global">
+            Capítulo 1
+        </h1>
         <div class="content d-flex">
-            <p class="TXR-global col-7">Bem-vindo ao curso da Metodolia Ágil Scrum. Clique nas aulas para começar a ver o
-                conteúdo.</p>
+            <p class="TXR-global col-7">
+                Bem-vindo ao curso da Metodolia Ágil Scrum. Clique nas aulas para começar a ver o conteúdo.
+            </p> 
         </div>
 
         <div class="content d-flex justify-content-left trilha-scrum">
-            <ul>
+            <ul class="LIST-global list-group lista-conteudos">
                 <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
                         class="links" href="/Fundamentos">Fundamentos Scrum</a></li><br>
                 <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
-                        class="links" href="/Valores"> Valores e Princípios ( Manifesto Ágil, Princípios, Valores)
+                        class="links" href="/Valores"> Valores e Princípios (Manifesto Ágil, Princípios, Valores)
                     </a></li><br>
                 <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
                         class="links" href="/Pilares Scrum"> Os Pilares de Scrum (Transparência, Inspeção, Adaptação)
