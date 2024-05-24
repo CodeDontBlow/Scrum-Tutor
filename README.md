@@ -65,7 +65,14 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
   <img height="80%" width="80%" src="assets/Backlog_SegundaSprint2.jpg">
 </p>
 
-## Vídeo da navegação do incremento
+## 🛣️ RoadMap
+<p align="center">
+  <img height="80%" width="80%" src="assets/roadmap.svg">
+</p>
+
+
+
+## ▶️ Vídeo da navegação do incremento
 Clique no ícone para acessar o vídeo no youtube:<br>
 
 <p align="center">
@@ -80,6 +87,7 @@ Clique no ícone para acessar o vídeo no youtube:<br>
 - ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 - ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) 
+- ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ## 🧰 Ferramentas
 - ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
@@ -91,9 +99,9 @@ Clique no ícone para acessar o vídeo no youtube:<br>
 
 |Nome|Função|GitHub|
 | -------- |-------- |-------- 
-|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)
 |**Leonardo Cristiano**|Product Owner|[@GitHub](https://github.com/Leonardo-dSouza)
 |**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)
+|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)
 |**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)
 |**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)
 |**Vanessa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)
