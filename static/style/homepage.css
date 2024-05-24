@@ -16,8 +16,8 @@
 
 
 .direct-title {
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 30px;
+    font-weight: 700;
     color: white;
     text-align: start;
     width: 50%;
@@ -27,12 +27,49 @@
     background-color: #4141DD;
     border: none;
     border-radius: 50px;
-    width: 300px;
-    height: 80px;
+    padding: 15px 50px;
     font-weight: 600;
     font-size: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
     margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    .btn {
+        padding: 10px 50px;
+        font-weight: 600;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .direct-title {
+        font-size: 25px;
+        font-weight: 700;
+        width: 100%;
+    }
+    .direct-intro {
+        padding: 30px 70px;
+    }
+}
+
+@media (max-width: 500px) { 
+    .btn {
+        padding: 10px 15px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .direct-title {
+        font-size: 17px;
+        font-weight: 700;
+        width: 100%;
+    }
+    .direct-intro {
+        justify-content: center;
+        padding: 30px;
+    }
+    .IMG-global {
+        display: none;
+    }
+    
 }
