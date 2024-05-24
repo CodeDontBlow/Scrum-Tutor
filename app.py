@@ -122,6 +122,10 @@ def jogoST():
 def examefinal():
     return render_template("/Modulo-3/examefinal.html")
 
+@app.route("/comentario")
+def comentario():
+    return render_template("/Modulo-3/comentario.html")
+
 # == == == =
 
 

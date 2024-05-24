@@ -1,13 +1,13 @@
 .backlog {
-    background-color: #1D1D7C;
-    border-radius: 0 50px;
-    padding: 30px;
-    border: ridge 5px rgba(81, 7, 255, 0.233);
-    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.titulo-jogo {
+.titulo-jogo, .titulo-jogo .TXT-global {
     margin-top: 30px;
+    text-align: center;
 }
 
 .tabela {
@@ -18,21 +18,29 @@
     display: flex;
     flex-direction: row;
 }
- 
-.elemento{
+
+.elemento {
     background-color: #020234;
 }
 
-.item-titulo, .elemento{
+.item-titulo,
+.elemento {
     padding: 30px;
     text-align: center;
     margin: 3px;
+    margin-left: 6px;
+    margin-right: 0;
     font-size: 8px;
-    width: 120px;
+    width: 150px;
 }
 
 .item-titulo {
     background-color: #3B3B82;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
 }
 
 .linha select {
@@ -40,6 +48,14 @@
     border: none;
     padding: 5px;
     font-size: 18px;
+}
+
+.grupo-requisito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .requisito {
@@ -63,18 +79,18 @@
 }
 
 .cards-requisitos {
-    gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 5%;
 }
 
 .validar {
     background-color: #2E8F2C;
     width: 150px;
     height: 50px;
-    margin: 5   0px auto;
     margin-top: 50px;
+    margin-left: 80px;
     border: none;
     border-radius: 30px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.267);
@@ -90,19 +106,114 @@
     width: 330px;
 }
 
+@media (max-width:1024px) {
+    .backlog {
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    .tabela{
+        margin-right: 0px;
+    }
+
+    .cards-requisitos {
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    .grupo-requisito {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .validar {
+        margin: 40px auto;
+    }
+}
+
 @media (max-width: 768px) {
     .backlog {
-        width: 80%;
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    .tabela {
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     .cards-requisitos {
-        margin-left: 0;
+        width: 80%;
+        margin: 20px auto;
     }
 
     .requisito {
-        margin: auto;
-        margin-top: 30px;
+        width: 60%;
+    }
+
+    .item-titulo,
+    .elemento {
+        width: 23%;
+    }
+
+    .item-titulo h1,
+    .elemento h1 {
+        font-size: 2em;
+    }
+
+    .drop-zone {
+        width: 30%;
+    }
+
+    .validar {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .backlog {
+        padding: 20px;
+    }
+
+    .tabela {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cards-requisitos {
+        width: 100%;
+    }
+
+    .requisito {
+        width: 33%;
+    }
+
+
+    .requisito h1 {
+        font-size: 0.5em;
+        text-align: center;
+    }
+
+    .item-titulo,
+    .elemento {
+        width: 23%;
+        padding: 10px;
+    }
+
+    .item-titulo h1,
+    .elemento h1 {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .linha select, .linha option {
+        font-size: 1em;
+        border: none;
+    }
+
+    .drop-zone {
+        width: 25%;
     }
 }

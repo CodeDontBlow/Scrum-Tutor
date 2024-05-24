@@ -1,11 +1,11 @@
 .bg-chat {
-    background-color: #1D1D7C;
-    border-radius: 0 50px;
-    padding: 30px;
-    border: ridge 5px rgba(81, 7, 255, 0.233);
-    box-shadow: 3px 2px rgba(0, 0, 0, 0.336);
+    padding: 50px;
     flex-direction: column;
     margin-top: 0;
+}
+
+.up-screen {
+    text-decoration: none;
 }
 
 .titulo-jogo {
@@ -168,7 +168,8 @@ hr {
     padding: 0;
 }
 
-.column-1, .column-2 {
+.column-1,
+.column-2 {
     width: 50%;
 }
 
@@ -176,38 +177,49 @@ hr {
     border-right: 1px solid rgba(231, 225, 225, 0.445);
 }
 
-@media (max-width:768px) {
+@media (min-width:768px) and (max-width:1024px) {
+    .bg-chat {
+        padding: 20px;
+
+    }
+
+    .task-list, .cliente {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 425px) and (max-width:768px) {
     .bg-chat {
         width: 80%;
         flex-direction: column;
     }
 
-    .speech-bubble{
+    .speech-bubble {
         padding: 10px 15px;
     }
 
-        .speech-bubble::before{
-            content: '';
-            width: 0;
-            height: 0;
-            
-            position: absolute;
-            top: 10px;
-            left: -13px;
+    .speech-bubble::before {
+        content: '';
+        width: 0;
+        height: 0;
 
-            border-top: 25px solid #2D2DA8;
-            border-left: 13px solid transparent;
-        }
+        position: absolute;
+        top: 10px;
+        left: -13px;
 
-        .sb-text{
-            margin-bottom: 0;
+        border-top: 25px solid #2D2DA8;
+        border-left: 13px solid transparent;
+    }
 
-            font-size: .8rem;
-            font-weight: 300;
+    .sb-text {
+        margin-bottom: 0;
 
-            word-spacing: 1px;
-            line-height: 19px;
-        }
+        font-size: .8rem;
+        font-weight: 300;
+
+        word-spacing: 1px;
+        line-height: 19px;
+    }
 
     .upside {
         width: 100%;
@@ -222,6 +234,74 @@ hr {
     }
 
     .task-list {
-        width: 80%;
+        width: 70%;
+        margin: 40px auto 0px;
+    }
+
+    .us {
+        flex-direction: column;
+    }
+
+    hr {
+        color: #ffffff00;
+    }
+
+    .column-1,
+    .column-2 {
+        width: 100%;
+        border: none;
+    }
+
+    .validar {
+        width: 100px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .cliente, .upside{ 
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .scrum-img {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .bg-chat{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .task-list{
+        width: 100%;
+    }
+
+    .task-list {
+        width: 70%;
+        margin: 40px auto 0px;
+    }
+
+    .us {
+        flex-direction: column;
+    }
+
+    hr {
+        color: #ffffff00;
+    }
+
+    .column-1,
+    .column-2 {
+        width: 100%;
+        border: none;
+    }
+
+    .validar {
+        width: 150px;
+        margin: 30px auto;
     }
 }

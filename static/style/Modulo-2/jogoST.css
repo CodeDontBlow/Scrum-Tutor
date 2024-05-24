@@ -122,14 +122,14 @@ button:hover i:nth-child(15) {
     margin: 50px 0;
 }
 
-/* .hidden{
+.hidden{
     opacity: 0;
     overflow: hidden;
     margin: 0;
     height: 0;
 
     transition: margin 350ms;
-} */
+}   
 
 .devs-container {
     padding: 0 100px;

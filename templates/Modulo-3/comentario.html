@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/comentario.css')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+{% endblock %}
+
+{% block pageTitle %} Comentarios {% endblock %}
+
+{% block pageContent %}
+
+    <body>
+        <header>
+            <h1 id="title">Scrum Tutor Survey Form </h1><br>
+            <p id="description">Obrigado por disponibilizar parte do seu tempo para nos ajudar a melhorar a plataforma!</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="preencher">
+                <label for="name" id="name-label">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
+
+                <label for="numeber" id="number-label">RA:</label>
+                <input type="number" min="0"  id="number" placeholder="Digite seu RA" required>
+            </div>
+
+            <label for="sugestoes">Você tem algum comentário para a plataforma?</label>
+            <textarea id="sugestoes" placeholder="Escreva aqui suas sugestões..." required></textarea>
+
+            <button type="submit" id="submit">Enviar</button>
+
+            <!-- <div class="rating"> estrela????
+                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                <input type="radio" name="star" id="star5"><label for="star5"></label>
+              </div> -->
+        </form>
+    </body>
+    <br>
+    {% endblock %}
