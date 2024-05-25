@@ -70,7 +70,7 @@
 <!--ROUNDS-->
 
 <!--Inicio-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
 
         <div class="container-sm d-flex cliente">
@@ -108,7 +108,7 @@
 </section>
 
 <!--Round 1 Perg 1-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -135,20 +135,20 @@
     <!--Pergunta 1 PO clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Entendi. Sobre o Catálogo de Livros,...</h1>
-        <div class="card">
-            <h5 class="card-title">Alternativa A</h5>
-            <p class="card-text"> Você acha que seria interessante organizar o catálogo de livros por cores das capas?
-            </p>
-        </div>
         <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(2)">
-                <h5 class="card-title">Alternativa B</h5>
+            <div class="card" onclick="toggle_screens(2), correct_sound.play()">
+                <h5 class="card-title">Alternativa A</h5>
                 <p class="card-text">Como você imagina que o catálogo de livros e as opções de pesquisa devem ser
                     organizados e apresentados aos usuários? Você tem alguma preferência em relação à exibição das
                     informações de cada livro, como imagem, sinopse, avaliações, etc.? </p>
             </div>
         </a>
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text"> Você acha que seria interessante organizar o catálogo de livros por cores das capas?
+            </p>
+        </div>
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa C</h5>
             <p class="card-text">Você acha que seria interessante adicionar um sistema de apostas esportivas integrado
                 ao catálogo de livros?</p>
@@ -157,7 +157,7 @@
 </section>
 
 <!--Round 2 - Resp Perg 1 - US 3 - Perg2-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -191,7 +191,7 @@
     <!--Pergunta 2 PO clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Agora sobre Carrinho de Compras e Checkout, ...</h1>
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa A</h5>
             <p class="card-text"> Você acha que seria interessante incluir um sistema de leilão para os produtos no
                 carrinho, onde os clientes pudessem disputar os itens?
@@ -199,13 +199,13 @@
         </div>
 
         <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(3)">
+            <div class="card" onclick="toggle_screens(3), correct_sound.play()">
                 <h5 class="card-title">Alternativa B</h5>
                 <p class="card-text"> Que funcionalidades você considera essenciais no carrinho de compras? </p>
             </div>
         </a>
 
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa C</h5>
             <p class="card-text"> Você acha que seria interessante incluir uma pesquisa de preferência política
                 partidária dos clientes durante o processo de finalização da compra? </p>
@@ -215,7 +215,7 @@
 </section>
 
 <!--Round 3 - US 1 - Resp Perg 2 - Perg3-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -249,24 +249,9 @@
     <!--Pergunta 3 PO clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Ainda sobre Carrinho de Compras e Checkout, ...</h1>
-        <div class="card">
-            <h5 class="card-title">Alternativa A</h5>
-            <p class="card-text">
-                Você acha que seria interessante adicionar um minigame ao carrinho de compras para entreter os clientes
-                durante o processo de checkout?
-            </p>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Alternativa B</h5>
-            <p class="card-text"> Você acha que seria interessante incluir uma opção de pagamento via trocas de serviços
-                durante o processo de finalização da compra?
-            </p>
-        </div>
-
         <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(4)">
-                <h5 class="card-title">Alternativa C</h5>
+            <div class="card" onclick="toggle_screens(4), correct_sound.play()">
+                <h5 class="card-title">Alternativa A</h5>
                 <p class="card-text"> Quais etapas você imagina que o processo de checkout deve contemplar para oferecer
                     uma experiência de compra segura e eficiente? Você tem alguma preferência ou requisito específico
                     quanto aos métodos de pagamento que devem ser oferecidos?
@@ -274,11 +259,26 @@
             </div>
         </a>
 
+        <div class="card" onclick="wrong_sound.play()">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text"> Você acha que seria interessante incluir uma opção de pagamento via trocas de serviços
+                durante o processo de finalização da compra?
+            </p>
+        </div>
+
+        <div class="card" onclick="wrong_sound.play()">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text">
+                Você acha que seria interessante adicionar um minigame ao carrinho de compras para entreter os clientes
+                durante o processo de checkout?
+            </p>
+        </div>
+
     </div>
 </section>
 
 <!--Round 4 - US 4 - Resp perg 3 - Perg 4-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -320,13 +320,13 @@
     <!--Pergunta 4 PO clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Certo, sobre o acompanhamento dos pedidos, ...</h1>
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa A</h5>
             <p class="card-text"> Você acha que seria interessante adicionar um sistema de jogos de azar no painel de
                 acompanhamento de pedidos, onde os clientes pudessem apostar na entrega dos seus produtos? </p>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa B</h5>
             <p class="card-text"> Você acha que seria interessante incluir uma funcionalidade de doação para
                 organizações políticas no painel de acompanhamento de pedidos dos clientes?
@@ -334,7 +334,7 @@
         </div>
 
         <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(5)">
+            <div class="card" onclick="toggle_screens(5), correct_sound.play()">
                 <h5 class="card-title">Alternativa C</h5>
                 <p class="card-text"> Que informações você considera essenciais no painel de acompanhamento de pedidos
                     dos clientes?
@@ -346,7 +346,7 @@
 </section>
 
 <!--Round 5 - US 5 - Resp perg 4 - Perg 5-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -391,7 +391,7 @@
     <!--Pergunta PO 5 clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Ainda sobre o acompanhamento dos pedidos….., ... </h1>
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa A</h5>
             <p class="card-text"> Você acha que seria interessante incluir uma funcionalidade de adoção de animais de
                 estimação no painel de acompanhamento de pedidos, onde os clientes pudessem adotar diferentes tipos de
@@ -399,27 +399,28 @@
             </p>
         </div>
 
-        <div class="card">
-            <h5 class="card-title">Alternativa B</h5>
+        <a href="#" class="up-screen">
+            <div class="card" onclick="toggle_screens(6), correct_sound.play()">
+                <h5 class="card-title">Alternativa B</h5>
+                <p class="card-text"> Você imagina alguma funcionalidade específica que possa melhorar a transparência e
+                    a satisfação dos clientes durante o processo de compra, como comunicação sobre o status dos pedidos?
+                </p>
+            </div>
+        </a>
+
+        <div class="card" onclick="wrong_sound.play()">
+            <h5 class="card-title">Alternativa C</h5>
             <p class="card-text"> Você acha que seria interessante incluir uma funcionalidade de contato direto com o
                 CEO da empresa no processo de checkout, onde os clientes pudessem ligar e conversar com ele sobre seus
                 pedidos?
             </p>
         </div>
-
-        <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(6)">
-                <h5 class="card-title">Alternativa C</h5>
-                <p class="card-text"> Você imagina alguma funcionalidade específica que possa melhorar a transparência e
-                    a satisfação dos clientes durante o processo de compra, como comunicação sobre o status dos pedidos?
-                </p>
-            </div>
     </div>
 
 </section>
 
 <!--Round 6 - US 6 - Resp perg 5 - Perg 6-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -473,36 +474,37 @@
     <!--Pergunta PO 6 clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Ótimo, sobre o design ...</h1>
-        <div class="card">
+        <div class="card" onclick="wrong_sound.play()">
             <h5 class="card-title">Alternativa A</h5>
             <p class="card-text"> Você acha que seria interessante utilizar uma paleta de cores com tons neon e efeitos
                 de luz pulsante no design do website, a fim de chamar mais a atenção dos clientes?
             </p>
         </div>
 
-        <div class="card">
-            <h5 class="card-title">Alternativa B</h5>
-            <p class="card-text"> Você acha que seria uma boa ideia ter um layout assimétrico e caótico no website, com
-                elementos flutuantes e sobrepostos, para criar uma sensação de dinamismo e movimento?
-            </p>
-        </div>
-
-
         <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(7)">
-                <h5 class="card-title">Alternativa C</h5>
+            <div class="card" onclick="toggle_screens(7), correct_sound.play()">
+                <h5 class="card-title">Alternativa B</h5>
                 <p class="card-text"> Você tem alguma preferência ou sugestão em relação à paleta de cores e ao
                     alinhamento do design do website com a identidade visual da empresa?
                 </p>
             </div>
         </a>
 
+
+        <div class="card" onclick="wrong_sound.play()">
+            <h5 class="card-title">Alternativa C</h5>
+            <p class="card-text"> Você acha que seria uma boa ideia ter um layout assimétrico e caótico no website,
+                com
+                elementos flutuantes e sobrepostos, para criar uma sensação de dinamismo e movimento?
+            </p>
+        </div>
+
     </div>
 
 </section>
 
 <!--Round 7 US 7 US 2 - Resp perg 6 - perg 7-->
-<section class="container-sm global-container d-flex bg-chat toggle-section ">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -568,35 +570,35 @@
     <!--Pergunta PO 7 clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Certo, ainda sobre o design, ... </h1>
-        <div class="card">
-            <h5 class="card-title">Alternativa A</h5>
-            <p class="card-text"> Você acha que seria interessante incluir GIFs animados com conteúdo humorístico e
-                irônico em todas as páginas do website, para deixar a experiência do usuário mais divertida?
-            </p>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Alternativa B</h5>
-            <p class="card-text"> Você acha que seria interessante incluir vídeos com conteúdo violento e sangrento em
-                todas as páginas do website, para criar uma atmosfera mais intensa e impactante?
-            </p>
-        </div>
-
         <a href="#" class="up-screen">
-            <div class="card" onclick="toggle_screens(8)">
-                <h5 class="card-title">Alternativa C</h5>
+            <div class="card" onclick="toggle_screens(8), correct_sound.play()">
+                <h5 class="card-title">Alternativa A</h5>
                 <p class="card-text"> Qual a sua expectativa em relação ao uso de imagens e outros elementos multimídia
                     no website?
                 </p>
             </div>
         </a>
 
+        <div class="card" onclick="wrong_sound.play()">
+            <h5 class="card-title">Alternativa B</h5>
+            <p class="card-text"> Você acha que seria interessante incluir vídeos com conteúdo violento e sangrento em
+                todas as páginas do website, para criar uma atmosfera mais intensa e impactante?
+            </p>
+        </div>
+
+            <div class="card" onclick="wrong_sound.play()">
+                <h5 class="card-title">Alternativa C</h5>
+                <p class="card-text"> Você acha que seria interessante incluir GIFs animados com conteúdo humorístico e
+                    irônico em todas as páginas do website, para deixar a experiência do usuário mais divertida?
+                </p>
+            </div>
+
     </div>
 
 </section>
 
 <!--Fala de finalização PO Round 8-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -678,7 +680,7 @@
 
 
 <!--Ultima resposta do Cliente Round 9-->
-<section class="container-sm global-container d-flex bg-chat toggle-section">
+<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -758,5 +760,10 @@
         next_screen.classList.remove('hidden')
     }
 
+    var correct_sound = new Audio();
+    correct_sound.src = "{{ url_for('static', filename='sounds/correct-answer.mp3')}}";
+
+    var wrong_sound = new Audio();
+    wrong_sound.src = "{{ url_for('static', filename='sounds/wrong-answer.mp3')}}"
 </script>
 {% endblock %}
