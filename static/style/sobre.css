@@ -8,6 +8,7 @@
 
 .cdb-img {
     width: 340px;
+   
 }
 
 .scrum-img {
@@ -23,7 +24,7 @@
 
 section {
     margin-top: 70px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .val {
@@ -44,8 +45,8 @@ section {
     background-color: #020234;
     border-radius: 25px;
     border: none;
-    max-width: 220px;
-    max-height: 400px;
+    max-width: 190px;
+    max-height: 270px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
 }
 
@@ -86,11 +87,125 @@ section {
     background-color: #4141DD;
     border: none;
     border-radius: 50px;
-    width: 350px;
-    height: 80px;
+    padding: 15px 50px;
     font-weight: 600;
     font-size: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    .btn {
+        padding: 10px 50px;
+        font-weight: 600;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .title-sobre {
+        margin: 5px;
+        font-size: 1.9rem;
+        font-weight: 600;
+    }
+
+      .val{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:  50px;
+         gap: 20px;
+            
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        margin-top:  40px;
+        gap: 20px;
+        
+       }
+   .card{
+    margin: 0 auto;
+    width: 175px;
+   }
+   
+   .card:hover {
+    opacity: 60%;
+        padding: 12px 20px;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.scrum-img {
+    display: none;
+}
+}
+
+@media(max-width: 600px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:  50px;
+        gap: 20px;
+        
+       }
+   .card{
+    margin: 0 auto;
+    width: 180px;
+   }
+   
+   .card:hover {
+    opacity: 60%;
+        padding: 12px 20px;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.scrum-img {
+    display: none;
+}
+
+.title-sobre {
+   
+    margin: 5px;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.cdb-img {
+    display: none;
+
+}
+
+section {
+    padding: 30px 70px;
+}
+
+.sobre-scrum .content {
+    align-content: center;
+    text-indent: 10px;
+
+}
+
+
+.p {
+    font-size: 14px;
+
+  }
+
 }
