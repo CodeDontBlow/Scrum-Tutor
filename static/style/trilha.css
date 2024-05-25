@@ -1,9 +1,14 @@
+.title{
+    text-emphasis: center;
+}
+
 .scrum-img {
     width: 290px;
 }
 
 .trilha-scrum {
     gap: 30px;
+    text-align: center;
     margin-top: auto;
     justify-content: center;
     align-items: center;
@@ -21,6 +26,7 @@
 }
 
 .links {
+    font-size: 20px;
     text-decoration: none;
     color: white;
     text-align: start;
