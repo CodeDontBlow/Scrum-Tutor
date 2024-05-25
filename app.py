@@ -61,6 +61,10 @@ def capitulo2():
 def time_scrum():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Time-Scrum.html")
 
+@app.route("/Skills")
+def skills():
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Skills.html")
+
 @app.route("/Conceitos")
 def conceitos():
     return render_template("Modulo-1/Capitulos/Capitulo-2/Conceitos.html")
