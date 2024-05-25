@@ -13,6 +13,8 @@ body {
     background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
     min-height: 100vh;
 
+    position: relative;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -246,6 +248,24 @@ div.CDBfooter-bottom div.CDBfooter-BTcontainer>div.CDBfooter-cdb a {
     }
 
 }
+
+/* Posicionando o Footer no Fim das Páginas */
+
+    #CDBfooter {
+        bottom: 0;
+        position: absolute;
+    }
+
+    body{
+        padding-bottom: 318px;
+    }
+
+    @media (max-width: 500px){
+        body{
+            padding-bottom: 220px;
+        }
+    }
+
 
 
 
