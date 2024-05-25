@@ -190,5 +190,64 @@ def test_quiz_final():
     return render_template("Modulo-3/examefinal.html", score=correct_answers)
 
 
+
+
+
+@app.route("/submit_quiz_cap_2", methods=['POST'])
+def quiz_capitulo_2():
+    if request.method == 'POST':
+        # Conectar ao banco de dados SQLite
+        conn = sql.connect('database/Questions.db')
+        cur = conn.cursor()
+
+
+
+      # Inicializar contagem de respostas corretas
+        correct_answers = 0
+
+# Verificar cada resposta
+    for i in range(1, 4):  # Assumindo que há 3 perguntas
+       user_answer = request.form.get(f'Alt-question-{i}')
+       correct_answer = cur.execute(
+           f"SELECT resposta FROM Perguntas_Capitulo2 WHERE Numero = ?", (i,)).fetchone()[0]
+
+       if user_answer == correct_answer:
+           correct_answers += 1
+
+   # Fechar a conexão com o banco de dados
+    conn.close()
+
+    # Renderizar o template com o número de respostas corretas
+    return render_template("Modulo-1/Capitulos/Capitulo-2/Conceitos.html", score_cap2=correct_answers)
+
+
+@app.route("/submit_quiz_cap_3", methods=['POST'])
+def quiz_capitulo_3():
+    if request.method == 'POST':
+        # Conectar ao banco de dados SQLite
+        conn = sql.connect('database/Questions.db')
+        cur = conn.cursor()
+
+
+
+      # Inicializar contagem de respostas corretas
+        correct_answers = 0
+
+# Verificar cada resposta
+    for i in range(1, 4):  # Assumindo que há 3 perguntas
+       user_answer = request.form.get(f'Alt-question-{i}')
+       correct_answer = cur.execute(
+           f"SELECT resposta FROM Perguntas_Capitulo3 WHERE Numero = ?", (i,)).fetchone()[0]
+
+       if user_answer == correct_answer:
+           correct_answers += 1
+
+   # Fechar a conexão com o banco de dados
+    conn.close()
+
+    # Renderizar o template com o número de respostas corretas
+    return render_template("Modulo-1/Capitulos/Capitulo-3/Estimativas.html", score_cap3=correct_answers)
+
+
 if __name__ == "__main__":
     app.run(debug= True)
