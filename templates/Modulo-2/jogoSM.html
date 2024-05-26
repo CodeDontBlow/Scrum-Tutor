@@ -352,7 +352,7 @@
             <div class="col-lg-6 col-9 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card">
+                <div class="options-card" onclick="wrong_sound.play()">
                     <h6 class="card-title">
                         Alternativa A
                     </h6>
@@ -363,7 +363,7 @@
                 </div>
 
                 <!-- Alternativa B -->
-                <div class="options-card" onclick="toggle_screens(4)">
+                <div class="options-card" onclick="toggle_screens(4), correct_sound.play()">
                     <h6 class="card-title">
                         Alternativa B
                     </h6>
@@ -374,7 +374,7 @@
                 </div>
 
                 <!-- Alternativa C -->
-                <div class="options-card">
+                <div class="options-card" onclick="wrong_sound.play()">
                     <h6 class="card-title">
                         Alternativa C
                     </h6>
@@ -607,7 +607,7 @@
             <div class="col-lg-6 col-9 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card"  onclick="toggle_screens(7)">
+                <div class="options-card"  onclick="toggle_screens(7), correct_sound.play()">
                     <h6 class="card-title">
                         Alternativa A
                     </h6>
@@ -618,7 +618,7 @@
                 </div>
 
                 <!-- Alternativa B -->
-                <div class="options-card">
+                <div class="options-card" onclick="wrong_sound.play()">
                     <h6 class="card-title">
                         Alternativa B
                     </h6>
@@ -629,7 +629,7 @@
                 </div>
 
                 <!-- Alternativa C -->
-                <div class="options-card">
+                <div class="options-card" onclick="wrong_sound.play()">
                     <h6 class="card-title">
                         Alternativa C
                     </h6>
@@ -1098,7 +1098,7 @@
             <div class="col-lg-6 col-9 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card">
+                <div class="options-card" onclick="wrong_sound.play()">
                     <h6 class="card-title">
                         Alternativa A
                     </h6>
@@ -1109,7 +1109,7 @@
                 </div>
 
                 <!-- Alternativa B -->
-                <div class="options-card">
+                <div class="options-card" onclick="wrong_sound.play()">
                     <h6 class="card-title">
                         Alternativa B
                     </h6>
@@ -1120,7 +1120,7 @@
                 </div>
 
                 <!-- Alternativa C -->
-                <div class="options-card" onclick="toggle_screens(13)">
+                <div class="options-card" onclick="toggle_screens(13), correct_sound.play()">
                     <h6 class="card-title">
                         Alternativa C
                     </h6>
@@ -1589,7 +1589,7 @@
             <div class="col-lg-6 col-9 options-container">
 
                 <!-- Alternativa A -->
-                <div class="options-card">
+                <div class="options-card" onclick="correct_sound.play()">
                     <h6 class="card-title">
                         Conclusão
                     </h6>
@@ -1620,6 +1620,14 @@
         let next_screen = document.getElementsByClassName("toggle-section")[n + 1]
         next_screen.classList.remove('hidden') //Exibe a próxima tela
     }
+
+    // Função Som
+
+    var correct_sound = new Audio();
+    correct_sound.src = "{{ url_for('static', filename='sounds/correct-answer.mp3')}}";
+
+    var wrong_sound = new Audio();
+    wrong_sound.src = "{{ url_for('static', filename='sounds/wrong-answer.mp3')}}"
 
 </script>
 
