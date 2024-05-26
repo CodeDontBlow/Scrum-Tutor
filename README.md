@@ -51,6 +51,11 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 <img height="80%" width="80%" src="assets/Backlog_Produto.jpg">
 </p>
 
+## 🛣️ RoadMap
+<p align="center">
+  <img height="80%" width="80%" src="assets/roadmap.svg">
+</p>
+
 ## 🔰 Sprint 1
 🔗 <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 ## 📋 Backlog Sprint 1
@@ -64,13 +69,6 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
   <img height="80%" width="80%" src="assets/Backlog_SegundaSprint1.jpg">
   <img height="80%" width="80%" src="assets/Backlog_SegundaSprint2.jpg">
 </p>
-
-## 🛣️ RoadMap
-<p align="center">
-  <img height="80%" width="80%" src="assets/roadmap.svg">
-</p>
-
-
 
 ## ▶️ Vídeo da navegação do incremento
 Clique no ícone para acessar o vídeo no youtube:<br>
