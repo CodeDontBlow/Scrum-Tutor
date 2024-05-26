@@ -9,7 +9,8 @@
 
 <div class="container-content titulo-jogo">
     <h1 class="TITLE-global">Desenvolva o seu BackLog</h1>
-    <h1 class="TXT-global">A partir dos requisitos encontrados durante a conversa com o cliente na etapa anterior, User Storys foram desenvolvida. Agora, monte o backlog do produto! <br>
+    <h1 class="TXT-global">A partir dos requisitos encontrados durante a conversa com o cliente na etapa anterior, User
+        Storys foram desenvolvida. Agora, monte o backlog do produto! <br>
         Dica: para colocar uma U.S no backlog, basta arrasta-la para a linha desejada...
     </h1>
 </div>
@@ -224,41 +225,61 @@
 </section>
 
 <script>
-    const columns = document.querySelectorAll(".drop-zone");
+    const dropZones = document.querySelectorAll(".drop-zone");
+    const requisitos = document.querySelectorAll(".requisito");
+    const botaoValidar = document.querySelector(".validar");
 
-    document.addEventListener("dragstart", (e) => {
-        e.target.classList.add("dragging");
+    document.addEventListener("dragstart", handleDragStart);
+    document.addEventListener("dragend", handleDragEnd);
+
+    dropZones.forEach((dropZone) => {
+        dropZone.addEventListener("dragover", handleDragOver);
+        dropZone.addEventListener("drop", handleDrop);
     });
 
-    document.addEventListener("dragend", (e) => {
-        e.target.classList.remove("dragging");
-    });
+    botaoValidar.addEventListener("click", validarDropZones);
 
-    columns.forEach((item) => {
-        item.addEventListener("dragover", (e) => {
-            const dragging = document.querySelector(".dragging");
-            const applyAfter = getNewPosition(item, e.clientY);
+    function handleDragStart(e) {
+        if (e.target.classList.contains("requisito")) {
+            e.target.classList.add("dragging");
+        }
+    }
 
-            if (applyAfter) {
-                applyAfter.insertAdjacentElement("afterend", dragging);
-            } else {
-                item.prepend(dragging);
-            }
+    function handleDragEnd(e) {
+        document.querySelectorAll(".requisito").forEach((requisito) => {
+            requisito.classList.remove("dragging");
         });
-    });
+    }
+
+    function handleDragOver(e) {
+        e.preventDefault();
+    }
+
+    function handleDrop(e) {
+        const dragging = document.querySelector(".dragging");
+        const mouseY = e.touches ? e.touches[0].clientY : e.clientY;
+        const applyAfter = getNewPosition(this, mouseY);
+
+        if (applyAfter) {
+            applyAfter.insertAdjacentElement("afterend", dragging);
+        } else {
+            this.prepend(dragging);
+        }
+    }
 
     function getNewPosition(column, posY) {
-        const cards = column.querySelectorAll(".item:not(.dragging)");
+        const requisitos = [...column.querySelectorAll(".requisito:not(.dragging)")];
         let result;
 
-        for (let refer_card of cards) {
-            const box = refer_card.getBoundingClientRect();
-            const boxCenterY = box.y + box.height / 2;
+        for (let refer_requisito of requisitos) {
+            const { top, bottom } = refer_requisito.getBoundingClientRect();
+            const boxCenterY = (top + bottom) / 2;
 
-            if (posY >= boxCenterY) result = refer_card;
+            if (posY >= boxCenterY) result = refer_requisito;
         }
 
         return result;
     }
+
 </script>
 {% endblock %}

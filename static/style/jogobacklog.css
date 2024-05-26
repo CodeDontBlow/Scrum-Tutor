@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.dragging {
+    opacity: 0.5;
+}
+
 .titulo-jogo, .titulo-jogo .TXT-global {
     margin-top: 30px;
     text-align: center;
