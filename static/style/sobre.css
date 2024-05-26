@@ -12,7 +12,7 @@
 }
 
 .scrum-img {
-    width: 250px;
+    width: 270px;
 }
 
 .sobre-scrum .content {
@@ -25,6 +25,7 @@
 section {
     margin-top: 70px;
     margin-bottom: 70px;
+    
 }
 
 .val {
@@ -34,6 +35,7 @@ section {
 
 .val .subtitle {
     font-size: 25px;
+    align-items: center;
 }
 
 .cards {
@@ -104,9 +106,7 @@ section {
         margin-top: 20px;
     }
     .title-sobre {
-        margin: 5px;
-        font-size: 1.9rem;
-        font-weight: 600;
+        font-size: 1.8rem;
     }
 
       .val{
@@ -118,6 +118,12 @@ section {
          gap: 20px;
             
     }
+    
+.text {
+    font-size: 1rem;
+    text-align: justify;
+    border: none;
+}
 
     .cards{
         display: flex;
@@ -130,7 +136,7 @@ section {
     margin: 0 auto;
     width: 175px;
    }
-   
+    
    .card:hover {
     opacity: 60%;
         padding: 12px 20px;
@@ -145,7 +151,7 @@ section {
 }
 
 .scrum-img {
-    display: none;
+    width: 50%;
 }
 }
 
@@ -181,10 +187,7 @@ section {
 }
 
 .title-sobre {
-   
-    margin: 5px;
-    font-size: 1.9rem;
-    font-weight: 600;
+    font-size: 1.8rem;
 }
 
 .cdb-img {
@@ -193,7 +196,7 @@ section {
 }
 
 section {
-    padding: 30px 70px;
+    padding: 0%;
 }
 
 .sobre-scrum .content {
@@ -202,10 +205,9 @@ section {
 
 }
 
-
-.p {
-    font-size: 14px;
-
-  }
+.text {
+    font-size: 1rem;
+    text-align: justify;
+}
 
 }
