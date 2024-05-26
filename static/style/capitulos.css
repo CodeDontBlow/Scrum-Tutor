@@ -15,6 +15,11 @@
 
 a.links{
     color: #92A3FF;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
+}
+
+li.text{
+    text-align: left;
+    line-height: 25px !important;
 }

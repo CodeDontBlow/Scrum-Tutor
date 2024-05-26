@@ -2,6 +2,7 @@
 
 {% block pageCss %}
 <link rel="stylesheet" href="{{url_for('static', filename='style/estimativa.css')}}">
+<link rel="stylesheet" href="{{url_for('static' , filename='style/Modulo-1/quiz.css')}}">
 {% endblock %}
 
 {% block pageTitle %} Estimativas {% endblock %}
@@ -117,128 +118,195 @@
         </div>
     </div>
 
-    <!--Questionário com 3 perguntas-->
-    <section>
-        <h2>
-            Questionário
-        </h2>
-        <div class="formulario">
-            <form class="question-forms" method="POST" action="/submit_quiz_cap_3">
-                <ol>
+<!-- .:: QUIZ ::.  -->
+    <form id="QUIZform" method="POST" action="/submit_quiz_cap_3">
 
-                    <!--Primeira pergunta - Resposta: A-->
-                    <h3>
-                        Questão sobre:
-                    </h3>
-                    <li>
-                        Verdadeiro ou Falso. Sprint podem ser definidas como:
-                        <ol id="first-question">
-                            <li>Ciclos completos de desenvolvimento com durações fixas.</li>
-                            <li>Uma reunião diária para discutir o progresso do projeto.</li>
-                            <li>Com finalidade de entregar um incremento de valor.</li>
-                            <li>Uma metodologia focada para resolver conflitos de equipe.</li>
-                            <li>Uma reunião de brainstorming para gerar ideias criativas.</li>
-                        </ol>
-                    </li>
+        <!-- PRIMEIRA QUESTÃO -->
+        <div class="QUIZform-container" id="first-question">
+            
+            <!-- Área da Pergunta (Parte de Cima) -->
+            <div class="QUIZ-question row">
+                <div class="question-number col-1">
+                    <h5>
+                        1
+                    </h5>
+                </div>
+                
+                <div class="question-text col-10">
+                    <p class="TXT-global">Sprint podem ser definidas como:</p>
+                    <ol class="LIST-global list-group">
+                        <li class="list-group-item"> Ciclos completos de desenvolvimento com durações fixas. </li>
+                        <li class="list-group-item"> Uma reunião diária para discutir o progresso do projeto. </li>
+                        <li class="list-group-item"> Com finalidade de entregar um incremento de valor. </li>
+                        <li class="list-group-item"> Uma reunião de brainstorming para gerar ideias criativas. </li>
+                    </ol>
+                </div>
 
+            </div>
 
+            <!-- Área das Respostas (Parte de Baixo) -->
+            <div class="QUIZ-answers row">
+                
+                <div class="answer-container col-sm-10 col">
 
-                    <!--Alternativa A-->
-                    <input type="radio" id="A-alt" name="Alt-question-1" value="I e III estão corretas.">
-                    <label for="I e III estão corretas.">
-                        I e III estão corretas.
-                    </label><br>
-
-                    <!--Alternativa B-->
-                    <input type="radio" id="B-alt" name="Alt-question-1" value="I e IV estão corretas.">
-                    <label for="I e IV estão corretas.">
-                        I e IV estão corretas.
-                    </label><br>
-
-                    <!--Alternativa C-->
-                    <input type="radio" id="C-alt" name="Alt-question-1" value="IV e V estão corretas.">
-                    <label for="IV e V estão corretas.">
-                        IV e V estão corretas.
-                    </label><br>
-
-                    <!--Alternativa D-->
-                    <input type="radio" id="D-alt" name="Alt-question-1" value="Todas as alternativas estão corretas.">
-
-                    <label for="Todas as alternativas estão corretas.">
-                        Todas as alternativas estão corretas.
+                    <!-- Alternativa A -->
+                    <input type="radio" id="1A-alt" name="Alt-question-1" value="I e III estão corretas.">
+                    <label class="asnwer-card" for="1A-alt">
+                        <p class="TXT-global">I e III estão corretas.</p>
                     </label>
-                    <br>
-                    <br>
 
+                    <!-- Alternativa B -->
+                    <input type="radio" id="1B-alt" name="Alt-question-1" value="I e IV estão corretas.">
+                    <label class="asnwer-card" for="1B-alt">
+                        <p class="TXT-global">I e IV estão corretas.</p>
+                    </label>
 
-                    <!--Segunda pergunta - Resposta: D-->
-                    <li>
-                        A respeito do Sprint Backlog:
-                    </li>
+                    <!-- Alternativa C -->
+                    <input type="radio" id="1C-alt" name="Alt-question-1" value="IV e V estão corretas.">
+                    <label class="asnwer-card" for="1C-alt">
+                        <p class="TXT-global">IV e V estão corretas.</p>
+                    </label>
 
-                    <!--Alternativa A-->
-                    <input type="radio" id="A-alt" name="Alt-question-2" value="É o quadro de planejamento que será apresentado ao cliente no início da sprint.">
-                    <label for="É o quadro de planejamento que será apresentado ao cliente no início da sprint.">
-                        É o quadro de planejamento que será apresentado ao cliente no início da sprint.
-                    </label><br>
-
-                    <!--Alternativa B-->
-                    <input type="radio" id="B-alt" name="Alt-question-2" value="É o gráfico composto por uma linha real e uma linha ideal e tem a função de medir o desempenho do grupo.">
-                    <label for="É o gráfico composto por uma linha real e uma linha ideal e tem a função de medir o desempenho do grupo.">
-                        É o gráfico composto por uma linha real e uma linha ideal e tem a função de medir o desempenho do grupo.
-                    </label><br>
-
-                    <!--Alternativa C-->
-                    <input type="radio" id="C-alt" name="Alt-question-2" value=" É o quadro onde serão designadas as responsabilidades das tarefas, juntamente com a organização das quais já foram concluídas, quais estão em andamento e quais estão para começar.">
-                    <label for=" É o quadro onde serão designadas as responsabilidades das tarefas, juntamente com a organização das quais já foram concluídas, quais estão em andamento e quais estão para começar.">
-                        É o quadro onde serão designadas as responsabilidades das tarefas, juntamente com a organização das quais já foram concluídas, quais estão em andamento e quais estão para começar.
-                    </label><br>
-
-                    <!--Alternativa D-->
-                    <input type="radio" id="D-alt" name="Alt-question-2" value="É o quadro onde terão as tarefas e subtarefas a serem desenvolvidas pelo Scrum Team, juntamente com uma ordem de prioridade, estimativa de conclusão e descrição.">
-                    <label for="É o quadro onde terão as tarefas e subtarefas a serem desenvolvidas pelo Scrum Team, juntamente com uma ordem de prioridade, estimativa de conclusão e descrição.">
-                        É o quadro onde terão as tarefas e subtarefas a serem desenvolvidas pelo Scrum Team, juntamente com uma ordem de prioridade, estimativa de conclusão e descrição.
-                    </label><br>
-                    <br>
-
-
-                    <!--Terceira questão - Resposta: B-->
-                    <li>
-                        Qual a função do Burndown Chart?
-                    </li>
-
-                    <!--Alternativa A-->
-                    <input type="radio" id="A-alt" name="Alt-question-3" value="Estimar o número de horas extras realizadas pelos desenvolvedores.">
-                    <label for="Estimar o número de horas extras realizadas pelos desenvolvedores.">
-                        Estimar o número de horas extras realizadas pelos desenvolvedores.
-                    </label><br>
-
-                    <!--Alternativa B-->
-                    <input type="radio" id="B-alt" name="Alt-question-3" value="Tornar visível a evolução diária do trabalho do time, mostrando a comparação entre o trabalho estimado com a quantidade de esforço.">
-                    <label for="Tornar visível a evolução diária do trabalho do time, mostrando a comparação entre o trabalho estimado com a quantidade de esforço.">
-                        Tornar visível a evolução diária do trabalho do time, mostrando a comparação entre o trabalho estimado com a quantidade de esforço.
-                    </label><br>
-
-
-                    <!--Alternativa C-->
-                    <input type="radio" id="C-alt" name="Alt-question-3" value="Priorizar as tarefas com base na complexidade e na dependência entre elas.">
-                    <label for="Priorizar as tarefas com base na complexidade e na dependência entre elas.">
-                        Priorizar as tarefas com base na complexidade e na dependência entre elas.
-                    </label><br>
-
-                    <!--Alternativa D-->
-                    <input type="radio" id="D-alt" name="Alt-question-3" value="Gerenciar o orçamento do projeto de forma eficiente.">
-                    <label for="Gerenciar o orçamento do projeto de forma eficiente.">
-                        Gerenciar o orçamento do projeto de forma eficiente.
-                    </label><br>
-
-                </ol>
-
-            <button data-bs-toggle="modal" data-bs-target="#resultados" type="submit" value="Validar" onclick="submitQuiz()"
-                class="btn btn-primary">Validar</button>
-            </form>
+                    <!-- Alternativa D -->
+                    <input type="radio" id="1D-alt" name="Alt-question-1" value="Todas as alternativas estão corretas.">
+                    <label class="asnwer-card" for="1D-alt">
+                        <p class="TXT-global">Todas as alternativas estão corretas.</p>
+                    </label>
+                </div>
+                
+            </div>
+            
         </div>
-    </section>
+
+        <!-- SEGUNDA QUESTÃO -->
+        <div class="QUIZform-container" id="second-question">
+
+            <!-- Área da Pergunta (Parte de Cima) -->
+            <div class="QUIZ-question row">
+                <div class="question-number col-1">
+                    <h5>
+                        2
+                    </h5>
+                </div>
+                
+                <div class="question-text col-10">
+                    <p class="TXT-global">
+                        A respeito do Sprint Backlog:
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Área das Respostas (Parte de Baixo) -->
+            <div class="QUIZ-answers row">
+                
+                <div class="answer-container col-sm-10 col">
+
+                    <!-- Alternativa A -->
+                    <input type="radio" id="2A-alt" name="Alt-question-2" value="É o quadro de planejamento que será apresentado ao cliente no início da sprint.">
+                    <label class="asnwer-card" for="2A-alt">
+                        <p class="TXT-global">
+                            É o quadro de planejamento que será apresentado ao cliente no início da sprint.
+                        </p>
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input type="radio" id="2B-alt" name="Alt-question-2" value="É o gráfico composto por uma linha real e uma linha ideal e tem a função de medir o desempenho do grupo.
+                    ">
+                    <label class="asnwer-card" for="2B-alt">
+                        <p class="TXT-global">
+                            É o gráfico composto por uma linha real e uma linha ideal e tem a função de medir o desempenho do grupo.
+                        </p>
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input type="radio" id="2C-alt" name="Alt-question-2" value="É o quadro onde serão designadas as responsabilidades das tarefas, juntamente com a organização das quais já foram concluídas, quais estão em andamento e quais estão para começar.">
+                    <label class="asnwer-card" for="2C-alt">
+                        <p class="TXT-global">
+                            É o quadro onde serão designadas as responsabilidades das tarefas, juntamente com a organização das quais já foram concluídas, quais estão em andamento e quais estão para começar.
+                        </p>
+                    </label>
+
+                    <!-- Alternativa D -->
+                    <input type="radio" id="2D-alt" name="Alt-question-2" value="É o quadro onde terão as tarefas e subtarefas a serem desenvolvidas pelo Scrum Team, juntamente com uma ordem de prioridade, estimativa de conclusão e descrição.">
+                    <label class="asnwer-card" for="2D-alt">
+                        <p class="TXT-global">
+                            É o quadro onde terão as tarefas e subtarefas a serem desenvolvidas pelo Scrum Team, juntamente com uma ordem de prioridade, estimativa de conclusão e descrição.
+                        </p>
+                    </label>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- TERCEIRA QUESTÃO -->
+        <div class="QUIZform-container" id="third-question">
+
+            <!-- Área da Pergunta (Parte de Cima) -->
+            <div class="QUIZ-question row">
+                <div class="question-number col-1">
+                    <h5>
+                        3
+                    </h5>
+                </div>
+                
+                <div class="question-text col-10">
+                    <p class="TXT-global">
+                        Qual a função do Burndown Chart?
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Área das Respostas (Parte de Baixo) -->
+            <div class="QUIZ-answers row">
+                
+                <div class="answer-container col-sm-10 col">
+
+                    <!-- Alternativa A -->
+                    <input type="radio" id="3A-alt" name="Alt-question-3" value="Estimar o número de horas extras realizadas pelos desenvolvedores.">
+                    <label class="asnwer-card" for="3A-alt">
+                        <p class="TXT-global">
+                            Estimar o número de horas extras realizadas pelos desenvolvedores.
+                        </p>
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input type="radio" id="3B-alt" name="Alt-question-3" value="Tornar visível a evolução diária do trabalho do time, mostrando a comparação entre o trabalho estimado com a quantidade de esforço.">
+                    <label class="asnwer-card" for="3B-alt">
+                        <p class="TXT-global">
+                            Tornar visível a evolução diária do trabalho do time, mostrando a comparação entre o trabalho estimado com a quantidade de esforço.
+                        </p>
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input type="radio" id="3C-alt" name="Alt-question-3" value="Priorizar as tarefas com base na complexidade e na dependência entre elas.">
+                    <label class="asnwer-card" for="3C-alt">
+                        <p class="TXT-global">
+                            Priorizar as tarefas com base na complexidade e na dependência entre elas.
+                        </p>
+                    </label>
+
+                    <!-- Alternativa D -->
+                    <input type="radio" id="3D-alt" name="Alt-question-3" value="Gerenciar o orçamento do projeto de forma eficiente.">
+                    <label class="asnwer-card" for="3D-alt">
+                        <p class="TXT-global">
+                            Gerenciar o orçamento do projeto de forma eficiente.
+                        </p>
+                    </label>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        
+        <button data-bs-toggle="modal" data-bs-target="#resultados" type="submit" value="Validar" onclick="submitQuiz()" class="QUIZform-button">
+            Validar
+        </button>
+
+    </form>
 
     <!-- Botão voltar ao topo da página -->
     <div class="container-content d-flex justify-content-center flex-wrap">
@@ -257,20 +325,47 @@
 
     <!--Modal para mostrar os resultados-->
     <!-- Modal -->
-    <div class="modal fade" id="resultados" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade" id="resultados" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" id="QUIZmodal" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="resultados">
-                        Resultados
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    </button>
-                </div>
-                    <div class="modal-body">
-                        Você acertou {{score_cap3}} respostas
+                <div class="modal-body">
+
+                    <!-- Conteúdo do Modal -->
+                    <div class="container-content text-center row">
+
+                        <!-- Área da Imagem de Celebração (Parte da Esquerda) -->
+                        <div class="content-block col-sm-5">
+                            <img src="{{url_for('static' , filename='img/storyset/Celebration-rafiki.svg')}}" alt="" class="IMG-global">
+                        </div>
+
+                        <!-- Área dos Textos (Parte da Direita)-->
+                        <div class="content-block col-sm-7">
+
+                            <!-- Textos (Cima) -->
+                            <div class="modal-text-container">
+                                <h3 class="SUB-global ">
+                                    Parabéns!
+                                </h3>
+                                <p class="TXT-global">
+                                    Você finalizou o terceiro quiz e acertou <b>{{score_cap3}} questões</b>!
+                                </p>
+                            </div>
+                            
+                            <!-- Botões (Baixo) -->
+                            <div class="modal-btn-container">
+                                <button type="button" class="BTN-global modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                    Voltar
+                                </button>
+
+                                <a href="/trilha" class="BTN-global modal-return-btn">
+                                    Prosseguir
+                                </a>
+                            </div>
+
+                        </div>
+
                     </div>
-                <div class="modal-footer">
+
                 </div>
             </div>
         </div>
@@ -281,13 +376,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!--Serve para mostrar o modal-->
