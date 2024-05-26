@@ -347,7 +347,7 @@
                                     Parabéns!
                                 </h3>
                                 <p class="TXT-global">
-                                    Você finalizou o terceiro quiz e acertou <b>{{score_cap3}} questões</b>!
+                                    Você acertou <b>{{score_cap3}} questões</b> e finalizou o <b>Módulo 1</b>!
                                 </p>
                             </div>
                             
@@ -357,7 +357,7 @@
                                     Voltar
                                 </button>
 
-                                <a href="/trilha" class="BTN-global modal-return-btn">
+                                <a href="/trilha#Modulo-2" class="BTN-global modal-return-btn">
                                     Prosseguir
                                 </a>
                             </div>
@@ -380,15 +380,14 @@
 
     <!--Serve para mostrar o modal-->
     <script>
-    $(document).ready(function () {
-    // Verifica se existe um score para mostrar, e se o modal deve ser exibido
-    var score = "{{ score_cap3 }}";
-    if (score)
-    {
-        var myModal = new bootstrap.Modal(document.getElementById('resultados'));
-        myModal.show();
-    }
-    });
+        $(document).ready(function () {
+            // Verifica se existe um score para mostrar, e se o modal deve ser exibido
+            var score = "{{ score_cap3 }}";
+            if (score) {
+                var myModal = new bootstrap.Modal(document.getElementById('resultados'));
+                myModal.show();
+            }
+        });
     </script>
 
 </div>

@@ -48,8 +48,7 @@
                 }
 
                     #QUIZform .question-text > .TXT-global{      
-                        margin-top: 15px;
-                        text-indent: 15px;
+                        margin: 15px 15px 0;
                         
                         font-size: 1.2rem;
                         font-weight: 600;
