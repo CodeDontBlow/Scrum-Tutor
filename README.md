@@ -46,9 +46,9 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
   </tr>
 </table>
 
-## 📋 BackLog do produto
+## 📋 Backlog do produto
 <p align="center">
-<img height="80%" width="80%" src="assets/Backlog_Produto.jpg">
+<img height="90%" width="90%" src="assets/Backlog_Produto.jpg">
 </p>
 
 ## 🛣️ RoadMap
@@ -60,14 +60,14 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 🔗 <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 ## 📋 Backlog Sprint 1
 <p align="center">
-<img height="80%" width="80%" src="assets/Backlog_PrimeiraSprint.jpg">
+<img height="90%" width="90%" src="assets/Backlog_PrimeiraSprint.jpg">
 </p>
 
 ## 🔰 Sprint 2
 ## 📋 Backlog Sprint 2
 <p align="center">
-  <img height="80%" width="80%" src="assets/Backlog_SegundaSprint1.jpg">
-  <img height="80%" width="80%" src="assets/Backlog_SegundaSprint2.jpg">
+  <img height="90%" width="90%" src="assets/Backlog_SegundaSprint1.jpg">
+  <img height="90%" width="90%" src="assets/Backlog_SegundaSprint2.jpg">
 </p>
 
 ## ▶️ Vídeo da navegação do incremento
@@ -77,6 +77,18 @@ Clique no ícone para acessar o vídeo no youtube:<br>
 
 [ <img height="10%" width="10%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/2560px-YouTube_full-color_icon_(2017).svg.png"> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
 
+</p>
+
+## 🔰 Sprint 3
+## 📋 Backlog Sprint 3
+<p align="center">
+  <img height="90%" width="90%" src="assets/Backlog_TerceiraSprint.jpg">
+</p>
+
+## ▶️ Vídeo de demonstração do Jogo do Scrum Team
+
+<p align="center">
+<video height="80%" width="80%" src="assets/JogoST.mp4"></video>
 </p>
 
 ## 💻 Tecnologias
