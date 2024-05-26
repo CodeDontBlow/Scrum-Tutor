@@ -2,27 +2,30 @@
     width: 420px;
 }
 
+section, .introducion-ava, .introducion-scrum, .vantagens {
+    margin-top: 5%;
+}
+
 .introducion-scrum .content {
     gap: 20px;
     justify-content: center;
 }
 
-section {
-    margin-top: 70px;
-    margin-bottom: 80px;
-}
 
 .cards {
-    gap: 50px;
     justify-content: center;
+    gap: 50px;
+}
+
+.card-column {
+    gap: 50px;
 }
 
 .card {
     background-color: #020234;
     border-radius: 25px;
     border: none;
-    max-width: 220px;
-    max-height: 400px;
+    width: 50%;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
 }
 
@@ -82,4 +85,58 @@ section {
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cards {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-column,
+    .cards {
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        margin: 0 auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 426px) {
+    .card-column {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content img {
+        width: 80%;
+    }
+
+    .text {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
 }
