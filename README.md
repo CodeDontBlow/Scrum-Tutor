@@ -6,17 +6,13 @@
 <img height="30%" width="30%" src="static/img/logos/STlogoG.svg">
 </p>
 
-## 🏛️ Curso de metodologia SCRUM 
-
-<img src="https://wac-cdn.atlassian.com/dam/jcr:7af87fb7-1d9d-40de-910b-852ad8fe1825/scrum@2x.png?cdnVersion=1549" alt="Texto Alternativo">
-
-## Objetivo
+## 🎯 Objetivo
 O objetivo deste projeto é desenvolver um website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. Alunos do 1º semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC liderarão o desenvolvimento desta plataforma
 
 ## 👁️ Visão do produto
 A visão deste produto é criar um sistema web didático e formativo que sirva como uma ferramenta abrangente para ensinar a metodologia Scrum. Nosso objetivo é fornecer aos usuários uma compreensão detalhada dos princípios, processos e artefatos do Scrum, enquanto demonstramos como aplicá-los em diferentes contextos de projeto.
 
-## Cronograma
+## 📅 Cronograma
 <table>
   <tr>
     <td></td>
