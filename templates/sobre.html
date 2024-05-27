@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block pageCss %}
 <link rel="stylesheet" href="{{url_for('static', filename='style/sobre.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
 {% endblock %}
 
 {% block pageTitle %} Sobre {% endblock %}
@@ -9,41 +10,41 @@
 <div class="container-sm global-container">
 <section class="container d-flex justify-content-center sobre-scrum">
   <img class="img-fluid cdb-img" src="{{url_for('static', filename='img/logos/CDB_preto.svg')}}" alt="CDB logo">
-  <h1 class="title-sobre col-6"> Code Don´t Blow:
-    <p> Onde cortamos o pavio <br>dos seus problemas!</p>
-  </h1>
+  <div class="title-sobre"> Code Don´t Blow:
+    <br> Onde cortamos<br> o pavio dos <br> seus problemas!<br>
+  </div>
 </section>
 <section>
   <h1 class="title">Quem somos?</h1>
-  <div class="content d-flex justify-content-left sobre-scrum">
+  <div class="content d-flex justify-content-center sobre-scrum">
     <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/about.svg')}}" alt="sobre">
-    <p class="text col-7"> Somos um novo player no mercado cada vez mais em expansão de tecnologia e soluções. Com um
+    <p class="text"> Somos um novo player no mercado cada vez mais em expansão de tecnologia e soluções. Com um
       time diverso e conectado com as mais importantes tendências na área Tecnológica e de Inovação, estamos sempre
       buscando novas abordagens, mais simples, rápidas e eficientes de forma personalizada para nossos clientes. </p>
   </div>
 </section>
-<section>
-  <h1 class="title">Valores</h1>
-  <div class="valores d-flex justify-content-left sobre-scrum">
-    <div class="val"><img src="{{url_for('static', filename='img/icons/graphicupicon.svg')}}" class="card-img-top"
-        style="height: 30px;" alt="...">
+
+  <div class="container-content text-center">
+   <h1 class="title">Valores</h1>
+   <div class="content d-flex justify-content-left val">
+    <div class="val"><span style="font-size: 40px"><i class="bi bi-currency-exchange"></i></span>
       <h5 class="subtitle_sobre">Soluções Econômicas</h5>
     </div>
-    <div class="val"><img src="{{url_for('static', filename='img/icons/handleicon.svg')}}" class="card-img-top"
-        style="height: 30px;" alt="...">
+    <div class="val"><span style="font-size: 40px"><i class="bi bi-people-fill"></i></span>
       <h5 class="subtitle_sobre">Transparência nas Relações</h5>
     </div>
-    <div class="val"><img src="{{url_for('static', filename='img/icons/tec.svg')}}" class="card-img-top"
-        style="height: 30px;" alt="...">
+    <div class="val"><span style="font-size: 40px"><i class="bi bi-info-circle-fill"></i></span>
       <h5 class="subtitle_sobre"> Inovação Tecnológica</h5>
     </div>
-  </div>
-</section>
+    </div>
+    </div>
+  
+
 <section>
   <h1 class="title">Visão da Empresa</h1>
-  <div class="content d-flex justify-content-left sobre-scrum">
+  <div class="content d-flex justify-content-center sobre-scrum">
     <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/online.svg')}}" alt="sobre">
-    <p class="text col-7"> O mercado de tecnologia se expande mais rápido do que as empresas são capazes de compreender
+    <p class="text"> O mercado de tecnologia se expande mais rápido do que as empresas são capazes de compreender
       as novas ferramentas, sejam elas de gestão, de inovação, de processos, de educação ou de cultura. Acreditamos na
       necessidade de empresas facilitadoras, isto é, um elo entre a Vanguarda das soluções e o mercado analógico que
       quer ser digitalizado.</p>
@@ -51,15 +52,15 @@
 </section>
 <section>
   <h1 class="title">Missão</h1>
-  <div class="content d-flex justify-content-left sobre-scrum">
+  <div class="content d-flex justify-content-center sobre-scrum">
     <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/Innovation-rafiki.svg')}}"
       alt="sobre">
-    <p class="text col-7"> A construção de um futuro em que qualquer empresa, seja ela de comércio, serviço ou
+    <p class="text"> A construção de um futuro em que qualquer empresa, seja ela de comércio, serviço ou
       desenvolvimento, de qualquer tamanho, possa estar conectada às ferramentas digitais mais relevantes para sua área
       de atuação. Todos têm que ter direito à revolução tecnológica que bate às nossas portas.</p>
   </div>
 </section>
-<section class="membros">
+<section class="membros"> 
   <h2 class="title">Membros da Equipe</h2>
   <div class="cards d-flex">
     <div class="card col-3">
@@ -81,13 +82,20 @@
       <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" style="height: 30px;"
         alt="...">
       <div class="card-body">
-        <h5 class="card-title">Ygor Pereira</h5>
+        <h5 class="card-title">Vanessa Rodrigues</h5>
         <p class="card-text">Development Team</p>
       </div>
     </div>
+    <div class="card col-3">
+      <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" style="height: 30px;"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ygor Pereira</h5>
+        <p class="card-text">Development Team</p>
+      </div>
+    </div> </div>
+    <br>
   </div>
-</section>
-<section class="membros">
   <div class="cards d-flex">
     <div class="card col-3">
       <img src="{{url_for('static', filename='img/icons/mirroricon.svg')}}" class="card-img-top" alt="...">
@@ -114,7 +122,7 @@
 </section>
 <section>
   <div class="pg-button d-flex">
-    <a class="btn btn-primary d-flex" href="#" role="button">Volte para a página inicial</a>
+    <a class="btn btn-success links" href="/comentario"> Dê seu feedback! </a><br>
   </div>
 </section>
 </div>

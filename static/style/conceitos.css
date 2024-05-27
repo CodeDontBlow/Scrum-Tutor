@@ -1,0 +1,12 @@
+/*Os dois CSS abaixo servem para mudar a cor da letra do modal para preto*/
+.modal-header {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
+
+ul > li{
+    text-align: justify;
+}

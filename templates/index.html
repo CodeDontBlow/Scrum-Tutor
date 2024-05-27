@@ -9,7 +9,7 @@
     {% block pageContent %}
         
         <section class="container-fluid top-bg">
-            <img class="img-fluid" src="{{url_for('static', filename='img/backgrounds/Kanban-bg.svg')}}" alt="">
+            <img class="img-fluid" height="100%" width="100%" src="{{url_for('static', filename='img/backgrounds/Kanban-bg.svg')}}" alt="">
         </section>
 
         <section class="container-fluid carrossel">
@@ -54,12 +54,15 @@
 
         <section class="container-fluid d-flex direct-intro">
             <div class="text-and-button">
-                <h1 class="fs-1 direct-title"> Agora que você já entendeu, que tal começar?</h1>
+                <h1 class="direct-title"> Agora que você já entendeu, que tal começar?</h1>
                 <div class="ava-button d-flex">
                     <a class="btn btn-primary d-flex" href="/scrumintroducion" role="button">Comece já</a>
                   </div>
             </div>
-            <img src="{{url_for('static', filename='img/storyset/teamwork rafiki.svg')}}" class="img-fluid">
+            <div class="content-block">
+                <img class="IMG-global art-img" src="{{url_for('static', filename='img/storyset/teamwork rafiki.svg')}}" alt="img">
+            </div>
+
         </section>
 
         {% endblock %}

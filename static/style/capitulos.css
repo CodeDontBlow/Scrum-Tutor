@@ -1,5 +1,25 @@
-section {
-    display: block;
-    margin-top: 70px;
-    margin-bottom: 80px;
+.capitulo-scrum{
+    text-align: center;
+}
+
+.col-7{
+    font-size:15px;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.lista-conteudos{
+    list-style-type: none;
+}
+
+
+a.links{
+    color: #92A3FF;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+li.text{
+    text-align: left;
+    line-height: 25px !important;
 }

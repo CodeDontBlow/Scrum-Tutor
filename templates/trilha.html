@@ -7,55 +7,113 @@
 
 {% block pageContent %}
 <section>
-    <h1 class="title"> Seja bem-vindo a Trilha de Aprendizado! </h1>
+    <h1 class="title">
+        Seja bem-vindo a Trilha de Aprendizado!
+    </h1>
     <div class="container d-flex justify-content-center container-sm trilha-scrum">
-        <h1 class="text" style="text-align: center;"> Essa trilha foi preparada especialmente para te proporcionar a
-            melhor experiência e
-            compreensão do Método Scrum <br>
-            Bons Estudos! </h1>
+        <h1 class="text" style="text-align: center;"> Essa trilha foi preparada especialmente para te proporcionar a melhor experiência e compreensão do Método Scrum
+            <br>
+            Bons Estudos!
+        </h1>
     </div>
 </section>
-<hr>
+<hr id="Modulo-1">
 <br>
+
+<!--Seção do módulo 1-->
 <section>
-    <h1 class="title"><img src="{{url_for('static', filename='img/icons/pin.svg')}}">Módulo 1</h1>
-    <div class="content d-flex justify-content-left">
-        <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/paper.svg')}}" alt="sobre">
-        <ul class="list-content">
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
-                    href="/Capitulo1"> Capítulo 1: Definição e Origem</a></li><br>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
-                    href="/Capitulo2"> Capítulo 2: Responsabilidade e Papéis</a></li><br>
-            <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}"><a class="links"
-                    href="/Capitulo3"> Capítulo 3: Eventos e Artefatos</a></li>
-        </ul>
+    <h1 class="title"><img src="{{url_for('static', filename='img/icons/pin.svg')}}">
+        Módulo 1
+    </h1>
+    <div class="container-content text-center row">
+
+        <div class="content-block col-md-4">
+            <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/paper.svg')}}" alt="sobre">
+        </div>
+
+        <div class="content-block col-md-8">
+            <ul class="list-content">
+                <li class="text">
+                    <img src="{{url_for('static', filename='img/icons/book.svg')}}">
+                    <a class="links" href="/Capitulo1">
+                        Capítulo 1: Definição e Origem
+                    </a>
+                </li><br>
+
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}">
+                    <a class="links" href="/Capitulo2">
+                        Capítulo 2: Responsabilidade e Papéis
+                    </a>
+                </li><br>
+
+                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}">
+                    <a class="links" href="/Capitulo3">
+                        Capítulo 3: Eventos e Artefatos
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
-<hr>
+<hr id="Modulo-2">
+
+<!--Seção do módulo 2-->
 <span>
     <section>
-        <h1 class="title"><img src="{{url_for('static', filename='img/icons/pin.svg')}}">Módulo 2</h1>
-        <div class="content d-flex justify-content-left">
-            <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/games.svg')}}" alt="sobre">
-            <ul class="list-content">
-                <li class="text"><img style="max-width: 35px;"
-                        src="{{url_for('static', filename='img/icons/Vector.svg')}}"><a class="links" href="/jogoPO">
-                        Jogo: Scrum Tutor - Rodada 1 </li> </a> <br>
-            </ul>
+        <h1 class="title"><img src="{{url_for('static', filename='img/icons/pin.svg')}}">
+            Módulo 2
+        </h1>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md-4">
+                <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/games.svg')}}" alt="sobre">
+            </div>
+
+            <div class="content-block col-md-8">
+                <ul class="list-content">
+                    <li class="text"><img style="max-width: 35px;" src="{{url_for('static', filename='img/icons/Vector.svg')}}"><a class="links" href="/jogoPO">
+                        Jogo: Product Owner - Rodada 1
+                    </li>
+                    </a><br>
+                    <li class="text"><img style="max-width: 35px;" src="{{url_for('static', filename='img/icons/Vector.svg')}}"><a class="links" href="/jogoSM">
+                        Jogo: Scrum Master - Rodada 2
+                    </li>
+                    </a><br>
+                    <li class="text"><img style="max-width: 35px;" src="{{url_for('static', filename='img/icons/Vector.svg')}}"><a class="links" href="/jogoST">
+                        Jogo: Scrum Team - Rodada 3
+                    </li>
+                    </a><br>
+                </ul>
+            </div>
         </div>
     </section>
 </span>
-<hr>
-<span>
+<hr id="Modulo-1">
+
+<!--Seção do módulo 3-->
+<span id="Mod3">
     <section>
-        <h1 class="title"><img src="{{url_for('static', filename='img/icons/pin.svg')}}">Módulo 3</h1>
-        <div class="content d-flex justify-content-left">
-            <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/test.svg')}}" alt="sobre">
-            <ul class="list-content">
-                <li class="text"><img src="{{url_for('static', filename='img/icons/pencil.svg')}}"><a class="links"
-                        href="/Exame final"> Exame Final: Teste de Aptidão </li> </a>
-            </ul>
+        <h1 class="title">
+            <img src="{{url_for('static', filename='img/icons/pin.svg')}}">
+            Módulo 3
+        </h1>
+
+        <div class="container-content text-center row">
+            <div class="content-block col-md-4">
+                <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/storyset/test.svg')}}" alt="sobre">
+            </div>
+
+            <div class="content-block col-md-8">
+                <ul class="list-content">
+                    <li class="text"><img src="{{url_for('static', filename='img/icons/pencil.svg')}}">
+                        <a class="links" href="/Exame final">
+                            Exame Final: Teste de Aptidão
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 </span>
+
 {% endblock %}
