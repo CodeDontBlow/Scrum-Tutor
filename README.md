@@ -73,11 +73,10 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 ## ▶️ Vídeo da navegação do incremento
 Clique no ícone para acessar o vídeo no youtube:<br>
 
-<p align="center">
 
-[ <img height="10%" width="10%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_(2017).svg/2560px-YouTube_full-color_icon_(2017).svg.png"> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
+[ <p align="center"> 
+<img height="60%" width="60%" src="https://img.youtube.com/vi/EQWc5rAp7w4/0.jpg"> </p> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
 
-</p>
 
 ## 🔰 Sprint 3
 ## 📋 Backlog Sprint 3
@@ -87,9 +86,11 @@ Clique no ícone para acessar o vídeo no youtube:<br>
 
 ## ▶️ Vídeo de demonstração do Jogo do Scrum Team
 
-<p align="center">
-<video height="80%" width="80%" src="assets/JogoST.mp4"></video>
-</p>
+
+[ <p align="center">
+ <img height="60%" width="60%" src="https://img.youtube.com/vi/SUgV0NVotks/0.jpg"> </p>](https://www.youtube.com/watch?v=SUgV0NVotks)
+
+
 
 ## 💻 Tecnologias
 - ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
