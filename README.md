@@ -72,8 +72,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 
 ## ▶️ Vídeo da navegação do incremento
 
-[ <p align="center"> 
-<img height="60%" width="60%" src="https://img.youtube.com/vi/EQWc5rAp7w4/0.jpg"> </p> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
+[ <img height="60%" width="60%" src="https://img.youtube.com/vi/EQWc5rAp7w4/0.jpg">](https://www.youtube.com/watch?v=EQWc5rAp7w4)
 
 
 ## 🔰 Sprint 3
@@ -85,8 +84,7 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 ## ▶️ Vídeo de demonstração do Jogo do Scrum Team
 
 
-[ <p align="center">
- <img height="60%" width="60%" src="https://img.youtube.com/vi/SUgV0NVotks/0.jpg"> </p>](https://www.youtube.com/watch?v=SUgV0NVotks)
+[ <img height="60%" width="60%" src="https://img.youtube.com/vi/SUgV0NVotks/0.jpg"> ](https://www.youtube.com/watch?v=SUgV0NVotks)
 
 
 
