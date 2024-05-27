@@ -71,8 +71,6 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 </p>
 
 ## ▶️ Vídeo da navegação do incremento
-Clique no ícone para acessar o vídeo no youtube:<br>
-
 
 [ <p align="center"> 
 <img height="60%" width="60%" src="https://img.youtube.com/vi/EQWc5rAp7w4/0.jpg"> </p> ](https://www.youtube.com/watch?v=EQWc5rAp7w4)
