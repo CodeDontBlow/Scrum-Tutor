@@ -15,6 +15,11 @@
     padding-left: 50px;
 }
 
+.bi-pin-fill {
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+}
 .content{
     padding-left: 50px;
     gap: 30px;
@@ -23,6 +28,12 @@
 .list-content {
     margin-top: 5%;
     align-items: center;
+}
+
+.list-content i {
+    display: inline-block;
+    font-size: 18px;    
+    margin-right: 5px;
 }
 
 .links {

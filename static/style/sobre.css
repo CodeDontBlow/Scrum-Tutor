@@ -8,7 +8,7 @@
 
 .cdb-img {
     width: 340px;
-   
+    margin-right: 30px;
 }
 
 .scrum-img {
@@ -25,7 +25,7 @@
 section {
     margin-top: 70px;
     margin-bottom: 70px;
-    
+
 }
 
 .val {
@@ -39,16 +39,22 @@ section {
 }
 
 .cards {
-    gap: 50px;
     justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cards-row {
+    justify-content: center;
+    gap: 40px;
 }
 
 .card {
     background-color: #020234;
     border-radius: 25px;
     border: none;
-    max-width: 190px;
-    max-height: 270px;
+    width: 200px;
+    height: 200px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.30);
 }
 
@@ -58,11 +64,10 @@ section {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.card img {
-    height: 35px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    justify-content: center;
+.card i {
+    color: #4141DD;
+    margin: 20px auto 8px;
+    font-size: 40px;
 }
 
 .card-title {
@@ -98,116 +103,119 @@ section {
     margin-top: 50px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .btn {
         padding: 10px 50px;
         font-weight: 600;
         font-size: 13px;
         margin-top: 20px;
     }
+
     .title-sobre {
         font-size: 1.8rem;
     }
 
-      .val{
+    .val {
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-top:  50px;
-         gap: 20px;
-            
-    }
-    
-.text {
-    font-size: 1rem;
-    text-align: justify;
-    border: none;
-}
-
-    .cards{
-        display: flex;
-        justify-content: center;
-        margin-top:  40px;
+        margin-top: 50px;
         gap: 20px;
-        
-       }
-   .card{
-    margin: 0 auto;
-    width: 175px;
-   }
-    
-   .card:hover {
-    opacity: 60%;
+
+    }
+
+    .text {
+        font-size: 1rem;
+        text-align: justify;
+        border: none;
+    }
+
+    .cards-row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .card:hover {
+        opacity: 60%;
         padding: 12px 20px;
+        transform: scale(1.1);
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .scrum-img {
+        width: 50%;
+
+    }
 }
 
-.card-title {
-    font-size: 14px;
-}
-
-.card-text {
-    font-size: 12px;
-}
-
-.scrum-img {
-    width: 50%;
-}
-}
-
-@media(max-width: 600px) {
-    .cards{
+@media(max-width: 425px) {
+    .cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top:  50px;
+        margin-top: 50px;
         gap: 20px;
-        
-       }
-   .card{
-    margin: 0 auto;
-    width: 180px;
-   }
-   
-   .card:hover {
-    opacity: 60%;
+
+    }
+
+    .card {
+        margin: 0 auto;
+        width: 180px;
+    }
+
+    .card:hover {
+        opacity: 60%;
         padding: 12px 20px;
-}
+    }
 
-.card-title {
-    font-size: 14px;
-}
+    .card-title {
+        font-size: 14px;
+    }
 
-.card-text {
-    font-size: 12px;
-}
+    .card-text {
+        font-size: 12px;
+    }
 
-.scrum-img {
+    /* .scrum-img {
     display: none;
-}
+} */
 
-.title-sobre {
-    font-size: 1.8rem;
-}
+    .title-sobre {
+        font-size: 1.8rem;
+    }
 
-.cdb-img {
+    /* .cdb-img {
     display: none;
 
-}
+} */
 
-section {
-    padding: 0%;
-}
+    section {
+        padding: 0%;
+    }
 
-.sobre-scrum .content {
-    align-content: center;
-    text-indent: 10px;
+    .sobre-scrum {
+        flex-direction: column;
+        text-indent: 10px;
+    }
 
-}
+    .sobre-scrum img {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 
-.text {
-    font-size: 1rem;
-    text-align: justify;
-}
+    .text {
+        font-size: 1rem;
+        text-align: justify;
+    }
 
 }

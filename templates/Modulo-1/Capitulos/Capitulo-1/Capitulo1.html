@@ -12,21 +12,26 @@
         <h1 class="TITLE-global">
             Capítulo 1
         </h1>
-        <div class="content d-flex">
-            <p class="TXR-global col-7">
-                Bem-vindo ao curso da Metodolia Ágil Scrum. Clique nas aulas para começar a ver o conteúdo.
-            </p> 
+        <div class="content d-flex justify-content-center">
+            <p class="TXT-global">
+                Damos as boas-vindas ao Módulo 1, sua porta de entrada para todo o conteúdo teórico que será explorado
+                neste curso! <br><br>
+                Neste primeiro capítulo, vamos explorar os alicerces do Scrum: seus valores, princípios e pilares
+                essenciais. Estes são os fundamentos que sustentam toda a metodologia ágil. Ao entendermos esses
+                conceitos fundamentais, estaremos prontos para aplicar o Scrum de forma eficaz em nossos projetos de
+                desenvolvimento de software.<br><br>
+                Você pode avançar no conteúdo do capítulo clicando no botão 'Avançar' ou selecionar uma das seções
+                destacadas abaixo para acessar uma página específica
+            </p>
         </div>
 
         <div class="content d-flex justify-content-left trilha-scrum">
-            <ul class="LIST-global list-group lista-conteudos">
-                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
-                        class="links" href="/Fundamentos">Fundamentos Scrum</a></li><br>
-                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
-                        class="links" href="/Valores"> Valores e Princípios (Manifesto Ágil, Princípios, Valores)
+            <ul class="LIST-global">
+                <li><i class="bi bi-bookmark-fill"></i><a class="links" href="/Fundamentos">Fundamentos Scrum</a></li>
+                <br>
+                <li><i class="bi bi-bookmark-fill"></i><a class="links" href="/Valores">Valores e Princípios
                     </a></li><br>
-                <li class="text"><img src="{{url_for('static', filename='img/icons/book.svg')}}" alt="icones"><a
-                        class="links" href="/Pilares Scrum"> Os Pilares de Scrum (Transparência, Inspeção, Adaptação)
+                <li><i class="bi bi-bookmark-fill"></i><a class="links" href="/Pilares Scrum">Os Pilares de Scrum
                     </a></li>
             </ul>
         </div>
@@ -44,6 +49,6 @@
             </a>
         </div>
     </div>
-    
+
 </div>
 {% endblock %}
