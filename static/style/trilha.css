@@ -41,6 +41,17 @@
     text-decoration: none;
     color: white;
     text-align: start;
+
+    transition: all 200ms;
+}
+
+button.links {
+    background-color: transparent;
+    border: none;
+}
+
+.links:hover {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 section {
@@ -56,3 +67,67 @@ hr {
     background-color: #4141DD;
     border-radius: 25px;
 }
+
+
+
+/* ESTILIZANDO O MODAL (do módulo 3) */
+
+#alertModal .modal-dialog{
+    max-width: 300px;
+}
+
+    #alertModal .modal-content{
+        background-color: #1f1f80;
+        border-radius: 3px;
+
+    }
+
+    #alertModal .modal-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        #alertModal .modal-body .alert-icon{
+            font-size: 5rem;
+        }
+    
+        #alertModal .modal-body .alert-title{
+            margin-bottom: 15px;
+
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    
+        #alertModal .modal-body .alert-text{
+            font-size: .9rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+    #alertModal .modal-footer{
+        display: flex;
+        justify-content: space-between;
+        
+        border: none;
+    }
+
+        #alertModal .modal-footer > a{
+            background-color: transparent;
+            
+            font-size: .8rem;
+            font-weight: 400;
+
+            flex-grow: 1;
+            
+            border: 1px solid white;
+
+            transition: 150ms;
+        }
+        
+        #alertModal .modal-footer > a:hover{
+            flex-grow: 1;
+
+            transform: scale(1.03);
+        }

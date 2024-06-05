@@ -90,7 +90,7 @@
         </div>
     </section>
 </span>
-<hr id="Modulo-1">
+<hr id="Modulo-3">
 
 <!--Seção do módulo 3-->
 <span id="Mod3">
@@ -109,14 +109,35 @@
             <div class="content-block col-md-8">
                 <ul class="list-content">
                     <li class="text"><i class="bi bi-pencil"></i>
-                        <a class="links" href="/Exame final">
+                        <!-- BOTÃO PARA O MODAL ALERTA -->
+                        <button type="button" class="links" data-bs-toggle="modal" data-bs-target="#alertModal">
                             Exame Final: Teste de Aptidão
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </div>
         </div>
+
+        
+        <!-- MODAL ALERTA -->
+        <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <i class="bi bi-exclamation-triangle alert-icon"></i>
+                        <h2 class="alert-title">ATENÇÃO!</h2>
+                        <h5 class="alert-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, tempora?</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-secondary" data-bs-dismiss="modal">Fechar</a>
+                        <a class="btn btn-primary" href="/Exame final">Continuar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 </span>
+
 
 {% endblock %}

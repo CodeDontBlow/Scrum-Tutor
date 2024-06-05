@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(9, 9, 66), rgb(31, 31, 128));
+    background-image: linear-gradient(to bottom right, #090942, #1f1f80);
     min-height: 100vh;
 
     position: relative;
