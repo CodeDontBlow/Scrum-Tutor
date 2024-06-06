@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/adm.css')}}">{% endblock %}
+
+{% block pageTitle%} {% endblock %}
+
+{% block pageContent %}
+
+<main>
+    <div class="search-filter">
+        <div class="search-container">
+            <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar..."> 
+            <i class="bi bi-search"></i>
+        </div>
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>RA</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Nota</th>
+                <th>Comentário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+{% endblock %}

@@ -130,6 +130,10 @@ def examefinal():
 def comentario():
     return render_template("/Modulo-3/comentario.html")
 
+@app.route("/adm")
+def adm():
+    return render_template("/adm.html")
+
 # == == == =
 
 

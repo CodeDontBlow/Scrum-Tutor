@@ -1,0 +1,50 @@
+.search-filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search-container{
+    background-color: #ABA7A7;
+    width: 40%;
+    border-radius: 40px;
+}
+
+.search-container i {
+    color: #000000;
+    font-size: 15px;
+    margin-left: 250px;
+}
+
+.search-container input{
+    background-color: #aba7a700;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.search-container input::placeholder{
+    color: #000000a8;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 8px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th {
+    background-color: #020234;
+}
+
+td {
+    background-color: #4141DD;
+}
+
+th, td {
+    text-align: center;
+    width: 20%;
+    height: 100px;
+}
