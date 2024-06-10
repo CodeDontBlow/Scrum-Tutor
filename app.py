@@ -166,6 +166,7 @@ def test_quiz():
 
 
 
+
 @app.route("/submit_quiz_final", methods=['POST'])
 def test_quiz_final():
     if request.method == 'POST':
@@ -179,10 +180,10 @@ def test_quiz_final():
         correct_answers = 0
 
 # Verificar cada resposta
-    for i in range(1, 11):  # Assumindo que há 3 perguntas
-       user_answer = request.form.get(f'Alt-question-{i}')
+    for k in range(1, 18):  # Assumindo que há 17 perguntas
+       user_answer = request.form.get(f'Alt-question-{k}')
        correct_answer = cur.execute(
-           f"SELECT resposta FROM Perguntas_final WHERE Numero = ?", (i,)).fetchone()[0]
+           f"SELECT resposta FROM Perguntas_final WHERE Numero = ?", (k,)).fetchone()[0]
 
        if user_answer == correct_answer:
            correct_answers += 1
@@ -191,7 +192,7 @@ def test_quiz_final():
     conn.close()
 
     # Renderizar o template com o número de respostas corretas
-    return render_template("Modulo-3/examefinal.html", score=correct_answers)
+    return render_template("Modulo-3/examefinal.html", score_final=correct_answers)
 
 
 
