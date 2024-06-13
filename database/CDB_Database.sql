@@ -31,7 +31,7 @@ create table Perguntas_Exame_Final(
 create table Comentarios(
 	id int auto_increment primary key,
     Nome varchar(250) not null,
-    RA int not null,
+    RA BIGINT not null,
     Comentario varchar(500) not null
 );
 
@@ -89,3 +89,7 @@ SELECT * from Perguntas_Capitulo2;
 SELECT * from Perguntas_Capitulo3;
 SELECT * FROM Perguntas_Exame_Final;
 SELECT * FROM Comentarios;
+
+truncate Comentarios;
+
+SHOW TABLES IN CDB_Database;

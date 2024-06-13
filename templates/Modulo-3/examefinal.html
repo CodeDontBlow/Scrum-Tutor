@@ -392,17 +392,68 @@
 
         <hr/>
 
-        <input class="btn btn-success" type="submit" value="Validar"/>
+        <input class="btn btn-success" type="submit" value="Validar" onclick="toggle_screens(0)"><br>
 
       </form> <br>
-      <a class="btn btn-success links" href="/comentario"> 
-        Dê seu feedback! 
-      </a><br>
   </div>
   
-  <!--Modal para mostrar os resultados-->
+  <!--Modal para o usuário comentar sobre o curso-->
   <!-- Modal -->
-  <div class="modal fade" id="resultados" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal fade modal-section hidden" id="comentario" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" id="QUIZmodal" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- Conteúdo do Modal -->
+          <div class="container-content text-center row">
+            <!-- Área da Imagem de Celebração (Parte da Esquerda) -->
+            <div class="content-block col-sm-5">
+              <img src="{{url_for('static' , filename='img/storyset/Celebration-rafiki.svg')}}" alt="" class="IMG-global">
+            </div>
+            <!-- Área dos Textos (Parte da Direita)-->
+            <div class="content-block col-sm-7">
+              <!-- Textos (Cima) -->
+              <div class="modal-text-container">
+                <h3 class="SUB-global ">
+                  Parabéns!
+                </h3>
+
+                <p class="TXT-global">
+                  Antes de verificar o resultado do exame, deixe o seu feedback para conseguir o certificado do curso!
+                </p>
+
+                <p class="TXT-global">
+                  
+                </p>
+              </div>
+              <div id="Forms">
+                <form id="survey-form" action="/submit_comentarios" method="POST">
+                  <div class="preencher">
+                    <label for="name" id="name-label">Nome:</label>
+                    <input style='color:black' type="text" id="name" name="Nome" placeholder="Digite o seu nome" required> <br>
+    
+                    <label for="numeber" id="number-label">RA:</label>
+                    <input style='color:black' type="number" min="0"  id="number" name="RA" placeholder="Digite seu RA" required>
+                  </div>
+    
+                  <label for="sugestoes">Escreva seu comentário aqui:</label>
+                  <textarea style='color:black' id="sugestoes" name="Comentario" placeholder="Escreva aqui suas sugestões..." required></textarea> <br>
+                  <div class="modal-btn-container">
+                    <button class="BTN-global modal-return-btn" type="button" id="verResultados">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal para mostrar os resultados -->
+  <!-- Modal -->
+  <div class="modal fade modal-section hidden" id="resultados" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
     <div class="modal-dialog modal-dialog-centered" id="QUIZmodal" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -423,14 +474,14 @@
                     Você acertou <b>{{score_final}} questões</b> e finalizou o <b>curso</b>!
                 </p>
                 <p class="TXT-global">
-                  Dê seu feedback para conseguir o certificado do curso!
+                  Clique abaixo para receber seu certificado
               </p>
               </div>   
               <!-- Botões (Baixo) -->
               <div class="modal-btn-container">
                 
                 <a href="/comentario" class="BTN-global modal-return-btn">
-                  Dê seu feedback
+                  Finalizar curso
                 </a>
               </div>
             </div>
@@ -453,8 +504,49 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!--Serve para mostrar o modal-->
+
+
   <script>
+    $(document).ready(function () {
+      var score = "{{ score_final }}";
+      if (score) {
+        var myModal = new bootstrap.Modal(document.getElementById('comentario'));
+        myModal.show();
+      }
+
+      $('#enviarComentario').click(function () {
+        $('#comentario').modal('hide');
+        var myModal = new bootstrap.Modal(document.getElementById('resultados'));
+        myModal.show();
+      });
+
+      $('#verResultados').click(function () {
+        $('#comentario').modal('hide');
+        var myModal = new bootstrap.Modal(document.getElementById('resultados'));
+        myModal.show();
+      });
+    });
+  </script>
+
+
+
+
+
+
+  <!-- Script para mostrar o modal de comentário -->
+  <!-- <script>
+    function toggle_screens(n) {
+
+    // Seleciona a tela atual
+    let screen = document.getElementsByClassName("modal-section")[n]
+    screen.classList.add('hidden') //Oculta a tela atual
+
+    // Seleciona o próximo modal
+    let next_screen = document.getElementsByClassName("toggle-section")[n + 1]
+    next_screen.classList.remove('hidden') //Exibe a próxima tela
+    }
+
+    //Serve para mostrar o modal
     $(document).ready(function () {
       // Verifica se existe um score para mostrar, e se o modal deve ser exibido
       var score = "{{ score_final }}";
@@ -471,7 +563,7 @@
       $('#resultModal').modal('show');
     });
   </script>
-  {% endif %}
+  {% endif %} -->
 
 </div>
 {% endblock %}
