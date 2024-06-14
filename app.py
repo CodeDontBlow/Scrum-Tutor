@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, render_template_string  # type: ignore
+from flask import Flask, jsonify, render_template, request, redirect, url_for, render_template_string  # type: ignore
 from flask_mysqldb import MySQL
 
 
@@ -249,7 +249,7 @@ def test_quiz_final():
            correct_answers += 1
 
     # Renderizar o template com o número de respostas corretas
-    return render_template("Modulo-3/examefinal.html", score_final=correct_answers)
+    return render_template("Modulo-3/comentario.html", score_final=correct_answers)
 
 
 #=========================================================================================================
@@ -273,7 +273,9 @@ def comentarios():
     # Fechar a conexão com o banco de dados
     cursor.close()
 
-    return render_template("Modulo-3/examefinal.html")
+    return render_template("Modulo-3/comentario.html")
+   
+    
 
 
 if __name__ == "__main__":
