@@ -240,7 +240,7 @@ def test_quiz_final():
         correct_answers = 0
 
 # Verificar cada resposta
-    for k in range(1, 18):  # Assumindo que há 17 perguntas
+    for k in range(1, 21):  # Assumindo que há 20 perguntas
        user_answer = request.form.get(f'Alt-question-{k}')
        correct_answer = cursor.execute(f"SELECT Resposta FROM Perguntas_Exame_Final WHERE Numero = %s", (k,))
        correct_answer = cursor.fetchone()['Resposta']
