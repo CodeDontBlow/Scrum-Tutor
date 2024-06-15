@@ -1,5 +1,8 @@
-from flask import Flask, jsonify, render_template, request, redirect, url_for, render_template_string  # type: ignore
+from flask import Flask, jsonify, render_template, request, redirect, url_for, render_template_string, send_file # type: ignore
 from flask_mysqldb import MySQL
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A3
+import io 
 
 
 app = Flask(__name__, static_url_path='/static', template_folder='templates')
@@ -14,6 +17,19 @@ app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
 mysql = MySQL(app)
 
+
+@app.route('/generate-pdf')
+def generate_pdf():
+    buffer = io.BytesIO()
+    
+    # Configurações do pdf certificado
+    cnv = canvas.Canvas(buffer, pagesize=A3)
+    cnv.drawImage("static/img/cont/CertificadoCDB.png", 0, 0,  width= 850, height=1200)
+    cnv.save()
+
+    buffer.seek(0)
+
+    return send_file(buffer, as_attachment=True, download_name='Certificado.pdf', mimetype='application/pdf')
 
 @app.route("/")
 def homepage():
