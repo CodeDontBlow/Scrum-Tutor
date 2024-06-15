@@ -2,395 +2,979 @@
 
 {% block pageCss %}
 <link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
-<link rel="stylesheet" href="{{url_for('static', filename='style/examefinal.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='style/Modulo-3/exame.css')}}">
 {% endblock %}
 
 {% block pageTitle %} Exame Final {% endblock %}
 
 {% block pageContent %}
+
+<header class="test-header">
+    <div class="container-sm">
+        <h1 class="test-header-title">Exame Final</h1>
+    </div>
+</header>
+
 <div class="container-sm global-container">  
 
-  <div id="Forms">
-        
-    <h2 class="text-center">Exame Final</h2>
-      <form action="/submit_quiz_final" method="POST">
-        <p>
-          Preparado para demonstrar todo o conhecimento adquirido ao longo deste curso? Este exame final oferece a oportunidade de mostrar sua compreensão e habilidades! Encare-o como um desafio gratificante, onde cada resposta reflete sua dedicação e preparação. Boa sorte!
-        </p>
-        <hr/>
-  
-        <!--Gabarito B-->  
-        <p> <b>
-          Pergunta 1: O que são as cerimônias e porque são importantes? 
-        </p> </b>
+    <div id="FINALtest">
+
+        <div id="test-introduction-area">
+
+            <div class="container-content text-center row">
+                <div class="content-block col-md-3">
+                    <img src="{{url_for('static' , filename='/img/logos/ST-branco.svg')}}" alt="" class="IMG-global">
+                </div>
+                
+                <div class="content-block col-md-9 ps-5">
+                  
+                    <div id="test-introduction-text-area">
+                    <h2 class="SUB-global" style="text-indent: 0px;">
+                      INTRODUÇÃO
+                            <!-- <span class="TXT-global ps-1" style="font-weight: 500;">
+                                Exame Final - ScrumTutor
+                            </span> -->
+                        </h2>
+                      
+                        <p class="TXT-global">
+                            Preparado para demonstrar todo o conhecimento adquirido ao longo deste curso? Este exame final oferece a oportunidade de mostrar sua compreensão e habilidades! Encare-o como um desafio gratificante, onde cada resposta reflete sua dedicação e preparação. Boa sorte!
+                        </p>
+                    </div>
+      
+                    <div class="alert d-flex align-items-center test-disclaimer" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill pe-2"></i>
+                        <div>
+                            <b>ATENÇÃO!</b> Você só pode realizar esse exame uma vez e etc
+                        </div>
+                    </div>
+
+                  </div>
+                
+            </div>
           
-        <input type="radio" id="A-alt" name="Alt-question-1" value="Alternativa A">
-        <label for="Alternativa A">As cerimônias são eventos sociais, são importantes porque precisam ser comemoradas.</label><br>
+        </div>
 
+        <hr>
+      
+        <form id="test-questions-area" action="/submit_quiz_final" method="POST">
+        <!-- <div class="test-user-form-area container-content text-center row">
+                    <div class="content-block col-9 p-0">
+                        <label class="test-user-label" for="user-name">
+                            <p>
+                                Digite seu Nome:
+                            </p>
+                            <input class="test-user-input" type="text" name="" id="user-name" required>
+                        </label>
+                    </div>
+                    
+                    <div class="content-block col-3 p-0">
+                        <label class="test-user-label" for="user-id">
+                            <p>
+                                Digite seu ID:
+                            </p>
+                            <input class="test-user-input" type="number" name="" id="user-id" required> 
+                        </label>
+                    </div>
+                </div>-->
 
-        <input type="radio" id="B-alt" name="Alt-question-1" value="Alternativa B">
-        <label for="Alternativa B">
-        As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral.</label><br>
+        <!-- PERGUNTA 1 -->
+            <div class="test-question">
 
-        <input type="radio" id="C-alt" name="Alt-question-1" value="Alternativa C">
-        <label for="Alternativa C">As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto.</label><br>
+                    <!-- Pergunta -->
+                    <p class="test-question-text">
+                        <span class="test-question-number">Pergunta 1:</span>
+                        O que são as cerimônias e porque são importantes?
+                    </p>
+            
+                    <!-- Alternativas [B] -->
+                    <div class="test-answers-area">
+                        
+                        <!-- Alternativa A -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="1A-alt" name="Alt-question-1" value="Alternativa A">
+                        <label class="test-radio-label" for="1A-alt">As cerimônias são eventos sociais, são importantes porque precisam ser comemoradas.
+                        </label>
 
-        <input type="radio" id="D-alt" name="Alt-question-1" value="Alternativa D">
-        <label for="Alternativa D">As cerimônias são sempre opcionais, cabe ao time definir se quer fazer a daily durante a sprint ou não, e só são importantes em momentos de crise.</label><br>
+                        <!-- Alternativa B -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="1B-alt" name="Alt-question-1" value="Alternativa B">
+                        <label class="test-radio-label" for="1B-alt">
+                        As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral.
+                        </label>
 
-        <hr/>
+                        <!-- Alternativa C -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="1C-alt" name="Alt-question-1" value="Alternativa C">
+                        <label class="test-radio-label" for="1C-alt">As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto.
+                        </label>
+                        
+                        <!-- Alternativa D -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="1D-alt" name="Alt-question-1" value="Alternativa D">
+                        <label class="test-radio-label" for="1D-alt">As cerimônias são sempre opcionais, cabe ao time definir se quer fazer a daily durante a sprint ou não, e só são importantes em momentos de crise.
+                        </label>
+                    </div>
+            </div>
 
-        <!--Gabarito A-->
-        <p> <b>
-          Pergunta 2: O que se pode fazer com relação às estimativas quando se usa a metodologia ágil e o método Scrum?
-        </p> </b>
+          <!-- PERGUNTA 2 -->
+            <div class="test-question">
 
+                    <!-- Pergunta -->
+                    <p class="test-question-text">
+                        <span class="test-question-number">Pergunta 2:</span>
+                        O que se pode fazer com relação às estimativas quando se usa a metodologia ágil e o método Scrum?
+                    </p>
+            
+                    <!-- Alternativas [A] -->
+                    <div class="test-answers-area">
+
+                        <!-- Alternativa A -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="2A-alt" name="Alt-question-2" value="Alternativa A">
+                        <label class="test-radio-label" for="2A-alt">
+                            Estimativas são sempre importantes, mas não podem ser estáticas, ser ágil significa adaptabilidade constante e encontrar novas formas de lidar com problemas complexos.
+                        </label>
+
+                        <!-- Alternativa B -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="2B-alt" name="Alt-question-2" value="Alternativa B">
+                        <label class="test-radio-label" for="2B-alt">
+                            Estimativas são sempre importantes, e uma vez definidas devem ser seguidas à risca por todos até a cerimônia de Release final.
+                        </label>
+
+                        <!-- Alternativa C -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="2C-alt" name="Alt-question-2" value="Alternativa C">
+                        <label class="test-radio-label" for="2C-alt">
+                            Estimativas são dispensáveis, uma vez que a cada nova sprint desafios novos são apresentados, seria perda de tempo.
+                        </label>
+                        
+                        <!-- Alternativa D -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="2D-alt" name="Alt-question-2" value="Alternativa D">
+                        <label class="test-radio-label" for="2D-alt">
+                            Estimativas são dispensáveis, a visão do produto é suficiente para saber o que precisa ser feito.
+                        </label>
+                    </div>
+            </div>
+
+          <!-- PERGUNTA 3 -->
+            <div class="test-question">
+
+                    <!-- Pergunta -->
+                    <p class="test-question-text">
+                        <span class="test-question-number">Pergunta 3:</span>
+                        A respeito de uma equipe que usa a filosofia ágil e a metodologia Scrum, o que se pode afirmar verdadeiramente:
+                    </p>
+            
+                    <!-- Alternativas [A] -->
+                    <div class="test-answers-area">
+
+                        <!-- Alternativa A -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="3A-alt" name="Alt-question-3" value="Alternativa A">
+                        <label class="test-radio-label" for="3A-alt">
+                            Os papéis são fixos, bem claros e hierarquicamente organizados dentro da estrutura de uma Equipe.
+                        </label>
+
+                        <!-- Alternativa B -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="3B-alt" name="Alt-question-3" value="Alternativa B">
+                        <label class="test-radio-label" for="3B-alt">
+                            Os papéis são fixos, pré-estabelecidos pelo cliente e todos devem opinar, mas a palavra final é sempre do Master.
+                        </label>
+
+                        <!-- Alternativa C -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="3C-alt" name="Alt-question-3" value="Alternativa C">
+                        <label class="test-radio-label" for="3C-alt">
+                            Os papéis são estáveis, mas não são fixos, e à medida que os processos se desenvolvem,  pessoas podem assumir novas funções, todos devem opinar, mas a palavra final é sempre do Master.
+                        </label>
+                        
+                        <!-- Alternativa D -->
+                        <input class="test-radio-input" class="test-radio-input" type="radio" id="3D-alt" name="Alt-question-3" value="Alternativa D">
+                        <label class="test-radio-label" for="3D-alt">
+                            Os papéis são estáveis, mas não são fixos, e à medida que os processos se desenvolvem, pessoas podem assumir novas funções, todos devem opinar e decidir, não há hierarquias.
+                        </label>
+                    </div>
+            </div>
+                  
+          <!-- PERGUNTA 4 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 4:
+                    </span>
+                    Assinale a afirmação verdadeira a seguir:
+                </p>
         
-        <input type="radio" id="A-alt" name="Alt-question-2" value="Alternativa A">
-        <label for="Alternativa A">Estimativas são sempre importantes, mas não podem ser estáticas, ser ágil significa adaptabilidade constante e encontrar novas formas de lidar com problemas complexos.</label><br>
+                <!-- Alternativas [C] -->
+                <div class="test-answers-area">
 
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="4A-alt" name="Alt-question-4" value="Alternativa A">
+                    <label class="test-radio-label" for="4A-alt">
+                        A visão do produto não é realmente relevante em um projeto.
+                    </label>
 
-        <input type="radio" id="B-alt" name="Alt-question-2" value="Alternativa B">
-        <label for="Alternativa B">Estimativas são sempre importantes, e uma vez definidas devem ser seguidas à risca por todos até a cerimônia de Release final.</label><br>
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="4B-alt" name="Alt-question-4" value="Alternativa B">
+                    <label class="test-radio-label" for="4B-alt">
+                        A visão do produto é uma etapa final, onde aspectos estéticos são adicionados ao produto final.
+                    </label>
 
-        <input type="radio" id="C-alt" name="Alt-question-2" value="Alternativa C">
-        <label for="Alternativa C">Estimativas são dispensáveis, uma vez que a cada nova sprint desafios novos são apresentados, seria perda de tempo.</label><br>
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="4C-alt" name="Alt-question-4" value="Alternativa C">
+                    <label class="test-radio-label" for="4C-alt">
+                      A melhor forma de começar uma Sprint Planning Meeting é apresentando a Visão do Produto.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="4D-alt" name="Alt-question-4" value="Alternativa D">
+                    <label class="test-radio-label" for="4D-alt">
+                        A Visão do produto é estabelecida apenas uma vez, antes do início do desenvolvimento e não muda ao longo do projeto.
+                    </label>
+                </div>
+            </div>
+                  
+          <!-- PERGUNTA 5 -->
+            <div class="test-question">
 
-        <input type="radio" id="D-alt" name="Alt-question-2" value="Alternativa D">
-        <label for="Alternativa D">Estimativas são dispensáveis, a visão do produto é suficiente para saber o que precisa ser feito.</label><br>
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 5:
+                    </span>
+                    A respeito da Sprint Planning Meeting, pode se afirmar o seguinte:
+                </p>
+        
+                <!-- Alternativas [C] -->
+                <div class="test-answers-area">
 
-        <hr/>
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="5A-alt" name="Alt-question-5" value="Alternativa A">
+                    <label class="test-radio-label" for="5A-alt">
+                        É a última cerimônia Scrum, onde os incrementos são apresentados/tornados públicos;
+                    </label>
 
-        <!--Gabarito D-->
-        <p> <b>
-          Pergunta 3: A respeito de uma equipe que usa a filosofia ágil e a metodologia Scrum, o que se pode afirmar verdadeiramente:
-        </p> </b>
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="5B-alt" name="Alt-question-5" value="Alternativa B">
+                    <label class="test-radio-label" for="5B-alt">
+                        É a primeira cerimônia Scrum, onde todos os detalhes precisam ser minuciosamente pensados;
+                    </label>
 
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="5C-alt" name="Alt-question-5" value="Alternativa C">
+                    <label class="test-radio-label" for="5C-alt">
+                        É uma cerimônia intermediária, deve acontecer em projetos com mais de 5 sprints;
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="5D-alt" name="Alt-question-5" value="Alternativa D">
+                    <label class="test-radio-label" for="5D-alt">
+                        Não é uma cerimônia oficial do Scrum, mas como a Visão do Produto, é fortemente recomendada;
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 6 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 6:
+                    </span>
+                    Qual o papel do Product Owner?
+                </p>
+        
+                <!-- Alternativas [A] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="6A-alt" name="Alt-question-6" value="Alternativa A">
+                    <label class="test-radio-label" for="6A-alt">
+                        Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="6B-alt" name="Alt-question-6" value="Alternativa B">
+                    <label class="test-radio-label" for="6B-alt">
+                        Tomar decisões finais sobre as funcionalidades a serem desenvolvidas.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="6C-alt" name="Alt-question-6" value="Alternativa C">
+                    <label class="test-radio-label" for="6C-alt">
+                        Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="6D-alt" name="Alt-question-6" value="Alternativa D">
+                    <label class="test-radio-label" for="6D-alt">
+                        Encarregado de gerenciar os conflitos dentro da equipe.
+                    </label>
+                </div>
+            </div>
+        
+        <!-- PERGUNTA 7 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 7:
+                    </span>
+                    Qual é a definição de Scrum Master no Scrum?
+                </p>
+        
+                <!-- Alternativas [D] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="7A-alt" name="Alt-question-7" value="Alternativa A">
+                    <label class="test-radio-label" for="7A-alt">
+                        O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="7B-alt" name="Alt-question-7" value="Alternativa B">
+                    <label class="test-radio-label" for="7B-alt">
+                        O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="7C-alt" name="Alt-question-7" value="Alternativa C">
+                    <label class="test-radio-label" for="7C-alt">
+                        O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="7D-alt" name="Alt-question-7" value="Alternativa D">
+                    <label class="test-radio-label" for="7D-alt">
+                        O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo.
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 8 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 8:
+                    </span>
+                    Quais são as perguntas recorrentes do Daily Scrum?
+                </p>
+        
+                <!-- Alternativas [C] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="8A-alt" name="Alt-question-8" value="Alternativa A">
+                    <label class="test-radio-label" for="8A-alt">
+                        O que você gostou de fazer no projeto? Está com alguma dificuldade?
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="8B-alt" name="Alt-question-8" value="Alternativa B">
+                    <label class="test-radio-label" for="8B-alt">
+                        Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="8C-alt" name="Alt-question-8" value="Alternativa C">
+                    <label class="test-radio-label" for="8C-alt">
+                        O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="8D-alt" name="Alt-question-8" value="Alternativa D">
+                    <label class="test-radio-label" for="8D-alt">
+                        O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 9 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 9:
+                    </span>
+                    Qual o formato de uma User Story?
+                </p>
+        
+                <!-- Alternativas [A] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="9A-alt" name="Alt-question-9" value="Alternativa A">
+                    <label class="test-radio-label" for="9A-alt">
+                        Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para &lt motivo que remeta um valor ao negócio &gt
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="9B-alt" name="Alt-question-9" value="Alternativa B">
+                    <label class="test-radio-label" for="9B-alt">
+                        Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="9C-alt" name="Alt-question-9" value="Alternativa C">
+                    <label class="test-radio-label" for="9C-alt">
+                        Como &lt tipo de usuário &gt necessito de &lt produto final &gt
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="9D-alt" name="Alt-question-9" value="Alternativa D">
+                    <label class="test-radio-label" for="9D-alt">
+                        Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 10 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 10:
+                    </span>
+                    Uma Release Planning Meeting é composta por:
+                </p>
+        
+                <!-- Alternativas [B] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="10A-alt" name="Alt-question-10" value="Alternativa A">
+                    <label class="test-radio-label" for="10A-alt">
+                        Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="10B-alt" name="Alt-question-10" value="Alternativa B">
+                    <label class="test-radio-label" for="10B-alt">
+                        Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="10C-alt" name="Alt-question-10" value="Alternativa C">
+                    <label class="test-radio-label" for="10C-alt">
+                        Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="10D-alt" name="Alt-question-10" value="Alternativa D">
+                    <label class="test-radio-label" for="10D-alt">
+                        Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 11 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 11:
+                    </span>
+                    Qual das seguintes alternativas descreve corretamente a essência de um processo empírico no contexto do Scrum?
+                </p>
+
+                <!-- Alternativas [D] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="11A-alt" name="Alt-question-11" value="Alternativa A">
+                    <label class="test-radio-label" for="11A-alt">
+                        Um processo que segue uma sequência fixa e definida, onde cada etapa é previsível.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="11B-alt" name="Alt-question-11" value="Alternativa B">
+                    <label class="test-radio-label" for="11B-alt">
+                        Um processo que não permite alterações durante a execução, garantindo a conformidade estrita com o plano inicial.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="11C-alt" name="Alt-question-11" value="Alternativa C">
+                    <label class="test-radio-label" for="11C-alt">
+                        Um processo que prioriza a documentação extensiva e controle rígido de mudanças.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="11D-alt" name="Alt-question-11" value="Alternativa D">
+                    <label class="test-radio-label" for="11D-alt">
+                        Um processo que adapta e melhora continuamente através da prática e experiência, enfrentando imprevistos.
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 12 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 12:
+                    </span>
+                    Qual é a importância da transparência dentro do Scrum?  
+                </p>
+
+                <!-- Alternativas [B] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="12A-alt" name="Alt-question-12" value="Alternativa A">
+                    <label class="test-radio-label" for="12A-alt">
+                        Permitir que somente o Scrum Master tenha uma visão clara do progresso do projeto.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="12B-alt" name="Alt-question-12" value="Alternativa B">
+                    <label class="test-radio-label" for="12B-alt">
+                        Assegurar que todos os membros da equipe compreendam claramente os processos e estejam alinhados nos termos utilizados.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="12C-alt" name="Alt-question-12" value="Alternativa C">
+                    <label class="test-radio-label" for="12C-alt">
+                        Garantir que as decisões sejam tomadas exclusivamente pelo Product Owner.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="12D-alt" name="Alt-question-12" value="Alternativa D">
+                    <label class="test-radio-label" for="12D-alt">
+                        Facilitar a introdução de novas metodologias sem a necessidade de comunicação constante.
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 13 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 13:
+                    </span>
+                    Como o Product Owner garante que o desenvolvimento do produto está alinhado com as necessidades do negócio?
+                </p>
+
+                <!-- Alternativas [A] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="13A-alt" name="Alt-question-13" value="Alternativa A">
+                    <label class="test-radio-label" for="13A-alt">
+                        Definindo, priorizando e aceitando o trabalho a ser realizado pela equipe de desenvolvimento com base nas expectativas dos stakeholders.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="13B-alt" name="Alt-question-13" value="Alternativa B">
+                    <label class="test-radio-label" for="13B-alt">
+                        Participando diretamente no desenvolvimento e codificação do produto.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="13C-alt" name="Alt-question-13" value="Alternativa C">
+                    <label class="test-radio-label" for="13C-alt">
+                        Gerenciando conflitos internos na equipe de desenvolvimento.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="13D-alt" name="Alt-question-13" value="Alternativa D">
+                    <label class="test-radio-label" for="13D-alt">
+                        Monitorando apenas os aspectos técnicos do desenvolvimento sem interação com os stakeholders.
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 14 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 14:
+                    </span>
+                    Qual das seguintes opções descreve corretamente a importância dos três pilares do Scrum (Transparência, Inspeção e Adaptação)?
+                </p>
+
+                <!-- Alternativas [B] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="14A-alt" name="Alt-question-14" value="Alternativa A">
+                    <label class="test-radio-label" for="14A-alt">
+                        Eles garantem que todas as decisões sejam tomadas exclusivamente pelo Product Owner.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="14B-alt" name="Alt-question-14" value="Alternativa B">
+                    <label class="test-radio-label" for="14B-alt">
+                        Eles proporcionam um ambiente onde o progresso pode ser monitorado continuamente e ajustes podem ser feitos com base em feedback constante.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="14C-alt" name="Alt-question-14" value="Alternativa C">
+                    <label class="test-radio-label" for="14C-alt">
+                        Eles estabelecem uma hierarquia rígida dentro da equipe de desenvolvimento.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="14D-alt" name="Alt-question-14" value="Alternativa D">
+                    <label class="test-radio-label" for="14D-alt">
+                        Eles eliminam a necessidade de reuniões frequentes e planejamento contínuo.
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 15 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 15:
+                    </span>
+                    Qual é o principal objetivo de uma User Story no Scrum?
+                </p>
+
+                <!-- Alternativas [C] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="15A-alt" name="Alt-question-15" value="Alternativa A">
+                    <label class="test-radio-label" for="15A-alt">
+                        Documentar tecnicamente todos os requisitos de um sistema.
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="15B-alt" name="Alt-question-15" value="Alternativa B">
+                    <label class="test-radio-label" for="15B-alt">
+                        Listar as tarefas diárias a serem realizadas pela equipe de desenvolvimento.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="15C-alt" name="Alt-question-15" value="Alternativa C">
+                    <label class="test-radio-label" for="15C-alt">
+                        Descrever uma funcionalidade desejada de forma que tenha valor para o usuário, focando no ponto de vista do cliente.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="15D-alt" name="Alt-question-15" value="Alternativa D">
+                    <label class="test-radio-label" for="15D-alt">
+                        Definir o cronograma e as metas do projeto
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 16 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 16:
+                    </span>
+                    O Scrum master não pode comparecer a daily, e você irá assumir o papel temporariamente, para que o processo não seja quebrado!
+                    Qual é as perguntas que se deve fazer aos outros membros?
+                </p>
+
+                <!-- Alternativas [A] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="16A-alt" name="Alt-question-16" value="Alternativa A">
+                    <label class="test-radio-label" for="16A-alt">
+                        O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?    
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="16B-alt" name="Alt-question-16" value="Alternativa B">
+                    <label class="test-radio-label" for="16B-alt">
+                        Está gostando do projeto? O que você acha que pode melhorar nele?
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="16C-alt" name="Alt-question-16" value="Alternativa C">
+                    <label class="test-radio-label" for="16C-alt">
+                        O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="16D-alt" name="Alt-question-16" value="Alternativa D">
+                    <label class="test-radio-label" for="16D-alt">
+                        Tem se esforçado para a realização desse projeto? Está ajudando os colegas de equipe?
+                    </label>
+                </div>
+            </div>
+
+        <!-- PERGUNTA 17 -->
+            <div class="test-question">
+
+                <!-- Pergunta -->
+                <p class="test-question-text">
+                    <span class="test-question-number">
+                        Pergunta 17:
+                    </span>
+                    Dada a seguinte situação, escolha a alternativa INCORRETA: <br>
+                    Durante a Sprint planning, todos os integrantes da equipe Scrum devem se reunir para organizar o que entregar e como produzir essa entrega de valor, respeitando o tempo da Sprint.
     
-        <input type="radio" id="A-alt" name="Alt-question-3" value="Alternativa A">
-        <label for="Alternativa A">Os papéis são fixos, bem claros e hierarquicamente organizados dentro da estrutura de uma Equipe.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-3" value="Alternativa B">
-        <label for="Alternativa B">Os papéis são fixos, pré-estabelecidos pelo cliente e todos devem opinar, mas a palavra final é sempre do Master.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-3" value="Alternativa C">
-        <label for="Alternativa C">Os papéis são estáveis, mas não são fixos, e à medida que os processos se desenvolvem,  pessoas podem assumir novas funções, todos devem opinar, mas a palavra final é sempre do Master.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-3" value="Alternativa D">
-        <label for="Alternativa D">Os papéis são estáveis, mas não são fixos, e à medida que os processos se desenvolvem, pessoas podem assumir novas funções, todos devem opinar e decidir, não há hierarquias.</label><br>
-        
-
-
-        <hr/>
-
-
-        <!--Gabarito C-->
-        <p> <b>
-          Pergunta 4: Assinale a afirmação verdadeira a seguir:
-        </p> </b>
-
-        
-        <input type="radio" id="A-alt" name="Alt-question-4" value="Alternativa A">
-        <label for="Alternativa A">A visão do produto não é realmente relevante em um projeto.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-4" value="Alternativa B">
-        <label for="Alternativa B">A visão do produto é uma etapa final, onde aspectos estéticos são adicionados ao produto final.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-4" value="Alternativa C">
-        <label for="Alternativa C">A melhor forma de começar uma Sprint Planning Meeting é apresentando a Visão do Produto </label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-4" value="Alternativa D">
-        <label for="Alternativa D">A Visão do produto é estabelecida apenas uma vez, antes do início do desenvolvimento e não muda ao longo do projeto.</label><br>
-        
-        <hr/>
-
-        <!--Gabarito B-->
-        <p> <b>
-          Pergunta 5: A respeito da Sprint Planning Meeting, pode se afirmar o seguinte:
-        </p> </b>
-
-        
-        <input type="radio" id="A-alt" name="Alt-question-5" value="Alternativa A">
-        <label for="Alternativa A">É a última cerimônia Scrum, onde os incrementos são apresentados/tornados públicos;</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-5" value="Alternativa B">
-        <label for="Alternativa B">É a primeira cerimônia Scrum, onde todos os detalhes precisam ser minuciosamente pensados;</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-5" value="Alternativa C">
-        <label for="Alternativa C">É uma cerimônia intermediária, deve acontecer em projetos com mais de 5 sprints;</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-5" value="Alternativa D">
-        <label for="Alternativa D">Não é uma cerimônia oficial do Scrum, mas como a Visão do Produto, é fortemente recomendada;</label><br>
-        
-        <hr/>
-
-        <!--Gabarito A-->
-        <p> <b>
-          Pergunta 6: Qual o papel do Product Owner?
-        </p> </b>
-
-        
-        <input type="radio" id="A-alt" name="Alt-question-6" value="Alternativa A">
-        <label for="Alternativa A">Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-6" value="Alternativa B">
-        <label for="Alternativa B">Tomar decisões finais sobre as funcionalidades a serem desenvolvidas.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-6" value="Alternativa C">
-        <label for="Alternativa C">Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-6" value="Alternativa D">
-        <label for="Alternativa D">Encarregado de gerenciar os conflitos dentro da equipe.</label><br>
-        
-        <hr/>
-
-        <!--Gabarito D-->
-        <p> <b>
-          Pergunta 7: Qual é a definição de Scrum Master no Scrum?
-        </p> </b>
-
-        
-        <input type="radio" id="A-alt" name="Alt-question-7" value="Alternativa A">
-        <label for="Alternativa A">O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-7" value="Alternativa B">
-        <label for="Alternativa B">O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-7" value="Alternativa C">
-        <label for="Alternativa C">O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-7" value="Alternativa D">
-        <label for="Alternativa D">O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo.</label><br>
-        
-        <hr/>
-
-
-        <!--Gabarito C-->
-        <p> <b>
-          Pergunta 8: Quais são as perguntas recorrentes do Daily Scrum?
-        </p> </b>
-
-        
-        <input type="radio" id="A-alt" name="Alt-question-8" value="Alternativa A">
-        <label for="Alternativa A">O que você gostou de fazer no projeto? Está com alguma dificuldade?</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-8" value="Alternativa B">
-        <label for="Alternativa B">Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-8" value="Alternativa C">
-        <label for="Alternativa C">O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-8" value="Alternativa D">
-        <label for="Alternativa D">O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?</label><br>
-        
-        <hr/>
-
-        <!--Gabarito A-->
-        <p> <b>
-          Pergunta 9: Qual o formato de uma User Story?
-        </p> </b>
-
-        <input type="radio" id="A-alt" name="Alt-question-9" value="Alternativa A">
-        <label for="Alternativa A">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para &lt motivo que remeta um valor ao negócio &gt</label><br>
-
-        <input type="radio" id="B-alt" name="Alt-question-9" value="Alternativa B">
-        <label for="Alternativa B">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-9" value="Alternativa C">
-        <label for="Alternativa C">Como &lt tipo de usuário &gt necessito de &lt produto final &gt</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-9" value="Alternativa D">
-        <label for="Alternativa D">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt</label><br>
-        
-        <hr/>
-
-        <!--Gabarito B-->
-        <p> <b>
-          Pergunta 10: Uma Release Planning Meeting é composta por:
-        </p> </b>
-
-        
-        <input type="radio" id="A-alt" name="Alt-question-10" value="Alternativa A">
-        <label for="Alternativa A">Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-10" value="Alternativa B">
-        <label for="Alternativa B">Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-10" value="Alternativa C">
-        <label for="Alternativa C">Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-10" value="Alternativa D">
-        <label for="Alternativa D">Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva</label><br>
-        
-        <hr/>
-
-
-        <!--Gabarito D-->
-        <p> <b>
-          Pergunta 11: Qual das seguintes alternativas descreve corretamente a essência de um processo empírico no contexto do Scrum?
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-11" value="Alternativa A">
-        <label for="Alternativa A">Um processo que segue uma sequência fixa e definida, onde cada etapa é previsível.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-11" value="Alternativa B">
-        <label for="Alternativa B">Um processo que não permite alterações durante a execução, garantindo a conformidade estrita com o plano inicial.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-11" value="Alternativa C">
-        <label for="Alternativa C">Um processo que prioriza a documentação extensiva e controle rígido de mudanças.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-11" value="Alternativa D">
-        <label for="Alternativa D">Um processo que adapta e melhora continuamente através da prática e experiência, enfrentando imprevistos.</label><br>
-      
-        <hr/>
-
-
-        <!--Gabarito B-->
-        <p> <b>
-          Pergunta 12: Qual é a importância da transparência dentro do Scrum?
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-12" value="Alternativa A">
-        <label for="Alternativa A">Permitir que somente o Scrum Master tenha uma visão clara do progresso do projeto.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-12" value="Alternativa B">
-        <label for="Alternativa B">Assegurar que todos os membros da equipe compreendam claramente os processos e estejam alinhados nos termos utilizados.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-12" value="Alternativa C">
-        <label for="Alternativa C">Garantir que as decisões sejam tomadas exclusivamente pelo Product Owner.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-12" value="Alternativa D">
-        <label for="Alternativa D">Facilitar a introdução de novas metodologias sem a necessidade de comunicação constante.</label><br>
-
-        <hr/>
-
-        <!--Gabarito A-->
-        <p> <b>
-          Pergunta 13: Como o Product Owner garante que o desenvolvimento do produto está alinhado com as necessidades do negócio?
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-13" value="Alternativa A">
-        <label for="Alternativa A">Definindo, priorizando e aceitando o trabalho a ser realizado pela equipe de desenvolvimento com base nas expectativas dos stakeholders.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-13" value="Alternativa B">
-        <label for="Participando diretamente no desenvolvimento e codificação do produto">Participando diretamente no desenvolvimento e codificação do produto.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-13" value="Alternativa C">
-        <label for="Alternativa C">Gerenciando conflitos internos na equipe de desenvolvimento.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-13" value="Alternativa D">
-        <label for="Alternativa D">Monitorando apenas os aspectos técnicos do desenvolvimento sem interação com os stakeholders.</label><br>
-
-
-        <hr/>
-
-
-        <!--Gabarito B-->
-        <p> <b>
-          Pergunta 14: Qual das seguintes opções descreve corretamente a importância dos três pilares do Scrum (Transparência, Inspeção e Adaptação)?
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-14" value="Alternativa A">
-        <label for="Alternativa A">Eles garantem que todas as decisões sejam tomadas exclusivamente pelo Product Owner.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-14" value="Alternativa B">
-        <label for="Alternativa B">Eles proporcionam um ambiente onde o progresso pode ser monitorado continuamente e ajustes podem ser feitos com base em feedback constante.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-14" value="Alternativa C">
-        <label for="Alternativa C">Eles estabelecem uma hierarquia rígida dentro da equipe de desenvolvimento.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-14" value="Alternativa D">
-        <label for="Alternativa D">Eles eliminam a necessidade de reuniões frequentes e planejamento contínuo.</label><br>
-
-
-        <hr/>
-
-        <!--Gabarito C-->
-        <p> <b>
-          Pergunta 15: Qual é o principal objetivo de uma User Story no Scrum?
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-15" value="Alternativa A">
-        <label for="Alternativa A">Documentar tecnicamente todos os requisitos de um sistema.</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-15" value="Alternativa B">
-        <label for="Alternativa B">Listar as tarefas diárias a serem realizadas pela equipe de desenvolvimento.</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-15" value="Alternativa C">
-        <label for="Alternativa C">Descrever uma funcionalidade desejada de forma que tenha valor para o usuário, focando no ponto de vista do cliente.</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-15" value="Alternativa D">
-        <label for="Alternativa D">Definir o cronograma e as metas do projeto</label><br>
-
-
-        <hr/>
-
-        <!--Gabarito A-->
-        <p> <b>
-          Pergunta 16: O Scrum master não pode comparecer a daily, e você irá assumir o papel temporariamente, para que o processo não seja quebrado!
-          Qual é as perguntas que se deve fazer aos outros membros?
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-16" value="Alternativa A">
-        <label for="Alternativa A">O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-16" value="Alternativa B">
-        <label for="Alternativa B">Está gostando do projeto? O que você acha que pode melhorar nele?</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-16" value="Alternativa C">
-        <label for="Alternativa C">O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-16" value="Alternativa D">
-        <label for="Alternativa D">Tem se esforçado para a realização desse projeto? Está ajudando os colegas de equipe?</label><br>
-
-
-        <hr/>
-
-
-
-        <!--Gabarito C-->
-        <p> <b>
-          Pergunta 17: Dada a seguinte situação, escolha a alternativa INCORRETA: <br>
-          Durante a Sprint planning, todos os integrantes da equipe Scrum devem se reunir para organizar o que entregar e como produzir essa entrega de valor, respeitando o tempo da Sprint.
+                    Abaixo, estão listadas algumas dos passos para uma boa Sprint planning, escolha a alternativa INCORRETA:
+                </p>
+
+                <!-- Alternativas [C] -->
+                <div class="test-answers-area">
+
+                    <!-- Alternativa A -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="17A-alt" name="Alt-question-17" value="Alternativa A">
+                    <label class="test-radio-label" for="17A-alt">
+                        Preparar o backlog e verificar a disponibilidade da equipe.    
+                    </label>
+
+                    <!-- Alternativa B -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="17B-alt" name="Alt-question-17" value="Alternativa B">
+                    <label class="test-radio-label" for="17B-alt">
+                        Estabelecer uma velocidade e apresentar um panorama geral.
+                    </label>
+
+                    <!-- Alternativa C -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="17C-alt" name="Alt-question-17" value="Alternativa C">
+                    <label class="test-radio-label" for="17C-alt">
+                        Analizar a Sprint anterior (caso tenha) buscando melhorar e culpar os membros que atrasaram entregas.
+                    </label>
+                    
+                    <!-- Alternativa D -->
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="17D-alt" name="Alt-question-17" value="Alternativa D">
+                    <label class="test-radio-label" for="17D-alt">
+                        Examinar o backlog e determinar a propriedade das tarefas.
+                    </label>
+                </div>
+            </div>
+
+            <input class="btn btn-success" type="submit" value="Validar"/>
+      </form>
+
+    </div>
+</div>
+
+
+
+        <article class="resumindo">
+          <!--Gabarito D-->
+          <p> <b>
+            Pergunta 3: A respeito de uma equipe que usa a filosofia ágil e a metodologia Scrum, o que se pode afirmar verdadeiramente:
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-3" value="Alternativa A">
+          <label for="Alternativa A">Os papéis são fixos, bem claros e hierarquicamente organizados dentro da estrutura de uma Equipe.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-3" value="Alternativa B">
+          <label for="Alternativa B">Os papéis são fixos, pré-estabelecidos pelo cliente e todos devem opinar, mas a palavra final é sempre do Master.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-3" value="Alternativa C">
+          <label for="Alternativa C">Os papéis são estáveis, mas não são fixos, e à medida que os processos se desenvolvem,  pessoas podem assumir novas funções, todos devem opinar, mas a palavra final é sempre do Master.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-3" value="Alternativa D">
+          <label for="Alternativa D">Os papéis são estáveis, mas não são fixos, e à medida que os processos se desenvolvem, pessoas podem assumir novas funções, todos devem opinar e decidir, não há hierarquias.</label><br>
           
-          Abaixo, estão listadas algumas dos passos para uma boa Sprint planning, escolha a alternativa INCORRETA:
-        </p> </b>
-
-      
-        <input type="radio" id="A-alt" name="Alt-question-17" value="Alternativa A">
-        <label for="Alternativa A">Preparar o backlog e verificar a disponibilidade da equipe</label><br>
-
-
-        <input type="radio" id="B-alt" name="Alt-question-17" value="Alternativa B">
-        <label for="Alternativa B">Estabelecer uma velocidade e apresentar um panorama geral</label><br>
-
-        <input type="radio" id="C-alt" name="Alt-question-17" value="Alternativa C">
-        <label for="Alternativa C">Analizar a Sprint anterior (caso tenha) buscando melhorar e culpar os membros que atrasaram entregas</label><br>
-
-        <input type="radio" id="D-alt" name="Alt-question-17" value="Alternativa D">
-        <label for="Alternativa D">Examinar o backlog e determinar a propriedade das tarefas</label><br>
-
-
-        <hr/>
+          <hr/>
+          <!--Gabarito C-->
+          <p> <b>
+            Pergunta 4: Assinale a afirmação verdadeira a seguir:
+          </p> </b>
+          
+          <input type="radio" id="A-alt" name="Alt-question-4" value="Alternativa A">
+          <label for="Alternativa A">A visão do produto não é realmente relevante em um projeto.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-4" value="Alternativa B">
+          <label for="Alternativa B">A visão do produto é uma etapa final, onde aspectos estéticos são adicionados ao produto final.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-4" value="Alternativa C">
+          <label for="Alternativa C">A melhor forma de começar uma Sprint Planning Meeting é apresentando a Visão do Produto </label><br>
+          <input type="radio" id="D-alt" name="Alt-question-4" value="Alternativa D">
+          <label for="Alternativa D">A Visão do produto é estabelecida apenas uma vez, antes do início do desenvolvimento e não muda ao longo do projeto.</label><br>
+          
+          <hr/>
+          <!--Gabarito B-->
+          <p> <b>
+            Pergunta 5: A respeito da Sprint Planning Meeting, pode se afirmar o seguinte:
+          </p> </b>
+          
+          <input type="radio" id="A-alt" name="Alt-question-5" value="Alternativa A">
+          <label for="Alternativa A">É a última cerimônia Scrum, onde os incrementos são apresentados/tornados públicos;</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-5" value="Alternativa B">
+          <label for="Alternativa B">É a primeira cerimônia Scrum, onde todos os detalhes precisam ser minuciosamente pensados;</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-5" value="Alternativa C">
+          <label for="Alternativa C">É uma cerimônia intermediária, deve acontecer em projetos com mais de 5 sprints;</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-5" value="Alternativa D">
+          <label for="Alternativa D">Não é uma cerimônia oficial do Scrum, mas como a Visão do Produto, é fortemente recomendada;</label><br>
+          
+          <hr/>
+          <!--Gabarito A-->
+          <p> <b>
+            Pergunta 6: Qual o papel do Product Owner?
+          </p> </b>
+          
+          <input type="radio" id="A-alt" name="Alt-question-6" value="Alternativa A">
+          <label for="Alternativa A">Gerenciar o Backlog, garantir o ROI, definir a visão do produto, gerenciar a entrada de requisitos e definir prioridades.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-6" value="Alternativa B">
+          <label for="Alternativa B">Tomar decisões finais sobre as funcionalidades a serem desenvolvidas.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-6" value="Alternativa C">
+          <label for="Alternativa C">Responsabilizar-se pelo desenvolvimento do produto e garantir sua qualidade.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-6" value="Alternativa D">
+          <label for="Alternativa D">Encarregado de gerenciar os conflitos dentro da equipe.</label><br>
+          
+          <hr/>
+          <!--Gabarito D-->
+          <p> <b>
+            Pergunta 7: Qual é a definição de Scrum Master no Scrum?
+          </p> </b>
+          
+          <input type="radio" id="A-alt" name="Alt-question-7" value="Alternativa A">
+          <label for="Alternativa A">O Scrum Master é responsável por pensar e desenvolver o produto, sendo o papel mais importante.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-7" value="Alternativa B">
+          <label for="Alternativa B">O Scrum Master é o líder da equipe de desenvolvimento e tem como objetivo cobrar caso haja tarefas a serem concluídas.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-7" value="Alternativa C">
+          <label for="Alternativa C">O Scrum Master é um gerenciador, onde tem principal função no Backlog do Produto, adicionando e excluindo as User Stories.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-7" value="Alternativa D">
+          <label for="Alternativa D">O Scrum Master é um facilitador, que ajuda a equipe a entender e adotar o Scrum, removendo impedimentos e promovendo um ambiente de trabalho colaborativo.</label><br>
+          
+          <hr/>
+          <!--Gabarito C-->
+          <p> <b>
+            Pergunta 8: Quais são as perguntas recorrentes do Daily Scrum?
+          </p> </b>
+          
+          <input type="radio" id="A-alt" name="Alt-question-8" value="Alternativa A">
+          <label for="Alternativa A">O que você gostou de fazer no projeto? Está com alguma dificuldade?</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-8" value="Alternativa B">
+          <label for="Alternativa B">Qual é o plano para a próxima sprint? Qual foi a atualização no Burndown Chart?</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-8" value="Alternativa C">
+          <label for="Alternativa C">O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-8" value="Alternativa D">
+          <label for="Alternativa D">O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?</label><br>
+          
+          <hr/>
+          <!--Gabarito A-->
+          <p> <b>
+            Pergunta 9: Qual o formato de uma User Story?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-9" value="Alternativa A">
+          <label for="Alternativa A">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para &lt motivo que remeta um valor ao negócio &gt</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-9" value="Alternativa B">
+          <label for="Alternativa B">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt para quem/o/a  &lt usuário final &gt</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-9" value="Alternativa C">
+          <label for="Alternativa C">Como &lt tipo de usuário &gt necessito de &lt produto final &gt</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-9" value="Alternativa D">
+          <label for="Alternativa D">Como &lt tipo de usuário &gt quero &lt funcionalidade desejada &gt</label><br>
+          
+          <hr/>
+          <!--Gabarito B-->
+          <p> <b>
+            Pergunta 10: Uma Release Planning Meeting é composta por:
+          </p> </b>
+          
+          <input type="radio" id="A-alt" name="Alt-question-10" value="Alternativa A">
+          <label for="Alternativa A">Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-10" value="Alternativa B">
+          <label for="Alternativa B">Abertura - Visão do Produto - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Gráficos - Retrospectiva</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-10" value="Alternativa C">
+          <label for="Alternativa C">Abertura - Visão do Produto - Status do Projeto - Estimativa - Mapear Itens - Plano de Comunicação - Gráficos - Retrospectiva</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-10" value="Alternativa D">
+          <label for="Alternativa D">Abertura - Status do Projeto - Tema - Estimativa - Mapear Itens - Plano de Riscos - Plano de Comunicação e Logística  - Retrospectiva</label><br>
+          
+          <hr/>
+          <!--Gabarito D-->
+          <p> <b>
+            Pergunta 11: Qual das seguintes alternativas descreve corretamente a essência de um processo empírico no contexto do Scrum?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-11" value="Alternativa A">
+          <label for="Alternativa A">Um processo que segue uma sequência fixa e definida, onde cada etapa é previsível.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-11" value="Alternativa B">
+          <label for="Alternativa B">Um processo que não permite alterações durante a execução, garantindo a conformidade estrita com o plano inicial.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-11" value="Alternativa C">
+          <label for="Alternativa C">Um processo que prioriza a documentação extensiva e controle rígido de mudanças.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-11" value="Alternativa D">
+          <label for="Alternativa D">Um processo que adapta e melhora continuamente através da prática e experiência, enfrentando imprevistos.</label><br>
+          <hr/>
+          <!--Gabarito B-->
+          <p> <b>
+            Pergunta 12: Qual é a importância da transparência dentro do Scrum?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-12" value="Alternativa A">
+          <label for="Alternativa A">Permitir que somente o Scrum Master tenha uma visão clara do progresso do projeto.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-12" value="Alternativa B">
+          <label for="Alternativa B">Assegurar que todos os membros da equipe compreendam claramente os processos e estejam alinhados nos termos utilizados.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-12" value="Alternativa C">
+          <label for="Alternativa C">Garantir que as decisões sejam tomadas exclusivamente pelo Product Owner.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-12" value="Alternativa D">
+          <label for="Alternativa D">Facilitar a introdução de novas metodologias sem a necessidade de comunicação constante.</label><br>
+          <hr/>
+          <!--Gabarito A-->
+          <p> <b>
+            Pergunta 13: Como o Product Owner garante que o desenvolvimento do produto está alinhado com as necessidades do negócio?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-13" value="Alternativa A">
+          <label for="Alternativa A">Definindo, priorizando e aceitando o trabalho a ser realizado pela equipe de desenvolvimento com base nas expectativas dos stakeholders.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-13" value="Alternativa B">
+          <label for="Participando diretamente no desenvolvimento e codificação do produto">Participando diretamente no desenvolvimento e codificação do produto.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-13" value="Alternativa C">
+          <label for="Alternativa C">Gerenciando conflitos internos na equipe de desenvolvimento.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-13" value="Alternativa D">
+          <label for="Alternativa D">Monitorando apenas os aspectos técnicos do desenvolvimento sem interação com os stakeholders.</label><br>
+          <hr/>
+          <!--Gabarito B-->
+          <p> <b>
+            Pergunta 14: Qual das seguintes opções descreve corretamente a importância dos três pilares do Scrum (Transparência, Inspeção e Adaptação)?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-14" value="Alternativa A">
+          <label for="Alternativa A">Eles garantem que todas as decisões sejam tomadas exclusivamente pelo Product Owner.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-14" value="Alternativa B">
+          <label for="Alternativa B">Eles proporcionam um ambiente onde o progresso pode ser monitorado continuamente e ajustes podem ser feitos com base em feedback constante.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-14" value="Alternativa C">
+          <label for="Alternativa C">Eles estabelecem uma hierarquia rígida dentro da equipe de desenvolvimento.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-14" value="Alternativa D">
+          <label for="Alternativa D">Eles eliminam a necessidade de reuniões frequentes e planejamento contínuo.</label><br>
+          <hr/>
+          <!--Gabarito C-->
+          <p> <b>
+            Pergunta 15: Qual é o principal objetivo de uma User Story no Scrum?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-15" value="Alternativa A">
+          <label for="Alternativa A">Documentar tecnicamente todos os requisitos de um sistema.</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-15" value="Alternativa B">
+          <label for="Alternativa B">Listar as tarefas diárias a serem realizadas pela equipe de desenvolvimento.</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-15" value="Alternativa C">
+          <label for="Alternativa C">Descrever uma funcionalidade desejada de forma que tenha valor para o usuário, focando no ponto de vista do cliente.</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-15" value="Alternativa D">
+          <label for="Alternativa D">Definir o cronograma e as metas do projeto</label><br>
+          <hr/>
+          <!--Gabarito A-->
+          <p> <b>
+            Pergunta 16: O Scrum master não pode comparecer a daily, e você irá assumir o papel temporariamente, para que o processo não seja quebrado!
+            Qual é as perguntas que se deve fazer aos outros membros?
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-16" value="Alternativa A">
+          <label for="Alternativa A">O que fiz desde a última Daily? O que pretendo fazer até a próxima? Existe algum impedimento?</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-16" value="Alternativa B">
+          <label for="Alternativa B">Está gostando do projeto? O que você acha que pode melhorar nele?</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-16" value="Alternativa C">
+          <label for="Alternativa C">O cliente pediu um novo requisito? Existe alguma tarefa atrasada? Alguém do time necessita de ajuda na implementação?</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-16" value="Alternativa D">
+          <label for="Alternativa D">Tem se esforçado para a realização desse projeto? Está ajudando os colegas de equipe?</label><br>
+          <hr/>
+          <!--Gabarito C-->
+          <p> <b>
+            Pergunta 17: Dada a seguinte situação, escolha a alternativa INCORRETA: <br>
+            Durante a Sprint planning, todos os integrantes da equipe Scrum devem se reunir para organizar o que entregar e como produzir essa entrega de valor, respeitando o tempo da Sprint.
+          
+            Abaixo, estão listadas algumas dos passos para uma boa Sprint planning, escolha a alternativa INCORRETA:
+          </p> </b>
+          <input type="radio" id="A-alt" name="Alt-question-17" value="Alternativa A">
+          <label for="Alternativa A">Preparar o backlog e verificar a disponibilidade da equipe</label><br>
+          <input type="radio" id="B-alt" name="Alt-question-17" value="Alternativa B">
+          <label for="Alternativa B">Estabelecer uma velocidade e apresentar um panorama geral</label><br>
+          <input type="radio" id="C-alt" name="Alt-question-17" value="Alternativa C">
+          <label for="Alternativa C">Analizar a Sprint anterior (caso tenha) buscando melhorar e culpar os membros que atrasaram entregas</label><br>
+          <input type="radio" id="D-alt" name="Alt-question-17" value="Alternativa D">
+          <label for="Alternativa D">Examinar o backlog e determinar a propriedade das tarefas</label><br>
+          <hr/>
+        </article>
 
         <input class="btn btn-success" type="submit" value="Validar"/>
 

@@ -256,3 +256,9 @@ def quiz_capitulo_3():
 
 if __name__ == "__main__":
     app.run(debug= True)
+
+
+
+@app.route("/demonstracao")
+def demonstracao():
+    return render_template("demonstracao.html")

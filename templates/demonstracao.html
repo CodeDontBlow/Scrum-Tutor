@@ -1,336 +1,320 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
+
+{% block pageCss%} 
+<style>
+
+.test-header{
+    background-color: rgb(107, 107, 233);
+    background-image: url('https://ccqm.ch/wp-content/uploads/2017/06/Exams-banner-student-1030x255.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: multiply;
     
-    <!-- Ícones Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    display: flex;
+    align-items: center;
 
-    <!-- CSS do Boostrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-    <!-- CSS Global do Projeto -->
-    <link rel="stylesheet" href="{{url_for('static', filename='style/global.css')}}">
-
-    <link rel="stylesheet" href="../static/style/global.css">
-
-<!-- CSS LOCAL feito para identificar melhor a disposição de conteúdo nos layouts (este style deve ser ignorado na hora de montar sua página) -->
-    <style>
-        body{
-            background-image: linear-gradient(to bottom right, #090942 , #1A1A76);
-            background-repeat: no-repeat;
-        }
-
-        .content-block{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.1));
-            border: 1px dashed rgba(255, 255, 255, 0.3);
-        }
-        
-        .container-content{
-            margin-bottom: 20px;
-        }
-    </style>
-
-
-
-<!-- 
-.:: LAYOUTS DISPONÍVEIS ::.
--->
-
-    <div class="container-sm">
-
-<!-- CENTRALIZAÇÃO DE VÁRIOS ELEMENTOS -->
-        <div class="container-content d-flex justify-content-center flex-wrap">
-            <!-- Elemento 1 -->
-            <div class="content-block">
-                Elemento
-            </div>
-            <!-- Elemento 2 -->
-            <div class="content-block">
-                Elemento
-            </div>
-            <!-- Elemento 3 -->
-            <div class="content-block">
-                Elemento
-            </div>
-        </div>
-
-        
-
-
-<!-- UM BLOCO PRA CONTEÚDO -->
-        <div class="container-content text-center">
-            <!-- Bloco 1 -->
-            <div class="content-block">
-                Bloco
-            </div>
-        </div>
-
-
-
-<!-- DOIS BLOCOS: [4x8] -->
-        <div class="container-content text-center row">
-            <!-- Bloco 1 -->
-            <div class="content-block col-md-4">
-                Bloco [4x8]
-            </div>
-
-            <!-- Bloco 2 -->
-            <div class="content-block col-md-8">
-                Bloco [4x8]
-            </div>
-        </div>
-
-
-
-<!-- DOIS BLOCOS: [6x6] -->   
-        <div class="container-content text-center row">
-            <!-- Bloco 1 -->
-            <div class="content-block col-md">
-                Bloco [6x6]
-            </div>
-
-            <!-- Bloco 2 -->
-            <div class="content-block col-md">
-                Bloco [6x6]
-            </div>
-        </div>
-
-
-
-<!-- DOIS BLOCOS: [8x4] -->
-        <div class="container-content text-center row">
-            <!-- Bloco 1 -->
-            <div class="content-block col-md-8">
-                Bloco [8x4]
-            </div>
-            <!-- Bloco 2 -->
-            <div class="content-block col-md-4">
-                Bloco [8x4]
-            </div>
-        </div>
-        
-
-
-<!-- TRÊS BLOCOS: [4x4x4] -->   
-        <div class="container-content text-center row">
-            <!-- Bloco 1 -->
-            <div class="content-block col-md">
-                Bloco [4x4x4]
-            </div>
-
-            <!-- Bloco 2 -->
-            <div class="content-block col-md">
-                Bloco [4x4x4]
-            </div>
-
-            <!-- Bloco 3 -->
-            <div class="content-block col-md">
-                Bloco [4x4x4]
-            </div>
-        </div>
-
-    </div>
+    width: 100%;
+    height: 300px;
     
+    filter: saturate(60%);
 
+    box-shadow: inset 30vw 0px 15vw rgba(0, 0, 0, 0.7);
+}
 
+    .test-header .test-header-title{
+        color: white;
+        font-size: 3rem;
+        text-shadow: 0px 0px 25px rgba(0, 0, 0);
+    }
 
+#FINALtest{
 
+}
 
+    #FINALtest #test-introduction-area{
+        margin: 50px 0;
+    }
+    
+        #test-introduction-area .test-disclaimer{
+            padding: 10px 20px;
+            background-color: #050546;
+            border: 1px solid  #0b0b6e;
+        }
 
+        #FINALtest #test-user-form-area{
+            margin-top: 30px;
 
+            font-size: 1rem;
+            font-weight: 400;
 
+            flex-wrap: nowrap;
+            gap: 5px;
+        }
+    
+            #test-user-form-area .test-user-label{
+                width: 100%;
 
-<!-- 
-.:: ELEMENTOS DISPONÍVEIS ::. 
--->
-
-        <div class="container-md">
+                cursor: text;
+            }
             
-<!-- TÍTULOS -->
-                <h1 class="TITLE-global">
-                    Título
-                </h1>
-<!-- /TÍTULOS -->
+                #test-user-form-area .test-user-label p{
+                    margin-bottom: 5px;
+                    
+                    font-size: .95rem;
+                    font-weight: 300;
+                    text-align: start;
 
-        <br>
+                    user-select: none;
+                }
+    
+                #test-user-form-area .test-user-input{
+                    background-color: rgba(65, 65, 221, 0.25);
+                    width: 100%;
+                    padding: 10px;
 
+                    font-size: .85rem;
+                    font-weight: 300;
+                    
+                    outline: 0px solid rgba(65, 65, 221, 0.2);
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 
-<!-- SUBTÍTULOS -->
-                <h2 class="SUB-global">
-                    Subtítulo
-                </h2>
-<!-- /SUBTÍTULOS -->
-
-        <br>
-
-
-<!-- PARÁGRAFOS -->
-            <div class="TXT-global-container">
-                <p class="TXT-global">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore amet vero dolorem sapiente nemo eos possimus pariatur, neque omnis?
-                </p>
-            </div>
-<!-- /PARÁGRAFOS -->
-
-        <br>
-
-
-<!-- LISTA -->       
-            <ol class="LIST-global list-group list-group-numbered">
-                <p class="TXT-global">Texto de Lista (opicional)</p>
-                <li class="list-group-item">Um item da lista</li>
-                <li class="list-group-item">Um item da lista</li>
-                <li class="list-group-item">Um item da lista</li>
-            </ol>
-<!-- /LISTA -->
-
-        <br>
-
-
-<!-- IMAGEM -->
-                <img src="../static/img/storyset/teamwork-rafiki.svg" alt="" class="IMG-global">
-<!--  /IMAGEM -->   
-
-        <br>
-
-
-                <p class="TXT-global">
-                    Texto para exemplificação do uso de um
-<!-- POP UP -->
-                <span class="POP-global" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-custom-class="custom-popover"
-                    data-bs-title="Título do Pop Up"
-                    data-bs-content="Texto do Pop Up">
-                        pop up
-                </span>
-<!-- /POP UP -->
-                    , fim do texto.
-                </p>  
-
-        <br>
-
-
-<!-- BOTÕES -->
-
-    <!-- Botão voltar ao topo da página -->
-        <a href="#" class="BTN-global">
-            <i class="bi bi-arrow-up-short"></i>
-        </a>
-                      
-    <!-- Botão ir para próxima página -->
-        <a href="" class="BTN-global">
-            Avançar <i class="bi bi-arrow-right-short"></i>
-        </a>
-              
-    <!-- Botão voltar para a trilha de aprendizagem -->
-        <a href="" class="BTN-global" id="btn-return-trail">
-            <i class="bi bi-arrow-return-left"></i> Voltar a Trilha
-        </a>
-<!-- /BOTÕES -->
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-<!-- 
-.:: Um exemplo de uso de LAYOUT + ELEMENTOS ::.
--->
-
-
-    <div class="container-md">
-
-        <div class="container-content text-center">
-            <div class="content-block">
-                <h1 class="TITLE-global">
-                    Título
-                </h1>
-            </div>
-        </div>
-
-        <div class="container-content text-center row">
-            <div class="content-block col-md-4">
-                <img src="../static/img/storyset/teamwork-rafiki.svg" alt="" class="IMG-global">
-            </div>
-
-            <div class="content-block col-md-8">
-                <h3 class="SUB-global">
-                    Lorem ipsum dolor sit amet.
-                </h3>
-                <div class="TXT-global-container">
-                    <p class="TXT-global">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore amet vero dolorem sapiente nemo eos possimus pariatur, neque omnis?
-                    </p>
-                    <p class="TXT-global">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non architecto,
-                            <span class="POP-global" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-custom-class="custom-popover"
-                            data-bs-title="Título do Pop Up"
-                            data-bs-content="Texto do Pop Up">
-                                pop up
-                            </span>
-                        aliquam temporibus earum facilis omnis. Autem quasi porro ut expedita.
-                    </p>
-                </div>
-                <h3 class="SUB-global">
-                    <div class="TXT-global-container">
-                        <p class="TXT-global">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore amet vero dolorem sapiente nemo eos possimus pariatur, neque omnis?
-                        </p>
+                    transition: 100ms;
+                }
+                
+                    #test-user-form-area .test-user-input:focus{
+                        background-color:rgba(65, 65, 221, 0.5);
                         
-                        <ol class="LIST-global list-group list-group-numbered">
-                            <p class="TXT-global">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, fuga.</p>
-                            <li class="list-group-item">A list item</li>
-                            <li class="list-group-item">A list item</li>
-                            <li class="list-group-item">A list item</li>
-                        </ol>
+                        font-size: .87rem;
+                        font-weight: 400;    
+                        
+                        outline: 1px solid #92A3FF;
+                    }
+
+
+
+    #FINALtest #test-questions-area{
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 50px 150px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        border-radius: 10px;        
+    }
+
+        #test-questions-area .test-question{
+            
+        }
+
+            #test-questions-area .test-question-text{
+                font-size: 1.15rem;
+                font-weight: 400;
+            }
+
+                #test-questions-area .test-question-number{
+                    font-size: .9em;
+                    font-weight: 600;
+                }
+            
+            #test-questions-area .test-answers-area{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            #test-questions-area .test-radio-label{
+                padding: 7px 25px;
+
+                font-size: .95rem;
+                font-weight: 300;
+                
+                border-radius: 20px;
+
+                cursor: pointer;
+                user-select: none;
+                transition: 150ms;
+            }
+
+                #test-questions-area .test-radio-label:hover{
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+
+                #test-questions-area .test-radio-label:active{
+                    transform: scale(1.01);
+                }
+
+                #test-questions-area .test-radio-label::before{
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    border: 3px solid white;
+                    border-radius: 100%;
+
+                    transition: 150ms;
+                }
+
+                #test-questions-area .test-radio-input{
+                    display: none;
+                }
+
+                    #test-questions-area .test-radio-input:checked + label{
+                        background-color: rgba(255, 255, 255, 0.1);
+                        transform: scale(1.01);
+                    }
+
+                        #test-questions-area .test-radio-input:checked + label::before{
+                            background-color: #2da32b;
+                        }
+
+                
+
+
+
+
+
+
+</style>
+{% endblock %}
+
+{% block pageTitle %} {% endblock %}
+
+{% block pageContent %}
+<header class="test-header">
+    <div class="container-sm">
+        <h1 class="test-header-title">Exame Final</h1>
+    </div>
+</header>
+
+<div class="container-sm global-container">  
+
+    <div id="FINALtest">
+
+        <div id="test-introduction-area">
+
+            <div class="container-content text-center row">
+                <div class="content-block col-md-3">
+                    <img src="{{url_for('static' , filename='/img/logos/ST-branco.svg')}}" alt="" class="IMG-global">
+                </div>
+
+                <div class="content-block col-md-9 ps-5">
+                    <h2 class="SUB-global" style="text-indent: 0px;">
+                        INTRODUÇÃO 
+                        <span class="TXT-global ps-1" style="font-weight: 500;">
+                            Exame Final - ScrumTutor
+                        </span>
+                    </h2>
+
+                    <p class="TXT-global">
+                        Preparado para demonstrar todo o conhecimento adquirido ao longo deste curso? Este exame final oferece a oportunidade de mostrar sua compreensão e habilidades! Encare-o como um desafio gratificante, onde cada resposta reflete sua dedicação e preparação. Boa sorte!
+                    </p>
+
+                    
+                    <!-- <div class="alert d-flex align-items-center test-disclaimer" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill pe-2"></i>
+                        <div>
+                            <b>ATENÇÃO!</b> Você só pode realizar esse exame uma vez e etc
+                        </div>
+                    </div> -->
+                    
+            <form action="/submit_quiz_final" method="POST">
+
+                <div class="container-content text-center row" id="test-user-form-area">
+                    <div class="content-block col-9 p-0">
+                        <label class="test-user-label" for="user-name">
+                            <p>
+                                Digite seu Nome:
+                            </p>
+                            <input class="test-user-input" type="text" name="" id="user-name" required>
+                        </label>
                     </div>
-                </h3>
-        </div>
+                    
+                    <div class="content-block col-3 p-0">
+                        <label class="test-user-label" for="user-id">
+                            <p>
+                                Digite seu ID:
+                            </p>
+                            <input class="test-user-input" type="number" name="" id="user-id" required> 
+                        </label>
+                    </div>
+                </div>    
 
-        <div class="container-content text-center row">
 
-        </div>
-
-        <div class="container-content d-flex justify-content-center flex-wrap">
-
-            <div class="content-block">
-                <a href="#" class="BTN-global">
-                    <i class="bi bi-arrow-up-short"></i>
-                </a>  
+                </div>
             </div>
+        </div>
+        
+        <hr>
+        
+        <div id="test-questions-area">
 
-            <div class="content-block">    
-                <a href="#" class="BTN-global">
-                    Avançar <i class="bi bi-arrow-right-short"></i>
-                </a>
+            <div class="test-question">
+
+                <!--Gabarito B-->
+                <p class="test-question-text">
+                    <span class="test-question-number">Pergunta 1:</span>
+                    O que são as cerimônias e porque são importantes?
+                </p>
+        
+                <div class="test-answers-area">
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1A-alt" name="Alt-question-1" value="Alternativa A">
+                    <label class="test-radio-label" for="1A-alt">As cerimônias são eventos sociais, são importantes porque precisam ser comemoradas.
+                    </label>
+
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1B-alt" name="Alt-question-1" value="Alternativa B">
+                    <label class="test-radio-label" for="1B-alt">
+                    As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral.
+                    </label>
+
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1C-alt" name="Alt-question-1" value="Alternativa C">
+                    <label class="test-radio-label" for="1C-alt">As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto.
+                    </label>
+                    
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1D-alt" name="Alt-question-1" value="Alternativa D">
+                    <label class="test-radio-label" for="1D-alt">As cerimônias são sempre opcionais, cabe ao time definir se quer fazer a daily durante a sprint ou não, e só são importantes em momentos de crise.
+                    </label>
+                </div>
+            </div>
+            <div class="test-question">
+
+                <!--Gabarito B-->
+                <p class="test-question-text">
+                    <span class="test-question-number">Pergunta 1:</span>
+                    O que são as cerimônias e porque são importantes?
+                </p>
+        
+                <div class="test-answers-area">
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1A-alt" name="Alt-question-1" value="Alternativa A">
+                    <label class="test-radio-label" for="1A-alt">As cerimônias são eventos sociais, são importantes porque precisam ser comemoradas.
+                    </label>
+
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1B-alt" name="Alt-question-1" value="Alternativa B">
+                    <label class="test-radio-label" for="1B-alt">
+                    As cerimônias são eventos específicos e esperados, são importantes porque ajudam a compreender a linha do tempo geral.
+                    </label>
+
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1C-alt" name="Alt-question-1" value="Alternativa C">
+                    <label class="test-radio-label" for="1C-alt">As cerimônias são eventos específicos e esperados, são importantes porque o cliente muda sempre de ideia sobre o produto.
+                    </label>
+                    
+                    <input class="test-radio-input" class="test-radio-input" type="radio" id="1D-alt" name="Alt-question-1" value="Alternativa D">
+                    <label class="test-radio-label" for="1D-alt">As cerimônias são sempre opcionais, cabe ao time definir se quer fazer a daily durante a sprint ou não, e só são importantes em momentos de crise.
+                    </label>
+                </div>
             </div>
             
+            </form>
         </div>
+  
+    </div>
+</div>
 
-
-
-
-    
-
-    <!-- JavaScript do Boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-        const popover = new bootstrap.Popover('.popover-dismiss', {
-        trigger: 'mouseover'
-        })
-    </script>
-        
-</body>
-</html>
+{% endblock%}
