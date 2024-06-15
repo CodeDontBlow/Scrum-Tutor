@@ -32,6 +32,7 @@ create table Comentarios(
 	id int auto_increment primary key,
     Nome varchar(250) not null,
     RA BIGINT not null,
+    Nota int not null,
     Comentario varchar(500) not null
 );
 

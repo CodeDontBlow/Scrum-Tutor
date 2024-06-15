@@ -9,7 +9,8 @@ app = Flask(__name__, static_url_path='/static', template_folder='templates')
 
 # Configurações do MySQL
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '2#J5E8@s*8$WgokH'
+# app.config['MYSQL_PASSWORD'] = '2#J5E8@s*8$WgokH'
+app.config['MYSQL_PASSWORD'] = 'admin'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_DB'] = 'CDB_Database'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
@@ -156,11 +157,12 @@ def examefinal():
 def comentario():
     return render_template("/Modulo-3/comentario.html")
 
-@app.route("/adm")
-def adm():
-    return render_template("/adm.html")
+# @app.route("/adm")
+# def adm():
+#     return render_template("/adm.html")
 
 # == == == =
+
 
 #Verificando se as respostas do quizz 1 estão certas usando o MySQL
 @app.route("/submit_quiz_cap_1", methods=["POST"])
@@ -243,8 +245,11 @@ def quiz_capitulo_3():
 #=========================================================================================================
 
 #Verificando se as respostas do quizz final estão certas usando o MySQL
+correct_answers = 0
+
 @app.route("/submit_quiz_final", methods=['POST'])
 def test_quiz_final():
+    global correct_answers
     if request.method == 'POST':
         # Conectar ao banco de dados SQLite
         conn = mysql.connection
@@ -282,8 +287,8 @@ def comentarios():
     cursor = conn.cursor()
 
     # Inserir dados no banco de dados
-    query = "INSERT INTO Comentarios (Nome, RA, Comentario) VALUES (%s, %s, %s)"
-    cursor.execute(query, (Nome, RA, Comentario))
+    query = "INSERT INTO Comentarios (Nome, RA, Nota, Comentario) VALUES (%s, %s, %s, %s)"
+    cursor.execute(query, (Nome, RA, correct_answers, Comentario))
     conn.commit()
 
     # Fechar a conexão com o banco de dados
@@ -291,7 +296,14 @@ def comentarios():
 
     return render_template("Modulo-3/comentario.html")
    
-    
+#Exibir lista de alunos (comentários)
+@app.route('/adm')
+def adm():
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM Comentarios")
+    Comentarios = cur.fetchall()
+    cur.close()
+    return render_template('adm.html', Comentarios=Comentarios)    
 
 
 if __name__ == "__main__":
