@@ -31,12 +31,13 @@ create table Perguntas_Exame_Final(
 create table Comentarios(
 	id int auto_increment primary key,
     Nome varchar(250) not null,
-    RA int not null,
+    RA BIGINT not null,
+    Nota int not null,
     Comentario varchar(500) not null
 );
 
 /*Linha de código para excluir uma tabela*/
-DROP table Comentarios;
+-- DROP table Comentarios;
 
 /*Inserção de perguntas do capítulo 1*/
 INSERT INTO Perguntas_Capitulo1 (Questao, Resposta) 
@@ -81,11 +82,17 @@ VALUES
 ('Qual das seguintes opções descreve corretamente a importância dos três pilares do Scrum (Transparência, Inspeção e Adaptação)?', 'Alternativa B'),
 ('Qual é o principal objetivo de uma User Story no Scrum?', 'Alternativa C'),
 ('O Scrum master não pode comparecer a daily, e você irá assumir o papel temporariamente, para que o processo não seja quebrado! Qual é as perguntas que se deve fazer aos outros membros?', 'Alternativa A'),
-('Dada a seguinte situação, escolha a alternativa INCORRETA: Durante a Sprint planning, todos os integrantes da equipe Scrum devem se reunir para organizar o que entregar e como produzir essa entrega de valor, respeitando o tempo da Sprint. Abaixo, estão listadas algumas dos passos para uma boa Sprint planning, escolha a alternativa INCORRETA:', 'Alternativa C');
-
+('Dada a seguinte situação, escolha a alternativa INCORRETA: Durante a Sprint planning, todos os integrantes da equipe Scrum devem se reunir para organizar o que entregar e como produzir essa entrega de valor, respeitando o tempo da Sprint. Abaixo, estão listadas algumas dos passos para uma boa Sprint planning, escolha a alternativa INCORRETA:', 'Alternativa C'),
+('Qual é a principal finalidade do Planning Poker em um projeto ágil?', 'Alternativa D'),
+('Quais são as principais responsabilidades de um desenvolvedor em uma equipe Scrum e como essas responsabilidades contribuem para o sucesso de um projeto ágil?', 'Alternativa A'),
+('O que acontece se um membro da equipe não concorda com a estimativa durante uma sessão de Planning Poker?', 'Alternativa B');
 
 SELECT * from Perguntas_Capitulo1;
 SELECT * from Perguntas_Capitulo2;
 SELECT * from Perguntas_Capitulo3;
 SELECT * FROM Perguntas_Exame_Final;
 SELECT * FROM Comentarios;
+
+truncate Comentarios;
+
+SHOW TABLES IN CDB_Database;

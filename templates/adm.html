@@ -19,56 +19,21 @@
     <table>
         <thead>
             <tr>
-                <th>RA</th>
                 <th>Nome</th>
-                <th>Email</th>
+                <th>RA</th>
                 <th>Nota</th>
                 <th>Comentário</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-                <td>--</td>
-            </tr>
+            {% for comentario in Comentarios %}
+                <tr>
+                    <td>{{ comentario.Nome }}</td>
+                    <td>{{ comentario.RA }}</td>
+                    <td>{{ comentario.Nota }}</td>
+                    <td>{{ comentario.Comentario }}</td>
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 </main>

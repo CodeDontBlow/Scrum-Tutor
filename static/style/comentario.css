@@ -176,3 +176,199 @@ placeholder {
     font-family: poppins;
     color: rgb(71, 71, 71);
 }
+
+
+
+.modal-header {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
+
+
+/* .:: FORMULÁRIO ::.  */
+
+form#QUIZform{
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+    #QUIZform .QUIZform-container{
+        width: 100%;
+        max-width: 750px;
+    }
+    
+    #first-question{
+
+    }
+    
+    #second-question{
+
+    }
+    
+    #third-question{
+
+    }
+
+    
+
+/* Área da Pergunta (Parte de Cima) */
+
+        #QUIZform .QUIZ-question{
+            justify-content: center;
+        }
+        
+            #QUIZform .QUIZ-question > *{
+                padding: 0;
+            }
+
+            #QUIZform .question-number h5{
+                margin: 10px 0;
+
+                font-size: 3.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+                #QUIZform .question-text > .TXT-global{      
+                    margin: 15px 15px 0;
+                    
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            
+                #QUIZform .LIST-global{
+                    list-style: upper-roman inside;
+                }
+                
+                    #QUIZform .LIST-global li{
+                        padding-bottom: 5px;
+                        display: list-item;
+                    }
+
+
+
+/* Área da Resposta (Parte de Baixo) */
+#QUIZform .QUIZ-answers{
+    margin-top: 10px;
+
+    justify-content: center;
+}
+            
+#QUIZform .answer-container{
+    padding: 0 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Alternativas */
+#QUIZform .asnwer-card{
+    background-color: #1d1e7b;
+    padding: 15px 30px;
+    
+    flex-grow: 1;
+
+    border: 2px solid #2d2da7;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+
+    transition: all 200ms ease-out;
+}
+
+#QUIZform .asnwer-card .TXT-global{
+    display: inline-block;
+
+    text-align: left;
+}
+
+#QUIZform .asnwer-card:hover{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    
+    transform: scale(1.02);
+}
+
+#QUIZform input[type='radio']{
+display: none;
+}
+                   
+#QUIZform input[type='radio']:checked + .asnwer-card{
+    background-color: #2d2da7;
+
+    border: 2px solid white;
+
+    transform: scale(1.035);
+}
+
+#QUIZform input[type='radio']:checked + .asnwer-card .TXT-global{
+    font-weight: 500;        
+}
+
+
+
+/* .:: MODAL DO QUIZ ::. */
+#QUIZmodal.modal-dialog{
+    max-width: 650px;
+    padding: 0 30px;
+}
+
+#QUIZmodal .modal-content{
+    width: 100%;
+    background-color: #1F1F5F;
+    border-radius: 15px;
+}
+
+#QUIZmodal .modal-body{
+    padding: 10px 20px;
+}
+
+#QUIZmodal .modal-body .content-block.col-sm-5{
+    padding: 0;
+}
+
+#QUIZmodal .modal-body .content-block.col-sm-7{
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+#QUIZmodal .modal-body .IMG-global{
+    margin: 0;
+}
+
+#QUIZmodal .modal-body .SUB-global{
+    font-size: 1.7rem;
+}
+
+#QUIZmodal .modal-body .TXT-global{
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#QUIZmodal .modal-btn-container{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+#QUIZmodal .BTN-global{
+    border: none;
+    border-radius: 10px;
+}
+
+#QUIZmodal .modal-return-btn{
+    background-color: #2E8F2C;
+}
