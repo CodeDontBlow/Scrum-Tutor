@@ -10,7 +10,7 @@ app = Flask(__name__, static_url_path='/static', template_folder='templates')
 # Configurações do MySQL
 app.config['MYSQL_USER'] = 'root'
 # app.config['MYSQL_PASSWORD'] = '2#J5E8@s*8$WgokH'
-app.config['MYSQL_PASSWORD'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'admin'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_DB'] = 'CDB_Database'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'

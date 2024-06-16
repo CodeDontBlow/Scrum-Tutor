@@ -22,11 +22,11 @@
         <div id="test-introduction-area">
 
             <div class="container-content text-center row">
-                <div class="content-block col-md-3">
+                <div class="content-block col-3" id="test-introduction-image-area">
                     <img src="{{url_for('static' , filename='/img/logos/ST-branco.svg')}}" alt="" class="IMG-global">
                 </div>
                 
-                <div class="content-block col-md-9 ps-5">
+                <div class="content-block col-md-9 col-12 ps-md-5">
                   
                     <div id="test-introduction-text-area">
                     <h2 class="SUB-global" style="text-indent: 0px;">
@@ -41,11 +41,8 @@
                         </p>
                     </div>
       
-                    <div class="alert d-flex align-items-center test-disclaimer" role="alert">
-                        <i class="bi bi-exclamation-triangle-fill pe-2"></i>
-                        <div>
-                            <b>ATENÇÃO!</b> Você só pode realizar esse exame uma vez e etc
-                        </div>
+                    <div class="alert d-flex test-disclaimer" role="alert">
+                            <b><i class="bi bi-exclamation-triangle-fill pe-1"></i> ATENÇÃO!</b> Você só pode realizar esse exame uma vez.
                     </div>
 
                   </div>
@@ -54,7 +51,7 @@
           
         </div>
 
-        <hr>
+        <hr id="test-desktop-hr">
       
         <form id="test-questions-area" action="/submit_quiz_final" method="POST">
         <!-- <div class="test-user-form-area container-content text-center row">

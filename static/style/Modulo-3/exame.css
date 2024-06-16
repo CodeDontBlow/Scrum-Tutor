@@ -35,7 +35,10 @@
             background-color: #020234;
             margin: 10px 0;
             padding: 10px 15px;
+
             font-size: .9rem;
+
+            gap: 5px;
         }
     
         #test-introduction-area .test-disclaimer b{
@@ -201,3 +204,164 @@
                 #test-questions-area .test-submit-btn:active{
                     transform: scale(1);
                 }
+
+
+@media (max-width: 766px){
+    .test-header{
+        display: flex;
+        align-items: center;
+    
+        height: 300px;
+        box-shadow: inset 0vw 25px 15vw 1vw rgba(15, 15, 86, 1) !important;
+    }
+    
+        .test-header .test-header-title{
+            font-size: 3rem;
+            text-align: center;
+        }
+    
+    #FINALtest{
+    
+    }
+    
+        #FINALtest #test-introduction-area{
+            margin: 60px 0 30px;
+        }
+        
+                #FINALtest #test-introduction-image-area{
+                    display: none;
+                }
+        
+                #test-introduction-area .test-disclaimer{
+                    margin: 15px 0 0;
+                    padding: 10px 15px;
+                    font-size: .95rem;
+                    justify-content: center;
+                }
+            
+                #test-introduction-area .test-disclaimer b{
+                    font-weight: 600;
+                }
+        
+    
+        hr#test-desktop-hr{
+            display: none;
+        }
+    
+    
+        #FINALtest #test-questions-area{
+            margin-top: 50px;
+            padding: 40px 50px;
+    
+            gap: 40px;
+        }
+    
+            #test-questions-area .test-question{
+    
+            }
+    
+                #test-questions-area .test-question-text{
+                    margin-bottom: 13px;
+                    
+                    font-size: 1rem;
+                }
+    
+                    #test-questions-area .test-question-number{
+                        font-size: .95em;
+                    }
+                
+                #test-questions-area .test-answers-area{
+                    gap: 2px;
+                }
+    
+                #test-questions-area .test-radio-label{
+                    padding: 4px 15px;
+    
+                    font-size: .9rem;
+                }                       
+}
+
+@media (max-width: 450px){
+    .test-header{
+        height: 200px;
+        box-shadow: inset 0vw 25px 15vw 1vw rgba(15, 15, 86, 1) !important;
+    }
+    
+        .test-header .test-header-title{
+            font-size: 2.3rem;
+            text-align: center;
+        }
+    
+    #FINALtest{
+    
+    }
+    
+        #FINALtest #test-introduction-area{
+            margin: 40px 0 30px;
+        }
+        
+                #test-introduction-area .test-disclaimer{
+                    margin: 15px 0 0;
+                    padding: 10px 15px;
+
+                    font-size: .9rem;
+                    line-height: 18px;
+
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 3px;
+                }
+
+                
+
+        #FINALtest #test-questions-area{
+            margin-top: 50px;
+            padding: 40px 30px;
+    
+            border-radius: 3px;
+            gap: 30px;
+        }
+    
+            #test-questions-area .test-question{
+    
+            }
+    
+                #test-questions-area .test-question-text{
+                    margin-bottom: 10px;
+                    
+                    font-size: 1rem;
+                }
+    
+                    #test-questions-area .test-question-number{
+                        font-size: .9em;
+                    }
+                
+                #test-questions-area .test-answers-area{
+                    gap: 1px;
+                }
+    
+                #test-questions-area .test-radio-label{
+                    padding: 4px 10px;
+    
+                    font-size: .9rem;
+                }
+    
+                    #test-questions-area .test-radio-label:hover{
+
+                    }
+    
+                    #test-questions-area .test-radio-label::before{
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 5px;
+    
+                        border: 2px solid white;
+                    }
+    
+                #test-questions-area .test-submit-btn{
+                    width: 100%;
+                    padding: 8px;
+                    font-size: .87rem;
+                }
+
+}
