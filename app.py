@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request, redirect, url_for, render_template_string, send_file # type: ignore
+from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, render_template_string, send_file # type: ignore
 from flask_mysqldb import MySQL
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A3
@@ -9,8 +9,7 @@ app = Flask(__name__, static_url_path='/static', template_folder='templates')
 
 # Configurações do MySQL
 app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = '2#J5E8@s*8$WgokH'
-app.config['MYSQL_PASSWORD'] = 'admin'
+app.config['MYSQL_PASSWORD'] = '2#J5E8@s*8$WgokH'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_DB'] = 'CDB_Database'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
@@ -157,9 +156,6 @@ def examefinal():
 def comentario():
     return render_template("/Modulo-3/comentario.html")
 
-# @app.route("/adm")
-# def adm():
-#     return render_template("/adm.html")
 
 # == == == =
 
@@ -281,21 +277,23 @@ def comentarios():
     Nome = request.form['Nome']
     RA = request.form['RA']
     Comentario = request.form['Comentario']
-
+    Nota_final = correct_answers
     # Conectar ao banco de dados
     conn = mysql.connection
     cursor = conn.cursor()
 
     # Inserir dados no banco de dados
     query = "INSERT INTO Comentarios (Nome, RA, Nota, Comentario) VALUES (%s, %s, %s, %s)"
-    cursor.execute(query, (Nome, RA, correct_answers, Comentario))
+    cursor.execute(query, (Nome, RA, Nota_final, Comentario))
     conn.commit()
 
     # Fechar a conexão com o banco de dados
     cursor.close()
 
     return render_template("Modulo-3/comentario.html")
-   
+
+
+
 #Exibir lista de alunos (comentários)
 @app.route('/adm')
 def adm():
@@ -303,7 +301,22 @@ def adm():
     cur.execute("SELECT * FROM Comentarios")
     Comentarios = cur.fetchall()
     cur.close()
-    return render_template('adm.html', Comentarios=Comentarios)    
+    return render_template('adm.html', Comentarios=Comentarios)
+
+show_modal = True
+
+senha = 'admin123'
+@app.route('/submit_senha', methods=["POST"])
+def login():
+    
+
+    if request.method == 'POST':
+        password = request.form['senha']
+    if password == senha:
+        return redirect(url_for('adm'))
+    else:
+        return render_template('index.html', show_modal=True)
+
 
 
 if __name__ == "__main__":

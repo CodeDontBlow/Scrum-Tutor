@@ -37,7 +37,7 @@ create table Comentarios(
 );
 
 /*Linha de código para excluir uma tabela*/
--- DROP table Comentarios;
+DROP table Comentarios;
 
 /*Inserção de perguntas do capítulo 1*/
 INSERT INTO Perguntas_Capitulo1 (Questao, Resposta) 

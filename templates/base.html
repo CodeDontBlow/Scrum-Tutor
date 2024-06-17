@@ -18,6 +18,10 @@
     
     <!-- Normalize Css -->
     <link rel="stylesheet" href="{{url_for('static', filename='normalize.css/normalize.css')}}">
+
+
+    <!--Css adicional-->
+    <link rel="stylesheet" href="{{url_for('static', filename='style/modal_senha.css')}}">
     
 
     <!-- Para adicionar mais arquivos CSS na sua página -->
@@ -127,7 +131,7 @@
             <div class="CDBfooter-BTcontainer
             d-flex">
                 <div class="CDBfooter-home">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#passModal"><img src="/static/img/icons/admin.svg" width="20"></a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#modal_senha"><img src="/static/img/icons/admin.svg" width="20"></a>
                 </div>
 
                 <div class="CDBfooter-home">
@@ -139,28 +143,50 @@
                 </div>
             </div>
         </div>
-
-
-
     </footer>
 
-    <!-- MODAL ALERTA -->
-    <div class="modal fade" id="passModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_senha" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" id="QUIZmodal" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <p class="text-dark">Insira a senha para acessar:</p>
+                    <p class="text-white">Insira a senha para acessar:</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form action='/submit_senha' method="POST">
+                    <div class="modal-body">
+                        <input type="password" name="senha" id="senha" class="text-dark">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    {% if show_modal %}
+    <div class="modal fade" id="modal_alert" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" id="QUIZmodal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="text-white">Desculpe</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <input type="password" name="senha" id="senha" class="text-dark">
+                    <p>Senha incorreta</p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
                 </div>
             </div>
         </div>
     </div>
+    {% endif %}
+
+
     <!-- JavaScript do Boostrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
@@ -175,8 +201,6 @@
         trigger: 'mouseover'
         })
     </script>
-
-
  
 </body>
 </html>
