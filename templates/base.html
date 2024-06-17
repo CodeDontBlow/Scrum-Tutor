@@ -127,7 +127,7 @@
             <div class="CDBfooter-BTcontainer
             d-flex">
                 <div class="CDBfooter-home">
-                    <a href="/adm"><img src="/static/img/icons/admin.svg" width="20"></a>
+                    <a href="" data-bs-toggle="modal" data-bs-target="#passModal"><img src="/static/img/icons/admin.svg" width="20"></a>
                 </div>
 
                 <div class="CDBfooter-home">
@@ -140,8 +140,27 @@
             </div>
         </div>
 
+
+
     </footer>
 
+    <!-- MODAL ALERTA -->
+    <div class="modal fade" id="passModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="text-dark">Insira a senha para acessar:</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="password" name="senha" id="senha" class="text-dark">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- JavaScript do Boostrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
@@ -156,6 +175,9 @@
         trigger: 'mouseover'
         })
     </script>
-        
+
+
+ 
 </body>
 </html>
+
