@@ -12,6 +12,13 @@ O objetivo deste projeto é desenvolver um website interativo e educativo que ca
 ## 👁️ Visão do produto
 A visão deste produto é criar um sistema web didático e formativo que sirva como uma ferramenta abrangente para ensinar a metodologia Scrum. Nosso objetivo é fornecer aos usuários uma compreensão detalhada dos princípios, processos e artefatos do Scrum, enquanto demonstramos como aplicá-los em diferentes contextos de projeto.
 
+## 📁 Acesso ao projeto
+Você pode [acessar o código fonte do projeto inicial](https://github.com/CodeDontBlow/Scrum-Tutor) ou [baixá-lo](https://github.com/CodeDontBlow/Scrum-Tutor/archive/refs/heads/main.zip).
+
+## 🔨Instalação
+
+Siga os passos em [INSTALACAO](./INSTALACAO.md).
+
 ## 📅 Cronograma
 <table>
   <tr>
@@ -44,6 +51,11 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
     <td>27/05</td>
     <td>16/06</td>
   </tr>
+  <tr>
+   <td>Feira de soluções</td>
+    <td>27/06</td>
+    <td>27/06</td>
+  </tr>
 </table>
 
 ## 📋 Backlog do produto
@@ -57,11 +69,11 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 </p>
 
 ## 🔰 Sprint 1
-🔗 <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 ## 📋 Backlog Sprint 1
 <p align="center">
 <img height="90%" width="90%" src="assets/Backlog_PrimeiraSprint.jpg">
 </p>
+🔗 <a href="https://www.figma.com/file/AITmv8eBwOrtGHrH3mUCpp/ScrumTutor?type=design&node-id=0%3A1&mode=design&t=XtDlVeMKcAiUqZ5w-1">Link do Prótotipo</a>
 
 ## 🔰 Sprint 2
 ## 📋 Backlog Sprint 2
@@ -92,6 +104,11 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 
 </div>
 
+## 🔰 Sprint 4
+## 📋 Backlog Sprint 4
+<p align="center">
+  <img height="90%" width="90%" src="assets/Backlog_QuartaSprint.jpg">
+</p>
 
 ## 💻 Tecnologias
 - ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
@@ -100,10 +117,12 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 - ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) 
 - ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ## 🧰 Ferramentas
 - ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+- ![Trello](https://img.shields.io/badge/Trello-0079BF?style=for-the-badge&logo=trello&logoColor=white)
 
 ## 👥 Equipe Code Don´t Blow
 
@@ -111,13 +130,13 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 
 |Nome|Função|GitHub|
 | -------- |-------- |-------- 
-|**Leonardo Cristiano**|Product Owner|[@GitHub](https://github.com/Leonardo-dSouza)
-|**Luana Souza**|Scrum Master|[@GitHub](https://github.com/luanaapms)
-|**Henrique Tadeu**|Desenvolvedor|[@GitHub](https://github.com/henrySilverIX)
-|**Mariana Lins**|Desenvolvedor|[@GitHub](https://github.com/mariana-lins)
-|**Rafael Gonçalves**|Desenvolvedor|[@GitHub](https://github.com/EstupendoG)
-|**Vanessa Rodrigues**|Desenvolvedor|[@GitHub](https://github.com/Doryumi)
-|**Ygor Pereira**|Desenvolvedor|[@GitHub](https://github.com/YgorPereira)
+|**Leonardo Cristiano**|Product Owner|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Leonardo-dSouza)
+|**Luana Souza**|Scrum Master|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/luanaapms)
+|**Henrique Tadeu**|Desenvolvedor|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/henrySilverIX)
+|**Mariana Lins**|Desenvolvedor|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mariana-lins)
+|**Rafael Gonçalves**|Desenvolvedor|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EstupendoG)
+|**Vanessa Rodrigues**|Desenvolvedor|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Doryumi)
+|**Ygor Pereira**|Desenvolvedor|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YgorPereira)
 
 <br>
 
