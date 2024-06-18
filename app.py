@@ -305,18 +305,26 @@ def adm():
 
 show_modal = True
 
-senha = 'admin123'
+senha = ''
+
 @app.route('/submit_senha', methods=["POST"])
 def login():
     
-
     if request.method == 'POST':
         password = request.form['senha']
     if password == senha:
         return redirect(url_for('adm'))
     else:
         return render_template('index.html', show_modal=True)
+    
 
+@app.route('/senha_nova', methods=["POST"])
+def mudar_senha():
+    global senha
+
+    if request.method == 'POST':
+        senha = request.form['senha_nova']
+        return redirect(url_for('adm'))
 
 
 if __name__ == "__main__":
