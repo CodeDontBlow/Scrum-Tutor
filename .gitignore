@@ -1,6 +1,9 @@
-.env/
+env/
 venv/  
 __pycache__/
-.dist/
-.vscode/
-.idea/
+dist/
+vscode/
+idea/
+
+
+env/

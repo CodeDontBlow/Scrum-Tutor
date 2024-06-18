@@ -1,0 +1,20 @@
+#modal_senha{
+    border: 2px solid white;
+    transform: scale(1.035);
+}
+
+#modal_senha .modal-content{
+    background-color: #1F1F5F;
+    color: white;
+}
+
+
+#modal_mudar_senha{
+    border: 2px solid white;
+    transform: scale(1.035);
+}
+
+#modal_mudar_senha .modal-content{
+    background-color: #1F1F5F;
+    color: white;
+}

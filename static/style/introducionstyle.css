@@ -2,8 +2,15 @@
     width: 420px;
 }
 
-section, .introducion-ava, .introducion-scrum, .vantagens {
+section,
+.introducion-ava,
+.introducion-scrum,
+.vantagens {
     margin-top: 5%;
+}
+
+.redirecionamento-ava {
+    margin-bottom: 5%;
 }
 
 .introducion-scrum .content {

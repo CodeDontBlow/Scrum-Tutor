@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='style/adm.css')}}">{% endblock %}
+
+{% block pageTitle%} {% endblock %}
+
+{% block pageContent %}
+
+
+<!-- <div class="search-filter">
+    <div class="search-container">
+        <input type="search" name="search-bar" id="search-bar" placeholder="Pesquisar..."> 
+        <i class="bi bi-search"></i>
+    </div>
+</div> -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>ID</th>
+            <th>Nota</th>
+            <th>Comentário</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for comentario in Comentarios %}
+            <tr>
+                <td>{{ comentario.Nome }}</td>
+                <td>{{ comentario.RA }}</td>
+                <td>{{ comentario.Nota }}</td>
+                <td>{{ comentario.Comentario }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<section>
+    <div class="pg-button d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_mudar_senha">Mudar senha</button>
+    </div>
+</section>
+
+
+<div class="modal fade" id="modal_mudar_senha" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" id="QUIZmodal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="text-white">Insira a nova senha:</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action='/senha_nova' method="POST">
+                <div class="modal-body">
+                    <input type="password" name="senha_nova" id="senha" class="text-dark">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Mudar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

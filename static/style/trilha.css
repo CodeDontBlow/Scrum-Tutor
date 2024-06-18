@@ -6,6 +6,10 @@
     width: 290px;
 }
 
+li{
+    list-style: none;
+}
+
 .trilha-scrum {
     gap: 30px;
     text-align: center;
@@ -15,6 +19,11 @@
     padding-left: 50px;
 }
 
+.bi-pin-fill {
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+}
 .content{
     padding-left: 50px;
     gap: 30px;
@@ -25,11 +34,30 @@
     align-items: center;
 }
 
+.list-content i {
+    display: inline-block;
+    font-size: 18px;    
+    margin-right: 5px;
+}
+
 .links {
     font-size: 20px;
     text-decoration: none;
     color: white;
     text-align: start;
+
+    cursor: pointer;
+
+    transition: all 200ms;
+}
+
+button.links {
+    background-color: transparent;
+    border: none;
+}
+
+.links:hover {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 section {
@@ -45,3 +73,97 @@ hr {
     background-color: #4141DD;
     border-radius: 25px;
 }
+
+
+
+/* ESTILIZANDO O MODAL (do módulo 3) */
+
+#alertModal .modal-dialog{
+    max-width: 300px;
+}
+
+    #alertModal .modal-content{
+        border-radius: 3px;
+    }
+
+    #alertModal .modal-body{
+        padding: 25px 30px 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+        #alertModal .modal-body i.alert-icon {
+            background-color: #4141DD;
+            width: 75px;
+            height: 75px;
+            margin-bottom: 10px;
+
+            font-size: 2.5rem;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            border-radius: 100px;
+        }
+    
+        #alertModal .modal-body .alert-title{
+            margin-bottom: 13px;
+
+            color: #020234;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    
+        #alertModal .modal-body .alert-text{
+            color: black;
+            font-size: .95rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+    #alertModal .modal-footer{
+        background-color: #4141DD;
+        padding: 0;
+
+        display: flex;
+        gap: 0;
+
+        border: none;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+
+        
+        overflow: hidden;
+    }
+
+        #alertModal .modal-footer > a{
+            background-color: #4141DD;
+            margin: 0;
+            padding: 15px 0;
+            
+            color: white;
+            font-size: .8rem;
+            font-weight: 300;
+
+            flex-grow: 1;
+            
+            border: none;
+            border-radius: 0px;
+
+            transition: 150ms;
+        }
+        
+        #alertModal .modal-footer > a:first-child{
+            font-weight: 400;
+        }
+
+        #alertModal .modal-footer > a:hover{
+            font-weight: 500;
+            box-shadow: none;
+            transform: scale(1.05);
+            background-color: rgba(0, 0, 0, 0.1);
+        }

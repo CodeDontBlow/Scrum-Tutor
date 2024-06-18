@@ -9,7 +9,7 @@
 
 {% block pageContent %}
 <!-- Introdução ao jogo -->
-<section id="top" class="container-sm global-container toggle-section">
+<section id="intro" class="container-sm global-container toggle-section">
 
     <div class="container-sm global-container">
 
@@ -53,7 +53,7 @@
                         no gerenciamento de projetos ágeis. Boa sorte e divirta-se!
                     </p>
                 </div>
-                <a href="#" class="up-screen">
+                <a href="#inicio" class="up-screen">
                     <div class="BTN-global" id="btn-return-trail" onclick="toggle_screens(0)"
                         style="background-color: #2E8F2C; color: white !important;">
                         INICIAR
@@ -70,7 +70,7 @@
 <!--ROUNDS-->
 
 <!--Inicio-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="inicio" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
 
         <div class="container-sm d-flex cliente">
@@ -95,7 +95,7 @@
     </div>
     <!--Resposta PO clicar-->
     <div class="container-sm global-container cards-buttons">
-        <a href="#" class="up-screen">
+        <a href="#pergunta-1" class="up-screen">
             <div class="card" onclick="toggle_screens(1)">
                 <h5 class="card-title">Resposta:</h5>
                 <p class="card-text">Olá João, prazer em conhece-lo! Gostaria de entender melhor algumas informações
@@ -108,7 +108,7 @@
 </section>
 
 <!--Round 1 Perg 1-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-1" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -135,7 +135,7 @@
     <!--Pergunta 1 PO clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Entendi. Sobre o Catálogo de Livros,...</h1>
-        <a href="#" class="up-screen">
+        <a href="#pergunta-2" class="up-screen">
             <div class="card" onclick="toggle_screens(2), correct_sound.play()">
                 <h5 class="card-title">Alternativa A</h5>
                 <p class="card-text">Como você imagina que o catálogo de livros e as opções de pesquisa devem ser
@@ -157,7 +157,7 @@
 </section>
 
 <!--Round 2 - Resp Perg 1 - US 3 - Perg2-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-2" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -198,7 +198,7 @@
             </p>
         </div>
 
-        <a href="#" class="up-screen">
+        <a href="#pergunta-3" class="up-screen">
             <div class="card" onclick="toggle_screens(3), correct_sound.play()">
                 <h5 class="card-title">Alternativa B</h5>
                 <p class="card-text"> Que funcionalidades você considera essenciais no carrinho de compras? </p>
@@ -215,7 +215,7 @@
 </section>
 
 <!--Round 3 - US 1 - Resp Perg 2 - Perg3-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-3" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -249,7 +249,7 @@
     <!--Pergunta 3 PO clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Ainda sobre Carrinho de Compras e Checkout, ...</h1>
-        <a href="#" class="up-screen">
+        <a href="#pergunta-4" class="up-screen">
             <div class="card" onclick="toggle_screens(4), correct_sound.play()">
                 <h5 class="card-title">Alternativa A</h5>
                 <p class="card-text"> Quais etapas você imagina que o processo de checkout deve contemplar para oferecer
@@ -278,7 +278,7 @@
 </section>
 
 <!--Round 4 - US 4 - Resp perg 3 - Perg 4-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-4" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -333,7 +333,7 @@
             </p>
         </div>
 
-        <a href="#" class="up-screen">
+        <a href="#pergunta-5" class="up-screen">
             <div class="card" onclick="toggle_screens(5), correct_sound.play()">
                 <h5 class="card-title">Alternativa C</h5>
                 <p class="card-text"> Que informações você considera essenciais no painel de acompanhamento de pedidos
@@ -346,7 +346,7 @@
 </section>
 
 <!--Round 5 - US 5 - Resp perg 4 - Perg 5-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-5" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -399,7 +399,7 @@
             </p>
         </div>
 
-        <a href="#" class="up-screen">
+        <a href="#pergunta-6" class="up-screen">
             <div class="card" onclick="toggle_screens(6), correct_sound.play()">
                 <h5 class="card-title">Alternativa B</h5>
                 <p class="card-text"> Você imagina alguma funcionalidade específica que possa melhorar a transparência e
@@ -420,7 +420,7 @@
 </section>
 
 <!--Round 6 - US 6 - Resp perg 5 - Perg 6-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-6" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -481,7 +481,7 @@
             </p>
         </div>
 
-        <a href="#" class="up-screen">
+        <a href="#pergunta-7" class="up-screen">
             <div class="card" onclick="toggle_screens(7), correct_sound.play()">
                 <h5 class="card-title">Alternativa B</h5>
                 <p class="card-text"> Você tem alguma preferência ou sugestão em relação à paleta de cores e ao
@@ -504,7 +504,7 @@
 </section>
 
 <!--Round 7 US 7 US 2 - Resp perg 6 - perg 7-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="pergunta-7" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -570,7 +570,7 @@
     <!--Pergunta PO 7 clicar-->
     <div class="container-sm global-container cards-buttons">
         <h1 class="SUB-global">PO: Certo, ainda sobre o design, ... </h1>
-        <a href="#" class="up-screen">
+        <a href="#pergunta-8" class="up-screen">
             <div class="card" onclick="toggle_screens(8), correct_sound.play()">
                 <h5 class="card-title">Alternativa A</h5>
                 <p class="card-text"> Qual a sua expectativa em relação ao uso de imagens e outros elementos multimídia
@@ -598,7 +598,7 @@
 </section>
 
 <!--Fala de finalização PO Round 8-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="finalizacao" class="container-sm global-container d-flex bg-chat toggle-section hidden">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -665,7 +665,7 @@
 
     <div class="container-sm global-container cards-buttons">
 
-        <a href="#" class="up-screen">
+        <a href="#final" class="up-screen">
             <div class="card" onclick="toggle_screens(9)">
                 <h5 class="card-title">Resposta:</h5>
                 <p class="card-text">Perfeito, essas informações são muito importantes para que possamos definir um
@@ -680,7 +680,7 @@
 
 
 <!--Ultima resposta do Cliente Round 9-->
-<section class="container-sm global-container d-flex bg-chat toggle-section hidden">
+<section id="final" class="container-sm global-container d-flex bg-chat toggle-section ">
     <div class="upside">
         <div class="container-sm d-flex cliente">
             <!-- aqui dentro vai o icone do cliente e sua fala  -->
@@ -743,8 +743,14 @@
             </div>
         </div>
     </div>
-    <div class="botao-validar">
+    <div class="botao-validar botao-1">
         <a href="/jogoBacklog">
+            <button type="button" class="validar">Validar<i class="bi bi-check"></i></button>
+        </a>
+    </div>
+
+    <div class="botao-validar botao-2">
+        <a href="/trilha">
             <button type="button" class="validar">Validar<i class="bi bi-check"></i></button>
         </a>
     </div>
