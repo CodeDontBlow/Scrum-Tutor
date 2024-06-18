@@ -109,6 +109,13 @@ Siga os passos em [INSTALACAO](./INSTALACAO.md).
 <p align="center">
   <img height="90%" width="90%" src="assets/Backlog_QuartaSprint.jpeg">
 </p>
+## ▶️ Vídeo da navegação do Exame final
+
+<div align="center">
+
+[ <img height="60%" width="60%" src="https://img.youtube.com/vi/Y1VRjwsXx0w/0.jpg">](https://youtu.be/Y1VRjwsXx0w)
+
+</div>
 
 ## 💻 Tecnologias
 - ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
