@@ -7,7 +7,7 @@
 </p>
 
 ## 🎯 Objetivo
-O objetivo deste projeto é desenvolver um website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. Alunos do 1º semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC liderarão o desenvolvimento desta plataforma
+O objetivo deste projeto é desenvolver um website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. Alunos do 1º semestre do curso de Análise e Desenvolvimento de Sistemas da FATEC liderarão o desenvolvimento desta plataforma.
 
 ## 👁️ Visão do produto
 A visão deste produto é criar um sistema web didático e formativo que sirva como uma ferramenta abrangente para ensinar a metodologia Scrum. Nosso objetivo é fornecer aos usuários uma compreensão detalhada dos princípios, processos e artefatos do Scrum, enquanto demonstramos como aplicá-los em diferentes contextos de projeto.
@@ -54,7 +54,7 @@ Siga os passos em [INSTALACAO](./INSTALACAO.md).
     <td>16/06</td>
   </tr>
   <tr>
-   <td>Feira de soluções</td>
+   <td>Feira de Soluções</td>
     <td>27/06</td>
     <td>27/06</td>
   </tr>
@@ -111,6 +111,7 @@ Siga os passos em [INSTALACAO](./INSTALACAO.md).
 <p align="center">
   <img height="90%" width="90%" src="assets/Backlog_QuartaSprint.jpeg">
 </p>
+
 ## ▶️ Vídeo da navegação do Exame final
 
 <div align="center">
