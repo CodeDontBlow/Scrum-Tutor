@@ -107,7 +107,7 @@ Siga os passos em [INSTALACAO](./INSTALACAO.md).
 ## 🔰 Sprint 4
 ## 📋 Backlog Sprint 4
 <p align="center">
-  <img height="90%" width="90%" src="assets/Backlog_QuartaSprint.jpg">
+  <img height="90%" width="90%" src="assets/Backlog_QuartaSprint.jpeg">
 </p>
 
 ## 💻 Tecnologias
