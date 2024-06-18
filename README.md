@@ -15,6 +15,8 @@ A visão deste produto é criar um sistema web didático e formativo que sirva c
 ## 📁 Acesso ao projeto
 Você pode [acessar o código fonte do projeto inicial](https://github.com/CodeDontBlow/Scrum-Tutor) ou [baixá-lo](https://github.com/CodeDontBlow/Scrum-Tutor/archive/refs/heads/main.zip).
 
+O projeto está disponível no seguinte link: [Scrum Tutor](http://scrumtutor.ddns.net:5000/).
+
 ## 🔨Instalação
 
 Siga os passos em [INSTALACAO](./INSTALACAO.md).
